@@ -52,7 +52,8 @@ A single-file, self-contained interactive dashboard to help providers and progra
 - Phase tabs & Step cards
   - Pinned phase tabs with per-phase progress, plus previous/next phase buttons under the list.
   - Each step is a collapsible card showing its status and progress at a glance. On a phone only the first unfinished step starts open; on desktop all steps start open. Expand all / Collapse all is one tap.
-  - Tap anywhere on a checklist row to check it off. The book icon opens that item's instructions.
+  - Tap anywhere on a checklist row to check it off. Every row also has an **Instructions** button that opens that item's instructions, tips and contacts (under the task text on phones, beside it on wider screens).
+  - Items without item-specific instructions show general guidance, and the dialog says so.
 
 - Subtask detail modal
   - Opens as a bottom sheet on phones. It shows step-by-step instructions, executive tips (audit/licensing traps), and required authority/portals & contacts, with one button to mark the item complete or open again.
