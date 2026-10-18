@@ -12,7 +12,6 @@ A single-file, self-contained interactive dashboard to help providers and progra
 ## Files
 
 - `nc_medicaid_bh_dashboard.html` — Main dashboard (standalone HTML).
-- `readme.txt` — Original plain-text README (kept for history).
 - `README.md` — This Markdown README.
 
 ## Features (what's in the app)
