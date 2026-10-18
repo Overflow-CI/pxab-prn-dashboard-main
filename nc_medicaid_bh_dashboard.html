@@ -1,0 +1,2361 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full bg-slate-50 text-[16px]">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>NC Medicaid Behavioral Health Operations & Compliance Dashboard</title>
+  <!-- Precompiled Tailwind CSS v3.4 (replaces the cdn.tailwindcss.com in-browser compiler).
+       If you add new Tailwind classes, regenerate with:
+       npx tailwindcss@3 --content nc_medicaid_bh_dashboard.html --minify -o tw.css  and paste tw.css here. -->
+  <style>*,:after,:before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/*! tailwindcss v3.4.19 | MIT License | https://tailwindcss.com*/*,:after,:before{box-sizing:border-box;border:0 solid #e5e7eb}:after,:before{--tw-content:""}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;-o-tab-size:4;tab-size:4;font-family:ui-sans-serif,system-ui,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{opacity:1;color:#9ca3af}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.container{width:100%}@media (min-width:640px){.container{max-width:640px}}@media (min-width:768px){.container{max-width:768px}}@media (min-width:1024px){.container{max-width:1024px}}@media (min-width:1280px){.container{max-width:1280px}}@media (min-width:1536px){.container{max-width:1536px}}.pointer-events-none{pointer-events:none}.pointer-events-auto{pointer-events:auto}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.sticky{position:sticky}.inset-0{inset:0}.bottom-0{bottom:0}.bottom-4{bottom:1rem}.left-0{left:0}.right-4{right:1rem}.top-0{top:0}.top-full{top:100%}.z-10{z-index:10}.z-30{z-index:30}.z-40{z-index:40}.z-50{z-index:50}.col-span-5{grid-column:span 5/span 5}.col-span-7{grid-column:span 7/span 7}.mx-auto{margin-left:auto;margin-right:auto}.my-6{margin-top:1.5rem;margin-bottom:1.5rem}.mb-1{margin-bottom:.25rem}.mb-1\.5{margin-bottom:.375rem}.mb-2{margin-bottom:.5rem}.mb-3{margin-bottom:.75rem}.mb-4{margin-bottom:1rem}.ml-2{margin-left:.5rem}.mt-0\.5{margin-top:.125rem}.mt-1{margin-top:.25rem}.mt-1\.5{margin-top:.375rem}.mt-2{margin-top:.5rem}.block{display:block}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.hidden{display:none}.h-1\.5{height:.375rem}.h-10{height:2.5rem}.h-11{height:2.75rem}.h-2{height:.5rem}.h-2\.5{height:.625rem}.h-3{height:.75rem}.h-3\.5{height:.875rem}.h-4{height:1rem}.h-5{height:1.25rem}.h-6{height:1.5rem}.h-full{height:100%}.max-h-80{max-height:20rem}.max-h-\[90vh\]{max-height:90vh}.min-h-\[36px\]{min-height:36px}.min-h-\[44px\]{min-height:44px}.min-h-\[48px\]{min-height:48px}.min-h-full{min-height:100%}.w-1\.5{width:.375rem}.w-10{width:2.5rem}.w-11{width:2.75rem}.w-2\.5{width:.625rem}.w-3{width:.75rem}.w-3\.5{width:.875rem}.w-4{width:1rem}.w-5{width:1.25rem}.w-6{width:1.5rem}.w-full{width:100%}.min-w-\[760px\]{min-width:760px}.max-w-2xl{max-width:42rem}.max-w-7xl{max-width:80rem}.max-w-full{max-width:100%}.max-w-lg{max-width:32rem}.max-w-sm{max-width:24rem}.max-w-xs{max-width:20rem}.flex-1{flex:1 1 0%}.shrink-0{flex-shrink:0}.-translate-x-1\/2{--tw-translate-x:-50%}.-translate-x-1\/2,.-translate-x-full{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.-translate-x-full{--tw-translate-x:-100%}.transform{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@keyframes pulse{50%{opacity:.5}}.animate-pulse{animation:pulse 2s cubic-bezier(.4,0,.6,1) infinite}.cursor-pointer{cursor:pointer}.select-none{-webkit-user-select:none;-moz-user-select:none;user-select:none}.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}.grid-cols-12{grid-template-columns:repeat(12,minmax(0,1fr))}.grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-center{align-items:center}.items-baseline{align-items:baseline}.items-stretch{align-items:stretch}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1{gap:.25rem}.gap-1\.5{gap:.375rem}.gap-2{gap:.5rem}.gap-2\.5{gap:.625rem}.gap-3{gap:.75rem}.gap-3\.5{gap:.875rem}.gap-4{gap:1rem}.space-x-1\.5>:not([hidden])~:not([hidden]){--tw-space-x-reverse:0;margin-right:calc(.375rem*var(--tw-space-x-reverse));margin-left:calc(.375rem*(1 - var(--tw-space-x-reverse)))}.space-y-1>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.25rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.25rem*var(--tw-space-y-reverse))}.space-y-1\.5>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.375rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.375rem*var(--tw-space-y-reverse))}.space-y-2>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.5rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.5rem*var(--tw-space-y-reverse))}.space-y-2\.5>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.625rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.625rem*var(--tw-space-y-reverse))}.space-y-3\.5>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.875rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.875rem*var(--tw-space-y-reverse))}.space-y-4>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem*var(--tw-space-y-reverse))}.space-y-5>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.25rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.25rem*var(--tw-space-y-reverse))}.space-y-6>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.5rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.5rem*var(--tw-space-y-reverse))}.self-start{align-self:flex-start}.self-stretch{align-self:stretch}.overflow-hidden{overflow:hidden}.overflow-x-auto{overflow-x:auto}.overflow-y-auto{overflow-y:auto}.truncate{overflow:hidden;text-overflow:ellipsis}.truncate,.whitespace-nowrap{white-space:nowrap}.rounded{border-radius:.25rem}.rounded-2xl{border-radius:1rem}.rounded-3xl{border-radius:1.5rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:.5rem}.rounded-md{border-radius:.375rem}.rounded-xl{border-radius:.75rem}.border{border-width:1px}.border-b{border-bottom-width:1px}.border-t{border-top-width:1px}.border-amber-200{--tw-border-opacity:1;border-color:rgb(253 230 138/var(--tw-border-opacity,1))}.border-amber-200\/60{border-color:hsla(48,97%,77%,.6)}.border-amber-300{--tw-border-opacity:1;border-color:rgb(252 211 77/var(--tw-border-opacity,1))}.border-amber-500\/30{border-color:rgba(245,158,11,.3)}.border-emerald-300{--tw-border-opacity:1;border-color:rgb(110 231 183/var(--tw-border-opacity,1))}.border-emerald-500\/30{border-color:rgba(16,185,129,.3)}.border-rose-300{--tw-border-opacity:1;border-color:rgb(253 164 175/var(--tw-border-opacity,1))}.border-rose-800\/50{border-color:rgba(159,18,57,.5)}.border-sky-200{--tw-border-opacity:1;border-color:rgb(186 230 253/var(--tw-border-opacity,1))}.border-sky-300{--tw-border-opacity:1;border-color:rgb(125 211 252/var(--tw-border-opacity,1))}.border-sky-400{--tw-border-opacity:1;border-color:rgb(56 189 248/var(--tw-border-opacity,1))}.border-sky-500\/30{border-color:rgba(14,165,233,.3)}.border-slate-100{--tw-border-opacity:1;border-color:rgb(241 245 249/var(--tw-border-opacity,1))}.border-slate-200{--tw-border-opacity:1;border-color:rgb(226 232 240/var(--tw-border-opacity,1))}.border-slate-200\/70{border-color:rgba(226,232,240,.7)}.border-slate-200\/90{border-color:rgba(226,232,240,.9)}.border-slate-300{--tw-border-opacity:1;border-color:rgb(203 213 225/var(--tw-border-opacity,1))}.border-slate-700{--tw-border-opacity:1;border-color:rgb(51 65 85/var(--tw-border-opacity,1))}.border-slate-800{--tw-border-opacity:1;border-color:rgb(30 41 59/var(--tw-border-opacity,1))}.border-teal-100{--tw-border-opacity:1;border-color:rgb(204 251 241/var(--tw-border-opacity,1))}.border-teal-200{--tw-border-opacity:1;border-color:rgb(153 246 228/var(--tw-border-opacity,1))}.border-teal-200\/90{border-color:rgba(153,246,228,.9)}.bg-amber-100{--tw-bg-opacity:1;background-color:rgb(254 243 199/var(--tw-bg-opacity,1))}.bg-amber-400{--tw-bg-opacity:1;background-color:rgb(251 191 36/var(--tw-bg-opacity,1))}.bg-amber-50\/50{background-color:rgba(255,251,235,.5)}.bg-amber-50\/70{background-color:rgba(255,251,235,.7)}.bg-amber-500\/20{background-color:rgba(245,158,11,.2)}.bg-amber-600{--tw-bg-opacity:1;background-color:rgb(217 119 6/var(--tw-bg-opacity,1))}.bg-emerald-100{--tw-bg-opacity:1;background-color:rgb(209 250 229/var(--tw-bg-opacity,1))}.bg-emerald-500{--tw-bg-opacity:1;background-color:rgb(16 185 129/var(--tw-bg-opacity,1))}.bg-emerald-500\/20{background-color:rgba(16,185,129,.2)}.bg-rose-100{--tw-bg-opacity:1;background-color:rgb(255 228 230/var(--tw-bg-opacity,1))}.bg-rose-500{--tw-bg-opacity:1;background-color:rgb(244 63 94/var(--tw-bg-opacity,1))}.bg-rose-950\/50{background-color:rgba(76,5,25,.5)}.bg-sky-50{--tw-bg-opacity:1;background-color:rgb(240 249 255/var(--tw-bg-opacity,1))}.bg-sky-500\/20{background-color:rgba(14,165,233,.2)}.bg-sky-600{--tw-bg-opacity:1;background-color:rgb(2 132 199/var(--tw-bg-opacity,1))}.bg-slate-100{--tw-bg-opacity:1;background-color:rgb(241 245 249/var(--tw-bg-opacity,1))}.bg-slate-100\/60{background-color:rgba(241,245,249,.6)}.bg-slate-100\/90{background-color:rgba(241,245,249,.9)}.bg-slate-200{--tw-bg-opacity:1;background-color:rgb(226 232 240/var(--tw-bg-opacity,1))}.bg-slate-200\/60{background-color:rgba(226,232,240,.6)}.bg-slate-300{--tw-bg-opacity:1;background-color:rgb(203 213 225/var(--tw-bg-opacity,1))}.bg-slate-50{--tw-bg-opacity:1;background-color:rgb(248 250 252/var(--tw-bg-opacity,1))}.bg-slate-50\/70{background-color:rgba(248,250,252,.7)}.bg-slate-50\/80{background-color:rgba(248,250,252,.8)}.bg-slate-800{--tw-bg-opacity:1;background-color:rgb(30 41 59/var(--tw-bg-opacity,1))}.bg-slate-900{--tw-bg-opacity:1;background-color:rgb(15 23 42/var(--tw-bg-opacity,1))}.bg-slate-950\/70{background-color:rgba(2,6,23,.7)}.bg-teal-50\/50{background-color:rgba(240,253,250,.5)}.bg-teal-50\/60{background-color:rgba(240,253,250,.6)}.bg-teal-600{--tw-bg-opacity:1;background-color:rgb(13 148 136/var(--tw-bg-opacity,1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity,1))}.bg-white\/20{background-color:hsla(0,0%,100%,.2)}.bg-white\/70{background-color:hsla(0,0%,100%,.7)}.bg-gradient-to-r{background-image:linear-gradient(to right,var(--tw-gradient-stops))}.bg-gradient-to-tr{background-image:linear-gradient(to top right,var(--tw-gradient-stops))}.from-sky-500{--tw-gradient-from:#0ea5e9 var(--tw-gradient-from-position);--tw-gradient-to:rgba(14,165,233,0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.to-teal-400{--tw-gradient-to:#2dd4bf var(--tw-gradient-to-position)}.to-teal-500{--tw-gradient-to:#14b8a6 var(--tw-gradient-to-position)}.p-1\.5{padding:.375rem}.p-2{padding:.5rem}.p-2\.5{padding:.625rem}.p-3{padding:.75rem}.p-3\.5{padding:.875rem}.p-4{padding:1rem}.p-5{padding:1.25rem}.p-6{padding:1.5rem}.p-8{padding:2rem}.px-1\.5{padding-left:.375rem;padding-right:.375rem}.px-2{padding-left:.5rem;padding-right:.5rem}.px-2\.5{padding-left:.625rem;padding-right:.625rem}.px-3{padding-left:.75rem;padding-right:.75rem}.px-3\.5{padding-left:.875rem;padding-right:.875rem}.px-4{padding-left:1rem;padding-right:1rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.py-0\.5{padding-top:.125rem;padding-bottom:.125rem}.py-1{padding-top:.25rem;padding-bottom:.25rem}.py-1\.5{padding-top:.375rem;padding-bottom:.375rem}.py-2{padding-top:.5rem;padding-bottom:.5rem}.py-2\.5{padding-top:.625rem;padding-bottom:.625rem}.py-3\.5{padding-top:.875rem;padding-bottom:.875rem}.py-4{padding-top:1rem;padding-bottom:1rem}.py-5{padding-top:1.25rem;padding-bottom:1.25rem}.py-6{padding-top:1.5rem;padding-bottom:1.5rem}.pb-1{padding-bottom:.25rem}.pb-1\.5{padding-bottom:.375rem}.pb-2{padding-bottom:.5rem}.pb-2\.5{padding-bottom:.625rem}.pb-3{padding-bottom:.75rem}.pr-2{padding-right:.5rem}.pr-3{padding-right:.75rem}.pt-0\.5{padding-top:.125rem}.pt-1{padding-top:.25rem}.pt-2{padding-top:.5rem}.pt-2\.5{padding-top:.625rem}.text-left{text-align:left}.text-center{text-align:center}.font-mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace}.text-2xl{font-size:1.5rem;line-height:2rem}.text-\[11px\]{font-size:11px}.text-\[16px\]{font-size:16px}.text-base{font-size:1rem;line-height:1.5rem}.text-sm{font-size:.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:.75rem;line-height:1rem}.font-black{font-weight:900}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.font-medium{font-weight:500}.font-normal{font-weight:400}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.italic{font-style:italic}.leading-relaxed{line-height:1.625}.leading-snug{line-height:1.375}.leading-tight{line-height:1.25}.tracking-tight{letter-spacing:-.025em}.tracking-wide{letter-spacing:.025em}.tracking-wider{letter-spacing:.05em}.text-amber-300{--tw-text-opacity:1;color:rgb(252 211 77/var(--tw-text-opacity,1))}.text-amber-600{--tw-text-opacity:1;color:rgb(217 119 6/var(--tw-text-opacity,1))}.text-amber-800{--tw-text-opacity:1;color:rgb(146 64 14/var(--tw-text-opacity,1))}.text-amber-900{--tw-text-opacity:1;color:rgb(120 53 15/var(--tw-text-opacity,1))}.text-amber-900\/90{color:rgba(120,53,15,.9)}.text-amber-950\/80{color:rgba(69,26,3,.8)}.text-emerald-300{--tw-text-opacity:1;color:rgb(110 231 183/var(--tw-text-opacity,1))}.text-emerald-600{--tw-text-opacity:1;color:rgb(5 150 105/var(--tw-text-opacity,1))}.text-emerald-800{--tw-text-opacity:1;color:rgb(6 95 70/var(--tw-text-opacity,1))}.text-emerald-900{--tw-text-opacity:1;color:rgb(6 78 59/var(--tw-text-opacity,1))}.text-rose-300{--tw-text-opacity:1;color:rgb(253 164 175/var(--tw-text-opacity,1))}.text-rose-900{--tw-text-opacity:1;color:rgb(136 19 55/var(--tw-text-opacity,1))}.text-sky-300{--tw-text-opacity:1;color:rgb(125 211 252/var(--tw-text-opacity,1))}.text-sky-400{--tw-text-opacity:1;color:rgb(56 189 248/var(--tw-text-opacity,1))}.text-sky-600{--tw-text-opacity:1;color:rgb(2 132 199/var(--tw-text-opacity,1))}.text-sky-700{--tw-text-opacity:1;color:rgb(3 105 161/var(--tw-text-opacity,1))}.text-sky-800{--tw-text-opacity:1;color:rgb(7 89 133/var(--tw-text-opacity,1))}.text-sky-900{--tw-text-opacity:1;color:rgb(12 74 110/var(--tw-text-opacity,1))}.text-slate-200{--tw-text-opacity:1;color:rgb(226 232 240/var(--tw-text-opacity,1))}.text-slate-300{--tw-text-opacity:1;color:rgb(203 213 225/var(--tw-text-opacity,1))}.text-slate-400{--tw-text-opacity:1;color:rgb(148 163 184/var(--tw-text-opacity,1))}.text-slate-500{--tw-text-opacity:1;color:rgb(100 116 139/var(--tw-text-opacity,1))}.text-slate-600{--tw-text-opacity:1;color:rgb(71 85 105/var(--tw-text-opacity,1))}.text-slate-700{--tw-text-opacity:1;color:rgb(51 65 85/var(--tw-text-opacity,1))}.text-slate-800{--tw-text-opacity:1;color:rgb(30 41 59/var(--tw-text-opacity,1))}.text-slate-900{--tw-text-opacity:1;color:rgb(15 23 42/var(--tw-text-opacity,1))}.text-slate-950{--tw-text-opacity:1;color:rgb(2 6 23/var(--tw-text-opacity,1))}.text-teal-400{--tw-text-opacity:1;color:rgb(45 212 191/var(--tw-text-opacity,1))}.text-teal-600{--tw-text-opacity:1;color:rgb(13 148 136/var(--tw-text-opacity,1))}.text-teal-700{--tw-text-opacity:1;color:rgb(15 118 110/var(--tw-text-opacity,1))}.text-teal-800{--tw-text-opacity:1;color:rgb(17 94 89/var(--tw-text-opacity,1))}.text-teal-900{--tw-text-opacity:1;color:rgb(19 78 74/var(--tw-text-opacity,1))}.text-teal-900\/90{color:rgba(19,78,74,.9)}.text-white{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.underline{text-decoration-line:underline}.line-through{text-decoration-line:line-through}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgba(0,0,0,.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color)}.shadow-2xl,.shadow-lg{box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color),0 4px 6px -4px var(--tw-shadow-color)}.shadow-md{--tw-shadow:0 4px 6px -1px rgba(0,0,0,.1),0 2px 4px -2px rgba(0,0,0,.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color),0 2px 4px -2px var(--tw-shadow-color)}.shadow-md,.shadow-sm{box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgba(0,0,0,.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color)}.outline-none{outline:2px solid transparent;outline-offset:2px}.filter{filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.transition{transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,-webkit-backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter,-webkit-backdrop-filter;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.duration-300{transition-duration:.3s}.selection\:bg-sky-200 ::-moz-selection{--tw-bg-opacity:1;background-color:rgb(186 230 253/var(--tw-bg-opacity,1))}.selection\:bg-sky-200 ::selection{--tw-bg-opacity:1;background-color:rgb(186 230 253/var(--tw-bg-opacity,1))}.selection\:text-sky-900 ::-moz-selection{--tw-text-opacity:1;color:rgb(12 74 110/var(--tw-text-opacity,1))}.selection\:text-sky-900 ::selection{--tw-text-opacity:1;color:rgb(12 74 110/var(--tw-text-opacity,1))}.selection\:bg-sky-200::-moz-selection{--tw-bg-opacity:1;background-color:rgb(186 230 253/var(--tw-bg-opacity,1))}.selection\:bg-sky-200::selection{--tw-bg-opacity:1;background-color:rgb(186 230 253/var(--tw-bg-opacity,1))}.selection\:text-sky-900::-moz-selection{--tw-text-opacity:1;color:rgb(12 74 110/var(--tw-text-opacity,1))}.selection\:text-sky-900::selection{--tw-text-opacity:1;color:rgb(12 74 110/var(--tw-text-opacity,1))}.hover\:scale-105:hover{--tw-scale-x:1.05;--tw-scale-y:1.05;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:border-emerald-300:hover{--tw-border-opacity:1;border-color:rgb(110 231 183/var(--tw-border-opacity,1))}.hover\:border-sky-300:hover{--tw-border-opacity:1;border-color:rgb(125 211 252/var(--tw-border-opacity,1))}.hover\:border-slate-300:hover{--tw-border-opacity:1;border-color:rgb(203 213 225/var(--tw-border-opacity,1))}.hover\:border-slate-400:hover{--tw-border-opacity:1;border-color:rgb(148 163 184/var(--tw-border-opacity,1))}.hover\:border-teal-300:hover{--tw-border-opacity:1;border-color:rgb(94 234 212/var(--tw-border-opacity,1))}.hover\:bg-amber-500:hover{--tw-bg-opacity:1;background-color:rgb(245 158 11/var(--tw-bg-opacity,1))}.hover\:bg-emerald-50\/30:hover{background-color:rgba(236,253,245,.3)}.hover\:bg-rose-900\/70:hover{background-color:rgba(136,19,55,.7)}.hover\:bg-sky-50:hover{--tw-bg-opacity:1;background-color:rgb(240 249 255/var(--tw-bg-opacity,1))}.hover\:bg-sky-50\/30:hover{background-color:rgba(240,249,255,.3)}.hover\:bg-sky-500:hover{--tw-bg-opacity:1;background-color:rgb(14 165 233/var(--tw-bg-opacity,1))}.hover\:bg-slate-100:hover{--tw-bg-opacity:1;background-color:rgb(241 245 249/var(--tw-bg-opacity,1))}.hover\:bg-slate-50:hover{--tw-bg-opacity:1;background-color:rgb(248 250 252/var(--tw-bg-opacity,1))}.hover\:bg-slate-700:hover{--tw-bg-opacity:1;background-color:rgb(51 65 85/var(--tw-bg-opacity,1))}.hover\:bg-teal-50\/30:hover{background-color:rgba(240,253,250,.3)}.hover\:bg-white:hover{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity,1))}.hover\:text-sky-900:hover{--tw-text-opacity:1;color:rgb(12 74 110/var(--tw-text-opacity,1))}.hover\:text-slate-700:hover{--tw-text-opacity:1;color:rgb(51 65 85/var(--tw-text-opacity,1))}.hover\:text-teal-900:hover{--tw-text-opacity:1;color:rgb(19 78 74/var(--tw-text-opacity,1))}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.hover\:underline:hover{text-decoration-line:underline}.focus\:ring-2:focus{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000)}.focus\:ring-amber-500:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(245 158 11/var(--tw-ring-opacity,1))}.focus\:ring-emerald-500:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(16 185 129/var(--tw-ring-opacity,1))}.focus\:ring-sky-500:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(14 165 233/var(--tw-ring-opacity,1))}.focus\:ring-teal-500:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(20 184 166/var(--tw-ring-opacity,1))}.active\:bg-amber-700:active{--tw-bg-opacity:1;background-color:rgb(180 83 9/var(--tw-bg-opacity,1))}.active\:bg-sky-700:active{--tw-bg-opacity:1;background-color:rgb(3 105 161/var(--tw-bg-opacity,1))}.active\:bg-slate-600:active{--tw-bg-opacity:1;background-color:rgb(71 85 105/var(--tw-bg-opacity,1))}.group:hover .group-hover\:text-sky-600{--tw-text-opacity:1;color:rgb(2 132 199/var(--tw-text-opacity,1))}.group:hover .group-hover\:text-sky-700{--tw-text-opacity:1;color:rgb(3 105 161/var(--tw-text-opacity,1))}@media (min-width:640px){.sm\:inline{display:inline}.sm\:w-auto{width:auto}.sm\:max-w-sm{max-width:24rem}.sm\:flex-none{flex:none}.sm\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.sm\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.sm\:flex-row{flex-direction:row}.sm\:items-center{align-items:center}.sm\:self-center{align-self:center}.sm\:p-5{padding:1.25rem}.sm\:p-6{padding:1.5rem}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\:text-2xl{font-size:1.5rem;line-height:2rem}.sm\:text-3xl{font-size:1.875rem;line-height:2.25rem}.sm\:text-base{font-size:1rem;line-height:1.5rem}.sm\:text-lg{font-size:1.125rem;line-height:1.75rem}.sm\:text-sm{font-size:.875rem;line-height:1.25rem}.sm\:text-xs{font-size:.75rem;line-height:1rem}}@media (min-width:768px){.md\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.md\:flex-row{flex-direction:row}.md\:items-center{align-items:center}.md\:self-center{align-self:center}}@media (min-width:1024px){.lg\:col-span-6{grid-column:span 6/span 6}.lg\:grid-cols-12{grid-template-columns:repeat(12,minmax(0,1fr))}.lg\:grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}.lg\:flex-row{flex-direction:row}.lg\:items-start{align-items:flex-start}.lg\:px-8{padding-left:2rem;padding-right:2rem}}</style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  
+  <style>
+    /* Mobile-first baseline: Enforce smallest text size no smaller than 12pt (16px) */
+    html {
+      font-size: 16px; /* 12pt equivalent */
+    }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-size: 1rem; /* 16px / 12pt minimum */
+      line-height: 1.5;
+    }
+    .font-mono {
+      font-family: 'JetBrains Mono', monospace;
+    }
+    /* Guarantee touch target size minimum 44px */
+    .touch-target {
+      min-height: 48px;
+      min-width: 48px;
+    }
+    .custom-scrollbar::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-track {
+      background: #f1f5f9;
+      border-radius: 6px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: #cbd5e1;
+      border-radius: 6px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+      background: #94a3b8;
+    }
+    /* Tab active styles */
+    .tab-active {
+      background-color: #0284c7;
+      color: #ffffff !important;
+      border-color: #0284c7;
+      box-shadow: 0 4px 12px -2px rgba(2, 132, 199, 0.35);
+    }
+    @media print {
+      .no-print { display: none !important; }
+      body { background: white; font-size: 12pt; }
+    }
+  </style>
+</head>
+<body class="min-h-full flex flex-col text-slate-800 antialiased selection:bg-sky-200 selection:text-sky-900 bg-slate-100/60">
+
+  <header id="site-header" class="bg-slate-900 text-white border-b border-slate-800 sticky top-0 z-40 shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between py-3.5 gap-3">
+        <div class="flex items-center gap-3">
+          <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-sky-500 to-teal-400 flex items-center justify-center shadow-md text-slate-950 font-black text-xl shrink-0">
+            NC
+          </div>
+          <div>
+            <div class="flex flex-wrap items-center gap-2">
+              <h1 class="text-base sm:text-lg font-bold tracking-tight text-white leading-tight">NC Medicaid BH Operations Navigator</h1>
+              <span class="inline-flex items-center px-2 py-0.5 rounded-md text-xs font-bold bg-sky-500/20 text-sky-300 border border-sky-500/30">v3.0 Mobile</span>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-400 mt-0.5">CCP 8G &bull; CCP 8A-12 &bull; CCP 8A-13 &bull; 10A NCAC 27G &bull; SL 2026-1</p>
+          </div>
+        </div>
+        
+        <!-- Action Buttons -->
+        <div class="flex items-center gap-2 self-stretch sm:self-center justify-end">
+          <button onclick="exportStateJson()" class="touch-target inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 active:bg-slate-600 text-slate-200 text-xs sm:text-sm font-semibold border border-slate-700 transition">
+            <svg class="w-4 h-4 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+            Export
+          </button>
+          <label class="touch-target inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 active:bg-slate-600 text-slate-200 text-xs sm:text-sm font-semibold border border-slate-700 cursor-pointer transition">
+            <svg class="w-4 h-4 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l4-4m0 0l4 4m-4-4v12"/></svg>
+            Import
+            <input type="file" id="import-json-input" onchange="importStateJson(event)" class="hidden" accept=".json">
+          </label>
+          <button onclick="confirmResetModal()" class="touch-target inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-xl bg-rose-950/50 hover:bg-rose-900/70 text-rose-300 text-xs sm:text-sm font-semibold border border-rose-800/50 transition">
+            Reset
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="bg-white border-b border-slate-200 shadow-sm py-4">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-4 items-start">
+        
+        <!-- Filter 1: County Footprint (Empty by Default) -->
+        <div class="lg:col-span-6 space-y-2">
+          <div class="flex items-center justify-between">
+            <label class="text-xs sm:text-sm font-bold text-slate-800 uppercase tracking-wide flex items-center gap-1.5">
+              <svg class="w-4 h-4 text-sky-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+              1. Geographic Footprint (Select Counties)
+            </label>
+            <div class="space-x-1.5 text-xs sm:text-sm">
+              <button onclick="selectAllCountiesDraft()" class="text-sky-700 hover:text-sky-900 font-semibold underline">All 100</button>
+              <span class="text-slate-300">|</span>
+              <button onclick="clearCountyFilterDraft()" class="text-slate-500 hover:text-slate-700 underline font-semibold">Clear</button>
+            </div>
+          </div>
+          
+          <div class="relative">
+            <button id="county-dropdown-trigger" onclick="toggleDropdown('county-dropdown-menu')" type="button" class="w-full min-h-[48px] bg-slate-50 border border-slate-300 hover:border-slate-400 rounded-xl px-3.5 py-2.5 text-left flex items-center justify-between text-xs sm:text-sm font-medium focus:ring-2 focus:ring-sky-500 transition shadow-xs">
+              <span id="county-dropdown-label" class="truncate text-slate-700 font-semibold">No Counties Selected (Click to choose)</span>
+              <svg class="w-5 h-5 text-slate-400 ml-2 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            
+            <div id="county-dropdown-menu" class="hidden absolute top-full left-0 mt-1.5 w-full bg-white border border-slate-200 rounded-2xl shadow-2xl z-50 p-3.5 max-h-80 overflow-y-auto custom-scrollbar">
+              <div class="mb-3 sticky top-0 bg-white pt-1 pb-2 z-10 border-b border-slate-100">
+                <input type="text" id="county-search-input" oninput="filterCountiesInMenu()" placeholder="Search county (e.g. Wake, Mecklenburg, Buncombe)..." class="w-full min-h-[44px] text-xs sm:text-sm bg-slate-50 border border-slate-300 rounded-xl px-3 py-2 focus:ring-2 focus:ring-sky-500 outline-none">
+              </div>
+              <div id="county-checkboxes-container" class="space-y-3.5">
+                <!-- Grouped counties injected via JS -->
+              </div>
+            </div>
+          </div>
+          <div id="active-regions-pills" class="flex flex-wrap gap-1.5 pt-0.5">
+            <!-- Selected region draft pills injected via JS -->
+          </div>
+        </div>
+
+        <!-- Filter 2: Services by CCP No. (Multi-select Dropdown) -->
+        <div class="lg:col-span-6 space-y-2">
+          <div class="flex items-center justify-between">
+            <label class="text-xs sm:text-sm font-bold text-slate-800 uppercase tracking-wide flex items-center gap-1.5">
+              <svg class="w-4 h-4 text-teal-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+              2. Clinical Coverage Policies (Target CCP Services)
+            </label>
+            <div class="space-x-1.5 text-xs sm:text-sm">
+              <button onclick="selectAllServicesDraft()" class="text-teal-700 hover:text-teal-900 font-semibold underline">Select All</button>
+              <span class="text-slate-300">|</span>
+              <button onclick="resetServiceFilterDraft()" class="text-slate-500 hover:text-slate-700 underline font-semibold">Reset (8G)</button>
+            </div>
+          </div>
+          
+          <!-- CCP Multi-Select Dropdown Control -->
+          <div class="relative">
+            <button id="ccp-dropdown-trigger" onclick="toggleDropdown('ccp-dropdown-menu')" type="button" class="w-full min-h-[48px] bg-slate-50 border border-slate-300 hover:border-slate-400 rounded-xl px-3.5 py-2.5 text-left flex items-center justify-between text-xs sm:text-sm font-medium focus:ring-2 focus:ring-teal-500 transition shadow-xs">
+              <span id="ccp-dropdown-label" class="truncate text-slate-700 font-semibold">All 3 Services Active (8G, 8A-12, 8A-13)</span>
+              <svg class="w-5 h-5 text-slate-400 ml-2 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            
+            <div id="ccp-dropdown-menu" class="hidden absolute top-full left-0 mt-1.5 w-full bg-white border border-slate-200 rounded-2xl shadow-2xl z-50 p-3.5 space-y-2">
+              <label class="flex items-start gap-3 p-2.5 rounded-xl border border-slate-200 hover:border-sky-300 bg-slate-50/70 hover:bg-sky-50/30 cursor-pointer transition">
+                <input type="checkbox" id="svc-check-8g" onchange="toggleDraftServiceSelection('8G')" checked class="mt-1 w-5 h-5 rounded border-slate-300 text-sky-600 focus:ring-sky-500">
+                <div class="text-xs sm:text-sm">
+                  <span class="font-bold text-slate-900 block">CCP 8G — Peer Support Services</span>
+                  <span class="text-xs text-slate-500 block">H0038 / Periodic (15-min) &bull; QP supervision (1:6) &bull; Caseload &le; 15</span>
+                </div>
+              </label>
+
+              <label class="flex items-start gap-3 p-2.5 rounded-xl border border-slate-200 hover:border-teal-300 bg-slate-50/70 hover:bg-teal-50/30 cursor-pointer transition">
+                <input type="checkbox" id="svc-check-8a12" onchange="toggleDraftServiceSelection('8A-12')" checked class="mt-1 w-5 h-5 rounded border-slate-300 text-teal-600 focus:ring-teal-500">
+                <div class="text-xs sm:text-sm">
+                  <span class="font-bold text-slate-900 block">CCP 8A-12 — Substance Abuse Intensive Outpatient Program (SAIOP)</span>
+                  <span class="text-xs text-slate-500 block">H0015 / ASAM 2.1 &bull; LCAS/CCS clinical supervisor &bull; 3 hrs/day &bull; 30-day pass-through</span>
+                </div>
+              </label>
+
+              <label class="flex items-start gap-3 p-2.5 rounded-xl border border-slate-200 hover:border-emerald-300 bg-slate-50/70 hover:bg-emerald-50/30 cursor-pointer transition">
+                <input type="checkbox" id="svc-check-8a13" onchange="toggleDraftServiceSelection('8A-13')" checked class="mt-1 w-5 h-5 rounded border-slate-300 text-emerald-600 focus:ring-emerald-500">
+                <div class="text-xs sm:text-sm">
+                  <span class="font-bold text-slate-900 block">CCP 8A-13 — Substance Abuse Comprehensive Outpatient Treatment (SACOT)</span>
+                  <span class="text-xs text-slate-500 block">H2036 / ASAM 2.5 &bull; 20+ hrs/wk (4 hrs/day) &bull; 1:10 QP ratio &bull; 60-day pass-through</span>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <!-- Action & Apply Bar -->
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-2.5 pt-2.5 border-t border-slate-200 mt-2">
+            <div class="flex items-center gap-2 text-xs sm:text-sm">
+              <span id="filter-status-indicator" class="inline-flex items-center px-2.5 py-1 rounded-full font-bold bg-slate-100 text-slate-700">
+                Initial State
+              </span>
+              <span id="filtered-steps-count" class="text-slate-600 font-semibold">Loading...</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <button id="discard-filter-btn" onclick="discardDraftFilters()" class="hidden touch-target text-xs sm:text-sm text-slate-500 hover:text-slate-700 underline font-semibold px-3 py-2">
+                Discard Changes
+              </button>
+              <button id="apply-filter-btn" onclick="applyFilters()" class="touch-target flex-1 sm:flex-none inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl bg-sky-600 hover:bg-sky-500 active:bg-sky-700 text-white font-bold text-xs sm:text-sm shadow-md transition focus:ring-2 focus:ring-sky-500">
+                <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                Apply Filters
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-slate-100/90 border-b border-slate-200 py-5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-4">
+        <div>
+          <h2 class="text-base sm:text-lg font-bold text-slate-900 flex items-center gap-2">
+            <svg class="w-5 h-5 text-sky-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+            Applicable Regional Governance: LME/MCO Tailored Plans, NC ROOTS Hubs & Medicaid Provider Support
+          </h2>
+          <p class="text-xs sm:text-sm text-slate-600 mt-0.5">Authorizations, network contracting, rural transformation leads, and state Medicaid provider ombudsman contacts based on your active county footprint.</p>
+        </div>
+        <div id="regions-active-count-badge" class="text-xs sm:text-sm font-bold text-slate-700 bg-white border border-slate-300 px-3 py-1.5 rounded-xl shadow-xs self-start md:self-center shrink-0">
+          No Counties Selected
+        </div>
+      </div>
+
+      <!-- Dynamic Cards Grid (LME/MCO on Left, NC ROOTS Hub Lead on Right, Medicaid Provider Support across) -->
+      <div id="regional-contacts-grid" class="space-y-4">
+        <!-- Injected dynamically via JS -->
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-white border-b border-slate-200 py-4 no-print">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5">
+        
+        <!-- Metric 1: Overall Progress -->
+        <div class="bg-slate-50 border border-slate-200/90 rounded-2xl p-3.5 shadow-xs">
+          <div class="text-xs font-bold text-slate-500 uppercase tracking-wider">Overall Plan Progress</div>
+          <div class="flex items-baseline justify-between mt-1">
+            <span id="metric-overall-pct" class="text-2xl sm:text-3xl font-black text-slate-900">0%</span>
+            <span id="metric-steps-ratio" class="text-xs sm:text-sm font-semibold text-slate-600">0 / 25 Steps Done</span>
+          </div>
+          <div class="w-full bg-slate-200 h-2 rounded-full overflow-hidden mt-2">
+            <div id="overall-progress-bar" class="bg-gradient-to-r from-sky-500 to-teal-500 h-full rounded-full transition-all duration-300" style="width: 0%"></div>
+          </div>
+        </div>
+
+        <!-- Metric 2: Subtasks Completed -->
+        <div class="bg-slate-50 border border-slate-200/90 rounded-2xl p-3.5 shadow-xs">
+          <div class="text-xs font-bold text-slate-500 uppercase tracking-wider">Subtasks Completed</div>
+          <div class="flex items-baseline justify-between mt-1">
+            <span id="metric-subtasks-count" class="text-2xl sm:text-3xl font-black text-teal-700">0</span>
+            <span id="metric-subtasks-total" class="text-xs sm:text-sm font-semibold text-slate-600">of 0 items</span>
+          </div>
+          <div class="text-xs text-slate-500 mt-1.5 flex items-center gap-1">
+            <svg class="w-3.5 h-3.5 text-teal-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            Click subtask text for instructions
+          </div>
+        </div>
+
+        <!-- Metric 3: Statutory Fees -->
+        <div class="bg-slate-50 border border-slate-200/90 rounded-2xl p-3.5 shadow-xs">
+          <div class="text-xs font-bold text-slate-500 uppercase tracking-wider">Estimated Statutory Fees</div>
+          <div class="flex items-baseline justify-between mt-1">
+            <span id="metric-cost-tally" class="text-xl sm:text-2xl font-black text-slate-900 whitespace-nowrap">$0</span>
+            <span class="text-xs sm:text-sm font-semibold text-slate-500">Base Filings</span>
+          </div>
+          <div id="metric-cost-note" class="text-xs text-slate-500 mt-1.5">Excludes buildout, lease & salaries</div>
+        </div>
+
+        <!-- Metric 4: Timeline Span -->
+        <div class="bg-slate-50 border border-slate-200/90 rounded-2xl p-3.5 shadow-xs">
+          <div class="text-xs font-bold text-slate-500 uppercase tracking-wider">Critical Path Span</div>
+          <div class="flex items-baseline justify-between mt-1">
+            <span id="metric-span-weeks" class="text-2xl sm:text-3xl font-black text-sky-800">0</span>
+            <span class="text-xs sm:text-sm font-semibold text-slate-500">Weeks Total</span>
+          </div>
+          <div id="metric-span-note" class="text-xs text-slate-500 mt-1.5">Concurrent Phase 1 & 2 start recommended</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-white border-b border-slate-200 py-4">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-3 gap-2">
+        <div>
+          <h2 class="text-base font-bold text-slate-900 flex items-center gap-2">
+            <svg class="w-5 h-5 text-sky-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+            Comprehensive Multi-Phase Timeline (Weeks 1 through <span id="timeline-total-weeks">32</span>)
+          </h2>
+          <p class="text-xs sm:text-sm text-slate-500">Gantt-style representation showing overlapping work streams, licensure surveys, and NCTracks credentialing cycles.</p>
+        </div>
+        <div class="flex flex-wrap items-center gap-3 text-xs sm:text-sm font-semibold text-slate-600">
+          <span class="flex items-center gap-1.5"><span class="w-3 h-3 rounded bg-slate-300"></span> Not Started</span>
+          <span class="flex items-center gap-1.5"><span class="w-3 h-3 rounded bg-amber-400"></span> In Progress</span>
+          <span class="flex items-center gap-1.5"><span class="w-3 h-3 rounded bg-emerald-500"></span> Completed</span>
+        </div>
+      </div>
+
+      <div class="overflow-x-auto custom-scrollbar border border-slate-200 rounded-2xl bg-slate-50 p-3.5">
+        <div class="min-w-[760px] space-y-2.5" id="timeline-container">
+          <!-- Timeline bars rendered via JS -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-white border-b border-slate-200 sticky z-30 shadow-xs" style="top: var(--header-h, 68px)">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between py-2 overflow-x-auto custom-scrollbar gap-2" id="phase-tabs-container">
+        <!-- Rendered dynamically: Phase 1, Phase 2, Phase 3, Phase 4, Phase 5 tabs -->
+      </div>
+    </div>
+  </section>
+
+  <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6">
+    <div id="current-phase-container" class="space-y-6">
+      <!-- Step Cards for active phase injected dynamically -->
+    </div>
+  </main>
+
+  <div id="subtask-detail-modal" role="dialog" aria-modal="true" aria-labelledby="modal-subtask-title" class="fixed inset-0 bg-slate-950/70 backdrop-blur-xs z-50 hidden flex items-center justify-center p-4 overflow-y-auto">
+    <div class="bg-white rounded-3xl max-w-2xl w-full shadow-2xl border border-slate-200 overflow-hidden my-6 transform transition-all flex flex-col max-h-[90vh]">
+      
+      <!-- Modal Header -->
+      <div class="px-5 py-4 bg-slate-900 text-white flex items-center justify-between shrink-0">
+        <div class="pr-3">
+          <div class="flex items-center gap-2">
+            <span id="modal-subtask-phase-badge" class="text-xs font-black uppercase tracking-wider text-sky-400">Phase 1 &bull; Step 1</span>
+            <span id="modal-subtask-status-pill" class="text-xs font-bold px-2 py-0.5 rounded-full bg-slate-800 text-slate-300">Open</span>
+          </div>
+          <h3 id="modal-subtask-title" class="text-base sm:text-lg font-bold text-white mt-1 leading-snug">Subtask Title</h3>
+        </div>
+        <button type="button" aria-label="Close" onclick="closeSubtaskModal()" class="touch-target text-slate-400 hover:text-white transition rounded-xl flex items-center justify-center">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+
+      <!-- Modal Body (Scrollable) -->
+      <div class="p-5 sm:p-6 space-y-5 overflow-y-auto custom-scrollbar flex-1 text-xs sm:text-sm">
+        
+        <!-- Step-by-Step Instructions -->
+        <div class="bg-slate-50 border border-slate-200 rounded-2xl p-4">
+          <h4 class="text-xs sm:text-sm font-bold text-slate-900 uppercase tracking-wide flex items-center gap-2 mb-2 text-sky-800">
+            <svg class="w-4 h-4 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg>
+            Step-by-Step Execution Instructions
+          </h4>
+          <div id="modal-instructions-body" class="text-slate-700 leading-relaxed space-y-2">
+            <!-- Dynamic instructions list -->
+          </div>
+        </div>
+
+        <!-- Practical Tips to Complete Successfully -->
+        <div class="bg-amber-50/70 border border-amber-200 rounded-2xl p-4">
+          <h4 class="text-xs sm:text-sm font-bold text-amber-900 uppercase tracking-wide flex items-center gap-2 mb-2">
+            <svg class="w-4 h-4 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            Executive Tips to Avoid Audit & Licensing Traps
+          </h4>
+          <div id="modal-tips-body" class="text-amber-900/90 leading-relaxed space-y-1.5">
+            <!-- Dynamic tips list -->
+          </div>
+        </div>
+
+        <!-- Contacts, Citations & Information Needed -->
+        <div class="bg-teal-50/60 border border-teal-200 rounded-2xl p-4">
+          <h4 class="text-xs sm:text-sm font-bold text-teal-900 uppercase tracking-wide flex items-center gap-2 mb-2">
+            <svg class="w-4 h-4 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+            Required Authority, Portals & Contacts
+          </h4>
+          <div id="modal-contacts-body" class="text-teal-900/90 leading-relaxed space-y-1.5">
+            <!-- Dynamic contacts -->
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Modal Footer with Subtask Status Dropdown -->
+      <div class="px-5 py-4 bg-slate-100 border-t border-slate-200 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3 shrink-0">
+        <div class="flex items-center gap-2.5">
+          <label for="modal-subtask-status-select" class="text-xs sm:text-sm font-bold text-slate-800 uppercase tracking-wider shrink-0">
+            Task Status:
+          </label>
+          <select id="modal-subtask-status-select" class="touch-target bg-white border border-slate-300 rounded-xl px-3 py-2 text-xs sm:text-sm font-bold text-slate-800 focus:ring-2 focus:ring-sky-500 outline-none w-full sm:w-auto">
+            <option value="open">⏳ Keep Open / Incomplete</option>
+            <option value="completed">✅ Mark as Complete</option>
+          </select>
+        </div>
+
+        <div class="flex items-center gap-2 justify-end">
+          <button onclick="closeSubtaskModal()" class="touch-target px-4 py-2.5 rounded-xl border border-slate-300 text-xs sm:text-sm font-semibold text-slate-700 bg-white hover:bg-slate-50 transition">
+            Close
+          </button>
+          <button onclick="saveSubtaskStatusFromModal()" class="touch-target px-5 py-2.5 rounded-xl bg-sky-600 hover:bg-sky-500 active:bg-sky-700 text-white text-xs sm:text-sm font-bold transition shadow-sm">
+            Save Status
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="notes-modal" role="dialog" aria-modal="true" aria-labelledby="modal-step-title" class="fixed inset-0 bg-slate-950/70 backdrop-blur-xs z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-lg w-full shadow-2xl border border-slate-200 overflow-hidden transform transition-all">
+      <div class="px-5 py-4 bg-slate-900 text-white flex items-center justify-between">
+        <div>
+          <span id="modal-step-badge" class="text-xs font-black uppercase tracking-wider text-sky-400">Step Note</span>
+          <h3 id="modal-step-title" class="text-sm sm:text-base font-bold truncate max-w-xs sm:max-w-sm text-white">Notes</h3>
+        </div>
+        <button type="button" aria-label="Close" onclick="closeNotesModal()" class="touch-target text-slate-400 hover:text-white transition flex items-center justify-center">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+      <div class="p-5 space-y-4 text-xs sm:text-sm">
+        <div>
+          <label class="block text-xs sm:text-sm font-bold text-slate-700 uppercase mb-1.5">Execution Notes / Internal Ticket Numbers</label>
+          <textarea id="modal-notes-textarea" rows="6" class="w-full text-xs sm:text-sm p-3.5 rounded-2xl border border-slate-300 focus:ring-2 focus:ring-sky-500 outline-none leading-relaxed" placeholder="Enter tracking numbers (e.g. NCTracks Case #, DHSR Inspector Name, Target completion date, assigned staff)..."></textarea>
+        </div>
+        <div class="flex items-center justify-end gap-2 pt-2 border-t border-slate-100">
+          <button onclick="closeNotesModal()" class="touch-target px-4 py-2 rounded-xl border border-slate-200 text-xs sm:text-sm font-semibold text-slate-600 hover:bg-slate-50 transition">Cancel</button>
+          <button onclick="saveStepNotesFromModal()" class="touch-target px-5 py-2 rounded-xl bg-sky-600 hover:bg-sky-500 text-white text-xs sm:text-sm font-bold transition">Save Notes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast notification container -->
+  <div id="toast-container" role="status" aria-live="polite" class="fixed bottom-4 right-4 z-50 space-y-2 pointer-events-none max-w-sm w-full"></div>
+
+  <script>
+    /* Statewide contacts shared by every region */
+    const STATE_PROVIDER_SUPPORT = {
+      ombudsman: 'NC Medicaid Provider Ombudsman: 877-201-3750 (Medicaid.ProviderOmbudsman@dhhs.nc.gov)',
+      nctracks: 'NCTracks Call Center: 1-800-688-6696 (Mon–Fri 8am–5pm)',
+      hieDesk: 'NC HealthConnex HIEA Helpdesk: 919-754-6912 (hiea@nc.gov)'
+    };
+
+    /* MASTER REGION & COUNTY DIRECTORY (All 100 NC Counties Grouped by Official 6 Medicaid Regions) */
+    const NC_REGIONS_DATA = {
+      1: {
+        id: 1,
+        name: 'Region 1 — Western NC',
+        tailoredPlan: 'Vaya Health',
+        tailoredPlanDetails: {
+          name: 'Vaya Health',
+          phone: '1-866-990-9712',
+          website: 'https://providers.vayahealth.com/',
+          address: '200 Ridgefield Court, Suite 218, Asheville, NC 28806',
+          umPhone: '1-800-893-6246 (ext. 1515)',
+          umEmail: 'UM@vayahealth.com',
+          portalUrl: 'https://providers.vayahealth.com/provider-portal',
+          portalLabel: 'Vaya Provider Portal'
+        },
+        rootsHub: 'Impact Health',
+        rootsHubDetails: {
+          name: 'Impact Health',
+          contactPerson: 'Tamara Smith (Executive Director)',
+          phone: '(828) 357-8170 / (800) 581-0182',
+          email: 't.smith@impacthealth.org',
+          website: 'https://impacthealth.org/',
+          address: 'PO Box 8427, Asheville, NC 28814',
+          focus: 'Whole-person rural health, WNC community clinical integration & HOP network transformation'
+        },
+        medicaidProviderSupport: {
+          ...STATE_PROVIDER_SUPPORT,
+          regionalLead: 'Vaya Provider Relations Desk: 1-866-990-9712 / provider.relations@vayahealth.com'
+        },
+        counties: ['Avery', 'Buncombe', 'Burke', 'Caldwell', 'Cherokee', 'Clay', 'Graham', 'Haywood', 'Henderson', 'Jackson', 'Macon', 'Madison', 'McDowell', 'Mitchell', 'Polk', 'Rutherford', 'Swain', 'Transylvania', 'Yancey']
+      },
+      2: {
+        id: 2,
+        name: 'Region 2 — Northwest NC',
+        tailoredPlan: 'Partners Health Management',
+        tailoredPlanDetails: {
+          name: 'Partners Health Management',
+          phone: '1-877-398-4145',
+          website: 'https://providers.partnersbhm.org/',
+          address: '901 S. New Hope Road, Gastonia, NC 28054',
+          umPhone: '1-877-398-4145',
+          umEmail: 'BHIDDManualAuthorizations@partnersbhm.org',
+          portalUrl: 'https://providers.partnersbhm.org/provider-portal-help/',
+          portalLabel: 'ProviderCONNECT Portal'
+        },
+        rootsHub: 'Trillium Health Resources (Hub Lead)',
+        rootsHubDetails: {
+          name: 'Trillium Health Resources',
+          contactPerson: 'Region 2 ROOTS Lead Coordinator',
+          phone: '1-855-250-1539',
+          email: 'Region2NCRootsHub@trilliumnc.org',
+          website: 'https://www.trilliumhealthresources.org/',
+          address: '1019 WH Smith Blvd, Greenville, NC 27834',
+          focus: 'Appalachian workforce expansion, ED diversion & rural primary care behavioral bridge'
+        },
+        medicaidProviderSupport: {
+          ...STATE_PROVIDER_SUPPORT,
+          regionalLead: 'Partners Provider Network: 1-877-398-4145 / PAS@PartnersBHM.org'
+        },
+        counties: ['Alleghany', 'Ashe', 'Davidson', 'Davie', 'Forsyth', 'Guilford', 'Randolph', 'Rockingham', 'Stokes', 'Surry', 'Watauga', 'Wilkes', 'Yadkin']
+      },
+      3: {
+        id: 3,
+        name: 'Region 3 — Southwest NC',
+        tailoredPlan: 'Partners Health / Alliance Health',
+        tailoredPlanDetails: {
+          name: 'Partners Health / Alliance Health',
+          phone: 'Partners: 1-877-398-4145 | Alliance: 1-855-759-9700',
+          website: 'https://providers.partnersbhm.org/',
+          address: 'Serving Mecklenburg, Cabarrus, Union, Gaston & surrounding corridors',
+          umPhone: '1-877-398-4145 / 1-855-759-9700',
+          umEmail: 'PAS@PartnersBHM.org / ACSSupport@AllianceHealthPlan.org',
+          portalUrl: 'https://providers.partnersbhm.org/',
+          portalLabel: 'Partners & Alliance Portals'
+        },
+        rootsHub: 'Vaya Health (Hub Lead)',
+        rootsHubDetails: {
+          name: 'Vaya Health',
+          contactPerson: 'NC ROOTS Region 3 Strategy Director',
+          phone: '1-800-962-9003',
+          email: 'RHTP@vayahealth.com',
+          website: 'https://www.vayahealth.com/',
+          address: '200 Ridgefield Court, Suite 218, Asheville, NC 28806',
+          focus: 'Digital health infrastructure, care management coordination, rural fringe access'
+        },
+        medicaidProviderSupport: {
+          ...STATE_PROVIDER_SUPPORT,
+          regionalLead: 'Partners & Alliance Joint Network Ops: providernetwork@alliancehealthplan.org'
+        },
+        counties: ['Alexander', 'Anson', 'Cabarrus', 'Catawba', 'Cleveland', 'Gaston', 'Iredell', 'Lincoln', 'Mecklenburg', 'Rowan', 'Stanly', 'Union']
+      },
+      4: {
+        id: 4,
+        name: 'Region 4 — North Central NC',
+        tailoredPlan: 'Alliance Health',
+        tailoredPlanDetails: {
+          name: 'Alliance Health',
+          phone: '1-855-759-9700',
+          website: 'https://www.alliancehealthplan.org/providers/',
+          address: '5200 W. Paramount Parkway, Suite 200, Morrisville, NC 27560',
+          umPhone: '1-855-759-9700 (Option 2)',
+          umEmail: 'ACSSupport@AllianceHealthPlan.org',
+          portalUrl: 'https://alliancehealth.okta.com/',
+          portalLabel: 'Alliance Provider Central Portal'
+        },
+        rootsHub: 'UNC Health (UNC Hospitals)',
+        rootsHubDetails: {
+          name: 'UNC Health',
+          contactPerson: 'NC ROOTS Region 4 Team',
+          phone: '(984) 974-1000 / 1-800-806-1964',
+          email: 'NCROOTSRegion4@unchealth.unc.edu',
+          website: 'https://www.unchealth.org/',
+          address: '101 Manning Drive, Chapel Hill, NC 27514',
+          focus: 'Academic-community clinical partnerships, rural prevention & outpatient SUD integration'
+        },
+        medicaidProviderSupport: {
+          ...STATE_PROVIDER_SUPPORT,
+          regionalLead: 'Alliance Provider Relations: 1-855-759-9700 / providerrelations@alliancehealthplan.org'
+        },
+        counties: ['Alamance', 'Caswell', 'Chatham', 'Durham', 'Franklin', 'Granville', 'Johnston', 'Nash', 'Orange', 'Person', 'Vance', 'Wake', 'Warren', 'Wilson']
+      },
+      5: {
+        id: 5,
+        name: 'Region 5 — Sandhills / South Central NC',
+        tailoredPlan: 'Trillium Health Resources',
+        tailoredPlanDetails: {
+          name: 'Trillium Health Resources',
+          phone: '1-855-250-1539',
+          website: 'https://www.trilliumhealthresources.org/',
+          address: '1019 WH Smith Blvd, Greenville, NC 27834 (Mailing: PO Box 12797, Durham, NC 27709)',
+          umPhone: '1-855-250-1539 (ext. 6875)',
+          umEmail: 'Info@TrilliumNC.org',
+          portalUrl: 'https://www.trilliumhealthresources.org/for-providers',
+          portalLabel: 'Trillium Provider Portal'
+        },
+        rootsHub: 'Trillium Health Resources (Hub Lead)',
+        rootsHubDetails: {
+          name: 'Trillium Health Resources',
+          contactPerson: 'Region 5 ROOTS Lead',
+          phone: '1-855-250-1539',
+          email: 'Region5NCRootsHub@trilliumnc.org',
+          website: 'https://www.trilliumhealthresources.org/',
+          address: '1019 WH Smith Blvd, Greenville, NC 27834',
+          focus: 'Sandhills rural health capacity, military/veteran community behavioral health'
+        },
+        medicaidProviderSupport: {
+          ...STATE_PROVIDER_SUPPORT,
+          regionalLead: 'Trillium Provider Services: 1-855-250-1539 / ProviderServices@TrilliumNC.org'
+        },
+        counties: ['Bladen', 'Brunswick', 'Columbus', 'Cumberland', 'Harnett', 'Hoke', 'Lee', 'Montgomery', 'Moore', 'New Hanover', 'Pender', 'Richmond', 'Robeson', 'Sampson', 'Scotland']
+      },
+      6: {
+        id: 6,
+        name: 'Region 6 — Eastern NC',
+        tailoredPlan: 'Trillium Health Resources',
+        tailoredPlanDetails: {
+          name: 'Trillium Health Resources',
+          phone: '1-855-250-1539',
+          website: 'https://www.trilliumhealthresources.org/',
+          address: '1019 WH Smith Blvd, Greenville, NC 27834',
+          umPhone: '1-855-250-1539',
+          umEmail: 'Info@TrilliumNC.org',
+          portalUrl: 'https://www.trilliumhealthresources.org/for-providers',
+          portalLabel: 'Trillium Provider Portal'
+        },
+        rootsHub: 'Access East, Inc.',
+        rootsHubDetails: {
+          name: 'Access East, Inc.',
+          contactPerson: 'Access East RHTP Hub Team',
+          phone: '(252) 847-3027',
+          email: 'Info-AccessEast@accesseast.org',
+          website: 'https://accesseast.org/',
+          address: '2410 S. Charles Blvd, Greenville, NC 27858',
+          focus: 'Eastern NC rural community health networks, transit access & coastal recovery'
+        },
+        medicaidProviderSupport: {
+          ...STATE_PROVIDER_SUPPORT,
+          regionalLead: 'Trillium Provider Desk: 1-855-250-1539 / ProviderSupport@TrilliumNC.org'
+        },
+        counties: ['Beaufort', 'Bertie', 'Camden', 'Carteret', 'Chowan', 'Craven', 'Currituck', 'Dare', 'Duplin', 'Edgecombe', 'Gates', 'Greene', 'Halifax', 'Hertford', 'Hyde', 'Jones', 'Lenoir', 'Martin', 'Northampton', 'Onslow', 'Pamlico', 'Pasquotank', 'Perquimans', 'Pitt', 'Tyrrell', 'Washington', 'Wayne']
+      }
+    };
+
+    function getRegionColor(regionId) {
+      const colors = {
+        1: '#0284c7', // Sky
+        2: '#0d9488', // Teal
+        3: '#6366f1', // Indigo
+        4: '#d97706', // Amber (Wake / Central)
+        5: '#e11d48', // Rose
+        6: '#059669'  // Emerald
+      };
+      return colors[regionId] || '#475569';
+    }
+
+    const MASTER_STEPS = [
+      // PHASE 1: Business & Legal Foundation
+      {
+        id: 1,
+        phase: 1,
+        phaseName: 'Phase 1: Business & Legal Foundation',
+        stepNumber: 'Step 1',
+        title: 'Entity Structure, Ownership Ledger & Labor Classification',
+        services: ['8G', '8A-12', '8A-13'],
+        description: 'Establish your legal entity (LLC, PC, or 501c3) with documented governance. Configure non-exempt wage classification under the NC Wage & Hour Act (N.C.G.S. § 95-25) ensuring Peer Support Specialists (CPSS) are paid for note documentation and inter-site travel.',
+        responsible: 'Owner / Healthcare Attorney & CPA',
+        timeWeeks: '1–3 weeks',
+        timelineStartWeek: 1,
+        timelineDurationWeeks: 3,
+        costEstimate: '$125 (SOS filing fee)',
+        statutoryFees: [{ label: 'NC SOS filing', min: 125, max: 125 }],
+        resourceName: 'NC Secretary of State (SOS)',
+        resourceUrl: 'https://www.sosnc.gov/',
+        dependencies: 'None — Initial foundation',
+        subtasks: [
+          'File Articles of Organization/Incorporation with NC Secretary of State',
+          'Obtain certified Certificate of Existence from NC SOS',
+          'Execute corporate operating agreement naming governing body oversight (10A NCAC 27G .0201)',
+          'Create 5%+ ownership disclosure ledger required for DHSR & 42 CFR § 455.104',
+          'Establish hourly non-exempt compensation policy for CPSS covering travel and APSM 45-2 note writing'
+        ]
+      },
+      {
+        id: 2,
+        phase: 1,
+        phaseName: 'Phase 1: Business & Legal Foundation',
+        stepNumber: 'Step 2',
+        title: 'Federal Tax Identification Number (EIN)',
+        services: ['8G', '8A-12', '8A-13'],
+        description: 'Obtain an Employer Identification Number from the IRS for payroll, federal healthcare tracking, and NPI registration.',
+        responsible: 'Owner / CFO',
+        timeWeeks: 'Immediate (online)',
+        timelineStartWeek: 2,
+        timelineDurationWeeks: 1,
+        costEstimate: '$0 (Free)',
+        resourceName: 'IRS EIN Assistant',
+        resourceUrl: 'https://www.irs.gov/businesses/small-businesses-self-employed/apply-for-an-employer-identification-number-ein-online',
+        dependencies: 'Step 1 (Entity registration)',
+        subtasks: [
+          'Complete online IRS Form SS-4',
+          'Download and archive official EIN Confirmation Letter (Notice CP 575)',
+          'Verify legal entity name matches exactly with NC SOS registration'
+        ]
+      },
+      {
+        id: 3,
+        phase: 1,
+        phaseName: 'Phase 1: Business & Legal Foundation',
+        stepNumber: 'Step 3',
+        title: 'National Provider Identifier (NPI Type 2 Organization)',
+        services: ['8G', '8A-12', '8A-13'],
+        description: 'Acquire organizational Type 2 NPI from NPPES. Necessary before initiating NCTracks or DHSR facility linkages.',
+        responsible: 'Office Administrator / Compliance Officer',
+        timeWeeks: '1–3 business days',
+        timelineStartWeek: 2,
+        timelineDurationWeeks: 1,
+        costEstimate: '$0 (Free)',
+        resourceName: 'NPPES NPI Registry',
+        resourceUrl: 'https://nppes.cms.hhs.gov/',
+        dependencies: 'Step 1 & Step 2 (Entity name & EIN)',
+        subtasks: [
+          'Register Authorized Official in NPPES portal',
+          'Apply for Type 2 Organizational NPI',
+          'Assign behavioral health / SUD organization primary taxonomy'
+        ]
+      },
+      {
+        id: 4,
+        phase: 1,
+        phaseName: 'Phase 1: Business & Legal Foundation',
+        stepNumber: 'Step 4',
+        title: 'Facility Site Selection & Municipal Zoning Approval',
+        services: ['8G', '8A-12', '8A-13'],
+        description: 'Secure commercial day/outpatient premises sized for client census. Obtain written municipal/county zoning approval explicitly authorizing an outpatient behavioral health day facility.',
+        responsible: 'Facility Director',
+        timeWeeks: '3–6 weeks',
+        timelineStartWeek: 2,
+        timelineDurationWeeks: 5,
+        costEstimate: 'Varies by lease + $50–$200 zoning fee',
+        statutoryFees: [{ label: 'Municipal zoning', min: 50, max: 200 }],
+        resourceName: 'Local County/City Planning & Zoning Office',
+        resourceUrl: 'https://www.ncacc.org/county-websites/',
+        dependencies: 'Step 1 (Entity formed)',
+        subtasks: [
+          'Execute lease or purchase agreement with confidentiality/counseling room partitions',
+          'Request formal Zoning Determination Letter from city/county planning department',
+          'Verify physical site meets ADA accessibility requirements'
+        ]
+      },
+      {
+        id: 5,
+        phase: 1,
+        phaseName: 'Phase 1: Business & Legal Foundation',
+        stepNumber: 'Step 5',
+        title: 'Commercial, General & Professional Liability Insurance',
+        services: ['8G', '8A-12', '8A-13'],
+        description: 'Bind mandatory commercial general liability, professional malpractice liability, and workers compensation coverage required by DHSR and LME/MCOs.',
+        responsible: 'Owner / Risk Manager',
+        timeWeeks: '1–2 weeks',
+        timelineStartWeek: 4,
+        timelineDurationWeeks: 2,
+        costEstimate: '$1,500 – $4,500 / year (deposit)',
+        resourceName: 'Commercial Healthcare Insurance Broker',
+        resourceUrl: 'https://www.ncdoi.gov/',
+        dependencies: 'Step 4 (Site lease secured)',
+        subtasks: [
+          'Procure $1M / $3M professional malpractice liability policy',
+          'Procure commercial general liability & property coverage',
+          'Procure NC statutory Workers Compensation insurance',
+          'Ensure certificates of insurance name the agency as primary insured'
+        ]
+      },
+      {
+        id: 6,
+        phase: 1,
+        phaseName: 'Phase 1: Business & Legal Foundation',
+        stepNumber: 'Step 6',
+        title: 'Dedicated Business Bank Account & EFT Setup',
+        services: ['8G', '8A-12', '8A-13'],
+        description: 'Open a dedicated commercial bank account for Medicaid electronic fund transfers (EFT) and operational separation.',
+        responsible: 'Owner / Treasurer',
+        timeWeeks: '1–2 business days',
+        timelineStartWeek: 3,
+        timelineDurationWeeks: 1,
+        costEstimate: '$0 – $100 initial deposit',
+        resourceName: 'Commercial Banking Institution',
+        resourceUrl: 'https://www.fdic.gov/',
+        dependencies: 'Step 1, 2, 3 (Entity, EIN, NPI)',
+        subtasks: [
+          'Establish business checking account with voided check for NCTracks EFT',
+          'Obtain bank letter verifying routing and account numbers',
+          'Establish segregated payroll holding ledger'
+        ]
+      },
+      {
+        id: 7,
+        phase: 1,
+        phaseName: 'Phase 1: Business & Legal Foundation',
+        stepNumber: 'Step 7',
+        title: 'Governing Body Appointment & Key Clinical Leadership',
+        services: ['8G', '8A-12', '8A-13'],
+        description: 'Appoint Facility Director (named on license) and Clinical Director / Supervisor meeting Qualified Professional (QP) standards under 10A NCAC 27G .0104.',
+        responsible: 'Governing Board / Owner',
+        timeWeeks: '1–3 weeks',
+        timelineStartWeek: 3,
+        timelineDurationWeeks: 3,
+        costEstimate: '$0 (Internal governance)',
+        resourceName: '10A NCAC 27G .0104 Definitions',
+        resourceUrl: 'https://www.oah.nc.gov/',
+        dependencies: 'Step 1 (Corporate governance)',
+        subtasks: [
+          'Document Board of Directors / Advisory Committee minutes',
+          'Designate Facility Director as legal responsible party',
+          'Appoint Clinical Director meeting QP requirements under 10A NCAC 27G .0104',
+          'Draft organizational chart showing lines of clinical and administrative supervision'
+        ]
+      },
+      {
+        id: 8,
+        phase: 1,
+        phaseName: 'Phase 1: Business & Legal Foundation',
+        stepNumber: 'Step 8',
+        title: 'LME/MCO Letter of Support (10A NCAC 27G .0406)',
+        services: ['8G', '8A-12', '8A-13'],
+        description: 'Formally request the mandatory Letter of Support from the LME/MCO governing the facility county footprint. Mandatory attachment for the DHSR license application.',
+        responsible: 'Facility Director',
+        timeWeeks: '2–6 weeks',
+        timelineStartWeek: 5,
+        timelineDurationWeeks: 5,
+        costEstimate: '$0 (Administrative)',
+        resourceName: 'Assigned LME/MCO (Alliance, Partners, Trillium, or Vaya)',
+        resourceUrl: 'https://medicaid.ncdhhs.gov/transformation/tailored-plans',
+        dependencies: 'Step 4 & 7 (Facility site & leadership)',
+        subtasks: [
+          'Submit program summary and county location to assigned LME/MCO Provider Network desk',
+          'Include intended CCP services: Peer Support, SAIOP, and/or SACOT',
+          'Obtain formal signed Letter of Support citing 10A NCAC 27G .0406'
+        ]
+      },
+
+      // PHASE 2: DHSR Facility Licensure
+      {
+        id: 9,
+        phase: 2,
+        phaseName: 'Phase 2: DHSR Licensure (10A NCAC 27G)',
+        stepNumber: 'Step 9',
+        title: 'Statutory Policies & Procedures Engineering',
+        services: ['8G', '8A-12', '8A-13'],
+        description: 'Draft comprehensive P&P manual cross-referenced to 10A NCAC 27G, APSM 45-2 documentation standards, modernized 42 CFR Part 2 rules, and NC IRIS 72-hour critical incident reporting.',
+        responsible: 'Clinical Director / Compliance Consultant',
+        timeWeeks: '3–6 weeks',
+        timelineStartWeek: 6,
+        timelineDurationWeeks: 5,
+        costEstimate: '$0 – $3,500 (consultant optional)',
+        resourceName: 'NC DHSR MHLCS Policy Review Tool',
+        resourceUrl: 'https://info.ncdhhs.gov/dhsr/mhlcs/establish.html',
+        dependencies: 'Step 7 & 8 (Leadership named, Letter of Support in progress)',
+        subtasks: [
+          'Draft governance, client rights & grievance procedures (10A NCAC Subchapters D & E)',
+          'Integrate APSM 45-2 ten-element service note protocol',
+          'Incorporate 42 CFR Part 2 modernized consent and disclosure restrictions',
+          'Establish Incident Response Improvement System (IRIS) 72-hour reporting workflow (.0600)',
+          'Draft Fraud, Waste & Abuse (FWA) / False Claims Act compliance plan'
+        ]
+      },
+      {
+        id: 10,
+        phase: 2,
+        phaseName: 'Phase 2: DHSR Licensure (10A NCAC 27G)',
+        stepNumber: 'Step 10',
+        title: 'Core Clinical & Peer Support Staff Recruitment',
+        services: ['8G', '8A-12', '8A-13'],
+        description: 'Recruit and hire staff meeting regulatory ratios: LCAS/CCS clinical supervisor for SAIOP/SACOT, Qualified Professionals for group therapy, and NC Certified Peer Support Specialists (CPSS).',
+        responsible: 'Clinical Director / HR',
+        timeWeeks: '4–8 weeks',
+        timelineStartWeek: 7,
+        timelineDurationWeeks: 6,
+        costEstimate: 'Recruitment costs / Staff payroll',
+        resourceName: 'NCASPPB / UNC NCCPSS Portal',
+        resourceUrl: 'https://pss.unc.edu/',
+        dependencies: 'Step 7 & 9 (P&P and leadership established)',
+        subtasks: [
+          'Hire LCAS (Licensed Clinical Addictions Specialist) or CCS for SUD supervision',
+          'Verify SACOT 1:10 group counseling Qualified Professional ratio capacity',
+          'Verify Peer Support 1:6 QP supervisory ratio and maximum 1:15 recipient caseload ratio',
+          'Execute signed employment agreements with defined job descriptions'
+        ]
+      },
+      {
+        id: 11,
+        phase: 2,
+        phaseName: 'Phase 2: DHSR Licensure (10A NCAC 27G)',
+        stepNumber: 'Step 11',
+        title: 'Mandatory Pre-Hire Screenings (HCPR & Exclusion Checks)',
+        services: ['8G', '8A-12', '8A-13'],
+        description: 'Perform mandatory pre-employment checks: NC Health Care Personnel Registry (HCPR) under N.C.G.S. § 131E-256, NC Sex Offender Registry, and federal OIG/SAMHSA exclusion logs.',
+        responsible: 'HR Director / Compliance Officer',
+        timeWeeks: '1–2 weeks',
+        timelineStartWeek: 10,
+        timelineDurationWeeks: 2,
+        costEstimate: '$35 – $75 per candidate (SBI background)',
+        statutoryFees: [{ label: 'SBI background check', min: 35, max: 75, perPerson: true }],
+        resourceName: 'NC Health Care Personnel Registry (HCPR)',
+        resourceUrl: 'https://info.ncdhhs.gov/dhsr/hcpr/index.html',
+        dependencies: 'Step 10 (Candidates identified)',
+        subtasks: [
+          'Execute and file NC Health Care Personnel Registry (HCPR) check PRIOR to hire date',
+          'Conduct state and national criminal history checks with fingerprints',
+          'Screen staff and 5%+ owners against OIG LEIE, SAM.gov, and NC Exclusion database',
+          'Establish recurring monthly OIG exclusion audit calendar'
+        ]
+      },
+      {
+        id: 12,
+        phase: 2,
+        phaseName: 'Phase 2: DHSR Licensure (10A NCAC 27G)',
+        stepNumber: 'Step 12',
+        title: 'CPSS Credential & Lived-Experience Verification',
+        services: ['8G'],
+        description: 'Verify all Peer Support staff hold active NCCPSS certification from UNC School of Social Work, documenting 18+ months lived recovery and ethics coursework.',
+        responsible: 'Clinical Director / HR',
+        timeWeeks: '1–2 weeks',
+        timelineStartWeek: 11,
+        timelineDurationWeeks: 2,
+        costEstimate: '$0 (Online verification)',
+        resourceName: 'UNC NCCPSS Program Office',
+        resourceUrl: 'https://pss.unc.edu/',
+        dependencies: 'Step 10 (CPSS hired)',
+        subtasks: [
+          'Verify active credential on NCCPSS registry',
+          'File proof of 50-hour Foundations course + 20 hours continuing education',
+          'Verify lived experience attestation in HR record',
+          'Set 2-year certification renewal reminder'
+        ]
+      },
+      {
+        id: 13,
+        phase: 2,
+        phaseName: 'Phase 2: DHSR Licensure (10A NCAC 27G)',
+        stepNumber: 'Step 13',
+        title: 'Local Fire Marshal & Sanitation Facility Clearances',
+        services: ['8G', '8A-12', '8A-13'],
+        description: 'Schedule and complete fire safety inspection and county health department sanitation inspections for day treatment occupancy.',
+        responsible: 'Facility Director',
+        timeWeeks: '2–4 weeks',
+        timelineStartWeek: 9,
+        timelineDurationWeeks: 3,
+        costEstimate: '$75 – $250 inspection fees',
+        statutoryFees: [{ label: 'Fire marshal / sanitation inspection', min: 75, max: 250 }],
+        resourceName: 'Local Municipal Fire Marshal & County Health Dept',
+        resourceUrl: 'https://www.ncdhhs.gov/divisions/public-health/county-health-departments',
+        dependencies: 'Step 4 (Site secured)',
+        subtasks: [
+          'Pass annual Fire Marshal inspection with stamped approval certificate',
+          'Pass sanitation inspection for day facility restrooms and water supply',
+          'Post approved maximum room occupancy signs in group rooms'
+        ]
+      },
+      {
+        id: 14,
+        phase: 2,
+        phaseName: 'Phase 2: DHSR Licensure (10A NCAC 27G)',
+        stepNumber: 'Step 14',
+        title: 'DHSR MHLCS Initial Licensure Application Submission',
+        services: ['8G', '8A-12', '8A-13'],
+        description: 'Submit formal Initial Licensure Application packet to DHSR Mental Health Licensure and Certification Section (MHLCS) in Raleigh with all required statutory exhibits.',
+        responsible: 'Facility Director',
+        timeWeeks: '1–2 weeks to assemble',
+        timelineStartWeek: 12,
+        timelineDurationWeeks: 2,
+        costEstimate: '$350 base fee + $12.50/day client capacity fee',
+        statutoryFees: [{ label: 'DHSR licensure base fee', min: 350, max: 350 }],
+        resourceName: 'DHSR MHLCS Application Section',
+        resourceUrl: 'https://info.ncdhhs.gov/dhsr/mhlcs/establish.html',
+        dependencies: 'Steps 4, 8, 9, 10, 11, 13',
+        subtasks: [
+          'Complete DHSR Initial Licensure Application PDF',
+          'Attach LME/MCO Letter of Support, Zoning Letter, and Fire/Sanitation reports',
+          'Attach complete P&P manual cross-walked to 10A NCAC 27G',
+          'Attach staff roster with verified credentials and fee payment'
+        ]
+      },
+      {
+        id: 15,
+        phase: 2,
+        phaseName: 'Phase 2: DHSR Licensure (10A NCAC 27G)',
+        stepNumber: 'Step 15',
+        title: 'DHSR On-Site Initial Licensure Survey',
+        services: ['8G', '8A-12', '8A-13'],
+        description: 'Undergo comprehensive on-site survey by DHSR inspectors reviewing physical plant, HR personnel files, restrictive intervention training, and clinical policies.',
+        responsible: 'Facility Director & Clinical Director (Mandatory on-site)',
+        timeWeeks: '4–8 weeks queue wait',
+        timelineStartWeek: 14,
+        timelineDurationWeeks: 4,
+        costEstimate: '$0 (Included in filing)',
+        resourceName: 'DHSR Survey Team',
+        resourceUrl: 'https://info.ncdhhs.gov/dhsr/mhlcs/',
+        dependencies: 'Step 14 (Application accepted by DHSR)',
+        subtasks: [
+          'Host DHSR inspector walkthrough of physical day facility',
+          'Provide 100% compliant personnel files with pre-hire HCPR checks',
+          'Demonstrate knowledge of client rights and restrictive intervention policies (10A NCAC 27G .0209)'
+        ]
+      },
+      {
+        id: 16,
+        phase: 2,
+        phaseName: 'Phase 2: DHSR Licensure (10A NCAC 27G)',
+        stepNumber: 'Step 16',
+        title: 'Plan of Correction (POC) & License Issuance',
+        services: ['8G', '8A-12', '8A-13'],
+        description: 'Respond to any Statement of Deficiencies within 10–15 calendar days with a systemic Plan of Correction. Receive official DHSR facility license.',
+        responsible: 'Facility Director / Clinical Director',
+        timeWeeks: '2–4 weeks',
+        timelineStartWeek: 18,
+        timelineDurationWeeks: 3,
+        costEstimate: '$0',
+        resourceName: 'DHSR MHLCS Licensure Desk',
+        resourceUrl: 'https://info.ncdhhs.gov/dhsr/mhlcs/',
+        dependencies: 'Step 15 (Survey findings received)',
+        subtasks: [
+          'Draft Plan of Correction identifying root cause, systemic change, and monitoring frequency',
+          'Submit POC to DHSR within required deadline',
+          'Receive official DHSR Mental Health / SUD Facility License with service designations'
+        ]
+      },
+
+      // PHASE 3: NCTracks Enrollment & HIE Integration
+      {
+        id: 17,
+        phase: 3,
+        phaseName: 'Phase 3: NCTracks & State Integration',
+        stepNumber: 'Step 17',
+        title: 'NC HealthConnex (HIE) Participation Agreement & Integration',
+        services: ['8G', '8A-12', '8A-13'],
+        description: 'Execute mandatory full participation agreement with NC Health Information Exchange Authority (NC HIEA) per N.C.G.S. § 90-414.4 and configure EHR interface.',
+        responsible: 'EHR Administrator / Compliance Officer',
+        timeWeeks: '3–6 weeks',
+        timelineStartWeek: 19,
+        timelineDurationWeeks: 4,
+        costEstimate: '$0 state fee (EHR interface fee varies)',
+        resourceName: 'NC HealthConnex / NC HIEA',
+        resourceUrl: 'https://hiea.nc.gov/',
+        dependencies: 'Step 16 (DHSR license issued)',
+        subtasks: [
+          'Execute NC HealthConnex Full Participation Agreement online',
+          'Select EHR certified for NC HealthConnex HL7/FHIR encounter data exchange',
+          'File proof of active connection or approved HIEA extension before billing'
+        ]
+      },
+      {
+        id: 18,
+        phase: 3,
+        phaseName: 'Phase 3: NCTracks & State Integration',
+        stepNumber: 'Step 18',
+        title: 'NCTracks Organization Provider Enrollment Application',
+        services: ['8G', '8A-12', '8A-13'],
+        description: 'Submit Organization Enrollment Application in NCTracks. Designate authorized Office Administrator with NCID, attach DHSR license, and assign taxonomy codes.',
+        responsible: 'Office Administrator',
+        timeWeeks: '1–2 weeks to submit',
+        timelineStartWeek: 20,
+        timelineDurationWeeks: 2,
+        costEstimate: '$100 NC state fee + $709 federal application fee',
+        statutoryFees: [{ label: 'NC state enrollment', min: 100, max: 100 }, { label: 'Federal application fee', min: 709, max: 709 }],
+        resourceName: 'NCTracks Provider Portal',
+        resourceUrl: 'https://www.nctracks.nc.gov/content/public/providers/provider-enrollment.html',
+        dependencies: 'Step 3, 16, 17 (NPI, DHSR License, HIE connection)',
+        subtasks: [
+          'Obtain NCID for designated Office Administrator',
+          'Complete NCTracks Organization Enrollment Application',
+          'Select correct taxonomies aligned with Provider Permission Matrix (PPM)',
+          'Upload DHSR license, W-9, and banking EFT documentation'
+        ]
+      },
+      {
+        id: 19,
+        phase: 3,
+        phaseName: 'Phase 3: NCTracks & State Integration',
+        stepNumber: 'Step 19',
+        title: 'Moderate/High Risk Fingerprinting & Site Screening',
+        services: ['8A-12', '8A-13'],
+        description: 'Complete mandatory fingerprint criminal history checks for 5%+ owners and managing employees under N.C.G.S. § 108C-3; complete NCTracks on-site review.',
+        responsible: '5%+ Owners / Managing Employees',
+        timeWeeks: '3–5 weeks',
+        timelineStartWeek: 22,
+        timelineDurationWeeks: 4,
+        costEstimate: '$38 per person (SBI/FBI electronic fingerprinting)',
+        statutoryFees: [{ label: 'SBI/FBI fingerprinting', min: 38, max: 38, perPerson: true }],
+        resourceName: 'Local Sheriff’s Office & NCTracks Screening',
+        resourceUrl: 'https://www.nctracks.nc.gov/',
+        dependencies: 'Step 18 (NCTracks notification received)',
+        subtasks: [
+          'Schedule electronic LiveScan fingerprinting within 30-day notice window',
+          'Submit Fingerprint Verification Forms to NCTracks Provider Screening Unit',
+          'Pass NCTracks physical site visit verification'
+        ]
+      },
+      {
+        id: 20,
+        phase: 3,
+        phaseName: 'Phase 3: NCTracks & State Integration',
+        stepNumber: 'Step 20',
+        title: 'NCTracks Approval & Effective Date Alignment',
+        services: ['8G', '8A-12', '8A-13'],
+        description: 'Receive approved NCTracks enrollment letter. Link individual rendering providers (LCAS, CCS, QP) to the organizational billing NPI.',
+        responsible: 'Office Administrator',
+        timeWeeks: '2–4 weeks',
+        timelineStartWeek: 25,
+        timelineDurationWeeks: 3,
+        costEstimate: '$0',
+        resourceName: 'NCTracks Provider Record',
+        resourceUrl: 'https://www.nctracks.nc.gov/',
+        dependencies: 'Step 18 & 19 (Enrollment and screening approved)',
+        subtasks: [
+          'Verify billing effective date aligns with credentials',
+          'Submit Manage Change Request (MCR) to affiliate rendering clinicians to organizational NPI',
+          'Test electronic claims submission and ERA 835 delivery'
+        ]
+      },
+
+      // PHASE 4: Tailored Plan Contracting
+      {
+        id: 21,
+        phase: 4,
+        phaseName: 'Phase 4: Tailored Plan Contracting',
+        stepNumber: 'Step 21',
+        title: 'Regional Tailored Plan / LME-MCO Network Participation',
+        services: ['8G', '8A-12', '8A-13'],
+        description: 'Execute network participation agreements with assigned regional Tailored Plans (Alliance, Partners, Trillium, or Vaya) for Medicaid and State-Funded benefit packages.',
+        responsible: 'Executive Director / Contracting Officer',
+        timeWeeks: '6–12 weeks',
+        timelineStartWeek: 21,
+        timelineDurationWeeks: 8,
+        costEstimate: '$0 (Contracting)',
+        resourceName: 'Regional LME/MCO Contracting Portal',
+        resourceUrl: 'https://medicaid.ncdhhs.gov/transformation/tailored-plans',
+        dependencies: 'Step 16 (DHSR License) & Step 18 (NCTracks submitted)',
+        subtasks: [
+          'Submit network participation applications to applicable regional plans',
+          'Submit roster attestation with clinician CAQH IDs and NCTracks records',
+          'Establish Electronic Data Interchange (EDI) testing with plan clearinghouses',
+          'Complete Utilization Management (UM) portal training for prior authorizations'
+        ]
+      },
+
+      // PHASE 5: Operational Readiness & Launch
+      {
+        id: 22,
+        phase: 5,
+        phaseName: 'Phase 5: Launch & Ongoing Compliance',
+        stepNumber: 'Step 22',
+        title: 'EHR Clinical Setup & APSM 45-2 Note Scrubber',
+        services: ['8G', '8A-12', '8A-13'],
+        description: 'Configure EHR clinical note templates enforcing all 10 mandatory elements of APSM 45-2, 15-minute periodic increments for Peer Support, and same-day service exclusion checks.',
+        responsible: 'Clinical Director & Billing Specialist',
+        timeWeeks: '2–4 weeks',
+        timelineStartWeek: 24,
+        timelineDurationWeeks: 3,
+        costEstimate: '$150 – $400 / clinician / month (EHR SaaS)',
+        resourceName: 'Behavioral Health EHR Vendor',
+        resourceUrl: 'https://www.healthit.gov/',
+        dependencies: 'Step 9 & 17 (P&P and HIE interface ready)',
+        subtasks: [
+          'Configure 10-element APSM 45-2 compliant service note templates',
+          'Build automated billing rules blocking concurrent SAIOP + SACOT same-day claims',
+          'Configure 20-unit (5 hr) daily and 80-unit (20 hr) weekly billing limits for Peer Support',
+          'Configure 3-hr daily minimum for SAIOP (H0015) and 4-hr daily minimum for SACOT (H2036)'
+        ]
+      },
+      {
+        id: 23,
+        phase: 5,
+        phaseName: 'Phase 5: Launch & Ongoing Compliance',
+        stepNumber: 'Step 23',
+        title: '24/7/365 First-Responder Crisis Protocol & Clinical Training',
+        services: ['8A-12', '8A-13'],
+        description: 'Train all staff on mandatory 24/7/365 crisis first-responder coverage required by CCP 8A-12 and CCP 8A-13; conduct restrictive intervention & client rights training (10A NCAC 27G .0209).',
+        responsible: 'Clinical Director',
+        timeWeeks: '1–2 weeks',
+        timelineStartWeek: 26,
+        timelineDurationWeeks: 2,
+        costEstimate: 'Staff training hours',
+        resourceName: 'Internal Clinical Training',
+        resourceUrl: 'https://www.oah.nc.gov/',
+        dependencies: 'Step 10 & 22 (Staff hired & EHR ready)',
+        subtasks: [
+          'Publish rotating 24/7/365 clinical crisis on-call schedule with LCAS/CCS backup',
+          'Document staff training on client rights, confidentiality, and de-escalation',
+          'File signed training completion certificates in personnel records'
+        ]
+      },
+      {
+        id: 24,
+        phase: 5,
+        phaseName: 'Phase 5: Launch & Ongoing Compliance',
+        stepNumber: 'Step 24',
+        title: 'Intake, Assessment, PCP & Authorization Protocol',
+        services: ['8G', '8A-12', '8A-13'],
+        description: 'Standardize intake: Comprehensive Clinical Assessment (CCA) within 1 year, ASAM level-of-care determination, Service Order signed by physician/NP/PA, and 30/60-day pass-through authorization tracking.',
+        responsible: 'Clinical Supervisor / Intake Coordinator',
+        timeWeeks: '1–2 weeks',
+        timelineStartWeek: 27,
+        timelineDurationWeeks: 2,
+        costEstimate: '$0 (Clinical workflow)',
+        resourceName: 'NC Medicaid Person-Centered Plan (PCP) Manual',
+        resourceUrl: 'https://medicaid.ncdhhs.gov/',
+        dependencies: 'Step 21 & 22 (Network contract and EHR active)',
+        subtasks: [
+          'Verify CCA contains required ASAM 6-dimension assessment (Level 2.1 SAIOP / Level 2.5 SACOT)',
+          'Ensure Service Order is executed prior to or on Day 1 of service',
+          'Set up automated tracking for SAIOP 30-day and SACOT 60-day pass-through expiration dates',
+          'Execute modernized 42 CFR Part 2 and HIPAA consent documentation at intake'
+        ]
+      },
+      {
+        id: 25,
+        phase: 5,
+        phaseName: 'Phase 5: Launch & Ongoing Compliance',
+        stepNumber: 'Step 25',
+        title: 'National Accreditation (CARF) Roadmap & NCTracks 5-Yr Reverification',
+        services: ['8A-12', '8A-13'],
+        description: 'Initiate 12-month CARF / Joint Commission accreditation pathway required for sustained network standing. Establish compliance calendar for annual DHSR renewal, 2-yr CPSS renewal, and 5-yr NCTracks reverification.',
+        responsible: 'Quality Director / CEO',
+        timeWeeks: 'Ongoing (Survey window months 9–12)',
+        timelineStartWeek: 28,
+        timelineDurationWeeks: 4,
+        costEstimate: '$8,000 – $14,000 (CARF survey fee)',
+        resourceName: 'CARF International Behavioral Health',
+        resourceUrl: 'https://www.carf.org/',
+        dependencies: 'Step 20 & 21 (Operational and billing Medicaid)',
+        subtasks: [
+          'Select accreditation body (CARF Behavioral Health Standards)',
+          'Run continuous 6-month demonstration period with QI Committee and chart peer reviews',
+          'Calendar NCTracks 5-year recredentialing (70, 50, 20, 5 day alerts)',
+          'Calendar monthly OIG/SAM exclusion screenings and 2-year CPSS renewals'
+        ]
+      }
+    ];
+
+    const SUBTASK_DETAILS_MAP = {
+      // Step 1
+      'step_1_sub_0': {
+        instructions: [
+          'Access the NC Secretary of State online business registration portal at sosnc.gov.',
+          'Draft Articles of Organization (for PLLC/LLC) or Articles of Incorporation (for 501c3 or PC).',
+          'Ensure the business purpose explicitly states providing licensed outpatient behavioral health and substance use disorder services in North Carolina.',
+          'Submit the application and pay the statutory $125 filing fee electronically.'
+        ],
+        tips: [
+          'Do NOT register as a generic LLC if licensing boards (e.g. NCASPPB, Social Work Board) in your ownership structure require a Professional Limited Liability Company (PLLC). Consult healthcare counsel.',
+          'Save your official receipt and certified stamped PDF copy immediately; DHSR and NCTracks will reject non-certified copies.'
+        ],
+        contacts: [
+          'NC Secretary of State Business Registration Division: (919) 814-5400 (sosnc.gov)',
+          'NC Department of Revenue: (877) 252-3052'
+        ]
+      },
+      'step_1_sub_1': {
+        instructions: [
+          'Log in to sosnc.gov and order an official Certificate of Existence (Certificate of Good Standing).',
+          'Verify that all annual reports are current and that the entity status is "Current-Active".',
+          'Download the digital verifiable PDF with barcode and security seal.'
+        ],
+        tips: [
+          'DHSR requires this certificate to be dated within 6 months of your initial licensure application submission.',
+          'Keep this document in an administrative credentials repository as LME/MCO network contracting desks will request it repeatedly.'
+        ],
+        contacts: [
+          'NC SOS Document Authentication: (919) 814-5400'
+        ]
+      },
+      'step_1_sub_2': {
+        instructions: [
+          'Draft an Operating Agreement / Corporate Bylaws specifying governing body meetings at least twice annually.',
+          'Document the authority of the governing body over administrative and clinical operations in accordance with 10A NCAC 27G .0201.',
+          'Include conflict-of-interest disclosures and fiscal review responsibilities.'
+        ],
+        tips: [
+          'Even single-member LLCs MUST have written bylaws/operating agreement addressing 10A NCAC 27G .0201 or DHSR will issue an immediate deficiency.',
+          'Ensure lines of authority clearly show how the Clinical Director reports to the governing body on medical necessity and client safety.'
+        ],
+        contacts: [
+          'NC Office of Administrative Hearings (10A NCAC 27G rules): oah.nc.gov',
+          'NC Healthcare Association / NC Council of Community Programs'
+        ]
+      },
+      'step_1_sub_3': {
+        instructions: [
+          'Identify every individual or corporate entity holding 5% or more direct or indirect ownership interest.',
+          'Compile legal names, physical addresses, dates of birth, Social Security Numbers / EINs, and percentage shares.',
+          'Document familial relationships between 5%+ owners and managing employees as mandated by 42 CFR § 455.104.'
+        ],
+        tips: [
+          'NCTracks conducts automated matching between ownership disclosures and federal sanction databases. Missing a 5% owner or misstating an SSN triggers an immediate fraud investigation and enrollment denial.',
+          'Maintain this ledger in real-time; any change of 5% or more must be reported to DHSR and NCTracks within 30 days.'
+        ],
+        contacts: [
+          'NCTracks Provider Screening Unit: 1-800-688-6696',
+          'CMS Center for Program Integrity: 42 CFR § 455'
+        ]
+      },
+      'step_1_sub_4': {
+        instructions: [
+          'Formulate written employment contracts classifying Certified Peer Support Specialists (CPSS) as hourly, non-exempt employees.',
+          'Incorporate explicit timekeeping protocols that track: face-to-face client contact, collateral coordination, client transportation, travel between service sites, and contemporaneous APSM 45-2 note entry.',
+          'Establish a documented 3-year payroll and timecard retention policy.'
+        ],
+        tips: [
+          'AUDIT TRAP: Never pay CPSS solely per billable 15-minute unit. Requiring staff to write documentation off-the-clock violates N.C.G.S. § 95-25 and triggers Department of Labor wage claims and False Claims Act liability.',
+          'Equip CPSS staff with mobile timekeeping apps that differentiate travel from direct clinical delivery.'
+        ],
+        contacts: [
+          'NC Department of Labor (Wage and Hour Bureau): 1-800-NC-LABOR (labor.nc.gov)',
+          'US Department of Labor Wage & Hour Division: 1-866-4USWAGE'
+        ]
+      },
+
+      // Step 2
+      'step_2_sub_0': {
+        instructions: [
+          'Access the IRS online EIN Assistant (irs.gov/ein) between 7:00 AM and 10:00 PM EST Monday through Friday.',
+          'Select legal structure (LLC, Corporation, or Other), provide the legal business name as filed with the NC SOS, and list the Responsible Party SSN.',
+          'Choose the reason for applying: "Starting a new business".'
+        ],
+        tips: [
+          'Ensure the responsible party is an individual owner or executive officer, not a nominal third party.',
+          'Do not pay third-party filing websites; the official IRS service is 100% free and immediate.'
+        ],
+        contacts: ['IRS Business & Specialty Tax Line: (800) 829-4933 (irs.gov)']
+      },
+      'step_2_sub_1': {
+        instructions: [
+          'Download and save the official IRS Form CP 575 Confirmation Notice upon completion.',
+          'Store original digital PDF and create multiple backups in the corporate compliance vault.',
+          'Verify the corporate address and legal spelling match your state formation documents.'
+        ],
+        tips: [
+          'NCTracks and commercial banks will ONLY accept the official CP 575 or a replacement 147C letter; printouts of IRS screens are not accepted.',
+          'If you lose your CP 575, call the IRS specialty line immediately to request Letter 147C (takes 1–2 weeks).'
+        ],
+        contacts: ['Internal Revenue Service: irs.gov']
+      },
+      'step_2_sub_2': {
+        instructions: [
+          'Cross-reference letter-by-letter: Corporate Name, comma placement, "LLC" vs "L.L.C.", and physical location across the SOS filing and IRS CP 575.',
+          'Correct any discrepancies through an amended SOS filing or IRS name correction letter before proceeding.'
+        ],
+        tips: [
+          'NCTracks automated matching algorithm will halt your enrollment application if there is even a minor discrepancy between your IRS record and Secretary of State registry.',
+          'Consistency across SOS, IRS, NPPES, and bank records is the #1 way to avoid multi-month NCTracks pend times.'
+        ],
+        contacts: ['NC SOS: (919) 814-5400', 'IRS: (800) 829-4933']
+      },
+
+      // Step 3
+      'step_3_sub_0': {
+        instructions: [
+          'Log in to NPPES (National Plan and Provider Enumeration System) at nppes.cms.hhs.gov with Identity & Access (I&A) credentials.',
+          'Designate the CEO, Owner, or Office Administrator as the Authorized Official (AO).',
+          'Optionally establish a Delegated Official (DO) for routine enrollment updates.'
+        ],
+        tips: [
+          'Set up the I&A account under an executive email that will not be lost during staff turnover.',
+          'Retain security challenge questions and multifactor tokens in secure corporate password vaults.'
+        ],
+        contacts: ['NPPES Customer Help Desk: 1-800-465-3203 (customerservice@npienumerator.com)']
+      },
+      'step_3_sub_1': {
+        instructions: [
+          'Select "Apply for an NPI for an Organization (Type 2)".',
+          'Enter the exact legal business name, EIN, and physical service facility location.',
+          'Submit the application and verify confirmation email within 24 to 72 hours.'
+        ],
+        tips: [
+          'Do NOT apply for an individual (Type 1) NPI for your agency. Organizational billing requires Type 2.',
+          'Ensure the mailing address matches your corporate records and the physical address is your licensed day facility site.'
+        ],
+        contacts: ['NPPES CMS Hub: nppes.cms.hhs.gov']
+      },
+      'step_3_sub_2': {
+        instructions: [
+          'Select primary taxonomy code based on primary service line (e.g. 251S00000X Community/Behavioral Health or 261QM0801X Mental Health Clinic / Outpatient SUD).',
+          'Add secondary taxonomies for Substance Abuse Intensive Outpatient and Day Treatment if needed.',
+          'Cross-reference selected taxonomy against the NC Medicaid Provider Permission Matrix (PPM).'
+        ],
+        tips: [
+          'Selecting a taxonomy code not supported on the NCTracks PPM for CCP 8G, 8A-12, or 8A-13 will require a Manage Change Request (MCR) to fix later, adding 4–6 weeks delay.',
+          'Consult the live NC Medicaid PPM PDF before confirming taxonomy submission.'
+        ],
+        contacts: ['NCTracks Provider Permission Matrix: nctracks.nc.gov']
+      }
+    };
+
+    const STORAGE_KEY = 'NC_MEDICAID_NAVIGATOR_FULL_STATE_V3';
+    const ALL_SERVICES = ['8G', '8A-12', '8A-13'];
+    const PHASE_TITLES = {
+      1: 'Phase 1: Legal Foundation',
+      2: 'Phase 2: DHSR Licensure',
+      3: 'Phase 3: NCTracks & HIE',
+      4: 'Phase 4: Network Contracts',
+      5: 'Phase 5: Operations & Launch'
+    };
+    const STATUS_META = {
+      not_started: { label: '⏳ Not Started', badge: 'bg-slate-100 text-slate-700 border-slate-200', bar: 'bg-slate-300' },
+      in_progress: { label: '⚡ In Progress', badge: 'bg-amber-100 text-amber-900 border-amber-300', bar: 'bg-amber-400' },
+      completed: { label: '✅ Completed', badge: 'bg-emerald-100 text-emerald-900 border-emerald-300', bar: 'bg-emerald-500' },
+      blocked: { label: '⛔ Blocked', badge: 'bg-rose-100 text-rose-900 border-rose-300', bar: 'bg-rose-500' }
+    };
+
+    // Lookup tables built once instead of re-scanning arrays on every render
+    const REGIONS = Object.values(NC_REGIONS_DATA);
+    const ALL_COUNTIES = REGIONS.flatMap(reg => reg.counties);
+    const STEPS_BY_ID = new Map(MASTER_STEPS.map(step => [step.id, step]));
+
+    const subtaskKey = (stepId, idx) => `step_${stepId}_sub_${idx}`;
+
+    function countDoneSubtasks(step) {
+      return step.subtasks.reduce((n, _, idx) => n + (appState.subtaskChecks[subtaskKey(step.id, idx)] ? 1 : 0), 0);
+    }
+
+    function defaultState() {
+      return {
+        selectedCounties: [],
+        selectedServices: [...ALL_SERVICES],
+        subtaskChecks: {},
+        stepStatuses: {},
+        stepNotes: {},
+        activePhase: 1
+      };
+    }
+
+    // Accepts anything (localStorage, imported file) and returns a well-formed state object
+    function normalizeState(raw) {
+      const state = defaultState();
+      if (!raw || typeof raw !== 'object') return state;
+      const isPlainObject = v => v && typeof v === 'object' && !Array.isArray(v);
+
+      if (Array.isArray(raw.selectedCounties)) {
+        state.selectedCounties = raw.selectedCounties.filter(c => ALL_COUNTIES.includes(c));
+      }
+      if (Array.isArray(raw.selectedServices)) {
+        const services = raw.selectedServices.filter(s => ALL_SERVICES.includes(s));
+        if (services.length) state.selectedServices = services;
+      }
+      if (isPlainObject(raw.subtaskChecks)) state.subtaskChecks = raw.subtaskChecks;
+      if (isPlainObject(raw.stepStatuses)) {
+        Object.entries(raw.stepStatuses).forEach(([id, status]) => {
+          if (STATUS_META[status]) state.stepStatuses[id] = status;
+        });
+      }
+      if (isPlainObject(raw.stepNotes)) {
+        Object.entries(raw.stepNotes).forEach(([id, note]) => {
+          if (typeof note === 'string' && note) state.stepNotes[id] = note;
+        });
+      }
+      if (PHASE_TITLES[raw.activePhase]) state.activePhase = raw.activePhase;
+      return state;
+    }
+
+    let appState = defaultState();
+
+    // Staging / Draft state for filter controls before "Apply" is clicked
+    let draftFilters = {
+      selectedCounties: [],
+      selectedServices: [...ALL_SERVICES],
+      hasUnappliedChanges: false
+    };
+
+    /* INITIALIZATION & LOCAL STORAGE */
+    function loadState(state) {
+      appState = normalizeState(state);
+      draftFilters.selectedCounties = [...appState.selectedCounties];
+      draftFilters.selectedServices = [...appState.selectedServices];
+      draftFilters.hasUnappliedChanges = false;
+      syncCountyCheckboxes();
+      checkFilterChanges();
+      renderDashboard();
+    }
+
+    function initState() {
+      let saved = null;
+      try {
+        saved = JSON.parse(localStorage.getItem(STORAGE_KEY));
+      } catch (e) {
+        console.warn('LocalStorage error, resetting state', e);
+      }
+      buildCountyDropdown();
+      loadState(saved);
+    }
+
+    function saveState() {
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(appState));
+      } catch (e) {
+        console.error('Failed to save to localStorage', e);
+      }
+    }
+
+    /* DROPDOWN & DRAFT FILTER CONTROLS */
+    function toggleDropdown(id) {
+      document.getElementById(id).classList.toggle('hidden');
+    }
+
+    // Close dropdowns on click outside. composedPath() is captured at dispatch time, so it still
+    // contains the menu even if the click handler re-rendered (detached) the clicked element.
+    window.addEventListener('click', function(e) {
+      const path = e.composedPath();
+      [['county-dropdown-trigger', 'county-dropdown-menu'], ['ccp-dropdown-trigger', 'ccp-dropdown-menu']].forEach(([btnId, menuId]) => {
+        const btn = document.getElementById(btnId);
+        const menu = document.getElementById(menuId);
+        if (!path.includes(btn) && !path.includes(menu)) menu.classList.add('hidden');
+      });
+    });
+
+    const sameSet = (a, b) => a.length === b.length && a.every(x => b.includes(x));
+
+    function checkFilterChanges() {
+      draftFilters.hasUnappliedChanges =
+        !sameSet(draftFilters.selectedCounties, appState.selectedCounties) ||
+        !sameSet(draftFilters.selectedServices, appState.selectedServices);
+
+      const indicator = document.getElementById('filter-status-indicator');
+      const applyBtn = document.getElementById('apply-filter-btn');
+      const discardBtn = document.getElementById('discard-filter-btn');
+
+      if (draftFilters.hasUnappliedChanges) {
+        indicator.innerText = 'Unapplied Filter Changes';
+        indicator.className = 'inline-flex items-center px-3 py-1 rounded-full font-bold bg-amber-100 text-amber-900 border border-amber-300 animate-pulse';
+        applyBtn.className = 'touch-target flex-1 sm:flex-none inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl bg-amber-600 hover:bg-amber-500 active:bg-amber-700 text-white font-extrabold text-xs sm:text-sm shadow-md transition hover:scale-105 focus:ring-2 focus:ring-amber-500';
+        discardBtn.classList.remove('hidden');
+      } else {
+        indicator.innerText = 'Filters Active';
+        indicator.className = 'inline-flex items-center px-3 py-1 rounded-full font-bold bg-emerald-100 text-emerald-800 border border-emerald-300';
+        applyBtn.className = 'touch-target flex-1 sm:flex-none inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl bg-sky-600 hover:bg-sky-500 active:bg-sky-700 text-white font-bold text-xs sm:text-sm shadow-md transition focus:ring-2 focus:ring-sky-500';
+        discardBtn.classList.add('hidden');
+      }
+    }
+
+    // Built once; afterwards only checkbox states are synced so the search filter and scroll position survive
+    function buildCountyDropdown() {
+      const container = document.getElementById('county-checkboxes-container');
+      container.innerHTML = REGIONS.map(reg => `
+          <div class="border-b border-slate-100 pb-2.5 county-region-group" data-region="${reg.id}">
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-xs sm:text-sm font-bold text-slate-900 uppercase tracking-wide flex items-center gap-1.5">
+                <span class="w-3 h-3 rounded-full shrink-0" style="background-color: ${getRegionColor(reg.id)}"></span>
+                ${reg.name}
+              </span>
+              <button type="button" onclick="toggleRegionCountiesDraft(${reg.id})" class="text-xs text-sky-700 hover:text-sky-900 font-bold underline touch-target flex items-center">Toggle Region (${reg.counties.length})</button>
+            </div>
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 text-xs sm:text-sm">
+              ${reg.counties.map(county => `
+                <label class="county-item-label flex items-center gap-2 p-1.5 rounded-lg hover:bg-slate-100 cursor-pointer text-slate-800 min-h-[36px]" data-county="${county.toLowerCase()}">
+                  <input type="checkbox" value="${county}" onchange="onCountyCheckboxChangeDraft(this.value, this.checked)" class="w-4 h-4 rounded border-slate-300 text-sky-600 focus:ring-sky-500 shrink-0">
+                  <span class="truncate ${county === 'Wake' ? 'font-black text-sky-800' : 'font-medium'}">${county}</span>
+                </label>
+              `).join('')}
+            </div>
+          </div>
+        `).join('');
+    }
+
+    function syncCountyCheckboxes() {
+      const selected = new Set(draftFilters.selectedCounties);
+      document.querySelectorAll('#county-checkboxes-container input[type="checkbox"]').forEach(cb => {
+        cb.checked = selected.has(cb.value);
+      });
+      updateCountyDropdownLabel();
+    }
+
+    function setDraftCounties(counties) {
+      draftFilters.selectedCounties = counties;
+      syncCountyCheckboxes();
+      checkFilterChanges();
+    }
+
+    function onCountyCheckboxChangeDraft(county, isChecked) {
+      const others = draftFilters.selectedCounties.filter(c => c !== county);
+      setDraftCounties(isChecked ? [...others, county] : others);
+    }
+
+    function toggleRegionCountiesDraft(regionId) {
+      const reg = NC_REGIONS_DATA[regionId];
+      const others = draftFilters.selectedCounties.filter(c => !reg.counties.includes(c));
+      const allSelected = others.length + reg.counties.length === draftFilters.selectedCounties.length;
+      setDraftCounties(allSelected ? others : [...others, ...reg.counties]);
+    }
+
+    function selectAllCountiesDraft() {
+      setDraftCounties([...ALL_COUNTIES]);
+    }
+
+    function clearCountyFilterDraft() {
+      setDraftCounties([]);
+    }
+
+    function filterCountiesInMenu() {
+      const q = document.getElementById('county-search-input').value.trim().toLowerCase();
+      document.querySelectorAll('.county-region-group').forEach(group => {
+        let anyVisible = false;
+        group.querySelectorAll('.county-item-label').forEach(lbl => {
+          const match = lbl.dataset.county.includes(q);
+          lbl.classList.toggle('hidden', !match);
+          anyVisible = anyVisible || match;
+        });
+        group.classList.toggle('hidden', !anyVisible);
+      });
+    }
+
+    function updateCountyDropdownLabel() {
+      const count = draftFilters.selectedCounties.length;
+      const label = document.getElementById('county-dropdown-label');
+      if (count === ALL_COUNTIES.length) {
+        label.innerText = `All ${ALL_COUNTIES.length} Counties Selected (Statewide)`;
+      } else if (count === 0) {
+        label.innerText = 'No Counties Selected (Click to choose)';
+      } else {
+        label.innerText = `${count} of ${ALL_COUNTIES.length} NC Counties Selected`;
+      }
+
+      // Update active regions draft pills
+      const activeRegionIds = getActiveRegionIds(draftFilters.selectedCounties);
+      document.getElementById('active-regions-pills').innerHTML = activeRegionIds.length === 0
+        ? '<span class="text-xs text-slate-500 italic">No regions active. Select counties above and click Apply.</span>'
+        : activeRegionIds.map(id => {
+            const reg = NC_REGIONS_DATA[id];
+            return `
+            <span class="inline-flex items-center gap-1.5 text-xs font-bold px-3 py-1 rounded-full text-white shadow-xs" style="background-color: ${getRegionColor(id)}">
+              Reg ${id}: ${reg.tailoredPlan} &bull; ${reg.rootsHub}
+            </span>
+          `;
+          }).join('');
+    }
+
+    function getActiveRegionIds(counties) {
+      const selected = new Set(counties);
+      return REGIONS.filter(reg => reg.counties.some(c => selected.has(c))).map(reg => reg.id);
+    }
+
+    /* CCP SERVICE FILTER DRAFT LOGIC */
+    function toggleDraftServiceSelection(serviceCode) {
+      if (draftFilters.selectedServices.includes(serviceCode)) {
+        if (draftFilters.selectedServices.length === 1) {
+          showToast('Selection Required', 'At least one Clinical Coverage Policy service line must remain selected.');
+          syncDraftServiceCheckboxes();
+          return;
+        }
+        draftFilters.selectedServices = draftFilters.selectedServices.filter(s => s !== serviceCode);
+      } else {
+        draftFilters.selectedServices.push(serviceCode);
+      }
+      syncDraftServiceCheckboxes();
+      checkFilterChanges();
+    }
+
+    function selectAllServicesDraft() {
+      draftFilters.selectedServices = [...ALL_SERVICES];
+      syncDraftServiceCheckboxes();
+      checkFilterChanges();
+    }
+
+    function resetServiceFilterDraft() {
+      draftFilters.selectedServices = ['8G'];
+      syncDraftServiceCheckboxes();
+      checkFilterChanges();
+    }
+
+    function syncDraftServiceCheckboxes() {
+      const selected = draftFilters.selectedServices;
+      document.getElementById('svc-check-8g').checked = selected.includes('8G');
+      document.getElementById('svc-check-8a12').checked = selected.includes('8A-12');
+      document.getElementById('svc-check-8a13').checked = selected.includes('8A-13');
+
+      // Keep display order stable regardless of click order
+      const ordered = ALL_SERVICES.filter(s => selected.includes(s));
+      document.getElementById('ccp-dropdown-label').innerText = ordered.length === ALL_SERVICES.length
+        ? `All ${ALL_SERVICES.length} Services Active (${ordered.join(', ')})`
+        : `${ordered.length} Service(s) Active (${ordered.join(', ')})`;
+    }
+
+    /* APPLY & DISCARD FILTERS */
+    function applyFilters() {
+      if (draftFilters.selectedServices.length === 0) {
+        showToast('Service Required', 'Please select at least one Clinical Coverage Policy service line.');
+        return;
+      }
+
+      appState.selectedCounties = [...draftFilters.selectedCounties];
+      appState.selectedServices = [...draftFilters.selectedServices];
+      saveState();
+
+      // Close dropdowns
+      document.getElementById('county-dropdown-menu').classList.add('hidden');
+      document.getElementById('ccp-dropdown-menu').classList.add('hidden');
+
+      checkFilterChanges();
+      renderDashboard();
+
+      const countyMsg = appState.selectedCounties.length === 0
+        ? 'No counties selected (statewide general view)'
+        : `${appState.selectedCounties.length} county/counties and ${appState.selectedServices.length} service line(s)`;
+      showToast('Filters Applied', `Dashboard updated for ${countyMsg}.`);
+    }
+
+    function discardDraftFilters() {
+      draftFilters.selectedServices = [...appState.selectedServices];
+      syncDraftServiceCheckboxes();
+      setDraftCounties([...appState.selectedCounties]);
+      showToast('Changes Cancelled', 'Reverted draft filters back to committed view.');
+    }
+
+    function updateRegionalContactsDisplay() {
+      const container = document.getElementById('regional-contacts-grid');
+      const badge = document.getElementById('regions-active-count-badge');
+      const activeIds = getActiveRegionIds(appState.selectedCounties);
+
+      if (activeIds.length === 0) {
+        badge.innerText = '0 Counties Selected (No Region Active)';
+        container.innerHTML = `
+          <div class="p-6 text-center bg-white rounded-2xl border border-slate-200 shadow-xs">
+            <svg class="w-10 h-10 text-slate-300 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            <h3 class="text-sm sm:text-base font-bold text-slate-800">No Regional Footprint Currently Selected</h3>
+            <p class="text-xs sm:text-sm text-slate-500 max-w-lg mx-auto mt-1">Please select one or more counties in the top filter dropdown and click <span class="font-bold text-sky-700">"Apply Filters"</span> to populate regional LME/MCO Tailored Plans, NC ROOTS Hub Leads, and Medicaid Provider Support contacts.</p>
+          </div>
+        `;
+        return;
+      }
+
+      badge.innerText = `Active: ${activeIds.length} of ${REGIONS.length} Regions (${appState.selectedCounties.length} Counties Selected)`;
+
+      const selected = new Set(appState.selectedCounties);
+      container.innerHTML = activeIds.map(id => {
+        const reg = NC_REGIONS_DATA[id];
+        const countyCountInRegion = reg.counties.filter(c => selected.has(c)).length;
+        const color = getRegionColor(id);
+
+        return `
+          <div class="bg-white rounded-3xl border border-slate-200/90 p-4 sm:p-5 shadow-xs space-y-4">
+            
+            <!-- Region Header -->
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between border-b border-slate-100 pb-3 gap-2">
+              <div class="flex items-center gap-2">
+                <span class="text-xs font-black uppercase tracking-wider px-3 py-1 rounded-full text-white" style="background-color: ${color}">
+                  REGION ${reg.id}
+                </span>
+                <h3 class="text-sm sm:text-base font-bold text-slate-900">${reg.name}</h3>
+              </div>
+              <span class="text-xs sm:text-sm text-slate-600 font-semibold bg-slate-50 px-3 py-1 rounded-xl border border-slate-200/70">
+                ${countyCountInRegion} of ${reg.counties.length} Counties Selected
+              </span>
+            </div>
+
+            <!-- Side-by-Side: LME/MCO (Left) & NC ROOTS Hub Lead (Right) -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              
+              <!-- Left: LME/MCO Tailored Plan Contact -->
+              <div class="bg-slate-50/80 p-4 rounded-2xl border border-slate-200 flex flex-col justify-between space-y-2.5">
+                <div>
+                  <div class="flex items-center justify-between mb-1">
+                    <span class="text-xs font-black uppercase text-sky-800 tracking-wider">LME/MCO Tailored Plan</span>
+                    <a href="${reg.tailoredPlanDetails.website}" target="_blank" rel="noopener noreferrer" class="text-xs text-sky-700 hover:underline font-bold inline-flex items-center gap-1">
+                      Website <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                    </a>
+                  </div>
+                  <div class="font-bold text-slate-900 text-sm sm:text-base">${reg.tailoredPlanDetails.name}</div>
+                  <div class="text-xs sm:text-sm text-slate-700 mt-2 space-y-1">
+                    <div><strong class="text-slate-900">Provider Service Desk:</strong> ${reg.tailoredPlanDetails.phone}</div>
+                    <div><strong class="text-slate-900">Central Office:</strong> ${reg.tailoredPlanDetails.address}</div>
+                    <div><strong class="text-slate-900">UM & Prior Authorizations:</strong> ${reg.tailoredPlanDetails.umPhone}</div>
+                    <div><strong class="text-slate-900">UM Direct Email:</strong> <a href="mailto:${reg.tailoredPlanDetails.umEmail}" class="text-sky-700 hover:underline">${reg.tailoredPlanDetails.umEmail}</a></div>
+                  </div>
+                </div>
+                <a href="${reg.tailoredPlanDetails.portalUrl}" target="_blank" rel="noopener noreferrer" class="touch-target inline-flex items-center justify-center w-full py-2.5 px-4 text-xs sm:text-sm font-bold text-sky-700 bg-white border border-sky-300 rounded-xl hover:bg-sky-50 transition shadow-xs">
+                  Access ${reg.tailoredPlanDetails.portalLabel}
+                </a>
+              </div>
+
+              <!-- Right: NC ROOTS Hub Lead (Beside LME/MCO) -->
+              <div class="bg-amber-50/50 p-4 rounded-2xl border border-amber-200 flex flex-col justify-between space-y-2.5">
+                <div>
+                  <div class="flex items-center justify-between mb-1">
+                    <span class="text-xs font-black uppercase text-amber-900 tracking-wider">NC ROOTS Hub Lead</span>
+                    <a href="${reg.rootsHubDetails.website}" target="_blank" rel="noopener noreferrer" class="text-xs text-amber-800 hover:underline font-bold inline-flex items-center gap-1">
+                      Hub Portal <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                    </a>
+                  </div>
+                  <div class="font-bold text-slate-900 text-sm sm:text-base">${reg.rootsHubDetails.name}</div>
+                  <div class="text-xs sm:text-sm text-slate-700 mt-2 space-y-1">
+                    <div><strong class="text-slate-900">Lead Contact:</strong> ${reg.rootsHubDetails.contactPerson}</div>
+                    <div><strong class="text-slate-900">Phone:</strong> ${reg.rootsHubDetails.phone}</div>
+                    <div><strong class="text-slate-900">Email:</strong> <a href="mailto:${reg.rootsHubDetails.email}" class="text-amber-800 hover:underline">${reg.rootsHubDetails.email}</a></div>
+                    <div><strong class="text-slate-900">Hub Office:</strong> ${reg.rootsHubDetails.address}</div>
+                  </div>
+                  <p class="text-xs text-amber-950/80 mt-2 bg-white/70 p-2 rounded-lg border border-amber-200/60 leading-snug">
+                    <strong class="font-semibold text-amber-900">Transformation Focus:</strong> ${reg.rootsHubDetails.focus}
+                  </p>
+                </div>
+                <div class="text-[11px] sm:text-xs text-amber-800 font-semibold text-center pt-1">
+                  Rural Transformation Sub-grants & Primary Care Bridge
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Across: Medicaid Provider Support for Selected Counties -->
+            <div class="bg-teal-50/50 border border-teal-200/90 rounded-2xl p-4">
+              <div class="text-xs font-black uppercase text-teal-900 tracking-wider mb-2 flex items-center gap-1.5">
+                <svg class="w-4 h-4 text-teal-700 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+                Medicaid Provider Support & Escalation (Applicable to Selected Region)
+              </div>
+              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2.5 text-xs sm:text-sm text-slate-700">
+                <div class="bg-white p-2.5 rounded-xl border border-teal-100">
+                  <span class="font-bold text-slate-900 block text-xs uppercase text-teal-800">State Provider Ombudsman</span>
+                  <span class="text-xs sm:text-sm text-slate-700 block mt-0.5">${reg.medicaidProviderSupport.ombudsman}</span>
+                </div>
+                <div class="bg-white p-2.5 rounded-xl border border-teal-100">
+                  <span class="font-bold text-slate-900 block text-xs uppercase text-teal-800">NCTracks Central Support</span>
+                  <span class="text-xs sm:text-sm text-slate-700 block mt-0.5">${reg.medicaidProviderSupport.nctracks}</span>
+                </div>
+                <div class="bg-white p-2.5 rounded-xl border border-teal-100">
+                  <span class="font-bold text-slate-900 block text-xs uppercase text-teal-800">Plan Network Desk</span>
+                  <span class="text-xs sm:text-sm text-slate-700 block mt-0.5">${reg.medicaidProviderSupport.regionalLead}</span>
+                </div>
+                <div class="bg-white p-2.5 rounded-xl border border-teal-100">
+                  <span class="font-bold text-slate-900 block text-xs uppercase text-teal-800">NC HealthConnex HIEA</span>
+                  <span class="text-xs sm:text-sm text-slate-700 block mt-0.5">${reg.medicaidProviderSupport.hieDesk}</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        `;
+      }).join('');
+    }
+
+    function getFilteredSteps() {
+      return MASTER_STEPS.filter(step => step.services.some(svc => appState.selectedServices.includes(svc)));
+    }
+
+    function renderPhaseTabs(filteredSteps) {
+      document.getElementById('phase-tabs-container').innerHTML = Object.keys(PHASE_TITLES).map(Number).map(pId => {
+        let subtasksTotal = 0;
+        let subtasksDone = 0;
+        filteredSteps.forEach(s => {
+          if (s.phase !== pId) return;
+          subtasksTotal += s.subtasks.length;
+          subtasksDone += countDoneSubtasks(s);
+        });
+        const phasePct = subtasksTotal > 0 ? Math.round((subtasksDone / subtasksTotal) * 100) : 0;
+        const isActive = appState.activePhase === pId;
+
+        return `
+          <button type="button" onclick="switchPhaseTab(${pId})" aria-pressed="${isActive}" class="touch-target px-4 py-2.5 rounded-2xl text-xs sm:text-sm font-bold border transition flex items-center gap-2 whitespace-nowrap ${isActive ? 'tab-active' : 'bg-slate-50 text-slate-700 border-slate-200 hover:bg-slate-100'}">
+            <span>${PHASE_TITLES[pId]}</span>
+            <span class="px-2 py-0.5 rounded-full text-xs font-black ${isActive ? 'bg-white/20 text-white' : 'bg-slate-200 text-slate-700'}">
+              ${phasePct}%
+            </span>
+          </button>
+        `;
+      }).join('');
+    }
+
+    function switchPhaseTab(phaseId) {
+      appState.activePhase = phaseId;
+      saveState();
+      const filteredSteps = getFilteredSteps();
+      renderPhaseTabs(filteredSteps);
+      renderCurrentPhaseCards(filteredSteps);
+    }
+
+    function renderCurrentPhaseCards(filteredSteps) {
+      const container = document.getElementById('current-phase-container');
+      const phaseSteps = filteredSteps.filter(s => s.phase === appState.activePhase);
+
+      if (phaseSteps.length === 0) {
+        container.innerHTML = `
+          <div class="p-8 text-center bg-white rounded-3xl border border-slate-200 text-slate-500">
+            No steps match the active Clinical Coverage Policy filter in this phase.
+          </div>
+        `;
+        return;
+      }
+
+      container.innerHTML = phaseSteps.map(step => {
+        const status = appState.stepStatuses[step.id] || 'not_started';
+        const noteText = appState.stepNotes[step.id] || '';
+        const stepSubtasksDone = countDoneSubtasks(step);
+        const stepPct = step.subtasks.length > 0 ? Math.round((stepSubtasksDone / step.subtasks.length) * 100) : 0;
+        const { label: statusLabel, badge: statusBadgeClass } = STATUS_META[status];
+
+        return `
+          <div class="bg-white rounded-3xl border border-slate-200/90 p-4 sm:p-6 shadow-sm space-y-4" id="step-card-${step.id}">
+            
+            <!-- Step Header -->
+            <div class="flex flex-col lg:flex-row lg:items-start justify-between gap-3">
+              <div class="space-y-1.5 flex-1">
+                <div class="flex flex-wrap items-center gap-2">
+                  <span class="px-2.5 py-1 rounded-xl text-xs font-black bg-slate-900 text-white">
+                    ${step.stepNumber}
+                  </span>
+                  <span class="px-2.5 py-1 rounded-xl text-xs font-bold border ${statusBadgeClass}">
+                    ${statusLabel}
+                  </span>
+                  <div class="flex gap-1">
+                    ${step.services.map(s => `<span class="px-2 py-0.5 rounded-lg text-xs font-bold bg-sky-50 text-sky-800 border border-sky-200">CCP ${s}</span>`).join('')}
+                  </div>
+                </div>
+                <h3 class="text-base sm:text-lg font-bold text-slate-900 leading-snug">${step.title}</h3>
+                <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">${step.description}</p>
+              </div>
+
+              <!-- Step Status Manual Override & Notes Button -->
+              <div class="flex items-center gap-2 self-start shrink-0">
+                <select onchange="onStepStatusChange(${step.id}, this.value)" class="touch-target text-xs sm:text-sm font-bold rounded-xl border border-slate-300 bg-white px-3 py-2 focus:ring-2 focus:ring-sky-500 outline-none">
+                  <option value="not_started" ${status === 'not_started' ? 'selected' : ''}>⏳ Not Started</option>
+                  <option value="in_progress" ${status === 'in_progress' ? 'selected' : ''}>⚡ In Progress</option>
+                  <option value="completed" ${status === 'completed' ? 'selected' : ''}>✅ Completed</option>
+                  <option value="blocked" ${status === 'blocked' ? 'selected' : ''}>⛔ Blocked</option>
+                </select>
+
+                <button onclick="openNotesModal(${step.id})" class="touch-target inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold px-3 py-2 rounded-xl border ${noteText ? 'border-sky-400 bg-sky-50 text-sky-900' : 'border-slate-300 bg-white text-slate-700 hover:bg-slate-50'} transition">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/></svg>
+                  ${noteText ? 'Note Active' : 'Add Note'}
+                </button>
+              </div>
+            </div>
+
+            <!-- Resource Procurement Matrix (Cost, Time, Link, Dependencies) -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 bg-slate-50 border border-slate-200 rounded-2xl p-3.5 text-xs sm:text-sm">
+              <div>
+                <span class="text-xs font-bold text-slate-400 uppercase tracking-wide block">Statutory Filing Cost</span>
+                <span class="font-bold text-slate-900 mt-0.5 block">${step.costEstimate}</span>
+              </div>
+              <div>
+                <span class="text-xs font-bold text-slate-400 uppercase tracking-wide block">Procurement Duration</span>
+                <span class="font-bold text-slate-800 mt-0.5 block">${step.timeWeeks}</span>
+              </div>
+              <div>
+                <span class="text-xs font-bold text-slate-400 uppercase tracking-wide block">Acquisition Gateway</span>
+                <a href="${step.resourceUrl}" target="_blank" rel="noopener noreferrer" class="text-sky-700 hover:underline font-bold inline-flex items-center gap-1 truncate max-w-full mt-0.5">
+                  ${step.resourceName}
+                  <svg class="w-3.5 h-3.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                </a>
+              </div>
+              <div>
+                <span class="text-xs font-bold text-slate-400 uppercase tracking-wide block">Plan Dependency</span>
+                <span class="text-slate-700 truncate block mt-0.5">${step.dependencies}</span>
+              </div>
+            </div>
+
+            <!-- Subtasks Checklist with Interactive Instructions Trigger -->
+            <div class="space-y-2 pt-1">
+              <div class="flex items-center justify-between text-xs sm:text-sm text-slate-600 font-bold border-b border-slate-100 pb-1.5">
+                <span class="flex items-center gap-1.5">
+                  <svg class="w-4 h-4 text-teal-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                  Actionable Checklist (${stepSubtasksDone} of ${step.subtasks.length} items &bull; ${stepPct}%)
+                </span>
+                <span class="text-xs text-sky-700 font-semibold hidden sm:inline">Tap text for instructions & tips</span>
+              </div>
+
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-2.5">
+        ${step.subtasks.map((sub, subIdx) => {
+          const checkKey = subtaskKey(step.id, subIdx);
+          const isChecked = !!appState.subtaskChecks[checkKey];
+          return `
+            <div class="flex items-start gap-3 p-3 rounded-2xl hover:bg-slate-50 border border-slate-200/70 hover:border-slate-300 transition text-xs sm:text-sm bg-white">
+              
+              <!-- Checkbox (Strict target for fast completion) -->
+              <input type="checkbox" aria-label="${escapeHtml(sub)}" onchange="onSubtaskCheckboxToggled('${checkKey}', ${step.id}, this.checked)" ${isChecked ? 'checked' : ''} class="w-5 h-5 mt-0.5 rounded-lg border-slate-300 text-teal-600 focus:ring-teal-500 shrink-0 cursor-pointer">
+              
+              <!-- Clickable Text that Opens Modal with Instructions -->
+              <button type="button" onclick="openSubtaskDetailModal('${checkKey}', ${step.id}, ${subIdx})" class="flex-1 text-left cursor-pointer group select-none">
+                <span class="group-hover:text-sky-700 transition ${isChecked ? 'line-through text-slate-400 font-normal' : 'font-semibold text-slate-800'}">
+                  ${sub}
+                </span>
+                <div class="text-[11px] sm:text-xs text-slate-400 group-hover:text-sky-600 flex items-center gap-1 mt-0.5">
+                  <span>View instructions & contacts</span>
+                  <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                </div>
+              </button>
+
+            </div>
+          `;
+        }).join('')}
+              </div>
+            </div>
+
+            <!-- Attached Note Preview -->
+            ${noteText ? `
+              <div class="text-xs sm:text-sm bg-amber-50/70 border border-amber-200 rounded-2xl p-3.5 text-amber-900 flex items-start gap-2.5">
+                <svg class="w-5 h-5 text-amber-600 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"/></svg>
+                <div><strong class="font-bold">Step Note:</strong> ${escapeHtml(noteText)}</div>
+              </div>
+            ` : ''}
+
+          </div>
+        `;
+      }).join('');
+    }
+
+    function evaluateStepStatusFromSubtasks(stepId) {
+      const step = STEPS_BY_ID.get(stepId);
+      if (!step) return;
+      const checkedCount = countDoneSubtasks(step);
+
+      // Automated State Transitions:
+      // None checked -> not_started (unless blocked)
+      // Some checked (>=1 and <total) -> in_progress
+      // All checked (total) -> completed
+      if (checkedCount === 0) {
+        if (appState.stepStatuses[stepId] !== 'blocked') {
+          appState.stepStatuses[stepId] = 'not_started';
+        }
+      } else if (checkedCount === step.subtasks.length) {
+        appState.stepStatuses[stepId] = 'completed';
+      } else {
+        appState.stepStatuses[stepId] = 'in_progress';
+      }
+    }
+
+    function onSubtaskCheckboxToggled(checkKey, stepId, isChecked) {
+      appState.subtaskChecks[checkKey] = isChecked;
+      evaluateStepStatusFromSubtasks(stepId);
+      saveState();
+      renderProgress();
+    }
+
+    function onStepStatusChange(stepId, newStatus) {
+      appState.stepStatuses[stepId] = newStatus;
+      saveState();
+      renderProgress();
+    }
+
+    let currentModalSubtask = {
+      checkKey: null,
+      stepId: null,
+      subIdx: null
+    };
+
+    const bulletList = (items, dotClass) => items.map(item => `
+        <div class="flex items-start gap-2">
+          <span class="w-1.5 h-1.5 rounded-full ${dotClass} mt-2 shrink-0"></span>
+          <span>${item}</span>
+        </div>
+      `).join('');
+
+    function openSubtaskDetailModal(checkKey, stepId, subIdx) {
+      const step = STEPS_BY_ID.get(stepId);
+      if (!step) return;
+      currentModalSubtask = { checkKey, stepId, subIdx };
+
+      const subtaskText = step.subtasks[subIdx];
+      const isChecked = !!appState.subtaskChecks[checkKey];
+
+      document.getElementById('modal-subtask-phase-badge').innerText = `Phase ${step.phase} • ${step.stepNumber}`;
+      document.getElementById('modal-subtask-title').innerText = subtaskText;
+
+      const statusPill = document.getElementById('modal-subtask-status-pill');
+      statusPill.innerText = isChecked ? 'Completed' : 'Open / Incomplete';
+      statusPill.className = isChecked
+        ? 'text-xs font-bold px-2.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30'
+        : 'text-xs font-bold px-2.5 py-0.5 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/30';
+
+      // Look up detailed instructions from DB or synthesize dynamically
+      const details = SUBTASK_DETAILS_MAP[checkKey] || {
+        instructions: [
+          `Execute operational requirements for "${subtaskText}" in alignment with ${step.phaseName}.`,
+          `Verify all documentation conforms to 10A NCAC 27G and relevant Clinical Coverage Policy guidelines (CCP ${step.services.join(', ')}).`,
+          `Store dated audit verification in the agency master compliance binder.`
+        ],
+        tips: [
+          `Audit verification must be completed contemporaneously; retroactive paperwork is a primary trigger for Medicaid recoupment.`,
+          `Ensure the assigned supervisor signs and verifies completion before rendering service to beneficiaries.`
+        ],
+        contacts: [
+          `Primary Authority: ${step.resourceName} (${step.resourceUrl})`,
+          `Internal Owner: ${step.responsible}`,
+          `NC Medicaid Provider Support: 877-201-3750`
+        ]
+      };
+
+      document.getElementById('modal-instructions-body').innerHTML = bulletList(details.instructions, 'bg-sky-600');
+      document.getElementById('modal-tips-body').innerHTML = bulletList(details.tips, 'bg-amber-600');
+      document.getElementById('modal-contacts-body').innerHTML = bulletList(details.contacts, 'bg-teal-600');
+
+      document.getElementById('modal-subtask-status-select').value = isChecked ? 'completed' : 'open';
+      openModal('subtask-detail-modal');
+    }
+
+    function closeSubtaskModal() {
+      closeModal('subtask-detail-modal');
+      currentModalSubtask = { checkKey: null, stepId: null, subIdx: null };
+    }
+
+    function saveSubtaskStatusFromModal() {
+      if (!currentModalSubtask.checkKey) return;
+      const isComplete = document.getElementById('modal-subtask-status-select').value === 'completed';
+
+      appState.subtaskChecks[currentModalSubtask.checkKey] = isComplete;
+      evaluateStepStatusFromSubtasks(currentModalSubtask.stepId);
+      saveState();
+      closeSubtaskModal();
+      renderProgress();
+      showToast('Subtask Updated', `Subtask marked as ${isComplete ? 'Complete' : 'Open'}.`);
+    }
+
+    /* MODAL HELPERS: remember the opener so focus returns to it, close on Escape / backdrop click */
+    let modalReturnFocus = null;
+
+    function openModal(id) {
+      modalReturnFocus = document.activeElement;
+      const modal = document.getElementById(id);
+      modal.classList.remove('hidden');
+      const focusTarget = modal.querySelector('textarea, select, button');
+      if (focusTarget) focusTarget.focus();
+    }
+
+    function closeModal(id) {
+      document.getElementById(id).classList.add('hidden');
+      if (modalReturnFocus && modalReturnFocus.isConnected) modalReturnFocus.focus();
+      modalReturnFocus = null;
+    }
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key !== 'Escape') return;
+      if (!document.getElementById('subtask-detail-modal').classList.contains('hidden')) closeSubtaskModal();
+      else if (!document.getElementById('notes-modal').classList.contains('hidden')) closeNotesModal();
+    });
+
+    document.getElementById('subtask-detail-modal').addEventListener('click', function(e) {
+      if (e.target === this) closeSubtaskModal();
+    });
+    document.getElementById('notes-modal').addEventListener('click', function(e) {
+      if (e.target === this) closeNotesModal();
+    });
+
+    function updateMetrics(filteredSteps) {
+      let completedSteps = 0;
+      let totalSubtasks = 0;
+      let completedSubtasks = 0;
+
+      filteredSteps.forEach(s => {
+        if (appState.stepStatuses[s.id] === 'completed') completedSteps++;
+        totalSubtasks += s.subtasks.length;
+        completedSubtasks += countDoneSubtasks(s);
+      });
+
+      const overallPct = totalSubtasks > 0 ? Math.round((completedSubtasks / totalSubtasks) * 100) : 0;
+
+      document.getElementById('metric-overall-pct').innerText = `${overallPct}%`;
+      document.getElementById('metric-steps-ratio').innerText = `${completedSteps} / ${filteredSteps.length} Steps Done`;
+      document.getElementById('overall-progress-bar').style.width = `${overallPct}%`;
+
+      document.getElementById('metric-subtasks-count').innerText = completedSubtasks;
+      document.getElementById('metric-subtasks-total').innerText = `of ${totalSubtasks} items`;
+
+      updateFeeMetric(filteredSteps);
+      updateSpanMetric(filteredSteps);
+    }
+
+    const formatUsd = n => '$' + n.toLocaleString('en-US');
+    const formatUsdRange = (min, max) => min === max ? formatUsd(min) : `${formatUsd(min)}–${formatUsd(max)}`;
+
+    // Sums the structured statutoryFees of the active steps. One-time agency fees make up the headline;
+    // per-person fees (background checks, fingerprinting) are shown separately since they scale with headcount.
+    function updateFeeMetric(filteredSteps) {
+      const totals = { agency: { min: 0, max: 0 }, perPerson: { min: 0, max: 0 } };
+      filteredSteps.forEach(step => {
+        (step.statutoryFees || []).forEach(fee => {
+          const bucket = fee.perPerson ? totals.perPerson : totals.agency;
+          bucket.min += fee.min;
+          bucket.max += fee.max;
+        });
+      });
+
+      document.getElementById('metric-cost-tally').innerText = formatUsdRange(totals.agency.min, totals.agency.max);
+      document.getElementById('metric-cost-note').innerText = totals.perPerson.max > 0
+        ? `+ ${formatUsdRange(totals.perPerson.min, totals.perPerson.max)} per staff member (screening). Excludes buildout, lease & salaries`
+        : 'Excludes buildout, lease & salaries';
+    }
+
+    // Span from the earliest scheduled start to the latest scheduled finish among the active steps
+    function updateSpanMetric(filteredSteps) {
+      const spanEl = document.getElementById('metric-span-weeks');
+      const noteEl = document.getElementById('metric-span-note');
+      if (filteredSteps.length === 0) {
+        spanEl.innerText = '0';
+        noteEl.innerText = 'No steps active';
+        return;
+      }
+      const firstWeek = Math.min(...filteredSteps.map(s => s.timelineStartWeek));
+      const lastWeek = Math.max(...filteredSteps.map(stepEndWeek));
+      const remaining = filteredSteps.filter(s => appState.stepStatuses[s.id] !== 'completed');
+      spanEl.innerText = lastWeek - firstWeek + 1;
+      noteEl.innerText = remaining.length === 0
+        ? `Weeks ${firstWeek}–${lastWeek} • All steps complete`
+        : `Weeks ${firstWeek}–${lastWeek} • Open work runs through week ${Math.max(...remaining.map(stepEndWeek))}`;
+    }
+
+    const stepEndWeek = step => step.timelineStartWeek + step.timelineDurationWeeks - 1;
+    // Axis length: latest finish across all steps, rounded up to a whole 8-week block
+    const TOTAL_WEEKS = Math.ceil(Math.max(...MASTER_STEPS.map(stepEndWeek)) / 8) * 8;
+
+    function renderTimeline(filteredSteps) {
+      // Same scale as the bars: week N starts at (N - 1) / TOTAL_WEEKS
+      const weekPct = week => ((week - 1) / TOTAL_WEEKS) * 100;
+      const axisNotes = { 16: ' (DHSR)', 24: ' (NCTracks)' };
+      const axisLabels = [1];
+      for (let wk = 8; wk <= TOTAL_WEEKS; wk += 8) axisLabels.push(wk);
+      document.getElementById('timeline-total-weeks').innerText = TOTAL_WEEKS;
+
+      let html = `
+        <div class="grid grid-cols-12 gap-1 text-xs font-bold text-slate-500 border-b border-slate-200 pb-1 mb-2">
+          <div class="col-span-5 truncate uppercase tracking-wider">Milestone Workstream</div>
+          <div class="col-span-7 relative h-4 text-xs font-mono text-slate-600">
+            ${axisLabels.map((wk, i) => `<span class="absolute whitespace-nowrap ${i === 0 ? '' : i === axisLabels.length - 1 ? '-translate-x-full' : '-translate-x-1/2'}" style="left: ${weekPct(wk)}%">Wk ${wk}${axisNotes[wk] || ''}</span>`).join('')}
+          </div>
+        </div>
+      `;
+
+      html += filteredSteps.map(step => {
+        const barColor = STATUS_META[appState.stepStatuses[step.id] || 'not_started'].bar;
+        const leftPct = weekPct(step.timelineStartWeek);
+        const widthPct = Math.min(Math.max((step.timelineDurationWeeks / TOTAL_WEEKS) * 100, 6), 100 - leftPct);
+
+        return `
+          <div class="grid grid-cols-12 gap-1 items-center text-xs sm:text-sm py-1 border-b border-slate-100 hover:bg-white rounded-lg transition">
+            <div class="col-span-5 flex items-center gap-1.5 truncate pr-2">
+              <span class="w-2.5 h-2.5 rounded-full ${barColor} shrink-0"></span>
+              <span class="font-semibold text-slate-800 truncate">${step.stepNumber}: ${step.title}</span>
+            </div>
+            <div class="col-span-7 relative h-5 bg-slate-200/60 rounded-lg overflow-hidden">
+              <div class="absolute top-0 bottom-0 ${barColor} rounded-lg transition-all duration-300 flex items-center justify-end px-1.5 text-xs text-white font-bold" style="left: ${leftPct}%; width: ${widthPct}%;">
+                ${widthPct > 10 ? step.timeWeeks : ''}
+              </div>
+            </div>
+          </div>
+        `;
+      }).join('');
+
+      document.getElementById('timeline-container').innerHTML = html;
+    }
+
+    let currentNotesStepId = null;
+
+    function openNotesModal(stepId) {
+      const step = STEPS_BY_ID.get(stepId);
+      if (!step) return;
+      currentNotesStepId = stepId;
+
+      document.getElementById('modal-step-badge').innerText = `${step.stepNumber} Operational Note`;
+      document.getElementById('modal-step-title').innerText = step.title;
+      document.getElementById('modal-notes-textarea').value = appState.stepNotes[stepId] || '';
+      openModal('notes-modal');
+    }
+
+    function closeNotesModal() {
+      closeModal('notes-modal');
+      currentNotesStepId = null;
+    }
+
+    function saveStepNotesFromModal() {
+      if (!currentNotesStepId) return;
+      const txt = document.getElementById('modal-notes-textarea').value.trim();
+      if (txt) {
+        appState.stepNotes[currentNotesStepId] = txt;
+      } else {
+        delete appState.stepNotes[currentNotesStepId];
+      }
+      saveState();
+      closeNotesModal();
+      renderProgress();
+      showToast('Note Saved', 'Your internal tracking note has been recorded.');
+    }
+
+    /* JSON EXPORT & IMPORT */
+    function exportStateJson() {
+      const blob = new Blob([JSON.stringify(appState, null, 2)], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const downloadAnchor = document.createElement('a');
+      downloadAnchor.href = url;
+      downloadAnchor.download = `NC_Medicaid_BH_Navigator_Backup_${new Date().toISOString().slice(0, 10)}.json`;
+      document.body.appendChild(downloadAnchor);
+      downloadAnchor.click();
+      downloadAnchor.remove();
+      setTimeout(() => URL.revokeObjectURL(url), 0);
+      showToast('Export Complete', 'Compliance snapshot downloaded.');
+    }
+
+    function importStateJson(event) {
+      const file = event.target.files[0];
+      event.target.value = '';
+      if (!file) return;
+
+      file.text().then(text => {
+        let parsed;
+        try {
+          parsed = JSON.parse(text);
+        } catch (err) {
+          showToast('Import Error', 'Failed to parse JSON backup.');
+          return;
+        }
+        if (!parsed || typeof parsed !== 'object' || Array.isArray(parsed)) {
+          showToast('Invalid File', 'File format is not recognized.');
+          return;
+        }
+        loadState(parsed);
+        saveState();
+        showToast('Backup Restored', 'Operational state successfully loaded.');
+      });
+    }
+
+    function confirmResetModal() {
+      const confirmed = window.confirm("Reset all operational progress, subtask checks, and notes back to initial setup with 0 counties selected?");
+      if (confirmed) {
+        try {
+          localStorage.removeItem(STORAGE_KEY);
+        } catch (e) {
+          console.error('Failed to clear localStorage', e);
+        }
+        document.getElementById('county-search-input').value = '';
+        filterCountiesInMenu();
+        loadState(null);
+        showToast('Dashboard Reset', 'All checkboxes, notes, and filters have been reset.');
+      }
+    }
+
+    /* TOAST NOTIFICATION COMPONENT */
+    function showToast(title, message) {
+      const container = document.getElementById('toast-container');
+      const toast = document.createElement('div');
+      toast.className = 'bg-slate-900 text-white p-4 rounded-2xl shadow-2xl border border-slate-700 flex items-start gap-3 pointer-events-auto transform transition-all duration-300';
+      toast.innerHTML = `
+        <svg class="w-5 h-5 text-sky-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        <div>
+          <div class="text-xs sm:text-sm font-bold text-white">${escapeHtml(title)}</div>
+          <div class="text-xs sm:text-sm text-slate-300 mt-0.5">${escapeHtml(message)}</div>
+        </div>
+      `;
+      container.appendChild(toast);
+      setTimeout(() => {
+        toast.style.opacity = '0';
+        setTimeout(() => toast.remove(), 300);
+      }, 3500);
+    }
+
+    function escapeHtml(text) {
+      if (!text) return '';
+      return String(text).replace(/[&<>"']/g, function(m) {
+        return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#039;' }[m];
+      });
+    }
+
+    /* RENDER CYCLES */
+    // Progress views: everything that depends on checks, statuses, notes or the service filter
+    function renderProgress() {
+      const filteredSteps = getFilteredSteps();
+      renderPhaseTabs(filteredSteps);
+      renderCurrentPhaseCards(filteredSteps);
+      updateMetrics(filteredSteps);
+      renderTimeline(filteredSteps);
+      return filteredSteps;
+    }
+
+    // Full render: also refreshes views driven by the committed county/service filters
+    function renderDashboard() {
+      const filteredSteps = renderProgress();
+      document.getElementById('filtered-steps-count').innerText = `${filteredSteps.length} of ${MASTER_STEPS.length} Steps Active`;
+      updateCountyDropdownLabel();
+      syncDraftServiceCheckboxes();
+      updateRegionalContactsDisplay();
+    }
+
+    // Keep the sticky phase tabs directly under the header, whose height changes when it wraps on mobile
+    const siteHeader = document.getElementById('site-header');
+    new ResizeObserver(() => {
+      document.documentElement.style.setProperty('--header-h', `${siteHeader.offsetHeight}px`);
+    }).observe(siteHeader);
+
+    initState();
+  </script>
+</body>
+</html>
