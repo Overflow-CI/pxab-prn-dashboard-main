@@ -1313,6 +1313,146 @@
           'Calendar NCTracks 5-year recredentialing (70, 50, 20, 5 day alerts)',
           'Calendar monthly OIG/SAM exclusion screenings and 2-year CPSS renewals'
         ]
+      },
+      // PHASE 6: H.R. 1 (Public Law 119-21) Medicaid compliance
+      {
+        id: 26,
+        phase: 6,
+        phaseName: 'Phase 6: H.R. 1 Medicaid Compliance',
+        stepNumber: 'Step 26',
+        title: 'H.R. 1 Impact Review & Compliance Owner',
+        services: ['8G', '8A-12', '8A-13'],
+        description: 'H.R. 1 (Public Law 119-21, the 2025 federal budget reconciliation act) changes Medicaid eligibility, renewals, cost-sharing and program-integrity rules, and created the Rural Health Transformation Program. Work out which provisions reach your service lines and name one accountable owner. Dates to confirm against current NC Medicaid guidance: Oct 2026 (immigrant eligibility), Dec 2026 (six-month renewals for expansion adults), Jan 2027 (community engagement and shorter retroactive coverage), Oct 2028 (cost-sharing).',
+        responsible: 'Compliance Officer / Owner',
+        timeWeeks: '1–2 weeks',
+        timelineStartWeek: 4,
+        timelineDurationWeeks: 2,
+        costEstimate: '$0 (Internal)',
+        resourceName: 'H.R. 1 (119th Congress) bill text',
+        resourceUrl: 'https://www.congress.gov/bill/119th-congress/house-bill/1',
+        dependencies: 'Step 1 (Entity formed)',
+        subtasks: [
+          'Read the H.R. 1 Medicaid provisions and the NC Medicaid guidance that apply to outpatient behavioral health',
+          'Name an H.R. 1 compliance owner and a backup in the governing body minutes',
+          'Subscribe to NC Medicaid bulletins and each Tailored Plan provider notice list for H.R. 1 updates',
+          'Build a dated H.R. 1 calendar of effective dates, each with an internal deadline and an owner'
+        ]
+      },
+      {
+        id: 27,
+        phase: 6,
+        phaseName: 'Phase 6: H.R. 1 Medicaid Compliance',
+        stepNumber: 'Step 27',
+        title: 'Eligibility Verification & Six-Month Renewal Readiness',
+        services: ['8G', '8A-12', '8A-13'],
+        description: 'Expansion adults are moving to eligibility renewals every six months, so more clients will lose coverage for paperwork reasons. Build intake and billing controls that check eligibility before every billing period, and help clients keep their coverage without giving legal advice.',
+        responsible: 'Billing Manager / Intake Lead',
+        timeWeeks: '2–4 weeks',
+        timelineStartWeek: 22,
+        timelineDurationWeeks: 4,
+        costEstimate: '$0 (Internal workflow)',
+        resourceName: 'NCTracks (eligibility verification)',
+        resourceUrl: 'https://www.nctracks.nc.gov/',
+        dependencies: 'Step 18 (NCTracks enrollment) & Step 22 (EHR setup)',
+        subtasks: [
+          'Add a Medicaid eligibility check to intake and again before each billing period or authorization renewal',
+          'Create a claim-hold and follow-up workflow for clients whose eligibility lapses during treatment',
+          'Train staff to remind clients about renewal notices and refer them to their county DSS or NC Medicaid for help',
+          'Track coverage-loss reasons monthly and report trends to the governing body'
+        ]
+      },
+      {
+        id: 28,
+        phase: 6,
+        phaseName: 'Phase 6: H.R. 1 Medicaid Compliance',
+        stepNumber: 'Step 28',
+        title: 'Community Engagement Requirement & Exemption Documentation',
+        services: ['8G', '8A-12', '8A-13'],
+        description: 'H.R. 1 requires many expansion adults to show work, community service, school or a similar activity. Exemptions may cover people in substance use disorder treatment, people with a disabling mental disorder and people who are medically frail. Prepare to document treatment participation and exemptions accurately, with proper client consent, once NC Medicaid sets its process.',
+        responsible: 'Clinical Director / Compliance Officer',
+        timeWeeks: '3–4 weeks',
+        timelineStartWeek: 24,
+        timelineDurationWeeks: 4,
+        costEstimate: '$0 (Internal)',
+        resourceName: 'NC Medicaid (NC DHHS)',
+        resourceUrl: 'https://medicaid.ncdhhs.gov/',
+        dependencies: 'Step 26 (Impact review) & Step 24 (Intake and assessment)',
+        subtasks: [
+          'Confirm with NC Medicaid and each Tailored Plan who must meet the requirement, which exemptions apply and how providers submit documentation',
+          'Add a client consent form for sharing treatment participation or exemption information, including the 42 CFR Part 2 rules for substance use disorder records',
+          'Create a clinician-signed template letter for exemptions such as SUD treatment, disabling mental disorder or medical frailty',
+          'Set up EHR reports that show each client attendance hours in SAIOP, SACOT or peer support for verification requests',
+          'Train staff on what they may tell clients about the requirement and when to refer them to NC Medicaid or county DSS'
+        ]
+      },
+      {
+        id: 29,
+        phase: 6,
+        phaseName: 'Phase 6: H.R. 1 Medicaid Compliance',
+        stepNumber: 'Step 29',
+        title: 'Coverage Changes, Billing & Cost-Sharing Controls',
+        services: ['8G', '8A-12', '8A-13'],
+        description: 'Shorter retroactive coverage, new immigrant eligibility rules and future cost-sharing for some expansion adults change what you can bill and collect. Update intake, financial-responsibility and billing rules so you do not deliver services you cannot get paid for or collect amounts you are not allowed to charge.',
+        responsible: 'Billing Manager / Compliance Officer',
+        timeWeeks: '2–3 weeks',
+        timelineStartWeek: 24,
+        timelineDurationWeeks: 3,
+        costEstimate: '$0 (Internal policy work)',
+        resourceName: 'NC Medicaid (NC DHHS)',
+        resourceUrl: 'https://medicaid.ncdhhs.gov/',
+        dependencies: 'Step 26 (Impact review) & Step 20 (NCTracks approval)',
+        subtasks: [
+          'Update the intake and billing policy for shorter retroactive coverage: confirm eligibility before services rather than relying on back-dated approval',
+          'Write a financial responsibility and sliding-fee policy, with client notices, for people who lose or do not qualify for Medicaid',
+          'Ask each Tailored Plan in writing whether member cost-sharing will apply to peer support, SAIOP and SACOT, and when, then set front-desk scripts',
+          'Update billing system edits for new eligibility categories and immigration-status changes, and test claims before launch'
+        ]
+      },
+      {
+        id: 30,
+        phase: 6,
+        phaseName: 'Phase 6: H.R. 1 Medicaid Compliance',
+        stepNumber: 'Step 30',
+        title: 'Program Integrity, Provider Screening & Funding Risk',
+        services: ['8G', '8A-12', '8A-13'],
+        description: 'H.R. 1 tightens Medicaid program-integrity rules, including more frequent checks of provider enrollment data against exclusion and death records, and it limits some state financing tools that help fund provider payments. Keep enrollment data clean and plan for rate or volume changes.',
+        responsible: 'Compliance Officer / CFO',
+        timeWeeks: '3–4 weeks',
+        timelineStartWeek: 26,
+        timelineDurationWeeks: 4,
+        costEstimate: '$0 (Internal)',
+        resourceName: 'OIG Exclusions Database (LEIE)',
+        resourceUrl: 'https://oig.hhs.gov/exclusions/',
+        dependencies: 'Step 20 (NCTracks approval) & Step 25 (Compliance calendar)',
+        subtasks: [
+          'Add a monthly screen of every owner, manager and rendering provider against the OIG exclusion list, SAM.gov and the death records NC Medicaid requires',
+          'Calendar NCTracks updates for ownership, address, license, NPI and taxonomy changes, with the reporting deadline for each',
+          'Build a reimbursement-risk budget that shows cash needs if Medicaid volume or rates fall 10 to 20 percent',
+          'Set a cash reserve target and a review date tied to NC Medicaid rate and Tailored Plan contract notices'
+        ]
+      },
+      {
+        id: 31,
+        phase: 6,
+        phaseName: 'Phase 6: H.R. 1 Medicaid Compliance',
+        stepNumber: 'Step 31',
+        title: 'Rural Health Transformation (NC ROOTS) Funding',
+        services: ['8G', '8A-12', '8A-13'],
+        description: 'H.R. 1 created a multi-year Rural Health Transformation Program that funds state plans, which NC runs as NC ROOTS. Providers in rural counties may be able to apply for sub-awards or join hub networks. Find out what NC has opened and whether your counties and services qualify.',
+        responsible: 'Owner / Grants Lead',
+        timeWeeks: '4–8 weeks',
+        timelineStartWeek: 10,
+        timelineDurationWeeks: 8,
+        costEstimate: '$0 (Internal)',
+        resourceName: 'NC Department of Health and Human Services',
+        resourceUrl: 'https://www.ncdhhs.gov/',
+        dependencies: 'Step 1 (Entity formed) & county selection in Setup',
+        subtasks: [
+          'Find NC rural health transformation (NC ROOTS) announcements, funding notices and eligibility rules from NC DHHS',
+          'Contact the hub lead for each of your counties (see Regional contacts) and ask how providers join or apply',
+          'Prepare a one-page capability statement with services, counties served, peer workforce and expected outcomes',
+          'Calendar application deadlines, reporting requirements and any data or technology conditions'
+        ]
       }
     ];
 
@@ -1477,7 +1617,8 @@
       2: 'Phase 2: DHSR Licensure',
       3: 'Phase 3: NCTracks & HIE',
       4: 'Phase 4: Network Contracts',
-      5: 'Phase 5: Operations & Launch'
+      5: 'Phase 5: Operations & Launch',
+      6: 'Phase 6: H.R. 1 Compliance'
     };
     const STATUS_META = {
       not_started: { label: '⏳ Not Started', plain: 'Not started', badge: 'bg-slate-100 text-slate-700 border-slate-200', bar: 'bg-slate-300', accent: 'border-l-slate-300' },
@@ -1485,7 +1626,7 @@
       completed: { label: '✅ Completed', plain: 'Completed', badge: 'bg-emerald-100 text-emerald-900 border-emerald-300', bar: 'bg-emerald-500', accent: 'border-l-emerald-500' },
       blocked: { label: '⛔ Blocked', plain: 'Blocked', badge: 'bg-rose-100 text-rose-900 border-rose-300', bar: 'bg-rose-500', accent: 'border-l-rose-500' }
     };
-    const PHASE_SHORT = { 1: 'Legal', 2: 'Licensure', 3: 'NCTracks & HIE', 4: 'Contracts', 5: 'Launch' };
+    const PHASE_SHORT = { 1: 'Legal', 2: 'Licensure', 3: 'NCTracks & HIE', 4: 'Contracts', 5: 'Launch', 6: 'H.R. 1' };
     const PHASE_NAMES = Object.fromEntries(MASTER_STEPS.map(step => [step.phase, step.phaseName]));
     const SERVICE_NAMES = {
       '8G': 'CCP 8G Peer Support Services',

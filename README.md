@@ -51,6 +51,7 @@ A single-file, self-contained interactive dashboard to help providers and progra
 
 - Phase tabs & Step cards
   - Pinned phase tabs with per-phase progress, plus previous/next phase buttons under the list.
+  - Phase 6 covers **H.R. 1** (Public Law 119-21): six steps on eligibility checks and six-month renewals, the community engagement requirement and exemption documentation, coverage and cost-sharing changes, program-integrity screening and funding risk, and Rural Health Transformation (NC ROOTS) funding. The step text asks you to confirm every effective date against current NC Medicaid guidance.
   - Each step is a collapsible card showing its status and progress at a glance. On a phone only the first unfinished step starts open; on desktop all steps start open. Expand all / Collapse all is one tap.
   - Tap anywhere on a checklist row to check it off. Every row also has an **Instructions** button that opens that item's instructions, tips and contacts (under the task text on phones, beside it on wider screens).
   - Items without item-specific instructions show general guidance, and the dialog says so.
