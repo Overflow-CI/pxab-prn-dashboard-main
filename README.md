@@ -51,14 +51,14 @@ A single-file, self-contained interactive dashboard to help providers and progra
 
 - Phase tabs & Step cards
   - Pinned phase tabs with per-phase progress, plus previous/next phase buttons under the list.
-  - Phase 6 covers **H.R. 1** (Public Law 119-21): six steps on eligibility checks and six-month renewals, the community engagement requirement and exemption documentation, coverage and cost-sharing changes, program-integrity screening and funding risk, and Rural Health Transformation (NC ROOTS) funding. The step text asks you to confirm every effective date against current NC Medicaid guidance.
+  - Phase 6 covers **H.R. 1** (Public Law 119-21): six steps on eligibility checks and six-month renewals, the community engagement requirement and exemption documentation, coverage and cost-sharing changes, program-integrity screening and funding risk, and Rural Health Transformation (NC ROOTS) funding. Dates and requirements were researched in October 2026; NC's work requirement policy and attestation form were still drafts open for comment until Nov 5, 2026, so recheck them.
   - Each step is a collapsible card showing its status and progress at a glance. On a phone only the first unfinished step starts open; on desktop all steps start open. Expand all / Collapse all is one tap.
   - Tap anywhere on a checklist row to check it off. Every row also has an **Instructions** button that opens that item's instructions, tips and contacts (under the task text on phones, beside it on wider screens).
-  - Items without item-specific instructions show general guidance, and the dialog says so.
 
 - Subtask detail modal
   - Opens as a bottom sheet on phones. It shows step-by-step instructions, executive tips (audit/licensing traps), and required authority/portals & contacts, with one button to mark the item complete or open again.
-  - Phone numbers and email addresses are tap-to-call / tap-to-email links.
+  - Phone numbers, email addresses and web addresses are tappable links.
+  - Each researched entry ends with a **Check before relying on this** section: a confidence rating (high, medium or low), what a person must still verify, and links to the sources it used. Phase 6 entries also say whether the item is required, expected from NC, or good practice, and the date it applies from. Entries for Steps 1 to 3 came with the original file and are labeled "Not yet checked against sources".
 
 - Printable plan (Print button)
   - Builds a clean, black-and-white-friendly report from your current state: summary and per-phase progress, every step with its status, checked and unchecked items (drawn as boxes), your notes, cost, owner, dependencies and source URLs.
@@ -78,7 +78,8 @@ A single-file, self-contained interactive dashboard to help providers and progra
 
 - Data model & embedded content
   - The dashboard contains embedded region data (regional contacts and county lists) and a MASTER_STEPS array with detailed phases, steps, subtasks, statutory fees, and timelines.
-  - No separate data files are required; all core content is embedded in the HTML.
+  - Every one of the 116 tasks has its own instructions, tips and contacts. They come from an October 2026 research pass against NC Medicaid, NCTracks, DHSR, NC legislature and federal sources, and keep their source links, confidence rating and verify notes.
+  - No separate data files are required; all core content is embedded in the HTML (about 440 KB).
 
 - Styling & build notes
   - The file includes a precompiled Tailwind v3.4 CSS block. If you add new Tailwind classes you will need to regenerate the CSS and paste it back into the file. The comment at the top of the HTML explains the regenerate command:
