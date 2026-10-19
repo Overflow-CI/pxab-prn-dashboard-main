@@ -6,6 +6,7 @@ A single-file, self-contained interactive dashboard to help providers and progra
 
 ## Quick start
 
+- **Quick start guide (illustrated):** [QUICK_START_GUIDE_URL](QUICK_START_GUIDE_URL) <!-- PLACEHOLDER: replace both occurrences of QUICK_START_GUIDE_URL with the published URL of the quick start guide. The source is docs/QUICK_START.md. -->
 - Open `nc_medicaid_bh_dashboard.html` in a web browser (double-click or File → Open). No server or build step required.
 - The UI is fully client-side. Use the filters and tabs to explore phases, steps, timelines, and regional contacts.
 
@@ -13,6 +14,10 @@ A single-file, self-contained interactive dashboard to help providers and progra
 
 - `nc_medicaid_bh_dashboard.html` — Main dashboard (standalone HTML).
 - `README.md` — This Markdown README.
+- `docs/QUICK_START.md` — Illustrated quick start guide for users (screenshots in `docs/images/`).
+- `docs/SPECIFICATION.md` — Full technical specification of the app.
+- `NC_Medicaid_Verification_Checklist.md` — Facts to verify, who to contact and what to say.
+- `nc_medicaid_sources.csv` — Every source used in the app and the research.
 
 ## Features (what's in the app)
 
