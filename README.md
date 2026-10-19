@@ -36,7 +36,7 @@ A single-file, self-contained interactive dashboard to help providers and progra
   - Apply filters updates the visible steps, timeline, metrics, and regional contacts based on selected counties and services.
 
 - Regional contacts & governance cards
-  - A dynamic grid shows LME/MCO tailored-plan contacts, NC ROOTS hub leads, and statewide Medicaid provider support (ombudsman, NCTracks, HIE desk) for the counties you selected.
+  - Tailored Plans are matched by county (Alliance Health, Trillium, Vaya Partners), with provider lines, UM contacts, payer IDs and whether each plan is taking SAIOP, SACOT or peer support applications. NC ROOTS hub leads are shown by Medicaid region, followed by statewide support (Provider Ombudsman, Contact Center, NCTracks, HIEA). Contacts were checked against public pages on 2026-10-18 and cite what was not confirmed.
   - Contact cards include phone, email, portal URLs, and quick references.
 
 - Overview card
