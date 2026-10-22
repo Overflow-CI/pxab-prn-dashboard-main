@@ -1,0 +1,4 @@
+[[redirects]]
+  from = "/"
+  to = "/nc_medicaid_bh_dashboard.html"
+  status = 200
