@@ -1,0 +1,373 @@
+{
+  "document": "Structured handoff context for the NC Medicaid BH Operations Navigator project",
+  "written": "2026-10-22",
+  "source_session": "91141d82-7be3-5ffc-bd0c-f501091745a6",
+  "read_first": [
+    "handoff/HANDOFF.md",
+    "docs/SPECIFICATION.md",
+    "NC_Medicaid_Verification_Checklist.md"
+  ],
+  "project": {
+    "name": "NC Medicaid Behavioral Health Operations & Compliance Dashboard (Navigator)",
+    "version": "4.0",
+    "purpose": "Guide a new NC provider through starting to bill NC Medicaid for CCP 8G Peer Support, CCP 8A-12 SAIOP and CCP 8A-13 SACOT.",
+    "constraints": [
+      "Single self-contained HTML file: nc_medicaid_bh_dashboard.html",
+      "Vanilla JavaScript, no framework, no backend",
+      "Tailwind CSS v3.4 precompiled and inlined (rebuild with handoff/tools/rebuild.py after adding classes)",
+      "localStorage key NC_MEDICAID_NAVIGATOR_FULL_STATE_V3 must not change",
+      "Mobile first (390 px), also desktop",
+      "Only network request: Google Fonts"
+    ],
+    "counts": {
+      "steps": 31,
+      "tasks": 116,
+      "phases": 6,
+      "steps_per_phase": {
+        "1": 8,
+        "2": 8,
+        "3": 4,
+        "4": 1,
+        "5": 4,
+        "6": 6
+      },
+      "distinct_source_urls_in_app": 242,
+      "entries_without_research": 11,
+      "low_confidence_entries": 3
+    },
+    "calculated_metrics_all_services": {
+      "agency_fees_usd": "1358-1705",
+      "per_staff_screening_usd": "73-113",
+      "schedule_weeks": 31
+    },
+    "peer_support_only_steps_shown": 27
+  },
+  "repository": {
+    "full_name": "tasha-a-coder/pxab-prn-dashboard-main",
+    "former_name": "hello-world",
+    "default_branch": "master",
+    "working_branch": "claude/code-review-optimize-dty0gi",
+    "pull_requests": [
+      {
+        "number": 1,
+        "state": "merged",
+        "note": "Original review and optimization, later retitled"
+      },
+      {
+        "number": 2,
+        "state": "merged",
+        "method": "squash",
+        "sha": "11a8c97",
+        "note": "v4.0: print, mobile-first, instructions button, Phase 6, researched content, county-based plans"
+      },
+      {
+        "number": 3,
+        "state": "merged",
+        "method": "merge commit",
+        "sha": "3558167",
+        "note": "Verification checklist and sources CSV"
+      }
+    ],
+    "unmerged_on_working_branch": [
+      "b070c0b: docs/SPECIFICATION.md, docs/QUICK_START.md, docs/images/*, README placeholder QUICK_START_GUIDE_URL",
+      "handoff/ folder"
+    ],
+    "open_pull_requests": []
+  },
+  "user_messages_verbatim": [
+    {
+      "timestamp": "2026-09-23T09:19:56.115Z",
+      "text": "@\"/root/.claude/uploads/91141d82-7be3-5ffc-bd0c-f501091745a6/5d3fd634-nc_medicaid_behavioral_health_operations_compliance_dashboard_v003.html\" Review and optimize this code."
+    },
+    {
+      "timestamp": "2026-09-23T19:20:53.724Z",
+      "text": "A pull request was just created for this branch from the Claude Code UI: https://github.com/tasha-a-coder/hello-world/pull/1\n\nYou don't need to create one. Reference this PR going forward — pushing more commits to this branch will update it."
+    },
+    {
+      "timestamp": "2026-09-23T19:38:01.806Z",
+      "text": "Make the fees and timeline metrics calculate from the data.  Restore the code to a single HTML file.  Rename the repository \"pxab-prn-dashboard-main\""
+    },
+    {
+      "timestamp": "2026-09-27T00:59:30.700Z",
+      "text": "I've renamed it."
+    },
+    {
+      "timestamp": "2026-10-18T04:14:32.963Z",
+      "text": "Done"
+    },
+    {
+      "timestamp": "2026-10-18T04:16:18.093Z",
+      "text": "Yes, update the PR description"
+    },
+    {
+      "timestamp": "2026-10-18T04:20:21.337Z",
+      "text": "Yes, update the title too"
+    },
+    {
+      "timestamp": "2026-10-18T04:20:41.106Z",
+      "text": "Merge the PR"
+    },
+    {
+      "timestamp": "2026-10-18T04:56:56.757Z",
+      "text": "Add a print feature, that let's the user print their plan as an easy to follow PDF document reflecting the user's progress, status, and notes.  Then, improve the usability of the app, using a mobile first design."
+    },
+    {
+      "timestamp": "2026-10-18T05:26:45.740Z",
+      "text": "Yes, open a PR.  I want to make more changes, before committing this new version 4.0"
+    },
+    {
+      "timestamp": "2026-10-18T05:28:37.945Z",
+      "text": "Add a button on each checklist row, that when clicked, displays instructions for that task."
+    },
+    {
+      "timestamp": "2026-10-18T05:35:42.707Z",
+      "text": "Write a comprehensive prompt for perplexity.ai to retrieve the 79 sets of instructions."
+    },
+    {
+      "timestamp": "2026-10-18T06:28:51.417Z",
+      "text": "I don't see the tasks to comply with the H.R. 1.  Please add those to the app.  Then, give me the prompts again."
+    },
+    {
+      "timestamp": "2026-10-18T11:13:01.170Z",
+      "text": "@\"/root/.claude/uploads/91141d82-7be3-5ffc-bd0c-f501091745a6/e2ba9bfa-Verify-NC-Medicaid-Service-Foundations.json\""
+    },
+    {
+      "timestamp": "2026-10-19T00:04:09.085Z",
+      "text": "We can't use perplexity for this research.  Let's use Gemini Notebook instead"
+    },
+    {
+      "timestamp": "2026-10-19T03:01:55.264Z",
+      "text": "@\"/root/.claude/uploads/91141d82-7be3-5ffc-bd0c-f501091745a6/b6578139-Batch-1.md\" @\"/root/.claude/uploads/91141d82-7be3-5ffc-bd0c-f501091745a6/c76eb3cc-Batch-2.md\" @\"/root/.claude/uploads/91141d82-7be3-5ffc-bd0c-f501091745a6/e2fc2fa1-Batch-3.md\" @\"/root/.claude/uploads/91141d82-7be3-5ffc-bd0c-f501091745a6/7f94bbb3-Batch-4.md\" @\"/root/.claude/uploads/91141d82-7be3-5ffc-bd0c-f501091745a6/67238f60-Batch-5.md\" Perplexity finished the research.  Here is the first of 2 messages with the responses."
+    },
+    {
+      "timestamp": "2026-10-19T03:11:15.218Z",
+      "text": "Yes, write the follow-up prompt"
+    },
+    {
+      "timestamp": "2026-10-19T03:48:38.337Z",
+      "text": "@\"/root/.claude/uploads/91141d82-7be3-5ffc-bd0c-f501091745a6/fa1410a7-p1-North-Carolina-Tailored-Plan-County-Map.md\" @\"/root/.claude/uploads/91141d82-7be3-5ffc-bd0c-f501091745a6/cf31e7cb-p2-NC-Medicaid-Regions-and-ROOTS-Contacts.md\" @\"/root/.claude/uploads/91141d82-7be3-5ffc-bd0c-f501091745a6/85a87b71-p3-NC-Medicaid-Accreditation-Deadlines.md\""
+    },
+    {
+      "timestamp": "2026-10-19T04:01:17.092Z",
+      "text": "Mark the PR ready and merge it"
+    },
+    {
+      "timestamp": "2026-10-19T04:09:18.236Z",
+      "text": "Give me a comprehensive markdown checklist of information that needs to be verified with clear instructions on how to verify the information, who to contact, how, and what to say exactly in order to verify the information.  Then, give me a CSV file of all sources used in the app and in our research, organized logically."
+    },
+    {
+      "timestamp": "2026-10-19T04:38:56.495Z",
+      "text": "I'll allow the force push"
+    },
+    {
+      "timestamp": "2026-10-19T04:47:16.262Z",
+      "text": "What's the benefit of opening a PR?  What purpose would it serve in this case?"
+    },
+    {
+      "timestamp": "2026-10-19T04:53:00.790Z",
+      "text": "Merge it now.  When I answer the questions in the checklist, we'll create a PR to update the app and checklist in the same session.  Create a markdown document, with full technical specification of the app.  Also, create an instructional \"quick start guide\" document (in markdown) for the user with screenshots to guide the user. Then,  update the read.me file with a placeholder for the quick start guide's url."
+    },
+    {
+      "timestamp": "2026-10-22T01:23:41.715Z",
+      "text": "Give me the full context of our conversation as a json file that I can download.  Also list all of the files and instructions that I gave you. I also need any outstanding questions that I need to answer or decisions that I need to make.  I need to continue development in another Claude Code account.  Tell me step by step how to transition seamlessly.  No info gaps."
+    }
+  ],
+  "user_provided_files": [
+    {
+      "file": "handoff/inputs/nc_medicaid_behavioral_health_operations_compliance_dashboard_v003.html",
+      "what": "Original dashboard v003"
+    },
+    {
+      "file": "handoff/inputs/Verify-NC-Medicaid-Service-Foundations.json",
+      "what": "Perplexity Batch 0 foundation corrections"
+    },
+    {
+      "file": "handoff/inputs/Batch-1.md ... Batch-8.md",
+      "what": "Perplexity instruction research for the tasks"
+    },
+    {
+      "file": "handoff/inputs/Batch-0B.md",
+      "what": "Perplexity H.R. 1 foundations"
+    },
+    {
+      "file": "handoff/inputs/p1-North-Carolina-Tailored-Plan-County-Map.md",
+      "what": "F1: county to Tailored Plan map, plan contacts, closed-network date"
+    },
+    {
+      "file": "handoff/inputs/p2-NC-Medicaid-Regions-and-ROOTS-Contacts.md",
+      "what": "F2: regions, ROOTS hub contacts, statewide contacts, funding"
+    },
+    {
+      "file": "handoff/inputs/p3-NC-Medicaid-Accreditation-Deadlines.md",
+      "what": "F3: accreditation, peer support licensing, credentialing, fees, HealthConnex, site visit"
+    }
+  ],
+  "deliverables_created": [
+    "nc_medicaid_bh_dashboard.html (v4.0)",
+    "README.md",
+    "NC_Medicaid_Verification_Checklist.md",
+    "nc_medicaid_sources.csv",
+    "docs/SPECIFICATION.md",
+    "docs/QUICK_START.md",
+    "docs/images/ (16 screenshots)",
+    "handoff/prompts/perplexity_prompts_v2.md",
+    "handoff/prompts/notebooklm_research_kit_v1.md",
+    "handoff/prompts/followup_research_prompts.md",
+    "handoff/research/* (structured research data)",
+    "handoff/tools/* (tests, rebuild, screenshot script)"
+  ],
+  "decisions_made_by_user": [
+    "Keep the dashboard one HTML file",
+    "Rename repo to pxab-prn-dashboard-main (done by user)",
+    "PR #2 opened as draft until more changes were made, later marked ready and merged",
+    "Use the researched content (Perplexity-format results supplied by user)",
+    "Allow one force-push to reset the working branch from master",
+    "Merge PR #3",
+    "When the checklist is answered, update the app and the checklist in ONE PR in the same session"
+  ],
+  "key_research_corrections_applied": [
+    "Provider Ombudsman is 866-304-7062; 877-201-3750 is the member line",
+    "Tailored Plans are assigned by county: Vaya Partners 47, Trillium 46, Alliance 7 (Vaya Health and Partners merged Oct 1, 2026)",
+    "Region county lists confirmed against the NCDHHS hub map; no differences",
+    "Rural Health Innovation Fund year 1 limited to primary care, FQHC, community health centers and safety-net providers; deadline 2026-11-16",
+    "Mandatory closed network effective 2026-07-07 (S.L. 2026-41 Section 9E.22), not July 2",
+    "Peer support needs no DHSR license; steps 14-16 apply to SAIOP and SACOT only",
+    "Accreditation 1 vs 3 years for SAIOP/SACOT is shown as a conflict; plan for 1 year",
+    "CQL listed as accepted accreditor in the Aug 16 2026 permission matrix but not in the April bulletin",
+    "Plan intake: peer support closed for all three plans; SAIOP and SACOT taking applications (Trillium needs only in Dare and Hyde)"
+  ],
+  "outstanding_questions_external": [
+    {
+      "id": "A1",
+      "question": "SAIOP/SACOT accreditation: 1 or 3 years, clock start, CQL accepted?",
+      "who": "NC Medicaid Provider Ombudsman 866-304-7062 or NCTracks 800-688-6696"
+    },
+    {
+      "id": "A2",
+      "question": "Will each plan contract for peer support, SAIOP, SACOT in the user's counties?",
+      "who": "Alliance, Trillium, Vaya Partners network teams"
+    },
+    {
+      "id": "A3",
+      "question": "Does a peer-support-only office need any DHSR license or walkthrough?",
+      "who": "DHSR 919-855-3795"
+    },
+    {
+      "id": "A4",
+      "question": "RHIF eligibility for a new behavioral health provider",
+      "who": "RHIF@nc.gov"
+    },
+    {
+      "id": "A5",
+      "question": "Vaya Partners portal and claims platform after Oct 1 2026",
+      "who": "Vaya Partners 1-866-990-9712"
+    },
+    {
+      "id": "B-H",
+      "question": "See NC_Medicaid_Verification_Checklist.md parts B to H and the estimates table in part I",
+      "who": "Various, scripts in the checklist"
+    }
+  ],
+  "outstanding_decisions_for_user": [
+    {
+      "id": "D1",
+      "decision": "Which services and counties will you offer? (never stated)"
+    },
+    {
+      "id": "D2",
+      "decision": "How to deliver the next round: new branch from master, one PR for app plus checklist"
+    },
+    {
+      "id": "D3",
+      "decision": "Research tool: Perplexity or Gemini/NotebookLM (conflicting signals)"
+    },
+    {
+      "id": "D4",
+      "decision": "Merge the documentation branch into master?"
+    },
+    {
+      "id": "D5",
+      "decision": "URL for the quick start guide (fills README placeholder QUICK_START_GUIDE_URL)"
+    },
+    {
+      "id": "D6",
+      "decision": "Host the app itself, for example GitHub Pages? (optional)"
+    },
+    {
+      "id": "D7",
+      "decision": "Keep 'plan for 1 year' accreditation assumption until NC Medicaid answers"
+    },
+    {
+      "id": "D8",
+      "decision": "Remove stray pm_modal.png from repo root?"
+    },
+    {
+      "id": "D9",
+      "decision": "Keep test scripts under handoff/tools or move to tests/?"
+    },
+    {
+      "id": "D10",
+      "decision": "Research Steps 1-3 (11 task entries never checked against sources)?"
+    },
+    {
+      "id": "D11",
+      "decision": "Resolve the 3 low-confidence entries via checklist parts C2, E1, G1"
+    }
+  ],
+  "time_sensitive": [
+    {
+      "date": "2026-11-05",
+      "item": "NC medical frailty policy / DSS-8209 public comment closes (Step 28)"
+    },
+    {
+      "date": "2026-11-16",
+      "item": "Rural Health Innovation Fund application due 11:59 p.m."
+    },
+    {
+      "date": "2027-01-01",
+      "item": "H.R. 1 work requirement and six-month renewals begin"
+    },
+    {
+      "date": "2027-07-01",
+      "item": "NC raises copays to the federal maximum"
+    }
+  ],
+  "testing": {
+    "tools_dir": "handoff/tools",
+    "scripts": [
+      "t_main.js",
+      "t_desk.js",
+      "t_p6.js",
+      "t_instr.js",
+      "t_print.js",
+      "t_details.js",
+      "t_plans.js",
+      "qs_shots.js"
+    ],
+    "requires": [
+      "Node 18+",
+      "playwright-core",
+      "Chromium (CHROMIUM env var, default /opt/pw-browsers/chromium)"
+    ],
+    "not_tested": [
+      "real iOS/Android devices",
+      "real browser print dialog"
+    ]
+  },
+  "environment_notes": {
+    "ran_on": "Claude Code on the web (cloud container)",
+    "model": "claude-sonnet-5-5 (set with /model on 2026-10-18)",
+    "nc_government_sites_blocked_403_from_sandbox": true,
+    "force_push_required_permission": true,
+    "git_remote_may_show_old_name_hello_world": true
+  },
+  "not_transferable": [
+    "conversation memory",
+    "raw 21 MB session log",
+    "scratchpad temp files",
+    "permission settings",
+    "PR subscriptions (none active)",
+    "browser-saved app progress (use Export/Import)"
+  ],
+  "transcript_file": "handoff/conversation_transcript.json"
+}
