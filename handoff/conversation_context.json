@@ -43,10 +43,9 @@
     "peer_support_only_steps_shown": 27
   },
   "repository": {
-    "full_name": "tasha-a-coder/pxab-prn-dashboard-main",
-    "former_name": "hello-world",
+    "full_name": "Overflow-CI/pxab-prn-dashboard-main",
     "default_branch": "master",
-    "working_branch": "claude/code-review-optimize-dty0gi",
+    "working_branch": "claude/code-review-optimize-dty0gi (fully merged; start new work on a new branch from master)",
     "pull_requests": [
       {
         "number": 1,
@@ -66,13 +65,22 @@
         "method": "merge commit",
         "sha": "3558167",
         "note": "Verification checklist and sources CSV"
+      },
+      {
+        "number": 5,
+        "state": "merged",
+        "method": "merge commit",
+        "sha": "71546f0",
+        "note": "Specification, quick start guide, README placeholder, handoff package"
       }
     ],
-    "unmerged_on_working_branch": [
-      "b070c0b: docs/SPECIFICATION.md, docs/QUICK_START.md, docs/images/*, README placeholder QUICK_START_GUIDE_URL",
-      "handoff/ folder"
+    "unmerged_on_working_branch": [],
+    "open_pull_requests": [],
+    "former_names": [
+      "tasha-a-coder/hello-world",
+      "tasha-a-coder/pxab-prn-dashboard-main"
     ],
-    "open_pull_requests": []
+    "note": "Owned by the Overflow-CI organization (moved from the tasha-a-coder account on or before 2026-10-22). Old addresses redirect."
   },
   "user_messages_verbatim": [
     {
@@ -283,7 +291,7 @@
     },
     {
       "id": "D4",
-      "decision": "Merge the documentation branch into master?"
+      "decision": "Done: documentation merged by PR #5 (no longer open)"
     },
     {
       "id": "D5",
@@ -369,5 +377,6 @@
     "PR subscriptions (none active)",
     "browser-saved app progress (use Export/Import)"
   ],
-  "transcript_file": "handoff/conversation_transcript.json"
+  "transcript_file": "handoff/conversation_transcript.json",
+  "written_note": "Repo name corrected after the repository moved to Overflow-CI."
 }
