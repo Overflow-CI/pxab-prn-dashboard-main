@@ -1,0 +1,1901 @@
+[
+  {
+    "id": "5c9c69bb-cbb8-40ae-bcec-2ad43b7a4a93_user",
+    "chatGroupId": "df7227c0-4f0c-4b49-880f-6c40882c1c05",
+    "role": "user",
+    "model": "perplexity",
+    "displayModel": "Perplexity",
+    "modelId": "pplx_asi_sonnet",
+    "contents": [
+      {
+        "type": "text",
+        "content": "BATCH 0 - VERIFY THE FOUNDATIONS (run this first)\nBefore I research individual tasks, check the identifiers my app is built on. Reply with a table: claim | CONFIRMED / CORRECTION / NOT VERIFIED | correct value | source URL. Then list anything important I have missed.\n\nClaims to check (they come from my app and may contain errors):\n1. NC Medicaid Clinical Coverage Policy 8G is \"Peer Support Services\". Billing code H0038, periodic, 15-minute unit. Qualified Professional (QP) supervision ratio 1:6. Peer caseload limit of 15.\n2. \"CCP 8A-12\" is the policy for Substance Abuse Intensive Outpatient Program (SAIOP). Code H0015, ASAM Level 2.1, supervised by an LCAS or CCS clinical supervisor, 3 hours per day, 30-day pass-through authorization.\n3. \"CCP 8A-13\" is the policy for Substance Abuse Comprehensive Outpatient Treatment (SACOT). Code H2036, ASAM Level 2.5, 20 or more hours per week (4 hours per day), 1:10 QP ratio, 60-day pass-through authorization.\n4. Facility licensure for these services is under 10A NCAC 27G (including 27G .0201 governing body policies), issued by DHSR Mental Health Licensure and Certification Section.\n5. \"SL 2026-1\" is a North Carolina session law relevant to these services. What is it, if it exists?\n6. \"APSM 45-2\" is the NC documentation / records manual used for service notes. What is its current name, number and status?\n7. NCTracks requires recredentialing every 5 years, and the revalidation reminders go out at 70, 50, 20 and 5 days.\n8. Medicaid Tailored Plans: which LME/MCOs operate in which of NC's regions today, and which are the current provider-network contacts. (My app lists Vaya Health for Region 1, Partners for Regions 2-3, Alliance for Region 4, Trillium for Regions 5-6. Check that.)\n9. \"NC ROOTS\" and \"Rural Health Transformation\" regional hubs listed in my app (Impact Health, Trillium, Vaya, UNC Health, Access East): do these exist and are they the hub leads?\n10. Fees my app assumes: NC SOS filing $125; DHSR licensure base fee $350 plus $12.50 per day of capacity; NCTracks state enrollment fee $100 plus the federal application fee $709; fingerprinting $38 per person; background check $35-$75 per candidate. Give the current amounts and sources.\nAlso tell me whether these three services need Tailored Plan credentialing in addition to NCTracks enrollment, and in what order the steps normally happen."
+      }
+    ],
+    "created_at": "2026-10-18 02:03:25",
+    "updated_at": 1792310150654
+  },
+  {
+    "id": "5c9c69bb-cbb8-40ae-bcec-2ad43b7a4a93_assistant",
+    "chatGroupId": "df7227c0-4f0c-4b49-880f-6c40882c1c05",
+    "role": "assistant",
+    "model": "perplexity",
+    "displayModel": "Perplexity",
+    "modelId": "pplx_asi_sonnet",
+    "contents": [
+      {
+        "type": "markdown",
+        "content": "# Batch 0: Foundation check (as of Oct 17–18, 2026)\n\nSeveral identifiers in your app are wrong: the 8G ratio, the SACOT code, the pass-through authorization claims, the DHSR fee, the federal fee, the Tailored Plan map, and \"APSM 45-2.\" The policy numbers, the ASAM levels and the 5-year revalidation cycle check out.\n\n## Claim table\n\n| # | Claim | Status | Correct value | Source |\n|---|---|---|---|---|\n| 1a | CCP 8G = Peer Support Services | CONFIRMED | Amended Sept 1, 2026 (original effective Nov 1, 2019). Applies to NC Medicaid Direct and Managed Care. | 8G policy[medicaid.ncdhhs.gov](https://medicaid.ncdhhs.gov/8g-peer-support-services/open?share_frome=aipt), NC Medicaid bulletin[medicaid.ncdhhs.gov](https://medicaid.ncdhhs.gov/blog/2026/10/02/amendment-clinical-coverage-policy-8g-peer-support-services?share_frome=aipt) |\n| 1b | H0038, 15-minute unit | CONFIRMED | H0038 = 15 minutes. H0038 HQ (group) is not telehealth or telephonic eligible. \"Periodic\" is not in the policy text I read. | 8G policy[medicaid.ncdhhs.gov](https://medicaid.ncdhhs.gov/8g-peer-support-services/open?share_frome=aipt) |\n| 1c | QP supervision ratio 1:6 | CORRECTION | QP-to-CPSS is 1:8. | 8G §6.2.1[medicaid.ncdhhs.gov](https://medicaid.ncdhhs.gov/8g-peer-support-services/open?share_frome=aipt) |\n| 1d | Peer caseload limit 15 | CONFIRMED, reframed | CPSS-to-beneficiary ratio is 1:15, and the group ratio is 1:12. The policy sets no fixed team caseload. | 8G §6.2.1[medicaid.ncdhhs.gov](https://medicaid.ncdhhs.gov/8g-peer-support-services/open?share_frome=aipt) |\n| 2a | CCP 8A-12 = SAIOP | CONFIRMED | New stand-alone policy, effective Jan 1, 2026, and removed from CCP 8A. | NC Medicaid policy update[medicaid.ncdhhs.gov](https://medicaid.ncdhhs.gov/blog/2026/01/07/behavioral-health-clinical-coverage-policy-updates?share_frome=aipt), 8A-12[medicaid.ncdhhs.gov](https://medicaid.ncdhhs.gov/media/15767/download?share_frome=aipt) |\n| 2b | H0015, ASAM 2.1, LCAS/CCS supervisor | CONFIRMED | H0015 = 1 event per day, minimum 3 hours. Supervisor is LCAS, CCS or CSI. | 8A-12[medicaid.ncdhhs.gov](https://medicaid.ncdhhs.gov/media/15767/download?share_frome=aipt) |\n| 2c | \"3 hours per day\" | PARTIAL | The program runs 9–19 hours per week for adults (6–19 for adolescents). Billing needs at least 3 hours per day. | 8A-12[medicaid.ncdhhs.gov](https://medicaid.ncdhhs.gov/media/15767/download?share_frome=aipt) |\n| 2d | 30-day pass-through authorization | CORRECTION | \"Medicaid shall not require prior approval for SAIOP\" (§5.1). No pass-through period appears. | 8A-12[medicaid.ncdhhs.gov](https://medicaid.ncdhhs.gov/media/15767/download?share_frome=aipt) |\n| 3a | CCP 8A-13 = SACOT, ASAM 2.5, 20+ hours per week | CONFIRMED | Effective Jan 1, 2026. Adults 18 and older. Must operate at least 20 hours per week, with at least 4 scheduled hours per service day. | 8A-13[medicaid.ncdhhs.gov](https://medicaid.ncdhhs.gov/media/15769/download?share_frome=aipt), policy update[medicaid.ncdhhs.gov](https://medicaid.ncdhhs.gov/blog/2026/01/07/behavioral-health-clinical-coverage-policy-updates?share_frome=aipt) |\n| 3b | Code H2036 | CORRECTION | The code is H2035, 1 unit = 1 hour. Billing needs at least 4 hours per day. | 8A-13[medicaid.ncdhhs.gov](https://medicaid.ncdhhs.gov/media/15769/download?share_frome=aipt) |\n| 3c | 1:10 QP ratio | CORRECTION | The ratio is 1 clinical staff per 10 or fewer beneficiaries in group counseling. No separate QP ratio is stated. | 8A-13 §6.2[medicaid.ncdhhs.gov](https://medicaid.ncdhhs.gov/media/15769/download?share_frome=aipt) |\n| 3d | 60-day pass-through | CORRECTION | No prior approval is required (§5.1). The 60-day figure is from 8G (176 units per 60 days). | 8A-13[medicaid.ncdhhs.gov](https://medicaid.ncdhhs.gov/media/15769/download?share_frome=aipt), 8G §5.2.2[medicaid.ncdhhs.gov](https://medicaid.ncdhhs.gov/8g-peer-support-services/open?share_frome=aipt) |\n| 4 | 10A NCAC 27G; .0201 governing body; DHSR MHL | CONFIRMED | .0201 is \"Governing Body Policies\" (eff. May 1, 1996). SAIOP is licensed under 27G .4400 and SACOT under 27G .4500. 8G requires compliance with 27G but names no section. | 27G .0201[reports.oah.state.nc.us](http://reports.oah.state.nc.us/ncac/title%2010a%20-%20health%20and%20human%20services/chapter%2027%20-%20mental%20health,%20community%20facilities%20and%20services/subchapter%20g/10a%20ncac%2027g%20.0201.pdf?share_frome=aipt), 8A-12[medicaid.ncdhhs.gov](https://medicaid.ncdhhs.gov/media/15767/download?share_frome=aipt), 8A-13[medicaid.ncdhhs.gov](https://medicaid.ncdhhs.gov/media/15769/download?share_frome=aipt) |\n| 5 | SL 2026-1 | CONFIRMED, exists | \"An Act Making Various Changes to the Medicaid Program and Other Changes Related to HHS...\" Ratified Apr 28, 2026. Became law Apr 30, 2026. Relevant: §3C.12 (open networks for PHPs, closed networks for Tailored Plans), §3C.13 (prepayment review threshold moves from 70% to 80%), §3C.14 (Medicaid credentialing and integrity plan, report due Oct 1, 2026, implementation no earlier than July 1, 2027). It does not mention NCTracks or peer support. | SL 2026-1[ncleg.gov](https://www.ncleg.gov/EnactedLegislation/SessionLaws/PDF/2025-2026/SL2026-1.pdf?share_frome=aipt) |\n| 6 | APSM 45-2 | CORRECTION / NOT VERIFIED | I found no APSM 45-2. The current manual is the Records Management and Documentation Manual (RMDM), effective July 8, 2025. It replaced the 3rd Edition of 9-1-16. The manual cites APSM 10-5, 10-6, 30-1, 45-1 and 95-2. | DHHS RMDM page[ncdhhs.gov](https://www.ncdhhs.gov/divisions/mental-health-developmental-disabilities-and-substance-use-services/records-management-and-documentation-manual?share_frome=aipt), RMDM text[ncdhhs.gov](https://www.ncdhhs.gov/rmdmjuly-2025/download?attachment=&share_frome=aipt) |\n| 7a | Recredentialing every 5 years | CONFIRMED | Revalidation every 5 years under the ACA. | NCTracks[nctracks.nc.gov](https://www.nctracks.nc.gov/content/public/providers/provider-recredentialing.html?share_frome=aipt) |\n| 7b | Notices at 70, 50, 20 and 5 days | CONFIRMED, refined | 70 days is the first notice. The reminders are at 50, 20 and 5 days. Missing the due date means suspension, then termination after 50 days of suspension. Separate license/accreditation expiry notices go out at 60, 30, 14 and 7 days. | NCTracks 2018 notice[nctracks.nc.gov](https://www.nctracks.nc.gov/content/public/providers/provider-communications/2018-announcements/Changes-to-Re-credentialing-and-Reverification-Process.html?share_frome=aipt), NC Medicaid[medicaid.ncdhhs.gov](https://medicaid.ncdhhs.gov/providers/provider-enrollment/provider-enrollment-recredentialing?share_frome=aipt) |\n| 8 | Region-based Tailored Plan map | CORRECTION | Tailored Plans are assigned by county, not by Regions 1–6. The three plans are Alliance (7 counties), Trillium (48 counties as listed), and Vaya Partners (47 counties). Partners no longer operates separately. See the section below. | NC Medicaid Plans[ncmedicaidplans.gov](https://www.ncmedicaidplans.gov/en/get-answers?share_frome=aipt), NCDHHS directory[ncdhhs.gov](https://www.ncdhhs.gov/providers/lme-mco-directory?share_frome=aipt) |\n| 9 | NC ROOTS hub leads | CONFIRMED | The hub leads match your list. See the note below. | NCDHHS ROOTS page[ncdhhs.gov](https://www.ncdhhs.gov/about/department-initiatives/rural-health-transformation-program/rural-organizations-orchestrating-transformation-sustainability-roots-hub-leads?share_frome=aipt) |\n| 10a | SOS $125 | CONFIRMED for LLC and business corporation | Nonprofit articles are $60. Certificate of Existence is $15. LLC annual report is $200. Expedited filing adds $100 (24 hours) or $200 (same day). | NC SOS fees[sosnc.gov](https://www.sosnc.gov/fees/by_title/_Business_Registration/?share_frome=aipt) |\n| 10b | DHSR $350 + $12.50/day | CORRECTION | Non-residential facilities, including SAIOP and SACOT, pay a $265 base fee with no per-capacity fee. The $350 figure applies to residential facilities of 6 beds or fewer. Licenses renew yearly. Packet revision 10/01/25 (form MHL5001). | DHSR packet[info.ncdhhs.gov](https://info.ncdhhs.gov/dhsr/mhlcs/pdf/mhiapp.pdf?ver=2&share_frome=aipt) |\n| 10c | NCTracks $100 + $709 | CORRECTION | $100 NC fee plus $750 federal fee for calendar year 2026, so $850 total. $709 was the 2024 figure. The fee applies at initial enrollment, re-enrollment, new owner or site, and revalidation. | NCTracks fee announcement[nctracks.nc.gov](https://www.nctracks.nc.gov/content/public/providers/provider-communications/2025-Announcements/Federal-Provider-Enrollment-Application-Fee-Increase-for-Year-2026.html?share_frome=aipt), [fee history spreadsheet](https://www.nctracks.nc.gov/content/dam/jcr:5088259c-ab17-4c01-bf6d-c64786be1da4/State%20and%20Federal%20Fee%20Amounts%20by%20Year.xlsx), NC fee FAQ[nctracks.nc.gov](https://www.nctracks.nc.gov/content/public/providers/faq-main-page/faqs-for-ACA-application-fee.html?share_frome=aipt) |\n| 10d | Fingerprinting $38 | NOT VERIFIED for NCTracks | NCTracks says the fee varies by location and states no amount. A DHSR-hosted SBI access form shows $38 per fingerprint card for national checks, but I could not confirm it applies to NCTracks or to your staff checks. | NCTracks fingerprint FAQ[nctracks.nc.gov](https://www.nctracks.nc.gov/content/public/providers/faq-main-page/faqs-for-fingerprinting.html?share_frome=aipt), SBI form[info.ncdhhs.gov](https://info.ncdhhs.gov/dhsr/abcms/pdf/Non-Criminal-Justice-Access-Agreement-Form_SB-41.pdf?share_frome=aipt) |\n| 10e | Staff background check $35–$75 | NOT VERIFIED | G.S. 143B-1209.20 caps the SBI State check fee at $14. No national check amount is stated, and private vendor prices vary. | G.S. 143B-1209.20[ncleg.gov](https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_143B/GS_143B-1209.20.html?share_frome=aipt), G.S. 122C-80[ncleg.gov](https://ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_122C/GS_122C-80.html?share_frome=aipt) |\n\n## Tailored Plans and contacts (claim 8)\n\n- **Alliance Health:** Cumberland, Durham, Harnett, Johnston, Mecklenburg, Orange and Wake counties. Provider network contact is 919-651-8500 or ProviderNetwork@alliancehealthplan.org per NC Medicaid health plans. The NCDHHS directory lists Provider Support at 855-759-9700.[medicaid.ncdhhs.gov](https://medicaid.ncdhhs.gov/about-nc-medicaid/health-plans?share_frome=aipt)[ncdhhs.gov](https://www.ncdhhs.gov/providers/lme-mco-directory?share_frome=aipt)\n- **Trillium Health Resources:** Absorbed Sandhills and Eastpointe counties on Feb 1, 2024. Contact is 855-250-1539 or networkservicessupport@trilliumnc.org.[sandhillscenter.org](https://www.sandhillscenter.org/?share_frome=aipt)\n- **Vaya Partners:** Vaya Health and Partners merged Oct 1, 2026. Vaya's provider page lists 866-990-9712 and provider.info@vayahealth.com. The NCDHHS directory lists 877-398-4145, which is the legacy Partners number. NCDHHS's directory also omits Cabarrus, while the NC Medicaid Plans page includes it. Verify by phone.[ncmedicaidplans.gov](https://www.ncmedicaidplans.gov/en/get-answers?share_frome=aipt)[vayahealth.com](https://www.vayahealth.com/wp-content/uploads/2026/07/Merger_Provider_FAQ.pdf?share_frome=aipt)[providers.partnersbhm.org](https://providers.partnersbhm.org/vaya-health-and-partners-health-management-announce-merger/?share_frome=aipt)\n- **Your app's mapping:** Alliance is not \"Region 4.\" It spans Medicaid Regions 3, 4 and 5. Partners no longer exists as a standalone plan, so the app's Partners entry is stale.\n\n## NC ROOTS (claim 9)\n\nThe hub leads are Impact Health (Region 1), Trillium (Regions 2 and 5), Vaya (Region 3), UNC Health (Region 4) and Access East (Region 6). This is the Rural Health Transformation program run by NCDHHS, announced May 1, 2026. It is a regional grant and coordination network. It is not part of licensure, NCTracks enrollment or credentialing, so I would not put it in a provider-onboarding checklist. The ROOTS page still shows \"Vaya Health,\" which is the pre-merger name.[ncdhhs.gov](https://www.ncdhhs.gov/news/press-releases/2026/05/01/ncdhhs-selects-nc-roots-hub-leads-strengthen-rural-health-care-across-north-carolina?share_frome=aipt)\n\n## Tailored Plan credentialing and step order\n\nYes, you need plan contracting and credentialing in addition to NCTracks enrollment.\n\n- **Policy requirement:** 8G §6.1 requires organizations to be \"credentialed and contracted by a Prepaid Health Plan or Prepaid Inpatient Health Plan\". 8A-12 and 8A-13 say \"credentialed and contracted by the DHHS designated contractor.\"[medicaid.ncdhhs.gov](https://medicaid.ncdhhs.gov/8g-peer-support-services/open?share_frome=aipt)\n- **Conflicting source:** An NCTracks FAQ says \"LME/MCOs no longer perform credentialing.\" It is undated and the policies are newer, but the practical split between NCTracks and plan credentialing is NOT VERIFIED. Ask each plan.[nctracks.nc.gov](https://www.nctracks.nc.gov/content/public/providers/faq-main-page/faqs-for-Behavioral-Health-Provider-Enrollment.html?share_frome=aipt)\n- **NCTracks comes first:** Alliance and Trillium both require active NCTracks enrollment before applying. Trillium's manual is an older edition, so confirm it.[alliancehealthplan.org](https://www.alliancehealthplan.org/providers/network/become-a-provider/provider-enrollment/?share_frome=aipt)[trilliumhealthresources.org](https://www.trilliumhealthresources.org/sites/default/files/docs/Provider-documents/Provider-Manual/Trillium-Provider-Manual.pdf?share_frome=aipt)\n- **Network access is need-based:** Alliance names peer support as a closed-network service and does not name SAIOP or SACOT. SL 2026-1 §3C.12 gives Tailored Plans closed-network authority for services excluded from PHP coverage. Alliance attributes its July 2, 2026 closed-network date to SB 257, which is SL 2026-41.[www3.ncleg.gov](https://www3.ncleg.gov/EnactedLegislation/SessionLaws/PDF/2025-2026/SL2026-41.pdf?share_frome=aipt)\n- **No contract with every plan is required.** Providers may contract with as many Tailored Plans as they choose.[medicaid.ncdhhs.gov](https://medicaid.ncdhhs.gov/contracting-tailored-plans/download?attachment=&share_frome=aipt)\n\nTypical order:\n\n1. Form the entity at the SOS.\n2. Obtain an EIN and an organizational NPI. I did not research these, so verify them.\n3. Contact the LME/MCOs early to learn network need. DHSR advises this for day programs seeking Medicaid.[info.ncdhhs.gov](https://info.ncdhhs.gov/dhsr/mhlcs/establish.html?share_frome=aipt)\n4. Apply to DHSR for the license. The packet requires an SOS report showing active status, zoning approval, a fire marshal report and a floor plan. You have 6 months from first contact with the DHSR licensure team.\n5. Enroll in NCTracks under taxonomy 251S00000X. The Provider Permission Matrix (PPM) dated Aug 16, 2026 requires the DHSR license for SAIOP and SACOT, but not for peer support.\n6. Apply to each plan for credentialing and a contract.\n7. Obtain national accreditation after enrollment.\n\n## Items you missed\n\n- **High-risk enrollment.** Taxonomy 251S00000X is high categorical risk. The PPM requires a site visit, fingerprinting and the federal fee for these services. Per a Sept 14, 2026 bulletin, the site visit and fingerprinting are waived only if you hold active national accreditation for the same location and service. Owners with 5% or more ownership are fingerprinted, and NCTracks sends the notice to the Office Administrator's email.[medicaid.ncdhhs.gov](https://medicaid.ncdhhs.gov/blog/2026/09/14/recent-behavioral-health-enrollment-updates-organizations?share_frome=aipt)\n- **Accreditation conflict.** The April 2026 NCTracks notice and the PPM require accreditation within 1 year for peer support and within 3 years for SAIOP and SACOT. Policies 8A-12 and 8A-13 §6.1 say 1 year for both. The accepted bodies are COA, Joint Commission and CARF. The clock starts when you select the service at enrollment, since from April 20, 2026 NCTracks requires a service selection. Plan for 1 year until NC Medicaid clarifies.[medicaid.ncdhhs.gov](https://medicaid.ncdhhs.gov/blog/2026/04/16/post-enrollment-national-accreditation-update?share_frome=aipt)\n- **8G changes effective Sept 1, 2026.** These include unmanaged units of 24 per episode, authorization of 176 units per 60 days (not more than 88 per 30 days), and a required NC Certified Peer Support Specialist (CPSS) roster. Telehealth and telephonic delivery is capped at 10% of service time per beneficiary per fiscal year (the bulletin's wording is \"less than 10% or less\"). Service notes must show start and end times.\n- **Peer support licensure.** The PPM does not require a DHSR license for peer support. Whether the service is licensable under G.S. 122C-3(14) is NOT VERIFIED. Call the DHSR licensure section at 919-855-3795.\n- **Federal fee timing.** The $750 federal fee is the 2026 amount. The 2027 amount takes effect Jan 1, 2027, and I did not verify it. If your application slips into 2027, budget for a change.\n- **New credentialing committee.** NCDHHS now has a Provider Credentialing Committee that issues final determinations on applications.[medicaid.ncdhhs.gov](https://medicaid.ncdhhs.gov/provider-enrollment-2026-summer-and-fall-series-1-powerpoint/open?share_frome=aipt)\n- **Medicaid regions versus plan counties.** Regions 1–6 are the Standard Plan and ROOTS geography, so do not use them to pick a Tailored Plan. Use the county where the beneficiary's Medicaid is administered.\n\n## Open questions\n\n- Is NCTracks the only credentialing step, or does each Tailored Plan also run its own? Call each plan's provider network line.\n- What is the actual cost per person for NCTracks fingerprinting and for staff national checks? Call the NCTracks Call Center at 800-688-6696.\n- Which accreditation deadline governs SAIOP and SACOT, 1 year or 3 years? Ask the Provider Ombudsman at 866-304-7062.\n- Is peer support licensable at your site? Call the DHSR licensure section at 919-855-3795.\n- Will Vaya Partners change its provider portal, contacts and credentialing process after Oct 1, 2026? Check with Vaya Partners.\n\nThis is research, not legal advice. Have a healthcare attorney or the agencies confirm the items above before you rely on them. When you're ready, send the first set of task keys."
+      },
+      {
+        "type": "sources",
+        "sources": [
+          {
+            "title": "NC Medicaid",
+            "url": "https://medicaid.ncdhhs.gov/8g-peer-support-services/open",
+            "domain": "medicaid.ncdhhs.gov"
+          },
+          {
+            "title": "Amendment to Clinical Coverage Policy 8G Peer Support Services",
+            "url": "https://medicaid.ncdhhs.gov/blog/2026/10/02/amendment-clinical-coverage-policy-8g-peer-support-services",
+            "domain": "medicaid.ncdhhs.gov"
+          },
+          {
+            "title": "[PDF] Peer Support Services, 8G. - NC Medicaid",
+            "url": "https://medicaid.ncdhhs.gov/documents/files/8g-0/open",
+            "domain": "medicaid.ncdhhs.gov"
+          },
+          {
+            "title": "[PDF] Peer Support, 8G. - NC Medicaid",
+            "url": "https://medicaid.ncdhhs.gov/documents/files/8g/open",
+            "domain": "medicaid.ncdhhs.gov"
+          },
+          {
+            "title": "[PDF] Peer Support Services, 8G. - NC Medicaid",
+            "url": "https://medicaid.ncdhhs.gov/8g/open",
+            "domain": "medicaid.ncdhhs.gov"
+          },
+          {
+            "title": "Program Specific Clinical Coverage Policies | NC Medicaid",
+            "url": "https://medicaid.ncdhhs.gov/providers/program-specific-clinical-coverage-policies",
+            "domain": "medicaid.ncdhhs.gov"
+          },
+          {
+            "title": "8G Amended Date: April 15, 2023 DRAFT",
+            "url": "https://medicaid.ncdhhs.gov/media/14741/download?attachment",
+            "domain": "medicaid.ncdhhs.gov"
+          },
+          {
+            "title": "WNC.CP.231 Peer Support Services_R - Wellcare NC",
+            "url": "https://www.wellcarenc.com/content/dam/centene/wellcare/nc/policies/clinical-policies/WNC.CP.231.pdf",
+            "domain": "wellcarenc.com"
+          },
+          {
+            "title": "NC Medicaid Program Specific Clinical Coverage Policies ...",
+            "url": "https://www.ncdhhs.gov/6-2-23-notice-end-covid-19-flexibilities-update-05242023-002/download?attachment",
+            "domain": "ncdhhs.gov"
+          },
+          {
+            "title": "8G, Peer Support Services - NC Medicaid",
+            "url": "https://medicaid.ncdhhs.gov/8g-peer-support-services",
+            "domain": "medicaid.ncdhhs.gov"
+          },
+          {
+            "title": "Behavioral Health Clinical Coverage Policy Updates - NC Medicaid",
+            "url": "https://medicaid.ncdhhs.gov/blog/2025/01/24/behavioral-health-clinical-coverage-policy-updates",
+            "domain": "medicaid.ncdhhs.gov"
+          },
+          {
+            "title": "Behavioral Health Clinical Coverage Policy Updates",
+            "url": "https://medicaid.ncdhhs.gov/blog/2025/02/12/behavioral-health-clinical-coverage-policy-updates",
+            "domain": "medicaid.ncdhhs.gov"
+          },
+          {
+            "title": "Behavioral Health Clinical Coverage Policy Updates",
+            "url": "https://medicaid.ncdhhs.gov/blog/2026/01/07/behavioral-health-clinical-coverage-policy-updates",
+            "domain": "medicaid.ncdhhs.gov"
+          },
+          {
+            "title": "Substance Abuse Intensive Outpatient Program (SAIOP)",
+            "url": "https://www.ncdhhs.gov/documents/state-funded-substance-abuse-intensive-outpatient-program-saiop-date-amendment-january-1-2026/open",
+            "domain": "ncdhhs.gov"
+          },
+          {
+            "title": "NC Division of Mental Health, State-Funded Substance ...",
+            "url": "https://www.ncdhhs.gov/state-funded-substance-abuse-intensive-outpatient-program-saiop-5-1-24/open",
+            "domain": "ncdhhs.gov"
+          },
+          {
+            "title": "Behavioral Health Clinical Coverage Policy Updates | NC Medicaid",
+            "url": "https://medicaid.ncdhhs.gov/blog/2024/05/08/behavioral-health-clinical-coverage-policy-updates",
+            "domain": "medicaid.ncdhhs.gov"
+          },
+          {
+            "title": "[PDF] nc-medicaid-reform-demo-sud-imp-plan-prtcl-20190425.pdf",
+            "url": "https://www.medicaid.gov/Medicaid-CHIP-Program-Information/By-Topics/Waivers/1115/downloads/nc/Medicaid-Reform/nc-medicaid-reform-demo-sud-imp-plan-prtcl-20190425.pdf",
+            "domain": "medicaid.gov"
+          },
+          {
+            "title": "[DOC] https://www.ncdhhs.gov/s-f-saiop-service-definitio...",
+            "url": "https://www.ncdhhs.gov/s-f-saiop-service-definition/open",
+            "domain": "ncdhhs.gov"
+          },
+          {
+            "title": "[PDF] State-Funded Substance Abuse Intensive Outpatient Program ...",
+            "url": "https://www.ncdhhs.gov/s-fsaiop-service-definition/open",
+            "domain": "ncdhhs.gov"
+          },
+          {
+            "title": "NC Medicaid: 8A-13",
+            "url": "https://medicaid.ncdhhs.gov/media/15769/download",
+            "domain": "medicaid.ncdhhs.gov"
+          },
+          {
+            "title": "NC Medicaid: 8A-12",
+            "url": "https://medicaid.ncdhhs.gov/media/15767/download",
+            "domain": "medicaid.ncdhhs.gov"
+          },
+          {
+            "title": "8A-13 Outpatient Treatment (SACOT) Amended Date: DRAFT",
+            "url": "https://medicaid.ncdhhs.gov/media/13938/download?attachment",
+            "domain": "medicaid.ncdhhs.gov"
+          },
+          {
+            "title": "[PDF] 8A-13 Outpatient Treatment (SACOT) Amended Date - NC Medicaid",
+            "url": "https://medicaid.ncdhhs.gov/media/14885/download?attachment",
+            "domain": "medicaid.ncdhhs.gov"
+          },
+          {
+            "title": "8A-12 Program (SAIOP) Amended Date: DRAFT",
+            "url": "https://medicaid.ncdhhs.gov/media/13939/download?attachment",
+            "domain": "medicaid.ncdhhs.gov"
+          },
+          {
+            "title": "[PDF] Enhanced Mental Health and Substance Abuse Services, 8A.",
+            "url": "https://medicaid.ncdhhs.gov/8a/open",
+            "domain": "medicaid.ncdhhs.gov"
+          },
+          {
+            "title": "NC Medicaid",
+            "url": "https://medicaid.ncdhhs.gov/media/14677/download?attachment",
+            "domain": "medicaid.ncdhhs.gov"
+          },
+          {
+            "title": "Session Law 2026-1 House Bill 696",
+            "url": "https://www.ncleg.gov/EnactedLegislation/SessionLaws/PDF/2025-2026/SL2026-1.pdf",
+            "domain": "ncleg.gov"
+          },
+          {
+            "title": "Session Laws",
+            "url": "https://www.ncleg.gov/Laws/Sessionlaws",
+            "domain": "ncleg.gov"
+          },
+          {
+            "title": "www.ncleg.gov › Laws › SessionLawsSession Laws - North Carolina General Assembly",
+            "url": "https://www.ncleg.gov/Laws/SessionLaws/2025",
+            "domain": "ncleg.gov"
+          },
+          {
+            "title": "GENERAL ASSEMBLY OF NORTH CAROLINA SESSION 2025 SESSION LAW ...",
+            "url": "https://www3.ncleg.gov/EnactedLegislation/SessionLaws/PDF/2025-2026/SL2026-41.pdf",
+            "domain": "www3.ncleg.gov"
+          },
+          {
+            "title": "Education",
+            "url": "https://www.ncleg.gov/Legislation/SummariesPublication/BySubject/2026/9/",
+            "domain": "ncleg.gov"
+          },
+          {
+            "title": "2026 Summaries By Subject",
+            "url": "https://www.ncleg.gov/Legislation/SummariesPublication/BySubject/2026/20/",
+            "domain": "ncleg.gov"
+          },
+          {
+            "title": "2026 Summaries By Subject - North Carolina General Assembly",
+            "url": "https://www.ncleg.gov/Legislation/SummariesPublication/BySubject/2026/4/",
+            "domain": "ncleg.gov"
+          },
+          {
+            "title": "North Carolina - DBIA",
+            "url": "https://dbia.org/pending-legislation/north-carolina/",
+            "domain": "dbia.org"
+          },
+          {
+            "title": "FAQs Regarding Recent Session Law Changes",
+            "url": "https://www.ncdor.gov/taxes-forms/corporate-income-franchise-tax/frequently-asked-questions-and-important-notices/faqs-regarding-recent-session-law-changes",
+            "domain": "ncdor.gov"
+          },
+          {
+            "title": "2025-2026 Legislation",
+            "url": "https://webservices.ncleg.gov/ViewDocSiteFile/120200",
+            "domain": "webservices.ncleg.gov"
+          },
+          {
+            "title": "Records Management and Documentation Manual",
+            "url": "https://www.ncdhhs.gov/records-management-and-documentation-manual/open",
+            "domain": "ncdhhs.gov"
+          },
+          {
+            "title": "Records Management and Documentation Manual",
+            "url": "https://www.ncdhhs.gov/rmanddm-3rd-edition-9-1-16/download",
+            "domain": "ncdhhs.gov"
+          },
+          {
+            "title": "STATE OF NORTH CAROLINA",
+            "url": "https://www.oah.nc.gov/documents/files/14-dhr-02198-6-17-15/open",
+            "domain": "oah.nc.gov"
+          },
+          {
+            "title": "[PDF] Service Records Manual - NC DHHS",
+            "url": "https://www.ncdhhs.gov/rm-dm-manual8-1-14/download",
+            "domain": "ncdhhs.gov"
+          },
+          {
+            "title": "Records Management and Documentation Manual",
+            "url": "https://www.ncdhhs.gov/divisions/mental-health-developmental-disabilities-and-substance-use-services/records-management-and-documentation-manual",
+            "domain": "ncdhhs.gov"
+          },
+          {
+            "title": "B3 AH Individual Support T1019 U4",
+            "url": "https://www.alliancehealthplan.org/document-library/B3-AH-Individual-Support-T1019-U4.pdf",
+            "domain": "alliancehealthplan.org"
+          },
+          {
+            "title": "Record Management and Documentation Manual, May 2025",
+            "url": "https://www.ncdhhs.gov/rmdmmay-2025/open",
+            "domain": "ncdhhs.gov"
+          },
+          {
+            "title": "[PDF] Provider Forum December 10, 2019 Beth Lackey, MSW, LCSW ...",
+            "url": "https://providers.partnersbhm.org/wp-content/uploads/2019/12/Provider-Forum-12-10-2019-Final.pdf",
+            "domain": "providers.partnersbhm.org"
+          },
+          {
+            "title": "Job description form",
+            "url": "https://providers.partnersbhm.org/wp-content/uploads/b3-service-definition-community-navigator.pdf",
+            "domain": "providers.partnersbhm.org"
+          },
+          {
+            "title": "B3 AH In-Home Skill Building Children and Adults with IDD T2013 U4",
+            "url": "https://www.alliancehealthplan.org/document-library/B3-AH-In-Home-Skill-Building-Children-and-Adults-with-IDD-T2013-U4.pdf",
+            "domain": "alliancehealthplan.org"
+          },
+          {
+            "title": "Provider Re-credentialing/Re-verification - NC.gov",
+            "url": "https://www.nctracks.nc.gov/content/public/providers/provider-recredentialing.html",
+            "domain": "nctracks.nc.gov"
+          },
+          {
+            "title": "General Provider Enrollment FAQs - NC.gov",
+            "url": "https://www.nctracks.nc.gov/content/public/providers/faq-main-page/faqs-for-providerenrollment.html",
+            "domain": "nctracks.nc.gov"
+          },
+          {
+            "title": "Behavioral Health Provider Enrollment FAQs - NC.gov",
+            "url": "https://www.nctracks.nc.gov/content/public/providers/faq-main-page/faqs-for-Behavioral-Health-Provider-Enrollment.html",
+            "domain": "nctracks.nc.gov"
+          },
+          {
+            "title": "Responding to Re-credentialing Invitations - NCTracks",
+            "url": "https://www.nctracks.nc.gov/content/public/providers/provider-recredentialing/recredentialing-announcements/Responding-to-Recred-Invitations.html",
+            "domain": "nctracks.nc.gov"
+          },
+          {
+            "title": "Provider Re-credentialing/Re-verification FAQs - NCTracks",
+            "url": "https://per.nctracks.com/content/public/es/providers/faq-main-page/faqs-for-re-credentialing0.html",
+            "domain": "per.nctracks.com"
+          },
+          {
+            "title": "Important Upcoming Updates to Re-credentialing and ...",
+            "url": "https://www.nctracks.nc.gov/content/public/providers/provider-communications/2018-announcements/Changes-to-Re-credentialing-and-Reverification-Process.html",
+            "domain": "nctracks.nc.gov"
+          },
+          {
+            "title": "A Message from NCTracks on Behalf of NC Medicaid Reverification Timeliness and Requirements Clarification",
+            "url": "https://www.nctracks.nc.gov/content/public/providers/provider-communications/2024-Announcements/Reverification-Timeliness-and-Requirements-Clarification.html",
+            "domain": "nctracks.nc.gov"
+          },
+          {
+            "title": "[PDF] JOB AID Re-verification - NCTracks",
+            "url": "https://www.nctracks.nc.gov/content/dam/jcr:030c0d61-e1b9-4df2-87c0-f52e16259dc4/JA%20-%20How%20to%20Complete%20the%20Re-Credentialing-Re-verification%20process%20in%20NCTracks%2020150219a.pdf",
+            "domain": "nctracks.nc.gov"
+          },
+          {
+            "title": "Provider Reverification Reminder",
+            "url": "https://medicaid.ncdhhs.gov/blog/2023/06/20/provider-reverification-reminder",
+            "domain": "medicaid.ncdhhs.gov"
+          },
+          {
+            "title": "Provider Enrollment 2026 Summer & Fall Series",
+            "url": "https://medicaid.ncdhhs.gov/prov-enrollment-summer-series-webinar-presentation20260924/download?attachment",
+            "domain": "medicaid.ncdhhs.gov"
+          },
+          {
+            "title": "Frequently asked questions | NC Medicaid Managed Care",
+            "url": "https://www.ncmedicaidplans.gov/en/get-answers",
+            "domain": "ncmedicaidplans.gov"
+          },
+          {
+            "title": "Behavioral Health and Intellectual/​Developmental ...",
+            "url": "https://medicaid.ncdhhs.gov/tailored-plans",
+            "domain": "medicaid.ncdhhs.gov"
+          },
+          {
+            "title": "Vaya Health Plans",
+            "url": "https://www.vayahealth.com/health-plans/",
+            "domain": "vayahealth.com"
+          },
+          {
+            "title": "[PDF] NC Medicaid Enrollment Broker",
+            "url": "https://ncmedicaidplans.gov/content/dam/digital/united-states/north-carolina/nc-eb/nceb_pdfs/NCEB_Community_Tailored_Plan_Presentation_English_7.12.23.pdf",
+            "domain": "ncmedicaidplans.gov"
+          },
+          {
+            "title": "Health Plans | NC Medicaid",
+            "url": "https://medicaid.ncdhhs.gov/about-nc-medicaid/health-plans",
+            "domain": "medicaid.ncdhhs.gov"
+          },
+          {
+            "title": "[PDF] STANDARD PLANS TAILORED PLANS - NC Medicaid Plans",
+            "url": "https://ncmedicaidplans.gov/content/dam/digital/united-states/north-carolina/nc-eb/nceb_pdfs/members-resources-docs/english/NC%20Medicaid%20Fact%20Sheet_ENG_Approved%20by%20DHHS_9.3.24.pdf",
+            "domain": "ncmedicaidplans.gov"
+          },
+          {
+            "title": "STANDARD PLANS TAILORED PLANS",
+            "url": "https://ncmedicaidplans.gov/content/dam/digital/united-states/north-carolina/nc-eb/nceb_pdfs/members-resources-docs/english/NC%20Medicaid%20Fact%20Sheet_ENG_Approved%20by%20DHHS%20_01.04.24.pdf",
+            "domain": "ncmedicaidplans.gov"
+          },
+          {
+            "title": "NCEB Community CFSP Presentation_Approved by ...",
+            "url": "https://ncmedicaidplans.gov/content/dam/digital/united-states/north-carolina/nc-eb/nceb_pdfs/members-resources-docs/english/NCEB_Community_CFSP_Presentation_Approved_by_DHHS_4.1.26_ADA(2).pdf",
+            "domain": "ncmedicaidplans.gov"
+          },
+          {
+            "title": "Eligibility for Tailored Care Management | NC Medicaid",
+            "url": "https://medicaid.ncdhhs.gov/tailored-care-management/eligibility",
+            "domain": "medicaid.ncdhhs.gov"
+          },
+          {
+            "title": "FAQs on NC Medicaid Tailored Plans - North Carolina Justice ...",
+            "url": "https://www.ncjustice.org/projects/health-advocacy-project/medicaid-expansion/faqs-on-medicaid-tailored-plans/",
+            "domain": "ncjustice.org"
+          },
+          {
+            "title": "NCDHHS Selects NC ROOTS Hub Leads to Strengthen Rural ...",
+            "url": "https://www.ncdhhs.gov/news/press-releases/2026/05/01/ncdhhs-selects-nc-roots-hub-leads-strengthen-rural-health-care-across-north-carolina",
+            "domain": "ncdhhs.gov"
+          },
+          {
+            "title": "NC ROOTS | North Carolina",
+            "url": "https://www.unchealth.org/ncroots",
+            "domain": "unchealth.org"
+          },
+          {
+            "title": "Rural Organizations Orchestrating Transformation for ...",
+            "url": "https://www.ncdhhs.gov/about/department-initiatives/rural-health-transformation-program/rural-organizations-orchestrating-transformation-sustainability-roots-hub-leads",
+            "domain": "ncdhhs.gov"
+          },
+          {
+            "title": "[DOC] NC Rural Organizations Orchestrating Transformation for ...",
+            "url": "https://www.ncdhhs.gov/rfa-2026-nc-rural-organizations-orchestrating-transformation-sustainability/download?attachment",
+            "domain": "ncdhhs.gov"
+          },
+          {
+            "title": "Rural Health Transformation Program Grant Opportunities | NCDHHS",
+            "url": "https://www.ncdhhs.gov/about/department-initiatives/rural-health-transformation-program/rural-health-transformation-program-grant-opportunities",
+            "domain": "ncdhhs.gov"
+          },
+          {
+            "title": "UNC Hospital to Lead Rural Health Transformation in NC ...",
+            "url": "https://www.med.unc.edu/thrivingcommunities/2026/05/08/unc-hospital-announced-as-nc-roots-hub/",
+            "domain": "med.unc.edu"
+          },
+          {
+            "title": "NC Rural Health Transformation Program Frequently ...",
+            "url": "https://www.ncdhhs.gov/about/department-initiatives/rural-health-transformation-program/nc-rural-health-transformation-program-frequently-asked-questions",
+            "domain": "ncdhhs.gov"
+          },
+          {
+            "title": "Initial Licensure Application Packet",
+            "url": "https://info.ncdhhs.gov/dhsr/mhlcs/pdf/mhiapp.pdf?ver=2",
+            "domain": "info.ncdhhs.gov"
+          },
+          {
+            "title": "Mental Health Licensure and Certification Section",
+            "url": "https://info.ncdhhs.gov/dhsr/mhlcs/faq.html",
+            "domain": "info.ncdhhs.gov"
+          },
+          {
+            "title": "Mental Health Licensure and Certification Section",
+            "url": "https://info.ncdhhs.gov/dhsr/mhlcs/establish.html",
+            "domain": "info.ncdhhs.gov"
+          },
+          {
+            "title": "Change Licensure Applica on Packet",
+            "url": "https://info.ncdhhs.gov/dhsr/mhlcs/pdf/MHL-ChangeApplication.pdf",
+            "domain": "info.ncdhhs.gov"
+          },
+          {
+            "title": "Medication/Mobile Unit Licensure Application Packet",
+            "url": "https://test.ncdhhs.gov/dhsr/mhlcs/pdf/MHL-OTP-Application.pdf?ver=1",
+            "domain": "test.ncdhhs.gov"
+          },
+          {
+            "title": "Mental Health Substance Use Treatment Centers - DHHS",
+            "url": "https://dhhs.ne.gov/licensure/Pages/Mental-Health-Substance-Use-Treatment-Centers.aspx",
+            "domain": "dhhs.ne.gov"
+          },
+          {
+            "title": "Change Licensure Application Packet",
+            "url": "https://info.ncdhhs.gov/dhsr/mhlcs/pdf/mhchginstru.pdf",
+            "domain": "info.ncdhhs.gov"
+          },
+          {
+            "title": "NC DHSR ACLS: Forms and Applications",
+            "url": "https://info.ncdhhs.gov/dhsr/acls/acforms.html",
+            "domain": "info.ncdhhs.gov"
+          },
+          {
+            "title": "NC DHSR MHLCS: Facility Licensure Information",
+            "url": "https://info.ncdhhs.gov/dhsr/mhlcs/faclicinfo.html",
+            "domain": "info.ncdhhs.gov"
+          },
+          {
+            "title": "North Carolina Treatment Center Compliance | Behave Health",
+            "url": "https://behavehealth.com/compliance/north-carolina",
+            "domain": "behavehealth.com"
+          },
+          {
+            "title": "NC Medicaid Provider Operations",
+            "url": "https://medicaid.ncdhhs.gov/provider-enrollment-2026-summer-and-fall-series-1-powerpoint/open",
+            "domain": "medicaid.ncdhhs.gov"
+          },
+          {
+            "title": "Federal Fee and NC Application Fee FAQs - NC.gov",
+            "url": "https://www.nctracks.nc.gov/content/public/providers/faq-main-page/faqs-for-ACA-application-fee.html",
+            "domain": "nctracks.nc.gov"
+          },
+          {
+            "title": "71 Search results for \"provider enrollment\"",
+            "url": "https://www.nctracks.nc.gov/content/public/search-result.html?currentPage=1&queryStr=provider%20enrollment",
+            "domain": "nctracks.nc.gov"
+          },
+          {
+            "title": "Quarterly Provider Update – Winter 2026 - NC Medicaid",
+            "url": "https://medicaid.ncdhhs.gov/blog/2026/01/27/quarterly-provider-update-winter-2026",
+            "domain": "medicaid.ncdhhs.gov"
+          },
+          {
+            "title": "Provider Enrollment - NCTracks",
+            "url": "https://per.nctracks.com/content/public/providers/provider-enrollment.html",
+            "domain": "per.nctracks.com"
+          },
+          {
+            "title": "Re-credentialing and Re-verification FAQs",
+            "url": "https://www.nctracks.nc.gov/content/public/providers/faq-main-page/faqs-for-re-credentialing0.html",
+            "domain": "nctracks.nc.gov"
+          },
+          {
+            "title": "Federal Provider Enrollment Application Fee Increase for ...",
+            "url": "https://medicaid.ncdhhs.gov/blog/2025/12/08/federal-provider-enrollment-application-fee-increase-year-2026",
+            "domain": "medicaid.ncdhhs.gov"
+          },
+          {
+            "title": "Business Corporations",
+            "url": "https://www.sosnc.gov/fees/by_title/_Business_Registration/",
+            "domain": "sosnc.gov"
+          },
+          {
+            "title": "Nonprofit Corporation - North Carolina Secretary of State's Office",
+            "url": "https://www.sosnc.gov/forms/by_title/_Business_Registration_Nonprofit_Corporations",
+            "domain": "sosnc.gov"
+          },
+          {
+            "title": "Chapter 55A - Article 1 - North Carolina General Assembly",
+            "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/ByArticle/Chapter_55A/Article_1.html",
+            "domain": "ncleg.gov"
+          },
+          {
+            "title": "STATE TAXATION AND NONPROFIT ORGANIZATIONS",
+            "url": "https://www.ncdor.gov/documents/manuals/state-taxation-and-nonprofit-publication/open",
+            "domain": "ncdor.gov"
+          },
+          {
+            "title": "State of North Carolina",
+            "url": "https://www.sosnc.gov/webfiles/documents/forms/Business_Registration/nonprofit_corporations/articles_of_dissolution_prior_to_commencement_of_activities.pdf",
+            "domain": "sosnc.gov"
+          },
+          {
+            "title": "[PDF] state taxation and nonprofit organizations | ncdor",
+            "url": "https://www.ncdor.gov/documents/files/state-taxation-and-nonprofit-organizations/open",
+            "domain": "ncdor.gov"
+          },
+          {
+            "title": "Chapter 55A",
+            "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/PDF/ByChapter/Chapter_55A.pdf",
+            "domain": "ncleg.gov"
+          },
+          {
+            "title": "Incorporating Your Nonprofit in North Carolina",
+            "url": "https://www.ncsbc.net/Documentmaster.aspx?doc=3252",
+            "domain": "ncsbc.net"
+          },
+          {
+            "title": "[PDF] Incorporating Your Business in North Carolina",
+            "url": "https://www.ncsbc.net/Documentmaster.aspx?doc=3250",
+            "domain": "ncsbc.net"
+          },
+          {
+            "title": "Nonprofit Corporate Tax Information | NCDOR",
+            "url": "https://www.ncdor.gov/taxes-forms/corporate-income-franchise-tax/nonprofit-corporate-tax-information",
+            "domain": "ncdor.gov"
+          },
+          {
+            "title": "BetterTogether",
+            "url": "https://resources.vayapartners.org/",
+            "domain": "resources.vayapartners.org"
+          },
+          {
+            "title": "Vaya Partners | Provider FAQs",
+            "url": "https://www.vayahealth.com/wp-content/uploads/2026/07/Merger_Provider_FAQ.pdf",
+            "domain": "vayahealth.com"
+          },
+          {
+            "title": "Vaya Health and Partners Health Management Announce ...",
+            "url": "https://providers.partnersbhm.org/vaya-health-and-partners-health-management-announce-merger/",
+            "domain": "providers.partnersbhm.org"
+          },
+          {
+            "title": "Vaya Partners Merger: EVV Guidance",
+            "url": "https://providers.partnersbhm.org/vaya-partners-merger-evv-guidance/",
+            "domain": "providers.partnersbhm.org"
+          },
+          {
+            "title": "Vaya Health Reflects on 2024 Milestones and Prepares for ...",
+            "url": "https://www.vayahealth.com/vaya-health-reflects-on-2024-milestones-prepares-for-community-impact-2025/",
+            "domain": "vayahealth.com"
+          },
+          {
+            "title": "Vaya Health and Partners Health Management Announce Merger",
+            "url": "https://www.fidelity.com/news/article/mergers-and-acquisitions/202605221330PRIMZONEFULLFEED9725517",
+            "domain": "fidelity.com"
+          },
+          {
+            "title": "[PDF] Provider Touchpoint Sept. 18, 2026, 11 am-12 pm",
+            "url": "https://providers.vayahealth.com/wp-content/uploads/2026/09/pcb-09-10-26-issue-17.pdf",
+            "domain": "providers.vayahealth.com"
+          },
+          {
+            "title": "Better Together: Vaya Partners Merger",
+            "url": "https://providers.vayahealth.com/wp-content/uploads/2026/09/Joint_VP_Merger_Info_Session_9-14-26.pdf",
+            "domain": "providers.vayahealth.com"
+          },
+          {
+            "title": "2026 – Partners Health Management – Provider Knowledge Base",
+            "url": "https://providers.partnersbhm.org/2026/",
+            "domain": "providers.partnersbhm.org"
+          },
+          {
+            "title": "Email from Vaya Health",
+            "url": "https://providers.vayahealth.com/wp-content/uploads/2026/09/PCB_Issue_16_20260903.pdf",
+            "domain": "providers.vayahealth.com"
+          },
+          {
+            "title": "SANDHILLS CENTER IS NOW PART OFTRILLIUM HEALTH RESOURCES",
+            "url": "https://www.sandhillscenter.org/",
+            "domain": "sandhillscenter.org"
+          },
+          {
+            "title": "[PDF] LME/MCO Consolidation Overview and FAQs – For Providers",
+            "url": "https://medicaid.ncdhhs.gov/lmemco-consolidation-overview-and-faqs-providers/open",
+            "domain": "medicaid.ncdhhs.gov"
+          },
+          {
+            "title": "Trillium Health Resources and Eastpointe Human Services ...",
+            "url": "https://www.nctracks.nc.gov/content/public/providers/provider-communications/2023-Announcements/Trillium-Health-Resources-and-Eastpointe-Human-Services-Agreement.html",
+            "domain": "nctracks.nc.gov"
+          },
+          {
+            "title": "[PDF] Trillium Health Resources news release",
+            "url": "https://www.trilliumhealthresources.org/sites/default/files/docs/News-Release/121823-Consolidation-Announcement-Joint-Final.pdf",
+            "domain": "trilliumhealthresources.org"
+          },
+          {
+            "title": "[PDF] STATE OF NORTH CAROLINA DEPARTMENT OF HEALTH AND ...",
+            "url": "https://www.ncdhhs.gov/trillium-health-resources-board-structure-and-board-member-appointments/download?attachment",
+            "domain": "ncdhhs.gov"
+          },
+          {
+            "title": "[PDF] 2024 IMPACT REPORT - Trillium Health Resources",
+            "url": "https://www.trilliumhealthresources.org/sites/default/files/docs/About-Us/Annual-Report/Trillium-2024-Annual-Report.pdf",
+            "domain": "trilliumhealthresources.org"
+          },
+          {
+            "title": "NCDHHS Consolidates Local Management Entity ...",
+            "url": "https://medicaid.ncdhhs.gov/blog/2024/02/01/ncdhhs-consolidates-local-management-entitymanaged-care-organizations-ahead-tailored-plan-launch",
+            "domain": "medicaid.ncdhhs.gov"
+          },
+          {
+            "title": "Sandhills Center (Consolidated with Trillium Health ...",
+            "url": "https://www.linkedin.com/company/sandhills-center",
+            "domain": "linkedin.com"
+          },
+          {
+            "title": "Approved consolidation of Trillium, Eastpointe, and ...",
+            "url": "https://bizfayetteville.com/health-care/2024/1/8/approved-consolidation-of-trillium-eastpointe-and-sandhills-center-takes-effect-what-the-merger-means-for-several-gfbj-counties/2565",
+            "domain": "bizfayetteville.com"
+          },
+          {
+            "title": "NC Medicaid Managed Care Provider Update – March 27, 2024",
+            "url": "https://medicaid.ncdhhs.gov/blog/2024/03/27/nc-medicaid-managed-care-provider-update-march-27-2024",
+            "domain": "medicaid.ncdhhs.gov"
+          },
+          {
+            "title": "LME/MCO Directory - NC DHHS",
+            "url": "https://www.ncdhhs.gov/providers/lme-mco-directory",
+            "domain": "ncdhhs.gov"
+          },
+          {
+            "title": "How to get intensive mental health services in North Carolina",
+            "url": "https://www.northcarolinahealthnews.org/2026/07/24/how-to-get-intensive-mental-health-services-in-north-carolina/",
+            "domain": "northcarolinahealthnews.org"
+          },
+          {
+            "title": "[PDF] Hoja Informativa Qué es la consolidación LME/MCO | NC Medicaid",
+            "url": "https://medicaid.ncdhhs.gov/documents/county/county-playbook/fact-sheet-what-lmemco-consolidation-spanish/download?attachment",
+            "domain": "medicaid.ncdhhs.gov"
+          },
+          {
+            "title": "www.ncdhhs.gov · about · department-initiativesInclusion Connects: Community Living | NCDHHS",
+            "url": "https://www.ncdhhs.gov/about/department-initiatives/inclusion-connects/inclusion-connects-community-living",
+            "domain": "ncdhhs.gov"
+          },
+          {
+            "title": "[PDF] Fact Sheet What is the LME/MCO Consolidation | NC Medicaid",
+            "url": "https://medicaid.ncdhhs.gov/fact-sheet-what-lmemco-consolidation-english/download?attachment",
+            "domain": "medicaid.ncdhhs.gov"
+          },
+          {
+            "title": "STATE OF NORTH CAROLINA DEPARTMENT OF ...",
+            "url": "https://www.ncdhhs.gov/tailored-plan-readiness-lmemco-streamlining-pursuant-sl-2023-134/download?attachment",
+            "domain": "ncdhhs.gov"
+          },
+          {
+            "title": "North Carolina Tailored Plan Network Adequacy",
+            "url": "https://healthlaw.org/wp-content/uploads/2024/05/2024.05-NC-MMC-Tailored-Plan-Hospitals-Fact-Sheet_final1.pdf",
+            "domain": "healthlaw.org"
+          },
+          {
+            "title": "June 26, 2026 Devdutta Sangvai Secretary North Carolina ...",
+            "url": "https://www.ncdhhs.gov/ncgs-122c-1242a-lme-mco-certificate-compliance-7/download?attachment",
+            "domain": "ncdhhs.gov"
+          },
+          {
+            "title": "SFY19-Q4 Performance Contract Report/Data Submission Requirements Report.xlsx",
+            "url": "https://www.ncdhhs.gov/documents/files/sfy19-q4-dhhs-lme-mco-performance-contract-report/open",
+            "domain": "ncdhhs.gov"
+          },
+          {
+            "title": "Job Aid ‒ PRV573",
+            "url": "https://www.nctracks.nc.gov/content/dam/jcr:630bf9ee-00a9-48d6-ad78-7a507013c657/Job%20Aid_PRV573_Reverification_W4.4.1F.pdf",
+            "domain": "nctracks.nc.gov"
+          },
+          {
+            "title": "Job Aid ‒ PRV601",
+            "url": "https://www.nctracks.nc.gov/content/dam/jcr:6f60ac46-ccca-4f8e-baa5-cb5f8e7f5fb3/JA_PRV601_Re-verification%20Dates_W1.3.2F.pdf",
+            "domain": "nctracks.nc.gov"
+          },
+          {
+            "title": "Job Aid ‒ PRV591",
+            "url": "https://www.nctracks.nc.gov/content/dam/jcr:334ac9d5-d2da-462c-94b5-062bd337d072/JA_PRV591_Prov%20Permission%20Matrix%20Instructs_W1.5.1%20(1)%20(1).pdf",
+            "domain": "nctracks.nc.gov"
+          },
+          {
+            "title": "CSC PPTX Template 1",
+            "url": "https://www.nctracks.nc.gov/content/dam/jcr:c75e4857-8ba0-4e9b-89de-850fcd4f4661/NCTracks%20Presentation%20HII%20Oct%202017%20v4.pdf",
+            "domain": "nctracks.nc.gov"
+          },
+          {
+            "title": "Common Enrollment Application Issues FAQs - NC.gov",
+            "url": "https://www.nctracks.nc.gov/content/public/providers/faq-main-page/Common-Enrollment-Application-Issues-FAQs.html",
+            "domain": "nctracks.nc.gov"
+          },
+          {
+            "title": "[PDF] NCMMIS How to Enroll in NC Medicaid - NCTracks",
+            "url": "https://www.nctracks.nc.gov/content/dam/jcr:a10297fb-1056-42a7-bdcd-a388e261c03a/PUG_PRV594_Enroll%20NC%20Medicaid-Individual_V2.0%20(1)%20(1).pdf",
+            "domain": "nctracks.nc.gov"
+          },
+          {
+            "title": "Job Aid ‒ PRV573",
+            "url": "https://per.nctracks.com/content/dam/jcr:030c0d61-e1b9-4df2-87c0-f52e16259dc4/Job%20Aid_PRV573_ReVerification_W3.1.1.pdf",
+            "domain": "per.nctracks.com"
+          },
+          {
+            "title": "Provider Permission Matrix Updates - NCTracks",
+            "url": "https://www.nctracks.nc.gov/content/public/providers/provider-communications/2025-Announcements/Provider-Permission-Matrix-Updates.html",
+            "domain": "nctracks.nc.gov"
+          },
+          {
+            "title": "Behavioral Health - NC Medicaid",
+            "url": "https://medicaid.ncdhhs.gov/providers/programs-and-services/behavioral-health-mental-health-idd",
+            "domain": "medicaid.ncdhhs.gov"
+          },
+          {
+            "title": "Provider Enrollment - Provider Enrollment - NC.gov",
+            "url": "https://www.nctracks.nc.gov/content/public/providers/provider-enrollment.html",
+            "domain": "nctracks.nc.gov"
+          },
+          {
+            "title": "How to Enroll in North Carolina Medicaid as an Individual",
+            "url": "https://per.nctracks.com/content/dam/jcr:efbac4a4-cfa2-4835-a1c4-fdde48441529/FINAL%20clean%20-%20How%20Do%20I%20Enroll%20in%20North%20Carolina%20Medicaid%20as%20an%20Individual.pdf",
+            "domain": "per.nctracks.com"
+          },
+          {
+            "title": "Out-of-State Provider Enrollment",
+            "url": "https://medicaid.ncdhhs.gov/providers/provider-enrollment/out-state-provider-enrollment",
+            "domain": "medicaid.ncdhhs.gov"
+          },
+          {
+            "title": "Fingerprinting FAQs - NCTracks",
+            "url": "https://www.nctracks.nc.gov/content/public/providers/faq-main-page/faqs-for-fingerprinting.html",
+            "domain": "nctracks.nc.gov"
+          },
+          {
+            "title": "[PDF] NC Medicaid Bulletin June 2018",
+            "url": "https://medicaid.ncdhhs.gov/documents/providers/bulletins/medicaid-bulletin-2018-06/open",
+            "domain": "medicaid.ncdhhs.gov"
+          },
+          {
+            "title": "Provider Enrollment - NC Medicaid",
+            "url": "https://medicaid.ncdhhs.gov/providers/provider-enrollment",
+            "domain": "medicaid.ncdhhs.gov"
+          },
+          {
+            "title": "Fingerprinting Process for Providers - NC Medicaid",
+            "url": "https://medicaid.ncdhhs.gov/blog/2018/01/04/fingerprinting-process-providers",
+            "domain": "medicaid.ncdhhs.gov"
+          },
+          {
+            "title": "Medicaid Behavioral Health Provider Enrollment",
+            "url": "https://medicaid.ncdhhs.gov/blog/2018/05/15/medicaid-behavioral-health-provider-enrollment",
+            "domain": "medicaid.ncdhhs.gov"
+          },
+          {
+            "title": "Medicaid Program Integrity",
+            "url": "https://webservices.ncleg.gov/ViewDocSiteFile/105512",
+            "domain": "webservices.ncleg.gov"
+          },
+          {
+            "title": "Provider Enrollment Application - NC Medicaid",
+            "url": "https://medicaid.ncdhhs.gov/providers/provider-enrollment/provider-enrollment-application",
+            "domain": "medicaid.ncdhhs.gov"
+          },
+          {
+            "title": "G.S. 122C-80 - North Carolina General Assembly",
+            "url": "https://ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_122C/GS_122C-80.html",
+            "domain": "ncleg.gov"
+          },
+          {
+            "title": "NC General Statutes - Chapter 122C Article 3A",
+            "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/PDF/ByArticle/Chapter_122C/Article_3A.pdf",
+            "domain": "ncleg.gov"
+          },
+          {
+            "title": "Chapter 122C",
+            "url": "https://www.ncleg.gov/enactedlegislation/statutes/html/bychapter/chapter_122c.html",
+            "domain": "ncleg.gov"
+          },
+          {
+            "title": "Criminal Background Check | North Carolina Judicial Branch",
+            "url": "https://www.nccourts.gov/help-topics/court-records/criminal-background-check",
+            "domain": "nccourts.gov"
+          },
+          {
+            "title": "general assembly of north carolina",
+            "url": "https://ncleg.gov/Sessions/2005/Bills/Senate/PDF/S41v5.pdf",
+            "domain": "ncleg.gov"
+          },
+          {
+            "title": "Microsoft Word - SL2005-4.doc",
+            "url": "https://www.ncleg.gov/EnactedLegislation/SessionLaws/PDF/2005-2006/SL2005-4.pdf",
+            "domain": "ncleg.gov"
+          },
+          {
+            "title": "NC Automated Background Check Management System",
+            "url": "https://info.ncdhhs.gov/dhsr/abcms/index.html",
+            "domain": "info.ncdhhs.gov"
+          },
+          {
+            "title": "Criminal Record Search Information Sheet",
+            "url": "https://www.nccourts.gov/assets/documents/publications/2022-06_Criminal_Record_Search_Information_Sheet.pdf?VersionId=4cCI7O9FKSq8UrKlRMWrShJG9p76.hR8",
+            "domain": "nccourts.gov"
+          },
+          {
+            "title": "JOSH STEIN • Governor",
+            "url": "https://www.ncdhhs.gov/cws412026/download?attachment",
+            "domain": "ncdhhs.gov"
+          },
+          {
+            "title": "Federal Provider Enrollment Application Fee Increase for Year 2026",
+            "url": "https://www.nctracks.nc.gov/content/public/providers/provider-communications/2025-Announcements/Federal-Provider-Enrollment-Application-Fee-Increase-for-Year-2026.html",
+            "domain": "nctracks.nc.gov"
+          },
+          {
+            "title": "NCMMIS How to Enroll in NC Medicaid – Organization Participant ...",
+            "url": "https://www.nctracks.nc.gov/content/dam/jcr:043f526b-61ae-4ef3-aa2d-6a0671393977/PUG_PRV593_Enroll%20in%20NC%20Medicaid%E2%80%93Organization_V1.3%20(3).pdf",
+            "domain": "nctracks.nc.gov"
+          },
+          {
+            "title": "NCMMIS How to Enroll in NC Medicaid - NCTracks",
+            "url": "https://www.nctracks.nc.gov/content/dam/jcr:8d0d2b03-b987-41b2-855c-cb5d1ad4980f/PUGPRV593.pdf",
+            "domain": "nctracks.nc.gov"
+          },
+          {
+            "title": "NC Medicaid Provider Enrollment: 2026 NCTracks Guide",
+            "url": "https://medsolercm.com/blog/nc-medicaid-provider-enrollment",
+            "domain": "medsolercm.com"
+          },
+          {
+            "title": "NC DHSR CIHCPIS: Provider Information - NC DHHS",
+            "url": "https://info.ncdhhs.gov/dhsr/ciu/provider.html",
+            "domain": "info.ncdhhs.gov"
+          },
+          {
+            "title": "NC DHSR HCPR: Accessing the Registries/Verifying Listings",
+            "url": "https://info.ncdhhs.gov/dhsr/hcpr/flonaidv.html",
+            "domain": "info.ncdhhs.gov"
+          },
+          {
+            "title": "Verify Registry Listings - NC HCPR",
+            "url": "https://ncnar.ncdhhs.gov/verify_listings1.jsp",
+            "domain": "ncnar.ncdhhs.gov"
+          },
+          {
+            "title": "About the N.C. Health Care Personnel Registry Section - NC HCPR",
+            "url": "https://ncnar.ncdhhs.gov/about.html",
+            "domain": "ncnar.ncdhhs.gov"
+          },
+          {
+            "title": "NC DHSR OEMS: Frequently Asked Questions",
+            "url": "https://info.ncdhhs.gov/dhsr/ems/faqcomp.htm",
+            "domain": "info.ncdhhs.gov"
+          },
+          {
+            "title": "Health Care Personnel Registry",
+            "url": "https://info.ncdhhs.gov/DHSR/hcpr/investigations.html",
+            "domain": "info.ncdhhs.gov"
+          },
+          {
+            "title": "NC DHSR HCPR: Nurse Aides",
+            "url": "https://info.ncdhhs.gov/dhsr/hcpr/personnel.html",
+            "domain": "info.ncdhhs.gov"
+          },
+          {
+            "title": "NC DHSR ACLS: North Carolina Health Care Personnel Registry",
+            "url": "https://info.ncdhhs.gov/dhsr/acls/training/pdf/hcpr.pdf",
+            "domain": "info.ncdhhs.gov"
+          },
+          {
+            "title": "NC Health Care Personnel Registry Section - NCDHHS",
+            "url": "https://ncnar.ncdhhs.gov/index1.jsp",
+            "domain": "ncnar.ncdhhs.gov"
+          },
+          {
+            "title": "Background Checks in North Carolina | VerticalID",
+            "url": "https://www.verticalid.com/background-checks-north-carolina/",
+            "domain": "verticalid.com"
+          },
+          {
+            "title": "Credentialing Committee",
+            "url": "https://medicaid.ncdhhs.gov/providers/provider-enrollment/provider-credentialing/credentialing-committee",
+            "domain": "medicaid.ncdhhs.gov"
+          },
+          {
+            "title": "Centralized Credentialing and Provider Enrollment",
+            "url": "https://medicaid.ncdhhs.gov/centralized-credentialing-and-provider-enrollment/download?attachment",
+            "domain": "medicaid.ncdhhs.gov"
+          },
+          {
+            "title": "Provider Enrollment Recredentialing",
+            "url": "https://medicaid.ncdhhs.gov/providers/provider-enrollment/provider-enrollment-recredentialing",
+            "domain": "medicaid.ncdhhs.gov"
+          },
+          {
+            "title": "Page 1 of 17",
+            "url": "https://www.alliancehealthplan.org/document-library/93711",
+            "domain": "alliancehealthplan.org"
+          },
+          {
+            "title": "[PDF] Tailored Plan Update | NC DHHS",
+            "url": "https://www.ncdhhs.gov/i2i-spring-conference-update-tailored-plan-final-2019-06-10/open",
+            "domain": "ncdhhs.gov"
+          },
+          {
+            "title": "[PDF] 1 LME/MCO CEO BH I/DD TP RFA Q&A Meeting - NC Medicaid",
+            "url": "https://medicaid.ncdhhs.gov/documents/providers/programs-services/mental-health/lme-mco-ceo-rfa-q-iii-9-22-2020-updated/open",
+            "domain": "medicaid.ncdhhs.gov"
+          },
+          {
+            "title": "[PDF] Back Porch Chat: Medicaid Managed Care Hot Topics - NC AHEC",
+            "url": "https://www.ncahec.net/wp-content/uploads/2021/05/2021-05-06_Managed-Care-Hot-Topics_FINAL.pdf",
+            "domain": "ncahec.net"
+          },
+          {
+            "title": "Law Enforcement Certification: Agencies - NCDOJ.gov",
+            "url": "https://ncdoj.gov/law-enforcement-training/criminal-justice/officer-certification-programs/law-enforcement-certification-agencies/",
+            "domain": "ncdoj.gov"
+          },
+          {
+            "title": "State four (4) ways to submit criminal fingerprint cards and ...",
+            "url": "https://ncja.ncdoj.gov/wp-content/uploads/2025/03/12SFingerprint0120.pdf",
+            "domain": "ncja.ncdoj.gov"
+          },
+          {
+            "title": "subchapter 09b ‑ standards for criminal justice employment ...",
+            "url": "https://ncdoj.gov/wp-content/uploads/2023/12/Recruitment-and-Retention-Materials.pdf",
+            "domain": "ncdoj.gov"
+          },
+          {
+            "title": "Employment at North Carolina Department of Justice.",
+            "url": "https://ncdoj.gov/employment/",
+            "domain": "ncdoj.gov"
+          },
+          {
+            "title": "Correctional and Probation/Parole Officer Certification - NCDOJ.gov",
+            "url": "https://ncdoj.gov/law-enforcement-training/criminal-justice/officer-certification-programs/correctional-and-probation-parole-officer-certification/",
+            "domain": "ncdoj.gov"
+          },
+          {
+            "title": "Open Government at North Carolina Department of Justice",
+            "url": "https://ncdoj.gov/open-government/",
+            "domain": "ncdoj.gov"
+          },
+          {
+            "title": "Protecting Consumers at North Carolina Department of Justice",
+            "url": "https://ncdoj.gov/protecting-consumers/",
+            "domain": "ncdoj.gov"
+          },
+          {
+            "title": "Getting Out of Debt - NCDOJ.gov",
+            "url": "https://ncdoj.gov/protecting-consumers/credit-and-debt/getting-out-of-debt/",
+            "domain": "ncdoj.gov"
+          },
+          {
+            "title": "Protect Your Business From ID Theft",
+            "url": "https://ncdoj.gov/protecting-consumers/protecting-your-identity/protect-your-business-from-id-theft/",
+            "domain": "ncdoj.gov"
+          },
+          {
+            "title": "Civil Rights Unit - NCDOJ",
+            "url": "https://ncdoj.gov/civil-rights-unit/",
+            "domain": "ncdoj.gov"
+          },
+          {
+            "title": "Provider Enrollment FAQs - NCTracks",
+            "url": "https://per.nctracks.com/content/public/es/providers/faq-main-page/faqs-for-providerenrollment.html",
+            "domain": "per.nctracks.com"
+          },
+          {
+            "title": "Provider Enrollment FAQs - Provider Enrollment FAQs",
+            "url": "https://per.nctracks.com/content/public/providers/faq-main-page/faqs-for-providerenrollment.html",
+            "domain": "per.nctracks.com"
+          },
+          {
+            "title": "Provider Permission Matrix Updates",
+            "url": "https://www.nctracks.nc.gov/content/public/es/providers/provider-communications/2025-Announcements/Provider-Permission-Matrix-Updates.html",
+            "domain": "nctracks.nc.gov"
+          },
+          {
+            "title": "Providers: Risks of Not Accurately Reporting on Your NCTracks ...",
+            "url": "https://medicaid.ncdhhs.gov/blog/2026/03/04/providers-risks-not-accurately-reporting-your-nctracks-provider-record",
+            "domain": "medicaid.ncdhhs.gov"
+          },
+          {
+            "title": "Provider Support & Services",
+            "url": "https://www.vayahealth.com/providers/",
+            "domain": "vayahealth.com"
+          },
+          {
+            "title": "Partners Health Management – Provider Knowledge Base ...",
+            "url": "https://providers.partnersbhm.org/",
+            "domain": "providers.partnersbhm.org"
+          },
+          {
+            "title": "How to Join",
+            "url": "https://thealliance.health/for-providers/join-our-network/how-to-join/",
+            "domain": "thealliance.health"
+          },
+          {
+            "title": "Provider Enrollment - Alliance Health",
+            "url": "https://www.alliancehealthplan.org/providers/network/become-a-provider/provider-enrollment/",
+            "domain": "alliancehealthplan.org"
+          },
+          {
+            "title": "Become a Provider - Alliance Health",
+            "url": "https://www.alliancehealthplan.org/providers/network/become-a-provider/",
+            "domain": "alliancehealthplan.org"
+          },
+          {
+            "title": "Join Our Network - Central California Alliance for Health",
+            "url": "https://thealliance.health/for-providers/join-our-network/",
+            "domain": "thealliance.health"
+          },
+          {
+            "title": "Provider Credentialing Applications and Policies",
+            "url": "https://thealliance.health/for-providers/resources/credentialing-applications-and-policies/",
+            "domain": "thealliance.health"
+          },
+          {
+            "title": "Become an Alliance Behavioral Health Provider",
+            "url": "https://thealliance.health/for-providers/manage-care/behavioral-health/become-an-alliance-behavioral-health-provider/",
+            "domain": "thealliance.health"
+          },
+          {
+            "title": "Provider Questions and Answers",
+            "url": "https://www.alliancehealthplan.org/providers/faqs/",
+            "domain": "alliancehealthplan.org"
+          },
+          {
+            "title": "For Providers | The Alliance",
+            "url": "https://the-alliance.org/providers/",
+            "domain": "the-alliance.org"
+          },
+          {
+            "title": "Training and Support",
+            "url": "https://www.alliancehealthplan.org/providers/network/support/",
+            "domain": "alliancehealthplan.org"
+          },
+          {
+            "title": "Prior Authorization Submission Process - Alliance Health",
+            "url": "https://www.alliancehealthplan.org/providers/tp/submission-processes/pa-submission-process/",
+            "domain": "alliancehealthplan.org"
+          },
+          {
+            "title": "ProviderManual 2026_EditedbyKE_R",
+            "url": "https://www.trilliumohp.com/content/dam/centene/trillium/ProviderResources/ProviderManuals/ProviderManual%202026_FINAL_R.pdf",
+            "domain": "trilliumohp.com"
+          },
+          {
+            "title": "[PDF] trillium health resources - provider manual",
+            "url": "https://www.trilliumhealthresources.org/sites/default/files/docs/Provider-documents/Provider-Manual/Trillium-Provider-Manual.pdf",
+            "domain": "trilliumhealthresources.org"
+          },
+          {
+            "title": "Request Participation Within Our Network",
+            "url": "https://www.trilliumohp.com/providers/Request-Participation-within-our-Network.html",
+            "domain": "trilliumohp.com"
+          },
+          {
+            "title": "Provider Portal & Resources",
+            "url": "https://www.trilliumohp.com/providers.html",
+            "domain": "trilliumohp.com"
+          },
+          {
+            "title": "Network Communication Bulletin #279",
+            "url": "https://www.trilliumhealthresources.org/sites/default/files/docs/Network-Communication-Bulletin/279-Network-Communication-Bulletin.pdf",
+            "domain": "trilliumhealthresources.org"
+          },
+          {
+            "title": "Trillium Provider Interest - Network Participation Request Form",
+            "url": "https://www.trilliumohp.com/content/dam/centene/trillium/ProviderResources/ProviderForms/TrilliumProviderInterest.pdf",
+            "domain": "trilliumohp.com"
+          },
+          {
+            "title": "Provider Recredentialing Application",
+            "url": "https://www.trilliumhealthresources.org/sites/default/files/docs/Provider-documents/Credentialing/Trillium-Provider-Recredentialing-Application.pdf",
+            "domain": "trilliumhealthresources.org"
+          },
+          {
+            "title": "Network Participation",
+            "url": "https://www.trilliumhealthresources.org/for-providers/request-opportunities",
+            "domain": "trilliumhealthresources.org"
+          },
+          {
+            "title": "[PDF] MEDICAID TRANSFORMATION UPDATE: - Trillium Health Resources",
+            "url": "https://www.trilliumhealthresources.org/sites/default/files/docs/Urgent-Notification/060122-UN-Medicaid-Updated.pdf",
+            "domain": "trilliumhealthresources.org"
+          },
+          {
+            "title": "[PDF] Trillium-TP-Provider-Manual.pdf",
+            "url": "https://www.trilliumhealthresources.org/sites/default/files/docs/Provider-documents/Provider-Manual/Trillium-TP-Provider-Manual.pdf",
+            "domain": "trilliumhealthresources.org"
+          },
+          {
+            "title": "Fact Sheet: What Providers Need to Know After Tailored Plan Launch",
+            "url": "https://medicaid.ncdhhs.gov/what-provider-need-know-after-tailored-plan-launch/download?attachment=",
+            "domain": "medicaid.ncdhhs.gov"
+          },
+          {
+            "title": "[PDF] NC Medicaid Managed Care: Contracting with Tailored Plans",
+            "url": "https://medicaid.ncdhhs.gov/contracting-tailored-plans/download?attachment",
+            "domain": "medicaid.ncdhhs.gov"
+          },
+          {
+            "title": "[PDF] Back Porch Chat: Medicaid Managed Care Hot Topics",
+            "url": "https://medicaid.ncdhhs.gov/managed-care-hot-topics05062021-slides/download?attachment",
+            "domain": "medicaid.ncdhhs.gov"
+          },
+          {
+            "title": "[PDF] May 6 NCMT Hot Topics Fireside Chat What Ifs - NC Medicaid",
+            "url": "https://medicaid.ncdhhs.gov/ncmt-hot-topics-fireside-qa-05062025/download?attachment",
+            "domain": "medicaid.ncdhhs.gov"
+          },
+          {
+            "title": "Medicaid Managed Care Update",
+            "url": "https://www.ncdhhs.gov/webinar-medicaid-managed-care-update-20190614-final-130pm/open",
+            "domain": "ncdhhs.gov"
+          },
+          {
+            "title": "[PDF] LME-MCO Joint Communication Bulletin # J413 DATE - NC DHHS",
+            "url": "https://www.ncdhhs.gov/joint-communication-bulletin-j413-state-funded-non-medicaid-provider-credentialing-05042022/download?attachment",
+            "domain": "ncdhhs.gov"
+          },
+          {
+            "title": "Behavioral Health Provider Enrollment FAQs - NCTracks",
+            "url": "https://per.nctracks.com/content/public/es/providers/faq-main-page/faqs-for-Behavioral-Health-Provider-Enrollment.html",
+            "domain": "per.nctracks.com"
+          },
+          {
+            "title": "NC Medicaid Managed Care Pharmacy Summit",
+            "url": "https://medicaid.ncdhhs.gov/tailored-plan-roll-out-webinar-faqs/download?attachment",
+            "domain": "medicaid.ncdhhs.gov"
+          },
+          {
+            "title": "Behavioral Health I/DD Tailored Plan Memo on Eligibility and ...",
+            "url": "https://www.ncdhhs.gov/medicaid/bh-idd-tp-eligibility-enrollment-update-final-20190716/download",
+            "domain": "ncdhhs.gov"
+          },
+          {
+            "title": "Trillium Selected as NC ROOTS Hub",
+            "url": "https://www.trilliumhealthresources.org/article/trillium-selected-nc-roots-hub",
+            "domain": "trilliumhealthresources.org"
+          },
+          {
+            "title": "North Carolina Selects Five Hub Leads to Strengthen Rural Healthcare",
+            "url": "https://www.hcinnovationgroup.com/policy-value-based-care/health-equity/news/55378503/north-carolina-selects-five-hub-leads-to-strengthen-rural-healthcare",
+            "domain": "hcinnovationgroup.com"
+          },
+          {
+            "title": "After a pioneering program was spiked, NC organizations build a new path forward",
+            "url": "https://www.northcarolinahealthnews.org/2026/05/13/new-path-for-hop/",
+            "domain": "northcarolinahealthnews.org"
+          },
+          {
+            "title": "NCDHHS selects Access East as hub for rural healthcare ...",
+            "url": "https://www.publicradioeast.org/2026-05-05/ncdhhs-selects-access-east-as-hub-for-rural-healthcare-transformation?_amp=true",
+            "domain": "publicradioeast.org"
+          },
+          {
+            "title": "Rural Health Transformation Program | NCDHHS",
+            "url": "https://www.ncdhhs.gov/about/department-initiatives/rural-health-transformation-program",
+            "domain": "ncdhhs.gov"
+          },
+          {
+            "title": "News | UNC Center for Thriving Communities",
+            "url": "https://www.med.unc.edu/thrivingcommunities/category/news/",
+            "domain": "med.unc.edu"
+          },
+          {
+            "title": "[PDF] 10a ncac 27g .0201 governing body policies",
+            "url": "http://reports.oah.state.nc.us/ncac/title%2010a%20-%20health%20and%20human%20services/chapter%2027%20-%20mental%20health,%20community%20facilities%20and%20services/subchapter%20g/10a%20ncac%2027g%20.0201.pdf",
+            "domain": "reports.oah.state.nc.us"
+          },
+          {
+            "title": "10a NCAC 27g - Available Reports",
+            "url": "http://reports.oah.state.nc.us/ncac/title%2010a%20-%20health%20and%20human%20services/chapter%2027%20-%20mental%20health,%20community%20facilities%20and%20services/subchapter%20g/subchapter%20g%20rules.html",
+            "domain": "reports.oah.state.nc.us"
+          },
+          {
+            "title": "Untitled",
+            "url": "http://reports.oah.state.nc.us/ncac/title%2010a%20-%20health%20and%20human%20services/chapter%2027%20-%20mental%20health,%20community%20facilities%20and%20services/subchapter%20g/10a%20ncac%2027g%20.3605.html",
+            "domain": "reports.oah.state.nc.us"
+          },
+          {
+            "title": "[PDF] 10A NCAC 27G - NC OAH",
+            "url": "https://www.oah.nc.gov/documents/rules/rrc/05162019-10a-ncac-27g-commission-mh-dd-sas/download",
+            "domain": "oah.nc.gov"
+          },
+          {
+            "title": "NC DHSR MHLCS: Plan of Correction",
+            "url": "https://info.ncdhhs.gov/dhsr/mhlcs/sods/2019/20190918-150373.pdf",
+            "domain": "info.ncdhhs.gov"
+          },
+          {
+            "title": "[PDF] NC DHSR MHLCS: Statement of Deficiency - NC DHHS",
+            "url": "https://info.ncdhhs.gov/dhsr/mhlcs/sods/2019/20190730-030269.pdf?ver=1",
+            "domain": "info.ncdhhs.gov"
+          },
+          {
+            "title": "10A NCAC 27G",
+            "url": "https://www.oah.nc.gov/documents/rules/rrc/10a-ncac-27g-final-report/download",
+            "domain": "oah.nc.gov"
+          },
+          {
+            "title": "[PDF] 10A NCAC 27G - NC OAH",
+            "url": "https://www.oah.nc.gov/10a-ncac-27g-commission/open",
+            "domain": "oah.nc.gov"
+          },
+          {
+            "title": "NCAC > Title 10A - Health and Human Services > Chapter 27",
+            "url": "http://reports.oah.state.nc.us/ncac.asp?folderName=%5CTitle%2010A%20-%20Health%20and%20Human%20Services%5CChapter%2027%20-%20Mental%20Health,%20Community%20Facilities%20and%20Services",
+            "domain": "reports.oah.state.nc.us"
+          },
+          {
+            "title": "SUBCHAPTER 27A – fiscal rules - Available Reports",
+            "url": "http://reports.oah.state.nc.us/ncac/title%2010a%20-%20health%20and%20human%20services/chapter%2027%20-%20mental%20health,%20community%20facilities%20and%20services/chapter%2027%20rules.html",
+            "domain": "reports.oah.state.nc.us"
+          },
+          {
+            "title": "SECTION .4400 – SUBSTANCE ABUSE INTENSIVE OUTPATIENT PROGRAM",
+            "url": "http://reports.oah.state.nc.us/ncac/title%2010a%20-%20health%20and%20human%20services/chapter%2027%20-%20mental%20health,%20community%20facilities%20and%20services/subchapter%20g/10a%20ncac%2027g%20.4401.pdf",
+            "domain": "reports.oah.state.nc.us"
+          },
+          {
+            "title": "STAFF | North Carolina Administrative Code",
+            "url": "https://regulations.justia.com/states/north-carolina/title-10a/chapter-27/subchapter-g/section-4400/section-27g-4402/",
+            "domain": "regulations.justia.com"
+          },
+          {
+            "title": "[PDF] Substance Abuse Intensive Outpatient Program (State-Funded)",
+            "url": "https://www.ncdhhs.gov/documents/state-funded-substance-abuse-intensive-outpatient-program-definition-pdf/open",
+            "domain": "ncdhhs.gov"
+          },
+          {
+            "title": "Subchapter G - RULES FOR MENTAL HEALTH, DEVELOPMENTAL ...",
+            "url": "https://www.law.cornell.edu/regulations/north-carolina/title-10A/chapter-27/subchapter-G",
+            "domain": "law.cornell.edu"
+          },
+          {
+            "title": "[PDF] Rules for Mental Health, Developmental Disabilities and Substance ...",
+            "url": "https://www.ncdhhs.gov/documents/files/apsm30-12-3-15/open",
+            "domain": "ncdhhs.gov"
+          },
+          {
+            "title": "10A NCAC 27G .4501 Scope",
+            "url": "http://reports.oah.state.nc.us/ncac/title%2010a%20-%20health%20and%20human%20services/chapter%2027%20-%20mental%20health,%20community%20facilities%20and%20services/subchapter%20g/10a%20ncac%2027g%20.4501.html",
+            "domain": "reports.oah.state.nc.us"
+          },
+          {
+            "title": "[PDF] State-Funded Substance Abuse Comprehensive Outpatient ...",
+            "url": "https://www.ncdhhs.gov/documents/state-funded-substance-abuse-comprehensive-outpatient-treatment-sacot-definition/open",
+            "domain": "ncdhhs.gov"
+          },
+          {
+            "title": "NORTH CAROLINA REGISTER BoilerPlate",
+            "url": "https://www.oah.nc.gov/documents/rules/nc-register/nc-register-volume-20-issue-10/open",
+            "domain": "oah.nc.gov"
+          },
+          {
+            "title": "NCAC Full-Text Rule Search",
+            "url": "http://ncrules.state.nc.us/searchRules.asp?searchCriteria=nc&title=&chapter=&returnType=Rule&resultsPage=344",
+            "domain": "ncrules.state.nc.us"
+          },
+          {
+            "title": "§ .4500 | State Regulations | LII / Legal Information Institute",
+            "url": "https://www.law.cornell.edu/regulations/north-carolina/title-10A/chapter-27/subchapter-G/section-.4500",
+            "domain": "law.cornell.edu"
+          },
+          {
+            "title": "RECORD MANAGEMENT AND DOCUMENTATION ...",
+            "url": "https://www.ncdhhs.gov/rmdmjuly-2025/download?attachment",
+            "domain": "ncdhhs.gov"
+          },
+          {
+            "title": "dmh/dd/sus crosscutting requirements",
+            "url": "https://www.nctreasurer.gov/documents/files/slgfdcompliancesupplements/dmh-0-2025/open",
+            "domain": "nctreasurer.gov"
+          },
+          {
+            "title": "[PDF] High Fidelity Wraparound Current Effective Date: 02/10/2026 Status",
+            "url": "https://provider.healthybluenc.com/docs/gpp/NC_CAID_HBCT_HighFidelityWraparound.pdf?v=202604062057",
+            "domain": "provider.healthybluenc.com"
+          },
+          {
+            "title": "ILOS – High Fidelity Wraparound Current Effective Date",
+            "url": "https://provider.healthybluenc.com/docs/gpp/NC_CAID_HBCT_HighFidelityWraparound.pdf?v",
+            "domain": "provider.healthybluenc.com"
+          },
+          {
+            "title": "[DOC] https://www.ncdhhs.gov/state-funded-withdrawl-mana...",
+            "url": "https://www.ncdhhs.gov/state-funded-withdrawl-management-2/open",
+            "domain": "ncdhhs.gov"
+          },
+          {
+            "title": "Division of Mental Health, Developmental Disabilities and Substance Use Services",
+            "url": "https://www.ncdhhs.gov/documents/state-funded-peer-support-service-definition-10-2026/open",
+            "domain": "ncdhhs.gov"
+          },
+          {
+            "title": "[PDF] records retention and disposition schedule dmh/dd/sas local ...",
+            "url": "https://archives.ncdcr.gov/dmhddsas-local-management-entity-lme-schedule/open",
+            "domain": "archives.ncdcr.gov"
+          },
+          {
+            "title": "[PDF] STATE BUREAU OF INVESTIGATION - NC DHHS",
+            "url": "https://info.ncdhhs.gov/dhsr/abcms/pdf/Non-Criminal-Justice-Access-Agreement-Form_SB-41.pdf",
+            "domain": "info.ncdhhs.gov"
+          },
+          {
+            "title": "G.S. 122C-80",
+            "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_122C/GS_122C-80.html",
+            "domain": "ncleg.gov"
+          },
+          {
+            "title": "[PDF] NC DHSR MHLCS: Frequently Asked Questions - NC DHHS",
+            "url": "https://info.ncdhhs.gov/dhsr/mhlcs/archive/pdf/faq.pdf",
+            "domain": "info.ncdhhs.gov"
+          },
+          {
+            "title": "[PDF] general assembly of north carolina",
+            "url": "https://www.ncleg.gov/Sessions/1999/Bills/Senate/PDF/S1192v5.pdf",
+            "domain": "ncleg.gov"
+          },
+          {
+            "title": "[PDF] Section V: - NCDHHS Policies and Manuals",
+            "url": "https://policies.ncdhhs.gov/wp-content/uploads/Pol5_SB_CrimRec.pdf",
+            "domain": "policies.ncdhhs.gov"
+          },
+          {
+            "title": "Out of State Clearances Page 1 of 28 Updated 06.01.2026",
+            "url": "https://www.pa.gov/content/dam/copapwp-pagov/en/dhs/documents/keepkidssafe/clearances/documents/out-of-state-clearances-table.pdf",
+            "domain": "pa.gov"
+          },
+          {
+            "title": "DHHS Criminal Background Checks - Basic Information",
+            "url": "https://ncchildcare.ncdhhs.gov/Home/DCDEE-Sections/Criminal-Background-Check-Unit/Basic-Information",
+            "domain": "ncchildcare.ncdhhs.gov"
+          },
+          {
+            "title": "Upcoming Layout Changes for PPM",
+            "url": "https://www.nctracks.nc.gov/content/public/providers/provider-communications/2025-Announcements1/Upcoming-Layout-Changes-for-PPM.html",
+            "domain": "nctracks.nc.gov"
+          },
+          {
+            "title": "[XLS] Provider Permission Matrix 01-2 - NCTracks",
+            "url": "https://www.nctracks.nc.gov/content/dam/jcr:ccce8958-7f2b-429b-9d6e-92feb51e90a4/Provider%20Permission%20Matrix%2001-25-2026.xlsx",
+            "domain": "nctracks.nc.gov"
+          },
+          {
+            "title": "Provider Playbook: Training Courses - NC Medicaid",
+            "url": "https://medicaid.ncdhhs.gov/providers/provider-playbook-medicaid-managed-care/provider-playbook-training-courses",
+            "domain": "medicaid.ncdhhs.gov"
+          },
+          {
+            "title": "Behavioral Health Providers | NC Medicaid",
+            "url": "https://medicaid.ncdhhs.gov/blog-terms/behavioral-health-providers",
+            "domain": "medicaid.ncdhhs.gov"
+          },
+          {
+            "title": "Recent Behavioral Health Enrollment Updates for ...",
+            "url": "https://medicaid.ncdhhs.gov/blog/2026/09/14/recent-behavioral-health-enrollment-updates-organizations",
+            "domain": "medicaid.ncdhhs.gov"
+          },
+          {
+            "title": "NC Medicaid Community Behavioral Health Taxonomy ...",
+            "url": "https://www.nctracks.nc.gov/content/dam/jcr:20b1a77a-7c43-428e-afef-d6b600f1736f/NC%20Medicaid%20Community%20Behavioral%20Health%20Taxonomy%20251S00000X%20Provider%20Attestation%20Form%20Updated%208.22.23.pdf",
+            "domain": "nctracks.nc.gov"
+          },
+          {
+            "title": "Post-Enrollment National Accreditation Update - NC Medicaid",
+            "url": "https://medicaid.ncdhhs.gov/blog/2026/04/16/post-enrollment-national-accreditation-update",
+            "domain": "medicaid.ncdhhs.gov"
+          },
+          {
+            "title": "Organizational Provider Records Without the Required ...",
+            "url": "https://medicaid.ncdhhs.gov/blog/2022/10/10/organizational-provider-records-without-required-individual-provider-affiliation-risk",
+            "domain": "medicaid.ncdhhs.gov"
+          },
+          {
+            "title": "Office of Rural Health | NCDHHS",
+            "url": "https://www.ncdhhs.gov/divisionoffice/office-rural-health",
+            "domain": "ncdhhs.gov"
+          },
+          {
+            "title": "NCDHHS Requests Applicants for NC Rural Health Transformation ROOTS Hub Leads",
+            "url": "https://www.ncdhhs.gov/public-notice-ncdhhs-requests-applicants-nc-rural-health-transformation-roots-hub-leads/open",
+            "domain": "ncdhhs.gov"
+          },
+          {
+            "title": "North Carolina Rural Health Transformation Program ( ...",
+            "url": "https://webservices.ncleg.gov/ViewDocSiteFile/105544",
+            "domain": "webservices.ncleg.gov"
+          },
+          {
+            "title": "North Carolina Rural Health Transformation Program",
+            "url": "https://healthpolicy.duke.edu/projects/north-carolina-rural-health-transformation-program",
+            "domain": "healthpolicy.duke.edu"
+          },
+          {
+            "title": "INSTRUCTIONS FOR NATIONAL CRIMINAL HISTORY RECORD ...",
+            "url": "https://dhhs.ne.gov/licensure/Documents/RCCAInstrForFingerprinting.pdf",
+            "domain": "dhhs.ne.gov"
+          },
+          {
+            "title": "Application Information APRN-Nurse Practitioner License",
+            "url": "https://dhhs.ne.gov/licensure/Documents/APRNNPapp.pdf",
+            "domain": "dhhs.ne.gov"
+          },
+          {
+            "title": "DHHS Children's Services Licensing National Criminal History ...",
+            "url": "https://dhhs.ne.gov/licensure/Documents/FingerprintApplicationOrientation.pdf",
+            "domain": "dhhs.ne.gov"
+          },
+          {
+            "title": "[PDF] Application Information for Nebraska Dental License - DHHS",
+            "url": "https://dhhs.ne.gov/licensure/Documents/DDSAPP.pdf",
+            "domain": "dhhs.ne.gov"
+          },
+          {
+            "title": "Guardianship | Health and Human Services North Dakota",
+            "url": "https://www.hhs.nd.gov/providers/criminal-background-checks/guardianship",
+            "domain": "hhs.nd.gov"
+          },
+          {
+            "title": "Out of State Clearances Page 1 of 21 Updated 6.15.23",
+            "url": "https://www.pa.gov/content/dam/copapwp-pagov/en/dhs/documents/KKS_Out-of-State-Clearances-Information.pdf",
+            "domain": "pa.gov"
+          },
+          {
+            "title": "*NFF State",
+            "url": "https://childcareta.acf.hhs.gov/sites/default/files/child_care_subsidy_cbc_state_contacts_9-19.pdf",
+            "domain": "childcareta.acf.hhs.gov"
+          },
+          {
+            "title": "Complaint Intake and Health Care Personnel Investigations Section",
+            "url": "https://info.ncdhhs.gov/dhsr/ciu/index.html",
+            "domain": "info.ncdhhs.gov"
+          },
+          {
+            "title": "NC DHSR CIHCPIS: Public Records Request",
+            "url": "https://info.ncdhhs.gov/dhsr/ciu/publicrecords.html",
+            "domain": "info.ncdhhs.gov"
+          },
+          {
+            "title": "Chapter 131E - Article 15",
+            "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/PDF/ByArticle/Chapter_131E/Article_15.pdf",
+            "domain": "ncleg.gov"
+          },
+          {
+            "title": "G.S. 143B-1209.20",
+            "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_143B/GS_143B-1209.20.html",
+            "domain": "ncleg.gov"
+          }
+        ]
+      }
+    ],
+    "created_at": "2026-10-18 02:03:25",
+    "updated_at": 1792310150662
+  },
+  {
+    "id": "bbbf9c98-7068-4328-8056-a21c92a7eb7e_user",
+    "chatGroupId": "df7227c0-4f0c-4b49-880f-6c40882c1c05",
+    "role": "user",
+    "model": "perplexity",
+    "displayModel": "Perplexity",
+    "modelId": "pplx_asi_sonnet",
+    "contents": [
+      {
+        "type": "text",
+        "content": "BATCH 0 - VERIFY THE FOUNDATIONS (run this first)\nBefore I research individual tasks, check the identifiers my app is built on. Reply with a table: claim | CONFIRMED / CORRECTION / NOT VERIFIED | correct value | source URL. Then list anything important I have missed.\n\nClaims to check (they come from my app and may contain errors):\n1. NC Medicaid Clinical Coverage Policy 8G is \"Peer Support Services\". Billing code H0038, periodic, 15-minute unit. Qualified Professional (QP) supervision ratio 1:6. Peer caseload limit of 15.\n2. \"CCP 8A-12\" is the policy for Substance Abuse Intensive Outpatient Program (SAIOP). Code H0015, ASAM Level 2.1, supervised by an LCAS or CCS clinical supervisor, 3 hours per day, 30-day pass-through authorization.\n3. \"CCP 8A-13\" is the policy for Substance Abuse Comprehensive Outpatient Treatment (SACOT). Code H2036, ASAM Level 2.5, 20 or more hours per week (4 hours per day), 1:10 QP ratio, 60-day pass-through authorization.\n4. Facility licensure for these services is under 10A NCAC 27G (including 27G .0201 governing body policies), issued by DHSR Mental Health Licensure and Certification Section.\n5. \"SL 2026-1\" is a North Carolina session law relevant to these services. What is it, if it exists?\n6. \"APSM 45-2\" is the NC documentation / records manual used for service notes. What is its current name, number and status?\n7. NCTracks requires recredentialing every 5 years, and the revalidation reminders go out at 70, 50, 20 and 5 days.\n8. Medicaid Tailored Plans: which LME/MCOs operate in which of NC's regions today, and which are the current provider-network contacts. (My app lists Vaya Health for Region 1, Partners for Regions 2-3, Alliance for Region 4, Trillium for Regions 5-6. Check that.)\n9. \"NC ROOTS\" and \"Rural Health Transformation\" regional hubs listed in my app (Impact Health, Trillium, Vaya, UNC Health, Access East): do these exist and are they the hub leads?\n10. Fees my app assumes: NC SOS filing $125; DHSR licensure base fee $350 plus $12.50 per day of capacity; NCTracks state enrollment fee $100 plus the federal application fee $709; fingerprinting $38 per person; background check $35-$75 per candidate. Give the current amounts and sources.\nAlso tell me whether these three services need Tailored Plan credentialing in addition to NCTracks enrollment, and in what order the steps normally happen."
+      }
+    ],
+    "created_at": "2026-10-18 03:29:43",
+    "updated_at": 1792310150662
+  },
+  {
+    "id": "bbbf9c98-7068-4328-8056-a21c92a7eb7e_assistant",
+    "chatGroupId": "df7227c0-4f0c-4b49-880f-6c40882c1c05",
+    "role": "assistant",
+    "model": "perplexity",
+    "displayModel": "Perplexity",
+    "modelId": "pplx_asi_sonnet",
+    "contents": [
+      {
+        "type": "markdown",
+        "content": "# Batch 0: Foundation check, with H.R. 1 added (Oct 18, 2026)\n\nYour updated instructions add an H.R. 1 phase, so I researched it and added a section below. The ten claim checks are unchanged from my earlier pass. The H.R. 1 items most relevant to these three services start Jan 1, 2027.\n\n## Claim table\n\n| # | Claim | Status | Correct value | Source |\n|---|---|---|---|---|\n| 1a | CCP 8G = Peer Support Services | CONFIRMED | Amended Sept 1, 2026. | [8G policy](https://medicaid.ncdhhs.gov/8g-peer-support-services/open), [NC Medicaid bulletin](https://medicaid.ncdhhs.gov/blog/2026/10/02/amendment-clinical-coverage-policy-8g-peer-support-services) |\n| 1b | H0038, 15-minute unit | CONFIRMED | \"Periodic\" is not in the policy text I read. | [8G policy](https://medicaid.ncdhhs.gov/8g-peer-support-services/open) |\n| 1c | QP supervision ratio 1:6 | CORRECTION | QP-to-CPSS (NC Certified Peer Support Specialist) is 1:8. | [8G §6.2.1](https://medicaid.ncdhhs.gov/8g-peer-support-services/open) |\n| 1d | Peer caseload limit 15 | CONFIRMED, reframed | The CPSS-to-beneficiary ratio is 1:15, and the group ratio is 1:12. There is no fixed team caseload. | [8G §6.2.1](https://medicaid.ncdhhs.gov/8g-peer-support-services/open) |\n| 2a | CCP 8A-12 = SAIOP | CONFIRMED | Stand-alone policy, effective Jan 1, 2026. | [policy update](https://medicaid.ncdhhs.gov/blog/2026/01/07/behavioral-health-clinical-coverage-policy-updates), [8A-12](https://medicaid.ncdhhs.gov/media/15767/download) |\n| 2b | H0015, ASAM 2.1, LCAS/CCS supervisor | CONFIRMED | The supervisor may also be a CSI. | [8A-12](https://medicaid.ncdhhs.gov/media/15767/download) |\n| 2c | 3 hours per day | PARTIAL | The program runs 9–19 hours per week for adults. Billing needs at least 3 hours per day. | [8A-12](https://medicaid.ncdhhs.gov/media/15767/download) |\n| 2d | 30-day pass-through | CORRECTION | \"Medicaid shall not require prior approval for SAIOP\" (§5.1). | [8A-12](https://medicaid.ncdhhs.gov/media/15767/download) |\n| 3a | CCP 8A-13 = SACOT, ASAM 2.5, 20+ hours per week | CONFIRMED | Effective Jan 1, 2026. Adults 18 and older. At least 4 hours per service day. | [8A-13](https://medicaid.ncdhhs.gov/media/15769/download) |\n| 3b | H2036 | CORRECTION | The code is H2035, 1 unit = 1 hour. | [8A-13](https://medicaid.ncdhhs.gov/media/15769/download) |\n| 3c | 1:10 QP ratio | CORRECTION | The ratio is 1 clinical staff per 10 or fewer in group counseling. | [8A-13 §6.2](https://medicaid.ncdhhs.gov/media/15769/download) |\n| 3d | 60-day pass-through | CORRECTION | No prior approval is required. The 60-day figure comes from 8G authorization periods. | [8A-13](https://medicaid.ncdhhs.gov/media/15769/download), [8G §5.2.2](https://medicaid.ncdhhs.gov/8g-peer-support-services/open) |\n| 4 | 10A NCAC 27G; .0201; DHSR | CONFIRMED | .0201 is \"Governing Body Policies.\" SAIOP is under 27G .4400 and SACOT under 27G .4500. | 27G .0201[reports.oah.state.nc.us](http://reports.oah.state.nc.us/ncac/title%2010a%20-%20health%20and%20human%20services/chapter%2027%20-%20mental%20health,%20community%20facilities%20and%20services/subchapter%20g/10a%20ncac%2027g%20.0201.pdf?share_frome=aipt), 27G .4501[reports.oah.state.nc.us](http://reports.oah.state.nc.us/ncac/title%2010a%20-%20health%20and%20human%20services/chapter%2027%20-%20mental%20health,%20community%20facilities%20and%20services/subchapter%20g/10a%20ncac%2027g%20.4501.html?share_frome=aipt) |\n| 5 | SL 2026-1 | CONFIRMED, exists | HB 696, \"An Act Making Various Changes to the Medicaid Program and Other Changes Related to HHS.\" Became law Apr 30, 2026. §3C.12 covers open and closed provider networks. It does not mention NCTracks or peer support. | [SL 2026-1](https://www.ncleg.gov/EnactedLegislation/SessionLaws/PDF/2025-2026/SL2026-1.pdf), HTML[ncleg.gov](https://www.ncleg.gov/EnactedLegislation/SessionLaws/HTML/2025-2026/SL2026-1.html?share_frome=aipt) |\n| 6 | APSM 45-2 | CORRECTION / NOT VERIFIED | I found no APSM 45-2. The current manual is the Records Management and Documentation Manual, effective July 8, 2025. Policies 8A-12 and 8A-13 §5.5 require service notes to meet it. | [DHHS manual page](https://www.ncdhhs.gov/divisions/mental-health-developmental-disabilities-and-substance-use-services/records-management-and-documentation-manual), manual[ncdhhs.gov](https://www.ncdhhs.gov/rmdmjuly-2025/download?attachment=&share_frome=aipt) |\n| 7 | 5-year revalidation; notices at 70, 50, 20 and 5 days | CONFIRMED, refined | 70 days is the first notice, and 50, 20 and 5 are reminders. A missed deadline means suspension, then termination. | [NCTracks](https://www.nctracks.nc.gov/content/public/providers/provider-recredentialing.html), [NCTracks 2018 notice](https://www.nctracks.nc.gov/content/public/providers/provider-communications/2018-announcements/Changes-to-Re-credentialing-and-Reverification-Process.html) |\n| 8 | Region-based Tailored Plan map | CORRECTION | Tailored Plans are assigned by county, not by Regions 1–6. Alliance has 7 counties. Trillium absorbed Sandhills and Eastpointe on Feb 1, 2024. Vaya Partners (Vaya and Partners merged Oct 1, 2026) has 47. | [NC Medicaid Plans](https://www.ncmedicaidplans.gov/en/get-answers), [NCDHHS directory](https://www.ncdhhs.gov/providers/lme-mco-directory), [Vaya merger FAQ](https://www.vayahealth.com/wp-content/uploads/2026/07/Merger_Provider_FAQ.pdf) |\n| 9 | NC ROOTS hub leads | CONFIRMED | Impact Health (Region 1), Trillium (Regions 2 and 5), Vaya (Region 3), UNC Health (Region 4), Access East (Region 6). They are not tied to licensure or enrollment. | [NCDHHS ROOTS page](https://www.ncdhhs.gov/about/department-initiatives/rural-health-transformation-program/rural-organizations-orchestrating-transformation-sustainability-roots-hub-leads) |\n| 10a | SOS $125 | CONFIRMED for LLC | Nonprofit articles are $60. Certificate of Existence is $15. LLC annual report is $200. | [NC SOS fees](https://www.sosnc.gov/fees/by_title/_Business_Registration/) |\n| 10b | DHSR $350 + $12.50/day | CORRECTION | Non-residential facilities (SAIOP/SACOT) pay a $265 base fee with no per-capacity fee. The $350 figure is for residential facilities of 6 beds or fewer. | [DHSR packet](https://info.ncdhhs.gov/dhsr/mhlcs/pdf/mhiapp.pdf?ver=2) |\n| 10c | NCTracks $100 + $709 | CORRECTION | The 2026 federal fee is $750, so the total is $850. $709 was the 2024 amount. | [NCTracks fee notice](https://www.nctracks.nc.gov/content/public/providers/provider-communications/2025-Announcements/Federal-Provider-Enrollment-Application-Fee-Increase-for-Year-2026.html), [fee history](https://www.nctracks.nc.gov/content/dam/jcr:5088259c-ab17-4c01-bf6d-c64786be1da4/State%20and%20Federal%20Fee%20Amounts%20by%20Year.xlsx) |\n| 10d | Fingerprinting $38 | NOT VERIFIED for NCTracks | NCTracks says the cost varies by location. A SBI access form shows $38 per card for national checks. | [NCTracks FAQ](https://www.nctracks.nc.gov/content/public/providers/faq-main-page/faqs-for-fingerprinting.html), SBI form[info.ncdhhs.gov](https://info.ncdhhs.gov/dhsr/abcms/pdf/Non-Criminal-Justice-Access-Agreement-Form_SB-41.pdf?share_frome=aipt) |\n| 10e | Background check $35–$75 | NOT VERIFIED | The statutory cap on the SBI State check fee is $14. National check pricing is not stated. | G.S. 143B-1209.20[ncleg.gov](https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_143B/GS_143B-1209.20.html?share_frome=aipt) |\n\nPlan contacts as verified earlier:\n\n- **Alliance:** 919-651-8500 or ProviderNetwork@alliancehealthplan.org ([NC Medicaid health plans](https://medicaid.ncdhhs.gov/about-nc-medicaid/health-plans)).\n- **Trillium:** 855-250-1539.\n- **Vaya Partners:** 866-990-9712 per Vaya's own page. The NCDHHS directory lists a different number, 877-398-4145, so verify by phone.\n\n## Credentialing and step order\n\nYes, you need Tailored Plan contracting and credentialing in addition to NCTracks enrollment.\n\n- **Policy requirement:** 8G §6.1 requires organizations to be \"credentialed and contracted by a Prepaid Health Plan or Prepaid Inpatient Health Plan\" ([8G](https://medicaid.ncdhhs.gov/8g-peer-support-services/open)).\n- **Conflicting source:** An undated [NCTracks FAQ](https://www.nctracks.nc.gov/content/public/providers/faq-main-page/faqs-for-Behavioral-Health-Provider-Enrollment.html) says LME/MCOs no longer perform credentialing. The policies are newer. Ask each plan what it still requires.\n- **NCTracks comes first:** Alliance requires NCTracks enrollment before you apply to its network.[alliancehealthplan.org](https://www.alliancehealthplan.org/providers/network/become-a-provider/provider-enrollment/?share_frome=aipt)\n\nTypical order:\n\n1. Form the entity at the SOS.\n2. Get an EIN and an organizational NPI. I did not research these.\n3. Ask the plans about network need.\n4. Apply for the DHSR license. SAIOP and SACOT need it, and the [Provider Permission Matrix](https://www.nctracks.nc.gov/content/dam/jcr:4f0d2400-62b7-48a3-9617-ad31dd8cf543/Provider%20Permission%20Matrix%2008-16-2026.xlsx) does not require it for peer support.\n5. Enroll in NCTracks under taxonomy 251S00000X. This is high risk, so expect a site visit, fingerprinting and the federal fee.\n6. Apply to each plan.\n7. Obtain accreditation. Policies 8A-12 and 8A-13 say 1 year. The permission matrix says 3 years for SAIOP and SACOT. See the April 2026 notice. Plan for 1 year.[medicaid.ncdhhs.gov](https://medicaid.ncdhhs.gov/blog/2026/04/16/post-enrollment-national-accreditation-update?share_frome=aipt)\n\n## H.R. 1 status for these services\n\nI've separated what is statute, what CMS has issued, and what NC has announced. Each item has its date.\n\n**Statute (Public Law 119-21)**\n- **§71119 (work and community engagement):** States must condition expansion-adult eligibility on 80 hours per month of qualifying activity or equivalent income, starting Jan 1, 2027. Two exemptions matter for your patients:\n  - Individuals \"with a substance use disorder,\" under the medically frail category, subsection (xx)(9)(A)(ii)(V)(bb).\n  - Individuals \"participating in a drug addiction or alcoholic treatment and rehabilitation program,\" subsection (xx)(9)(A)(ii)(VII).\n- **Good-faith exemption:** The Secretary may exempt a state that shows a good-faith effort. Any such exemption expires no later than Dec 31, 2028.[law.cornell.edu](https://www.law.cornell.edu/uscode/text/42/1396a?share_frome=aipt)\n- **Other timing:** Six-month redeterminations (§71107) and shorter retroactive coverage (§71112) also start Jan 1, 2027. Qualified-alien eligibility (§71109) starts Oct 1, 2026.[webservices.ncleg.gov](https://webservices.ncleg.gov/ViewDocSiteFile/104990?share_frome=aipt)\n\n**CMS**\n- CMS issued an interim final rule (CMS-2454-IFC) on June 1, 2026.[cms.gov](https://www.cms.gov/newsroom/fact-sheets/medicaid-community-engagement-requirement-certain-individuals-interim-final-rule-comment-period-cms?share_frome=aipt)\n- It was published in the Federal Register on June 3, 2026. It took effect July 31, 2026, and comments closed Aug 1, 2026.[federalregister.gov](https://www.federalregister.gov/api/v1/documents/2026-11094?publication_date=2026-06-03&share_frome=aipt)\n- CMS's fact sheet lists participants in drug or alcohol treatment programs and medically frail people as exempt. It requires a 30-day notice of noncompliance and does not state a provider attestation requirement.\n- The CMS guidance bulletin was posted Dec 8, 2025.[medicaid.gov](https://www.medicaid.gov/resources-for-states/working-families-tax-cut-legislation/community-engagement?share_frome=aipt)\n\n**NC announcements**\n- NC applies the requirement Jan 1, 2027. The exemption list on NC Medicaid's page includes \"In a drug addiction or alcohol treatment and rehabilitation program\" and \"Has a substance use disorder.\" The page is dated Oct 13, 2026.[medicaid.ncdhhs.gov](https://medicaid.ncdhhs.gov/beneficiaries/impact-hr-1-and-federal-changes-medicaid/work-and-community-engagement-requirement?share_frome=aipt)\n- Members must meet the requirement in 3 of the 6 months before recertification.\n- Retroactive coverage drops from 3 months to 1 month for most expansion-age adults on Jan 1, 2027.[medicaid.ncdhhs.gov](https://medicaid.ncdhhs.gov/beneficiaries/medicaid-is-changing?share_frome=aipt)\n- NC still describes the medically frail pathway as undefined, and tells people to keep proof and contact their county Department of Social Services.\n- I found no NC good-faith exemption request. That is NOT VERIFIED.\n- The NC legislative deck lists provider-related and payment/financing provisions as \"not currently in scope.\" It also lists the expansion-adult copayments (§71120) as not currently in scope. Provider taxes (§71115) and state directed payments (§71116) are not itemized there.\n\n**What this means for your checklist**\n- Your patients may be exempt, but the member must document it. The legislative deck says providers should expect more requests for medical documentation to support exemption and disability determinations.\n- Plan for coverage churn. Six-month renewals and the shorter look-back mean more eligibility checks before billing. Verify eligibility on the date of service.[medicaid.ncdhhs.gov](https://medicaid.ncdhhs.gov/providers/programs-and-services/prior-approval-and-due-process?share_frome=aipt)\n- NC's provider-facing H.R. 1 page did not load, so I could not read it. Check it before you finalize that phase.\n\n## Other items you missed\n\n- **High-risk enrollment.** The Sept 14, 2026 bulletin says the site visit and fingerprinting are waived only with active national accreditation for the same location and service.[medicaid.ncdhhs.gov](https://medicaid.ncdhhs.gov/blog/2026/09/14/recent-behavioral-health-enrollment-updates-organizations?share_frome=aipt)\n- **42 CFR Part 2.** HHS says the SUD records rule's compliance date and enforcement start are Feb 16, 2026. SAIOP and SACOT likely fall under it. I did not confirm which of your services are Part 2 programs, so confirm that with an attorney.[hhs.gov](https://www.hhs.gov/hipaa/for-professionals/regulatory-initiatives/fact-sheet-42-cfr-part-2-final-rule/index.html?share_frome=aipt)[hhs.gov](https://www.hhs.gov/press-room/hhs-announce-civil-enforcement-program-sud-patient-records.html?share_frome=aipt)\n- **8G changes (effective Sept 1, 2026).** Unmanaged units are 24 per episode. Authorization is up to 176 units per 60 days. Telehealth is limited to 10% of service time.\n- **Peer support licensure.** Whether it needs a DHSR license is NOT VERIFIED. Call DHSR at 919-855-3795.\n- **2027 federal fee.** The 2027 federal fee takes effect Jan 1, 2027 and I did not verify it.\n\n## Open questions\n\n- Does NC plan to request a good-faith exemption that delays the work requirement past Jan 1, 2027? Check NC Medicaid's H.R. 1 page or the NC Medicaid contact center.\n- Which accreditation deadline governs SAIOP and SACOT, 1 year or 3 years? Ask the NC Medicaid Provider Ombudsman at 866-304-7062.\n- What do NCTracks fingerprinting and staff national checks actually cost? Call the NCTracks Call Center at 800-688-6696.\n- Is a separate credentialing step required by each Tailored Plan? Call each plan's provider network line.\n- Is peer support licensable at your site? Call DHSR at 919-855-3795.\n\nThis is research, not legal advice. Have a healthcare attorney confirm the Part 2 and H.R. 1 items before you rely on them. Send the first set of task keys when you're ready."
+      },
+      {
+        "type": "sources",
+        "sources": [
+          {
+            "title": "Medicaid Community Engagement Requirement for ...",
+            "url": "https://www.cms.gov/newsroom/fact-sheets/medicaid-community-engagement-requirement-certain-individuals-interim-final-rule-comment-period-cms",
+            "domain": "cms.gov"
+          },
+          {
+            "title": "Interim Final Rule with Comment Period: Medicaid ...",
+            "url": "https://www.hhs.gov/guidance/document/interim-final-rule-comment-period-medicaid-program-community-engagement-requirement",
+            "domain": "hhs.gov"
+          },
+          {
+            "title": "Community Engagement | Medicaid",
+            "url": "https://www.medicaid.gov/resources-for-states/working-families-tax-cut-legislation/community-engagement",
+            "domain": "medicaid.gov"
+          },
+          {
+            "title": "Federal Register",
+            "url": "https://www.federalregister.gov/api/v1/documents/2026-11094?publication_date=2026-06-03",
+            "domain": "federalregister.gov"
+          },
+          {
+            "title": "7.14 HR1 deck",
+            "url": "https://www.pa.gov/content/dam/copapwp-pagov/en/dhs/documents/about/dhs-information/documents/informationforadvocatesandstakeholders/consumer-subcommittee/7-14-hr1-deck.pdf",
+            "domain": "pa.gov"
+          },
+          {
+            "title": "CMS issues interim final rule on Medicaid community ...",
+            "url": "https://www.aha.org/news/headline/2026-06-01-cms-issues-interim-final-rule-medicaid-community-engagement-requirements",
+            "domain": "aha.org"
+          },
+          {
+            "title": "CMS Medicaid Community Engagement Rule: What Managed Care Plans Must Know",
+            "url": "https://www.crowell.com/en/insights/client-alerts/cms-announces-new-medicaid-eligibility-requirements-implications-for-managed-care-plans",
+            "domain": "crowell.com"
+          },
+          {
+            "title": "1 July 31, 2026 Centers for Medicare & Medicaid Services ...",
+            "url": "https://www.nyc.gov/assets/doh/downloads/pdf/public/comments/comment-07312026-community-engagement-requirement.pdf",
+            "domain": "nyc.gov"
+          },
+          {
+            "title": "CMS Issues Interim Final Rule on Medicaid Work Requirements",
+            "url": "https://www.ebglaw.com/insights/publications/cms-issues-interim-final-rule-on-medicaid-work-requirements",
+            "domain": "ebglaw.com"
+          },
+          {
+            "title": "Interim Final Rule: Medicaid Community Engagement ...",
+            "url": "https://www.advancingstates.org/sites/default/files/Summary%20of%20Interim%20Final%20Rule%20on%20Medicaid%20Community%20Engagement.pdf",
+            "domain": "advancingstates.org"
+          },
+          {
+            "title": "The Work and Community Engagement Requirement",
+            "url": "https://medicaid.ncdhhs.gov/beneficiaries/impact-hr-1-and-federal-changes-medicaid/work-and-community-engagement-requirement",
+            "domain": "medicaid.ncdhhs.gov"
+          },
+          {
+            "title": "Governor Stein, NCDHHS Call on CMS to Protect Medicaid for ...",
+            "url": "https://governor.nc.gov/news/press-releases/2026/07/30/governor-stein-ncdhhs-call-cms-protect-medicaid-people-cancer-and-severe-illnesses",
+            "domain": "governor.nc.gov"
+          },
+          {
+            "title": "[PDF] STATE OF NORTH CAROLINA DEPARTMENT OF HEALTH AND ...",
+            "url": "https://webservices.ncleg.gov/ViewDocSiteFile/105327",
+            "domain": "webservices.ncleg.gov"
+          },
+          {
+            "title": "NC Medicaid H.R.1 Public Outreach Presentation",
+            "url": "https://medicaid.ncdhhs.gov/hr-1-presentation-english/download?attachment",
+            "domain": "medicaid.ncdhhs.gov"
+          },
+          {
+            "title": "1",
+            "url": "https://www.ncdhhs.gov/scfacpresentationaugust2025final/download?attachment",
+            "domain": "ncdhhs.gov"
+          },
+          {
+            "title": "DRAFT",
+            "url": "https://medicaid.ncdhhs.gov/mac-meeting-minutes20251202/download?attachment",
+            "domain": "medicaid.ncdhhs.gov"
+          },
+          {
+            "title": "[PDF] June 18, 2026 RE: H.R. 1 Beneficiary Mailings Dear ... - NC Medicaid",
+            "url": "https://medicaid.ncdhhs.gov/dcdl-re-hr-1-beneficiary-mailings/open",
+            "domain": "medicaid.ncdhhs.gov"
+          },
+          {
+            "title": "NC Medicaid Community Partners Webinar l March 3, 2026",
+            "url": "https://medicaid.ncdhhs.gov/cpw20260303/download?attachment",
+            "domain": "medicaid.ncdhhs.gov"
+          },
+          {
+            "title": "NC Medicaid H.R.1 Essentials Deck Speaker's Notes",
+            "url": "https://medicaid.ncdhhs.gov/medicaid-hr1-essentials-deck-speakers-notes/download?attachment",
+            "domain": "medicaid.ncdhhs.gov"
+          },
+          {
+            "title": "Governor Stein Hosts Roundtable Focused on Protecting North Carolinians from Federal Cuts to Medicaid",
+            "url": "https://governor.nc.gov/news/press-releases/2026/10/13/governor-stein-hosts-roundtable-focused-protecting-north-carolinians-federal-cuts-medicaid",
+            "domain": "governor.nc.gov"
+          },
+          {
+            "title": "New federal rules will reshape Medicaid in NC. Here's ...",
+            "url": "https://www.northcarolinahealthnews.org/2026/09/17/medicaid-changes-faq/",
+            "domain": "northcarolinahealthnews.org"
+          },
+          {
+            "title": "Medicaid Eligibility Changes and Work Requirements in H.R. 1 ...",
+            "url": "https://leadingage.org/wp-content/uploads/2025/07/Eligibility-Changes-and-Work-Requirements-in-H.R.-1-the-2025-07.11.2025-FINAL.pdf",
+            "domain": "leadingage.org"
+          },
+          {
+            "title": "Work Requirements - DHHS - Nebraska.gov",
+            "url": "https://dhhs.ne.gov/Pages/WorkRequirements.aspx",
+            "domain": "dhhs.ne.gov"
+          },
+          {
+            "title": "H.R. 1 Community Briefing",
+            "url": "https://www.pa.gov/content/dam/copapwp-pagov/en/dhs/documents/medicaid/hr1-related/2026-08-26-hr1-stakeholder-briefing-cbos.pdf",
+            "domain": "pa.gov"
+          },
+          {
+            "title": "H.R. 1 Changes & Work Requirements | Office of Addiction ...",
+            "url": "https://oasas.ny.gov/providers/hr-1",
+            "domain": "oasas.ny.gov"
+          },
+          {
+            "title": "H.R.1 and the Impact of Medicaid Work Requirements",
+            "url": "https://pages.thenationalcouncil.org/rs/773-MJF-379/images/HR%201%20and%20the%20Impact%20of%20Medicaid%20Work%20Requirements%201.pdf?version=0",
+            "domain": "pages.thenationalcouncil.org"
+          },
+          {
+            "title": "Medicaid HR1 Work Rules Create Concerns for People with ...",
+            "url": "https://www.ilr.cornell.edu/carow/carow-policy/medicaid-hr1-work-rules-create-concerns-people-disabilities",
+            "domain": "ilr.cornell.edu"
+          },
+          {
+            "title": "Preparing for Medicaid Work Requirements: Strategies for ...",
+            "url": "https://www.csh.org/wp-content/uploads/H.R.1-Preparing-for-Medicaid-Work-Requirements-FAQ.pdf",
+            "domain": "csh.org"
+          },
+          {
+            "title": "Medicaid Work Reporting Requirements: Implementation ...",
+            "url": "https://shvs.org/resources/medicaid-work-reporting-requirements-implementation-basics-and-state-decision-points/",
+            "domain": "shvs.org"
+          },
+          {
+            "title": "Medicaid HR1 Work Rules Create Concerns for People with Disabilities",
+            "url": "https://www.ilr.cornell.edu/yti/news/medicaid-hr1-work-rules-create-concerns-people-disabilities/i",
+            "domain": "ilr.cornell.edu"
+          },
+          {
+            "title": "Medicaid Work Reporting Requirements: Verifying ...",
+            "url": "https://shvs.org/wp-content/uploads/2025/11/SHVS_Work-Requirements-Compliance-and-Exemptions-Verification_November-2025.pdf",
+            "domain": "shvs.org"
+          },
+          {
+            "title": "Medicaid Work Requirements FAQ - AAPD",
+            "url": "https://www.aapd.com/medicaid-work-requirements-faq/",
+            "domain": "aapd.com"
+          },
+          {
+            "title": "H.R.1 Eligibility & Enrollment Changes for NC Medicaid",
+            "url": "https://webservices.ncleg.gov/ViewDocSiteFile/104990",
+            "domain": "webservices.ncleg.gov"
+          },
+          {
+            "title": "SL 2026-1 (HB 696) - North Carolina General Assembly",
+            "url": "https://www.ncleg.gov/EnactedLegislation/SessionLaws/HTML/2025-2026/SL2026-1.html",
+            "domain": "ncleg.gov"
+          },
+          {
+            "title": "The (Cross)road Less Traveled: NC Medicaid Steps into an ...",
+            "url": "https://ncmedicaljournal.com/api/v1/articles/154038-the-cross-road-less-traveled-nc-medicaid-steps-into-an-uncertain-future.pdf",
+            "domain": "ncmedicaljournal.com"
+          },
+          {
+            "title": "Stein says NC counties will shoulder costs of new Medicaid rules, urges Congress to reverse cuts",
+            "url": "https://www.newsfromthestates.com/article/stein-says-nc-counties-will-shoulder-costs-new-medicaid-rules-urges-congress-reverse-cuts",
+            "domain": "newsfromthestates.com"
+          },
+          {
+            "title": "House Bill 653 (2025-2026 Session) - North Carolina General ...",
+            "url": "https://www.ncleg.gov/BillLookUp/2025/H653",
+            "domain": "ncleg.gov"
+          },
+          {
+            "title": "2025 Session - Legislative Fiscal Note",
+            "url": "https://www.ncleg.gov/Sessions/2025/FiscalNotes/House/PDF/HFN696v4.pdf",
+            "domain": "ncleg.gov"
+          },
+          {
+            "title": "October 13, 2026: Letter from Governor Stein to the North ...",
+            "url": "https://governor.nc.gov/october-13-2026-letter-governor-stein-north-carolina-congressional-delegation",
+            "domain": "governor.nc.gov"
+          },
+          {
+            "title": "2025-2026 General Assembly",
+            "url": "https://dashboard.ncleg.gov/api/Services/BillSummary/2025/H696-SMBC-129(CCSLUxr-3)-v-9",
+            "domain": "dashboard.ncleg.gov"
+          },
+          {
+            "title": "NCDHHS Launches the Know What’s Next Toolkit on Medicaid ...",
+            "url": "https://www.ncdhhs.gov/news/press-releases/2026/09/01/ncdhhs-launches-know-whats-next-toolkit-medicaid-changes-starting-oct-1-2026",
+            "domain": "ncdhhs.gov"
+          },
+          {
+            "title": "Connecting Communities & Medicaid Session #4",
+            "url": "https://medicaid.ncdhhs.gov/ccm-powerpoint-05132026/open",
+            "domain": "medicaid.ncdhhs.gov"
+          },
+          {
+            "title": "Understanding Medicaid Cost Sharing and Policy Changes ...",
+            "url": "https://www.kff.org/medicaid/understanding-medicaid-cost-sharing-and-policy-changes-from-the-2025-reconciliation-law/",
+            "domain": "kff.org"
+          },
+          {
+            "title": "Thank you for joining, please put your name and ...",
+            "url": "https://medicaid.ncdhhs.gov/connecting-communities-medicaid-session-3-presentation/download?attachment",
+            "domain": "medicaid.ncdhhs.gov"
+          },
+          {
+            "title": "Changes to Medicaid, SNAP begin in North Carolina",
+            "url": "https://www.qcnews.com/health-care/changes-to-medicaid-snap-take-effect-oct-1-in-north-carolina/",
+            "domain": "qcnews.com"
+          },
+          {
+            "title": "Changes to Medicaid in the Budget Reconciliation Law ( ...",
+            "url": "https://shvs.org/wp-content/uploads/2026/07/SHVS_Changes-to-Medicaid-in-the-Budget-Reconciliation-Law_Revised-10.7.25.pdf",
+            "domain": "shvs.org"
+          },
+          {
+            "title": "SUMMARY OF HOW H.R. 1 AFFECTS ESSENTIAL HOSPITALS",
+            "url": "https://essentialhospitals.org/wp-content/uploads/2025/07/Summary-of-Final-Reconciliation-Bill.pdf",
+            "domain": "essentialhospitals.org"
+          },
+          {
+            "title": "Federal Reforms to Medicaid Financing: What Counties Should Know",
+            "url": "https://www.naco.org/resource/federal-reforms-medicaid-financing-what-counties-should-know",
+            "domain": "naco.org"
+          },
+          {
+            "title": "H.R. 1",
+            "url": "https://www.acog.org/advocacy/policy-priorities/hr-1",
+            "domain": "acog.org"
+          },
+          {
+            "title": "Medicaid is Changing in 2026-27",
+            "url": "https://medicaid.ncdhhs.gov/beneficiaries/medicaid-is-changing",
+            "domain": "medicaid.ncdhhs.gov"
+          },
+          {
+            "title": "August Back Porch Chat",
+            "url": "https://medicaid.ncdhhs.gov/medicaid-back-porch-chat-hr-120260820/download?attachment",
+            "domain": "medicaid.ncdhhs.gov"
+          },
+          {
+            "title": "[PDF] NC Medicaid Community Partners Webinar l November 4, 2025",
+            "url": "https://medicaid.ncdhhs.gov/cpw-presentation11042025/download?attachment",
+            "domain": "medicaid.ncdhhs.gov"
+          },
+          {
+            "title": "Meeting Minutes Hybrid Meeting | May 13, 2026, 9:00 AM",
+            "url": "https://www.ncdhhs.gov/scfac-minutes-may26/download?attachment",
+            "domain": "ncdhhs.gov"
+          },
+          {
+            "title": "The Impact of H.R. 1 on Two Medicaid Eligibility Rules",
+            "url": "https://www.kff.org/medicaid/the-impact-of-h-r-1-on-two-medicaid-eligibility-rules/",
+            "domain": "kff.org"
+          },
+          {
+            "title": "Health Reform Implementation Timeline",
+            "url": "https://www.kff.org/interactive/implementation-timeline/",
+            "domain": "kff.org"
+          },
+          {
+            "title": "medicaidmonitor.org › sources › center-on-budget-andCenter on Budget and Policy Priorities — Medicaid Monitor",
+            "url": "https://medicaidmonitor.org/sources/center-on-budget-and-policy-priorities",
+            "domain": "medicaidmonitor.org"
+          },
+          {
+            "title": "A Closer Look at the Work Requirement Provisions in ...",
+            "url": "https://www.kff.org/medicaid/a-closer-look-at-the-work-requirement-provisions-in-the-2025-federal-budget-reconciliation-law/",
+            "domain": "kff.org"
+          },
+          {
+            "title": "Scholarship Tax Credit...",
+            "url": "https://www.kac.org/the_next_two_years_of_h_r_1_implementation",
+            "domain": "kac.org"
+          },
+          {
+            "title": "Health Provisions in the 2025 Federal Budget ...",
+            "url": "https://www.kff.org/medicaid/health-provisions-in-the-2025-federal-budget-reconciliation-law/",
+            "domain": "kff.org"
+          },
+          {
+            "title": "Implementation Dates for 2025 Budget Reconciliation Law",
+            "url": "https://www.kff.org/medicaid/implementation-dates-for-2025-budget-reconciliation-law/",
+            "domain": "kff.org"
+          },
+          {
+            "title": "An Early Look at Policy Decisions as States Get Ready to ...",
+            "url": "https://www.kff.org/medicaid/an-early-look-at-policy-decisions-as-states-get-ready-to-implement-work-requirements/",
+            "domain": "kff.org"
+          },
+          {
+            "title": "Medicaid Work Requirements Data and Policies",
+            "url": "https://www.kff.org/medicaid/medicaid-work-requirements-tracker-state-national-data-and-policies/",
+            "domain": "kff.org"
+          },
+          {
+            "title": "NRHA Advocacy",
+            "url": "https://www.ruralhealth.us/advocacy/medicaid-hub/medicaid/h-r-1",
+            "domain": "ruralhealth.us"
+          },
+          {
+            "title": "Public Law 119-21",
+            "url": "https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm",
+            "domain": "govinfo.gov"
+          },
+          {
+            "title": "3L-1 Provided in Congregate Settings Amended Date",
+            "url": "https://medicaid.ncdhhs.gov/media/14407/download?attachment",
+            "domain": "medicaid.ncdhhs.gov"
+          },
+          {
+            "title": "Prior Approval and Due Process",
+            "url": "https://medicaid.ncdhhs.gov/providers/programs-and-services/prior-approval-and-due-process",
+            "domain": "medicaid.ncdhhs.gov"
+          },
+          {
+            "title": "Provider Billing of Medicaid Beneficiaries",
+            "url": "https://medicaid.ncdhhs.gov/provider-billing-medicaid-beneficiaries/download",
+            "domain": "medicaid.ncdhhs.gov"
+          },
+          {
+            "title": "[PDF] House Bill 696-Ratified Bill - North Carolina General Assembly",
+            "url": "https://www3.ncleg.gov/Sessions/2025/Bills/House/PDF/H696v4.pdf",
+            "domain": "www3.ncleg.gov"
+          },
+          {
+            "title": "Understanding Confidentiality of Substance Use Disorder ...",
+            "url": "https://www.hhs.gov/hipaa/part-2/index.html",
+            "domain": "hhs.gov"
+          },
+          {
+            "title": "Fact Sheet 42 CFR Part 2 Final Rule",
+            "url": "https://www.hhs.gov/hipaa/for-professionals/regulatory-initiatives/fact-sheet-42-cfr-part-2-final-rule/index.html",
+            "domain": "hhs.gov"
+          },
+          {
+            "title": "Office for Civil Rights Announces Civil Enforcement ...",
+            "url": "https://www.hhs.gov/press-room/hhs-announce-civil-enforcement-program-sud-patient-records.html",
+            "domain": "hhs.gov"
+          },
+          {
+            "title": "42 C.F.R. Part 2: Final Rule - LA County Department of Public ...",
+            "url": "http://www.publichealth.lacounty.gov/sapc/docs/providers/42-cfr/SAPC_Guidance.pdf",
+            "domain": "publichealth.lacounty.gov"
+          },
+          {
+            "title": "Kim Stanger",
+            "url": "https://www.hollandhart.com/getdoc.aspx?publicationid=50938",
+            "domain": "hollandhart.com"
+          },
+          {
+            "title": "Changes to Substance Use Disorder Confidentiality ...",
+            "url": "https://www.chcs.org/resource/changes-to-substance-use-disorder-confidentiality-regulations/",
+            "domain": "chcs.org"
+          },
+          {
+            "title": "HHS final rule modifies confidentiality of SUD records",
+            "url": "https://www.physicianspractice.com/view/hhs-final-rule-modifies-confidentiality-of-sud-records",
+            "domain": "physicianspractice.com"
+          },
+          {
+            "title": "Updates To Processes And...",
+            "url": "https://www.mintz.com/insights-center/viewpoints/2146/2026-03-02-ensuring-compliance-part-2-final-rule-required-updates",
+            "domain": "mintz.com"
+          },
+          {
+            "title": "[PDF] Network Development and Patient Access - Public Health LA County",
+            "url": "http://publichealth.lacounty.gov/sapc/NetworkProviders/pm/091825/4-SND-ATP-Meeting.pdf",
+            "domain": "publichealth.lacounty.gov"
+          },
+          {
+            "title": "Model Notices of Privacy Practices",
+            "url": "https://www.hhs.gov/hipaa/for-professionals/privacy/guidance/model-notices-privacy-practices/index.html",
+            "domain": "hhs.gov"
+          },
+          {
+            "title": "42 U.S. Code § 1396a - State plans for medical assistance",
+            "url": "https://www.law.cornell.edu/uscode/text/42/1396a",
+            "domain": "law.cornell.edu"
+          }
+        ]
+      }
+    ],
+    "created_at": "2026-10-18 03:29:43",
+    "updated_at": 1792310150665
+  }
+]

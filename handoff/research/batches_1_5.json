@@ -1,0 +1,1714 @@
+{
+ "step_4_sub_0": {
+  "instructions": [
+   "Call the city or county planning office before you sign anything and ask whether an outpatient substance use day program (SAIOP or SACOT) is a permitted use at the exact address, and under which zoning district.",
+   "Confirm the building is classified Group B Business Occupancy for adult SAIOP and SACOT; adolescent day programs cannot sit in Group B and must meet Group E or Group I-4 under the NC State Building Code.",
+   "Add contingencies to the lease or purchase contract: zoning approval, DHSR licensure, a clean Fire Marshal inspection, and tenant-improvement consent for full-height, sound-rated partitions and lockable doors on counseling rooms and records storage.",
+   "Sketch a dimensioned floor plan of the space to be licensed, with exits and toilets; DHSR requires it plus interior and exterior photos. Show a reception area and private interview space, which 10A NCAC 27G .0304 lists.",
+   "Sign only in the exact legal name on your Secretary of State record, and file the executed lease with your credentials repository for DHSR, LME/MCO contracting and insurance."
+  ],
+  "tips": [
+   "AUDIT TRAP: DHSR returns incomplete applications to the sender without processing, and the Day Program checklist requires the original local zoning approval letter. A signed lease without it stalls licensure while rent runs.",
+   "Counseling room privacy supports substance use record confidentiality. Specify partitions to the ceiling, sound control and lockable records storage, and ask your compliance consultant to map 42 CFR 2.16 (security for records) to the layout.",
+   "CCP 8G Peer Support is not on DHSR's licensed-program list, so a peer-support-only site may not trigger DHSR zoning or Fire Marshal paperwork; confirm with your LME/MCO whether it wants a service location documented."
+  ],
+  "contacts": [
+   "DHSR Mental Health Licensure and Certification Section: 919-855-3795 (https://info.ncdhhs.gov/dhsr/mhlcs/pdf/mhiapp.pdf)",
+   "Local city or county Planning and Zoning Office and Building Inspections: NOT VERIFIED - look up for the specific address via https://www.ncacc.org/county-websites/"
+  ],
+  "sources": [
+   "https://info.ncdhhs.gov/dhsr/mhlcs/pdf/mhiapp.pdf",
+   "https://www.ecfr.gov/current/title-42/chapter-I/subchapter-A/part-2/subpart-B/section-2.16",
+   "http://reports.oah.state.nc.us/ncac/title%2010a%20-%20health%20and%20human%20services/chapter%2027%20-%20mental%20health,%20community%20facilities%20and%20services/subchapter%20g/subchapter%20g%20rules.html"
+  ],
+  "confidence": "high",
+  "verify": "Typical time (3-6 weeks) and cost shown are NOT VERIFIED by any primary source. Confirm the building occupancy class with the local Building Official. Confirm with your LME/MCO whether a peer-support-only office needs a documented service location. Have a healthcare attorney review lease contingencies."
+ },
+ "step_4_sub_1": {
+  "instructions": [
+   "Contact the planning department that governs the parcel (city if inside municipal limits, otherwise county) and ask for its written zoning verification or use verification letter for an outpatient substance use treatment day program at the exact address.",
+   "Submit the request with street address, parcel ID, a one-page description of services (group and individual counseling, no overnight stay, no medication dispensing), expected client census and the lease or purchase contract.",
+   "Pay the jurisdiction's fee. Fees vary: Durham charges $58 for a business or use verification letter and $28 for a zoning-district-only letter. Ask whether a special use permit or rezoning could be required.",
+   "Review the letter: it must name the address, the zoning district and state the intended use is permitted. If it says not permitted, request a written determination citing the ordinance section.",
+   "Send the original letter to DHSR with your Day Program application; a copy is not enough."
+  ],
+  "tips": [
+   "AUDIT TRAP: A zoning-district-only letter does not verify the use. DHSR asks for zoning approval or verification that the facility is classified for the intended use, so request the use-specific letter by name.",
+   "Administrative zoning determinations can be appealed to the board of adjustment, and G.S. 160D-405 sets a 30-day appeal window, so calendar the letter date if the answer is no.",
+   "Describe the program honestly. Planning staff may classify an outpatient treatment clinic differently from a general office; an unclear description can produce a letter that later does not match the DHSR survey."
+  ],
+  "contacts": [
+   "DHSR Mental Health Licensure and Certification Section: 919-855-3795 (https://info.ncdhhs.gov/dhsr/mhlcs/pdf/mhiapp.pdf)",
+   "City of Durham Planning Verification Letters (example jurisdiction): NOT VERIFIED phone - see https://www.durhamnc.gov/4856/Verification-Letters"
+  ],
+  "sources": [
+   "https://info.ncdhhs.gov/dhsr/mhlcs/pdf/mhiapp.pdf",
+   "https://www.durhamnc.gov/4856/Verification-Letters",
+   "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_160D/GS_160D-405.html",
+   "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_160D/GS_160D-403.html"
+  ],
+  "confidence": "medium",
+  "verify": "Each city and county sets its own form, fee and turnaround. The $50-$200 range and 3-6 weeks in the app are NOT VERIFIED statewide. Confirm the current fee and the letter wording with your planning office and confirm DHSR accepts it."
+ },
+ "step_4_sub_2": {
+  "instructions": [
+   "Walk the site with the ADA Checklist for Existing Facilities, starting with Priority 1: accessible parking, route from the street, entrance, then Priority 2 to 4 for restrooms and counseling rooms.",
+   "Compare findings to the 2010 ADA Standards for Accessible Design and to the NC Accessibility Code in the NC Building Code Chapter 11, which currently references ANSI A117.1-2009.",
+   "Remove barriers that are readily achievable under 28 CFR 36.304, such as ramps, curb cuts, door hardware and restroom grab bars, and get landlord written consent before any alteration.",
+   "Ask the local Building Official whether renovations need a permit and whether the space is Group B; new construction or alterations must meet new-construction standards.",
+   "Save the completed checklist, photos and contractor invoices for surveyors and LME/MCO site reviews."
+  ],
+  "tips": [
+   "AUDIT TRAP: Do not rely on the landlord's statement that the building is ADA compliant. The business that serves the public carries Title III duties, so document your own walk-through.",
+   "Check every counseling room, group room and at least one restroom for wheelchair maneuvering space; treatment programs commonly fail on single-user restrooms and doors without clear width.",
+   "The federal disabled access credit (IRS Form 8826) may offset eligible access costs for small businesses; ask a CPA before relying on it."
+  ],
+  "contacts": [
+   "U.S. DOJ ADA Information Line: 800-514-0301, TTY 833-610-1264 (https://www.ada.gov/infoline/)",
+   "Local city or county Building Inspections: NOT VERIFIED - look up for the site address"
+  ],
+  "sources": [
+   "https://www.ada.gov/topics/title-iii/",
+   "https://www.ada.gov/resources/title-iii-primer/",
+   "https://www.ecfr.gov/current/title-28/chapter-I/part-36",
+   "https://www.law.cornell.edu/cfr/text/28/36.304",
+   "https://archive.ada.gov/racheck.pdf",
+   "https://www.ncosfm.gov/codes/codes-current-and-past",
+   "https://www.ada.gov/infoline/"
+  ],
+  "confidence": "medium",
+  "verify": "OSFM's codes page shows the 2018 NC Building Code (ANSI A117.1-2009) as currently effective, with the 2024 code effective date tied to a later State Fire Marshal action; confirm which edition the local Building Official enforces today. Have an architect or certified accessibility specialist confirm compliance."
+ },
+ "step_5_sub_0": {
+  "instructions": [
+   "Ask a healthcare-focused insurance broker for professional liability quotes at $1,000,000 per occurrence and $3,000,000 annual aggregate, covering the agency and employees, for SAIOP, SACOT and peer support services.",
+   "Choose occurrence or claims-made. If claims-made, buy tail coverage of at least three years after contract end or keep a retroactive date on or before the contract start date.",
+   "Confirm the carrier is licensed and authorized in North Carolina by the NC Department of Insurance.",
+   "Bind the policy and request a certificate of insurance listing your exact legal entity name; send it to the LME/MCO when you apply for network participation.",
+   "Calendar renewal: send a new certificate within 10 business days after any policy expires and give 30 days written notice before coverage is cancelled or reduced."
+  ],
+  "tips": [
+   "AUDIT TRAP: Alliance states loss of insurance is a basis for payback of services billed during the gap and may end the contract. Never let a policy lapse, even for a day.",
+   "The $1M/$3M limit comes from LME/MCO terms (Alliance publishes it), not from the DHSR packet. The DHHS model contract says each LME/PIHP sets the limits, so check every plan you contract with.",
+   "Tell the carrier you offer substance use treatment, including adolescents if applicable. Policies that exclude treatment services or professional acts you actually perform can leave you uncovered."
+  ],
+  "contacts": [
+   "NC Department of Insurance: NOT VERIFIED phone - see https://www.ncdoi.gov/",
+   "Alliance Health Provider Support: 855-759-9700 (https://www.alliancehealthplan.org/providers/network/qa/insurance/)"
+  ],
+  "sources": [
+   "https://www.alliancehealthplan.org/providers/network/qa/insurance/",
+   "https://www.vayahealth.com/wp-content/uploads/2016/09/Insurance-Requirements-1.pdf",
+   "https://www.ncdhhs.gov/provider-agency-contract/open",
+   "https://info.ncdhhs.gov/dhsr/mhlcs/pdf/mhiapp.pdf"
+  ],
+  "confidence": "medium",
+  "verify": "Get written insurance requirements from each LME/MCO you will contract with (Alliance, Trillium, Vaya Partners). Vaya's file is a 2016 upload, and Vaya and Partners began combined claims processing Oct 1, 2026, so confirm current limits. The annual cost of $1,500-$4,500 is NOT VERIFIED."
+ },
+ "step_5_sub_1": {
+  "instructions": [
+   "Request commercial general liability quotes at $1,000,000 per occurrence and $3,000,000 annual aggregate for bodily injury and property damage arising from your operations.",
+   "Bundle a commercial property or business owner's policy for contents, equipment and tenant improvements, and match the limits to what your lease requires of the tenant.",
+   "Add hired and non-owned auto coverage, or commercial auto at $500,000 per person and per occurrence, if staff will transport clients or drive for peer support work.",
+   "Ask the broker about cyber and abuse or molestation coverage. The LME/MCO pages reviewed do not require them, but you will hold sensitive substance use records and serve vulnerable clients.",
+   "Bind coverage, collect certificates for the landlord and each LME/MCO, and store policies in the credentials repository."
+  ],
+  "tips": [
+   "AUDIT TRAP: Alliance requires auto liability only if you transport enrollees. Decide whether peer support staff or drivers will transport clients, and document the answer before the plan asks.",
+   "Landlords usually require general liability and property certificates before key release, so quote this coverage before the lease signing date.",
+   "General liability is separate from professional liability. A professional policy generally does not cover a client slipping in the lobby, so carry both."
+  ],
+  "contacts": [
+   "Alliance Health Provider Support: 855-759-9700 (https://www.alliancehealthplan.org/providers/network/qa/insurance/)"
+  ],
+  "sources": [
+   "https://www.alliancehealthplan.org/providers/network/qa/insurance/",
+   "https://www.vayahealth.com/wp-content/uploads/2016/09/Insurance-Requirements-1.pdf",
+   "https://www.ncdhhs.gov/provider-agency-contract/open"
+  ],
+  "confidence": "medium",
+  "verify": "Property, cyber and abuse coverage are NOT VERIFIED as LME/MCO requirements; confirm with each LME/MCO and your broker. Confirm limits against the lease. The date of the DHHS model contract page is NOT VERIFIED."
+ },
+ "step_5_sub_2": {
+  "instructions": [
+   "Count employees: three or more regularly employed workers trigger coverage under the NC Workers' Compensation Act, and corporate officers count toward the three.",
+   "Request a workers' compensation and employer's liability quote from a broker or directly from a carrier; employer's liability should be at least $100,000 each accident, $100,000 each employee for disease and $500,000 policy limit for LME/MCO contracts.",
+   "Ask the broker about the NC Rate Bureau assigned risk plan if carriers decline, and decide whether corporate officers will exclude themselves from coverage, which the Industrial Commission permits.",
+   "Bind coverage before the first employee starts; keep the certificate and post the NC Industrial Commission Form 17 workplace poster.",
+   "Send the certificate to each LME/MCO with your contract package."
+  ],
+  "tips": [
+   "AUDIT TRAP: Corporate officers count toward the three-employee test even if they exclude themselves from the policy, so a corporation with two officers and one employee needs coverage. How LLC members are counted is NOT VERIFIED; ask your broker.",
+   "Even with fewer than three employees at opening, Alliance lists statutory workers' compensation among its minimum coverage unless waived in writing by the LME/MCO, so get any waiver in writing.",
+   "Form 19 is the Employer's Report of Employee's Injury or Occupational Disease to the Industrial Commission; ask your carrier at binding how injuries must be reported and keep the workplace poster up."
+  ],
+  "contacts": [
+   "NC Industrial Commission Employers page: NOT VERIFIED phone - see https://www.ic.nc.gov/workers-compensation-claims/employers",
+   "NC Rate Bureau Workers Compensation: NOT VERIFIED phone - see https://www.ncrb.org/ncrb/Workers-Compensation"
+  ],
+  "sources": [
+   "https://www.ic.nc.gov/workers-compensation-claims/employers",
+   "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_97/GS_97-2.html",
+   "https://www.ncleg.gov/enactedlegislation/statutes/html/bysection/chapter_97/gs_97-93.html",
+   "https://www.ncrb.org/digitallibrary/basicmanual/Rule_4_-_Assigned_Risk_Plan_Rules.htm",
+   "https://www.alliancehealthplan.org/providers/network/qa/insurance/"
+  ],
+  "confidence": "high",
+  "verify": "Confirm penalties and the exemptions in G.S. 97-13 with a broker or the Industrial Commission. The Industrial Commission page states the three-employee rule; the Alliance page is the LME/MCO source for the employer's liability limits. Premium estimates are NOT VERIFIED."
+ },
+ "step_5_sub_3": {
+  "instructions": [
+   "Ask the broker to issue each certificate of insurance with your exact legal entity name, matching the Secretary of State record and IRS EIN letter, as the named insured.",
+   "Request the LME/MCO be listed as certificate holder, and as additional insured if the plan requires it; a 2016-dated Vaya file says certificates must name the LME/MCO as an Additional Insured before contract execution.",
+   "Ask the broker to add primary and non-contributory wording, and a 30-day notice of cancellation endorsement where the carrier allows, because plans require notice before coverage is cancelled or reduced.",
+   "Check each certificate for policy numbers, effective dates, limits, and occurrence versus claims-made before sending it.",
+   "Set calendar alerts 60 days before each expiration and send the replacement within the plan's deadline."
+  ],
+  "tips": [
+   "AUDIT TRAP: Your agency should be the named insured on its own policies. The primary and non-contributory term describes how your coverage responds ahead of another party's coverage, not who is insured. The app's primary insured wording should be corrected.",
+   "A certificate is evidence only and does not change the policy. If the LME/MCO requires additional insured status, ask for the endorsement itself, not only the certificate.",
+   "Name mismatches between the certificate, W-9 and NCTracks record delay contracting; an LLC doing business under a trade name needs both names addressed."
+  ],
+  "contacts": [
+   "Alliance Health Provider Support: 855-759-9700 (https://www.alliancehealthplan.org/providers/network/qa/insurance/)",
+   "Vaya Partners provider merger information session (Aug 24, 2026): see https://providers.vayahealth.com/wp-content/uploads/2026/08/8_24_26_ProviderMergerInfoSession.pdf (no phone verified)"
+  ],
+  "sources": [
+   "https://www.vayahealth.com/wp-content/uploads/2016/09/Insurance-Requirements-1.pdf",
+   "https://www.alliancehealthplan.org/providers/network/qa/insurance/",
+   "https://providers.vayahealth.com/wp-content/uploads/2026/08/8_24_26_ProviderMergerInfoSession.pdf"
+  ],
+  "confidence": "low",
+  "verify": "Trillium and Partners insurance wording was NOT VERIFIED. Obtain each LME/MCO's current certificate-holder name, address and endorsement language, and let the broker confirm primary and non-contributory availability. Vaya's requirement comes from an older 2016 file."
+ },
+ "step_6_sub_0": {
+  "instructions": [
+   "Open a business checking account at a bank or credit union in the exact legal name of the entity, using the Secretary of State record, EIN letter and operating agreement or bylaws.",
+   "Order checks and a deposit slip, and keep one blank or voided check on file; NCTracks does not appear to require uploading it, but LME/MCOs often do.",
+   "Enter routing number, account number and account type in the EFT section of the NCTracks enrollment application, or later have the Office Administrator update it in the Status and Management section of the secure Provider Portal.",
+   "Complete each LME/MCO's EFT form: Alliance asks for a blank, voided check or bank-generated verification form; Trillium asks for an EFT authorization form, a bank letter or voided check, and a W-9.",
+   "Expect the EFT pre-note test to take up to six business days; claims suspend while valid EFT information is missing."
+  ],
+  "tips": [
+   "AUDIT TRAP: The account holder name should match the legal business name and EIN on the W-9. Alliance's vendor packet asks for legal name and TIN matching its records, and mismatches can hold setup.",
+   "Any EFT change triggers a bank pre-note test that can take up to six business days; NCTracks suspends claims for 45 days for providers without valid EFT on file, so open the account before billing.",
+   "Do not use a personal account. Keep Medicaid receipts in the dedicated business account for audit trail and for later EFT changes."
+  ],
+  "contacts": [
+   "NCTracks Call Center: 800-688-6696 (https://www.nctracks.nc.gov/content/public/providers/faq-main-page/faqs-for-claim-submission.html)",
+   "Trillium Tailored Plan Finance: TP.Finance@TrilliumNC.org (https://www.trilliumhealthresources.org/sites/default/files/docs/Provider-documents/Claims/Trillium-Unified-Claims-Platform-Presentation-082726.pdf)",
+   "Vaya Partners EFT: payables@vayahealth.com (https://providers.vayahealth.com/wp-content/uploads/2026/08/8_24_26_ProviderMergerInfoSession.pdf)"
+  ],
+  "sources": [
+   "https://www.nctracks.nc.gov/content/dam/jcr:b77caef7-8592-4d5a-9c65-9798ca6a13f2/JA_PRV531_Add-Updt%20EFT%20Info_W2.0.1.pdf",
+   "https://www.nctracks.nc.gov/content/public/providers/faq-main-page/faqs-for-claim-submission.html",
+   "https://www.nctracks.nc.gov/content/public/providers/faq-main-page/faqs-for-providerenrollment.html",
+   "https://www.alliancehealthplan.org/document-library/59711/",
+   "https://www.trilliumhealthresources.org/sites/default/files/docs/Provider-documents/Claims/Trillium-Unified-Claims-Platform-Presentation-082726.pdf",
+   "https://providers.vayahealth.com/wp-content/uploads/2026/08/8_24_26_ProviderMergerInfoSession.pdf"
+  ],
+  "confidence": "medium",
+  "verify": "The NCTracks EFT job aid is dated 2022 and may differ from live screens; confirm in the portal whether any bank document upload is requested. Vaya Partners and Trillium changed claims and payment processes effective Oct 1, 2026, so confirm the current EFT form. The $0-$100 opening deposit is NOT VERIFIED."
+ },
+ "step_6_sub_1": {
+  "instructions": [
+   "Ask your bank branch for a signed letter on bank letterhead stating account holder legal name, routing number (ABA), account number and account type; ask for a bank-generated verification form if offered.",
+   "Check that the letter name equals the W-9 and Secretary of State name, then date it within the last 30 days.",
+   "Attach it to LME/MCO packages that accept it: Trillium accepts a bank letter or direct deposit letter, and Alliance accepts a bank-generated verification form.",
+   "Keep a copy in the credentials repository for NCTracks changes and provider recredentialing."
+  ],
+  "tips": [
+   "AUDIT TRAP: Transposed digits cause EFT pre-note failures and delayed payment. Read numbers from the bank letter rather than retyping from memory.",
+   "NCTracks was not found to request a bank letter; use one for LME/MCO setup, not as a substitute for entering EFT data online.",
+   "If you change banks, update NCTracks and every LME/MCO before closing the old account, or payments may be sent to a closed account."
+  ],
+  "contacts": [
+   "NCTracks Call Center: 800-688-6696 (https://www.nctracks.nc.gov/content/public/providers/faq-main-page/faqs-for-claim-submission.html)",
+   "Trillium Tailored Plan Finance: TP.Finance@TrilliumNC.org (https://www.trilliumhealthresources.org/sites/default/files/docs/Provider-documents/Claims/Trillium-Unified-Claims-Platform-Presentation-082726.pdf)"
+  ],
+  "sources": [
+   "https://www.trilliumhealthresources.org/sites/default/files/docs/Provider-documents/Claims/Trillium-Unified-Claims-Platform-Presentation-082726.pdf",
+   "https://www.alliancehealthplan.org/document-library/59711/",
+   "https://www.nctracks.nc.gov/content/public/providers/faq-main-page/faqs-for-providerenrollment.html"
+  ],
+  "confidence": "medium",
+  "verify": "The 30-day freshness window for a bank letter is a practical suggestion, not a source requirement. Confirm with each LME/MCO whether it accepts a bank letter, voided check or both."
+ },
+ "step_6_sub_2": {
+  "instructions": [
+   "Create a separate payroll holding ledger, or a second bank sub-account, where you transfer each payday's withheld income tax, Social Security and Medicare, plus the employer share, as payroll is run.",
+   "Pay federal deposits by EFT on your Form 941 monthly or semiweekly schedule, and file Form 941 quarterly by the last day of the month after quarter end.",
+   "Register for NC withholding with Form NC-BR, then file and pay NC-5 or NC-5Q as assigned; NC does not use a depository system for withholding.",
+   "Reconcile the ledger to payroll reports each pay period, and have the CPA review it monthly."
+  ],
+  "tips": [
+   "AUDIT TRAP: Withheld payroll taxes are held in trust. The IRS can assess the Trust Fund Recovery Penalty against any responsible person who willfully fails to pay them, including officers and employees.",
+   "Fund the ledger on payday, not the due date, so slow Medicaid reimbursement cannot spend tax money.",
+   "Keep ledger detail with payroll registers; Medicaid and LME/MCO audits ask for payroll records that tie to staff qualification and timesheets."
+  ],
+  "contacts": [
+   "IRS Employment Taxes: see https://www.irs.gov/businesses/small-businesses-self-employed/depositing-and-reporting-employment-taxes (no phone verified)",
+   "NC Department of Revenue Withholding: see https://www.ncdor.gov/taxes-forms/withholding-tax/withholding-tax-frequently-asked-questions (no phone verified)"
+  ],
+  "sources": [
+   "https://www.irs.gov/publications/p15",
+   "https://www.irs.gov/businesses/small-businesses-self-employed/employment-tax-due-dates",
+   "https://www.irs.gov/businesses/small-businesses-self-employed/employment-taxes-and-the-trust-fund-recovery-penalty-tfrp",
+   "https://www.ncdor.gov/income-tax-withholding-tables-and-instructions-employers/open",
+   "https://www.ncdor.gov/taxes-forms/withholding-tax/withholding-tax-frequently-asked-questions"
+  ],
+  "confidence": "medium",
+  "verify": "A segregated holding ledger is a good-practice control, not a requirement found in NC Medicaid or DHSR sources. A CPA or payroll provider should confirm deposit schedule, NC unemployment tax registration and sub-account structure."
+ },
+ "step_7_sub_0": {
+  "instructions": [
+   "Hold an organizational meeting of the governing body: for a corporation this is the board of directors; for other entities the rule says the owner. Adopt a resolution appointing the Facility Director and Clinical Director.",
+   "Record minutes with date, attendees, votes and signatures, and adopt the written policies 10A NCAC 27G .0201(a) requires, including delegation of management authority and the quality assurance and improvement plan.",
+   "Approve the ownership disclosure of anyone with 5 percent or more control, and the budget, insurance, bank and lease actions already taken.",
+   "Store minutes permanently and set a regular meeting schedule, such as quarterly, with minutes for each meeting."
+  ],
+  "tips": [
+   "AUDIT TRAP: 10A NCAC 27G .0201(b) requires governing body minutes to be permanently maintained. Missing minutes are a common licensure survey finding.",
+   "The governing body under 10A NCAC 27G .0104 is the board of directors for a corporation and the owner in all other cases; an LLC owner or manager should sign as the governing body and document that choice with counsel.",
+   "An advisory committee is optional and does not replace the governing body; keep advisory minutes separate."
+  ],
+  "contacts": [
+   "DHSR Mental Health Licensure and Certification Section: 919-855-3795 (https://info.ncdhhs.gov/dhsr/mhlcs/pdf/mhiapp.pdf)"
+  ],
+  "sources": [
+   "http://reports.oah.state.nc.us/ncac/title%2010a%20-%20health%20and%20human%20services/chapter%2027%20-%20mental%20health,%20community%20facilities%20and%20services/subchapter%20g/subchapter%20g%20rules.html",
+   "https://info.ncdhhs.gov/dhsr/mhlcs/pdf/mhiapp.pdf",
+   "https://www.law.cornell.edu/cfr/text/42/455.104"
+  ],
+  "confidence": "medium",
+  "verify": "I confirmed 27G .0201(b) minutes wording through a search excerpt and the compiled rule text; read the full rule text before adopting bylaws. Ask a healthcare attorney how an LLC should identify its governing body."
+ },
+ "step_7_sub_1": {
+  "instructions": [
+   "Pass a governing body resolution naming one Facility Director and delegating day-to-day management authority in writing under 10A NCAC 27G .0201(a)(1).",
+   "Write a signed job description for the director stating education, experience, duties and responsibilities, as 10A NCAC 27G .0202(a) requires; keep it in the personnel file with licensure verification.",
+   "Enter the Facility Director's name on item 4 of the DHSR Initial Licensure Application (DHSR 5001); a person with signatory authority signs as licensee.",
+   "Keep the director's credentials, background checks and signed acceptance in the personnel file."
+  ],
+  "tips": [
+   "AUDIT TRAP: The license is issued to the licensee entity, and the governing body remains responsible for policies. Naming a director does not move legal responsibility away from the owners or board.",
+   "For SAIOP and SACOT, the program must be under the direction of an LCAS or CCS, so the Facility Director may need to be a different person than the clinical lead unless one person meets both roles.",
+   "Tell DHSR, NCTracks and each LME/MCO whenever the director changes; stale managing-employee information can delay recredentialing."
+  ],
+  "contacts": [
+   "DHSR Mental Health Licensure and Certification Section: 919-855-3795 (https://info.ncdhhs.gov/dhsr/mhlcs/pdf/mhiapp.pdf)"
+  ],
+  "sources": [
+   "https://info.ncdhhs.gov/dhsr/mhlcs/pdf/mhiapp.pdf",
+   "http://reports.oah.state.nc.us/ncac/title%2010a%20-%20health%20and%20human%20services/chapter%2027%20-%20mental%20health,%20community%20facilities%20and%20services/subchapter%20g/subchapter%20g%20rules.html",
+   "https://www.law.cornell.edu/regulations/north-carolina/10A-NCAC-27G-0202"
+  ],
+  "confidence": "medium",
+  "verify": "No source reviewed defines Facility Director as the legal responsible party. Ask DHSR how it treats the Facility Director and the licensee, and have an attorney confirm personal liability exposure."
+ },
+ "step_7_sub_2": {
+  "instructions": [
+   "Appoint SAIOP leadership who is an LCAS or CCS, on site at least 50 percent of operating hours, under 10A NCAC 27G .4402.",
+   "Appoint SACOT leadership who is an LCAS or CCS on site at least 90 percent of operating hours (10A NCAC 27G .4502); the CCPs also allow a Clinical Supervisor Intern and a role split between two staff.",
+   "For CCP 8G, assign a full-time Qualified Professional meeting 10A NCAC 27G .0104 to direct the program; one QP supervises up to 8 CPSS staff.",
+   "Verify credentials on the NC Addictions Specialist Professional Practice Board, plus OIG exclusion and Healthcare Personnel Registry checks. Keep primary-source verification in the file."
+  ],
+  "tips": [
+   "AUDIT TRAP: The QP definition in 10A NCAC 27G .0104 is now item (21); the text of .4402 and .4502 still cites (18). Cite the current item number in your policies, and use both rules.",
+   "CCP 8A-12 and 8A-13 were amended January 1, 2026 and add national accreditation within one year of enrollment, so plan the clinical director's workload around CARF or another accreditor.",
+   "The app says QP only. A QP is not enough for SAIOP or SACOT leadership: the supervisor must hold LCAS or CCS, or CSI under the CCP."
+  ],
+  "contacts": [
+   "NC Medicaid Behavioral Health Policy: see https://medicaid.ncdhhs.gov/blog/2026/01/07/behavioral-health-clinical-coverage-policy-updates (no phone verified)",
+   "DHSR Mental Health Licensure and Certification Section: 919-855-3795 (https://info.ncdhhs.gov/dhsr/mhlcs/pdf/mhiapp.pdf)"
+  ],
+  "sources": [
+   "https://reports.oah.state.nc.us/ncac/title%2010a%20-%20health%20and%20human%20services/chapter%2027%20-%20mental%20health,%20community%20facilities%20and%20services/subchapter%20g/10a%20ncac%2027g%20.0104.html",
+   "https://www.law.cornell.edu/regulations/north-carolina/10A-NCAC-27G-4402",
+   "http://reports.oah.state.nc.us/ncac/title%2010a%20-%20health%20and%20human%20services/chapter%2027%20-%20mental%20health,%20community%20facilities%20and%20services/subchapter%20g/10a%20ncac%2027g%20.4502.html",
+   "https://medicaid.ncdhhs.gov/media/15767/download",
+   "https://medicaid.ncdhhs.gov/media/15769/download",
+   "https://medicaid.ncdhhs.gov/8g-peer-support-services/download?attachment",
+   "https://medicaid.ncdhhs.gov/blog/2026/01/07/behavioral-health-clinical-coverage-policy-updates"
+  ],
+  "confidence": "high",
+  "verify": "The CCP refers to a DHSR licensure rules waiver for SAIOP and SACOT and I did not read the waiver text, so confirm with DHSR whether it alters the 27G .4402 and .4502 staffing. Also confirm the CCP 8G Sept 1, 2026 amendment's supervisor language and the exact QP definition item with the rule text."
+ },
+ "step_7_sub_3": {
+  "instructions": [
+   "Draw a one-page chart with the governing body at the top, then Facility Director, Clinical Director or Clinical Supervisor, QPs, AP and paraprofessional staff, CPSS peer specialists, and administrative staff.",
+   "Mark two lines separately: clinical supervision (Clinical Supervisor or LCAS to counselors, QP to CPSS at 1 to 8) and administrative supervision (Facility Director to office and billing staff).",
+   "Label each box with the person's name, title and credential and show who is on site during all operating hours.",
+   "Date and version the chart, have the governing body approve it in minutes, and update it whenever someone leaves."
+  ],
+  "tips": [
+   "AUDIT TRAP: 10A NCAC 27G .0201(a)(7)(D) requires written supervision of staff who are not qualified professionals by a QP. A chart without matching supervision logs does not satisfy surveyors.",
+   "Show who covers when the LCAS or CCS is away; CCP 8A-12 says certified clinical staff must be covered by licensed clinical staff.",
+   "Include the contracted prescriber, compliance officer and clinical records or privacy officer if you have them."
+  ],
+  "contacts": [
+   "DHSR Mental Health Licensure and Certification Section: 919-855-3795 (https://info.ncdhhs.gov/dhsr/mhlcs/pdf/mhiapp.pdf)"
+  ],
+  "sources": [
+   "http://reports.oah.state.nc.us/ncac/title%2010a%20-%20health%20and%20human%20services/chapter%2027%20-%20mental%20health,%20community%20facilities%20and%20services/subchapter%20g/subchapter%20g%20rules.html",
+   "https://medicaid.ncdhhs.gov/media/15767/download",
+   "https://medicaid.ncdhhs.gov/media/15769/download",
+   "https://medicaid.ncdhhs.gov/8g-peer-support-services/download?attachment"
+  ],
+  "confidence": "medium",
+  "verify": "No source reviewed prescribes an org chart format; this follows rule and CCP supervision requirements. Confirm with your LME/MCO and accreditor whether they want a specific format."
+ },
+ "step_8_sub_0": {
+  "instructions": [
+   "Look up your facility county in the NC DHHS LME/MCO directory. Since October 1, 2026 Vaya Health and Partners operate as Vaya Partners, so the three plans are Alliance, Trillium and Vaya Partners.",
+   "Enroll in NCTracks first if your county is Alliance; Alliance denies Provider Application requests from providers not enrolled in NCTracks and answers within five business days.",
+   "Write a one-page program summary: legal entity, NPI, site address and county, services, capacity, population served, hours, and a named contact with phone and email. The 10A NCAC 27G .0406(b) list is a good template.",
+   "Send it through the plan's channel: Alliance Provider Application request, Trillium NetworkServicesSupport@TrilliumNC.org, or Vaya Partners ACCESS Provider Services. Keep the sent copy and every reply with dates."
+  ],
+  "tips": [
+   "Plans changed in 2026: Partners paused new contracting requests and licensure letters of support for non-contracted providers on August 1, 2026, and Vaya Partners launched October 1, 2026. Ask Vaya Partners in writing whether requests for your county are open.",
+   "AUDIT TRAP: NCTracks enrollment does not put you in a network. A clinician or site cannot bill a plan until it is both enrolled in NCTracks and contracted with that plan.",
+   "Plans decide on network adequacy, so ask for the Current Service Needs page and whether your county has an identified need for each service before paying for a lease or build-out."
+  ],
+  "contacts": [
+   "Alliance Health Provider Support: 855-759-9700 (https://www.alliancehealthplan.org/providers/network/become-a-provider/provider-enrollment/)",
+   "Trillium Health Resources Provider Support Service Line: 855-250-1539 (https://www.trilliumhealthresources.org/contracting-trillium)",
+   "Vaya Partners ACCESS Provider Services: 1-866-990-9712 (https://providers.vayahealth.com/enroll/)"
+  ],
+  "sources": [
+   "https://www.ncdhhs.gov/providers/lme-mco-directory",
+   "https://www.alliancehealthplan.org/providers/network/become-a-provider/provider-enrollment/",
+   "https://www.trilliumhealthresources.org/contracting-trillium",
+   "https://providers.vayahealth.com/enroll/",
+   "https://providers.partnersbhm.org/partners-pauses-new-contracting-requests/",
+   "http://reports.oah.state.nc.us/ncac/title%2010a%20-%20health%20and%20human%20services/chapter%2027%20-%20mental%20health,%20community%20facilities%20and%20services/subchapter%20g/subchapter%20g%20rules.html"
+  ],
+  "confidence": "medium",
+  "verify": "The Vaya Partners merger took effect October 1, 2026 and plan intake pages are changing. Confirm with your county's plan which intake form and email it currently uses and whether new contracting requests are open. Confirm your county-to-plan assignment in the NC DHHS directory."
+ },
+ "step_8_sub_1": {
+  "instructions": [
+   "List each service in the request by policy: CCP 8G Peer Support Services, CCP 8A-12 SAIOP, and CCP 8A-13 SACOT. Give planned start date, weekly hours, and starting capacity for each.",
+   "For Peer Support, state that the program sits inside an organization offering a comprehensive clinical assessment, psychotherapy and medication management. If you lack medication management, name the partner provider under a signed MOU or MOA.",
+   "Ask each plan whether Peer Support is currently open to new providers. Peer Support became a mandatory closed-network service for all prepaid health plans on July 7, 2026, so plans may decline new applicants.",
+   "Ask whether SAIOP and SACOT are listed as current network needs for your county, and note that both need a DHSR day-program license before billing."
+  ],
+  "tips": [
+   "CCP 8G section 6.3 (amended September 1, 2026): a provider enrolling on or after that date must have the signed MOU or MOA in place before providing Peer Support and submit it to its contracted health plan(s).",
+   "AUDIT TRAP: Match the service names, ages and hours in your request to the CCPs. SACOT is for ages 18 and older at ASAM Level 2.5 with 20 or more hours weekly; SAIOP adult programming is 9 to 19 hours weekly. Mismatches surface at credentialing and audit.",
+   "AUDIT TRAP: CCP 8G bars Peer Support during the same time of day a beneficiary is in SAIOP or SACOT, so schedule peers outside program hours if the same clients are enrolled in all three."
+  ],
+  "contacts": [
+   "Alliance Health Provider Support: 855-759-9700 (https://www.alliancehealthplan.org/providers/network/become-a-provider/provider-enrollment/)",
+   "Trillium Health Resources Provider Support Service Line: 855-250-1539 (https://www.trilliumhealthresources.org/contracting-trillium)",
+   "Vaya Partners ACCESS Provider Services: 1-866-990-9712 (https://providers.vayahealth.com/enroll/)"
+  ],
+  "sources": [
+   "https://medicaid.ncdhhs.gov/8g-peer-support-services/open",
+   "https://medicaid.ncdhhs.gov/media/15767/download",
+   "https://medicaid.ncdhhs.gov/media/15769/download",
+   "https://medicaid.ncdhhs.gov/providers/provider-playbook-medicaid-managed-care/fact-sheets/mandatory-closed-networks",
+   "https://www.alliancehealthplan.org/providers/network/become-a-provider/provider-enrollment/",
+   "https://www.trilliumhealthresources.org/contracting-trillium",
+   "https://providers.partnersbhm.org/partners-pauses-new-contracting-requests/"
+  ],
+  "confidence": "medium",
+  "verify": "Ask each plan how it is implementing the Peer Support closed network and whether it accepts new Peer Support applicants. Confirm the MOU or MOA submission method with the plan. Alliance dates the closed-network change July 2, 2026 while NC Medicaid says July 7, 2026 (Session Law 2026-41); confirm with NC Medicaid which date governs your enrollment."
+ },
+ "step_8_sub_2": {
+  "instructions": [
+   "Check whether you need a letter at all: 10A NCAC 27G .0406 requires an LME letter of support only for residential facilities, and the DHSR packet lists it only in its 24-hour residential section, not in the Day Programs requirements box.",
+   "If you also plan a residential facility, send the LME a written request with license type, capacity, services, location, program description, population served and a point of contact, as .0406(b) lists.",
+   "For day or peer services, ask the plan for a signed written statement of network-need determination or contract status instead, and say plainly that it is not a .0406 letter.",
+   "If a residential letter is issued, attach it to the DHSR application. Under .0406(e) the LME must respond within five business days, and .0406(g) has the request and letter forwarded to DMH/DD/SUS and DHSR."
+  ],
+  "tips": [
+   "AUDIT TRAP: Do not label a plan email as a .0406 letter of support or submit it as a required DHSR attachment for SAIOP or SACOT. DHSR's application packet places the letter only in the 24-hour residential section.",
+   "DHSR says to contact the LME/MCO if you want Medicaid or state funding; the plan tells you whether there is a need and how to contract. Some plans, such as Partners, still issue licensure letters as plan practice."
+  ],
+  "contacts": [
+   "DHSR Mental Health Licensure and Certification Section: 919-855-3795 (https://info.ncdhhs.gov/dhsr/mhlcs/establish.html)",
+   "Vaya Partners Provider Support Service Line: 877-398-4145 (https://www.ncdhhs.gov/providers/lme-mco-directory)"
+  ],
+  "sources": [
+   "http://reports.oah.state.nc.us/ncac/title%2010a%20-%20health%20and%20human%20services/chapter%2027%20-%20mental%20health,%20community%20facilities%20and%20services/subchapter%20g/subchapter%20g%20rules.html",
+   "https://info.ncdhhs.gov/dhsr/mhlcs/pdf/mhiapp.pdf",
+   "https://info.ncdhhs.gov/dhsr/mhlcs/establish.html",
+   "https://providers.partnersbhm.org/partners-pauses-new-contracting-requests/",
+   "https://www.ncdhhs.gov/providers/lme-mco-directory"
+  ],
+  "confidence": "high",
+  "verify": "Ask DHSR (919-855-3795) to confirm that no letter is needed for your exact day-program license category before you skip one. Ask each plan whether it issues a non-residential letter as plan practice, and confirm the .0406 text on the OAH site has not been amended."
+ },
+ "step_9_sub_0": {
+  "instructions": [
+   "Download the DHSR Policy and Procedure Workbook (worksheet rev. 3-20-25) and use it as your table of contents. Write one policy per item and cite the rule number in each header.",
+   "Draft governing body policies required by 10A NCAC 27G .0201(a)(1)-(18): delegation of authority, admission and discharge criteria, records, quality assurance, supervision, training, safety, fee collection, and a client grievance policy with review and disposition procedures.",
+   "Draft client rights policies from 10A NCAC Subchapter 27D (rights, notice to clients, confidentiality) and Subchapter 27E (limits on restrictive interventions), including how clients are told of rights and how grievances are filed.",
+   "Record governing body meeting minutes; 27G .0201(b) requires permanent retention. Adopt the manual by a dated board resolution."
+  ],
+  "tips": [
+   "AUDIT TRAP: Surveyors compare policy text to what staff actually do. 27G .0201(a)(18) requires procedures for review and disposition of grievances, so name the reviewer, set deadlines, and keep a grievance log.",
+   "The DHSR packet says not to send policies with the application; they are reviewed later by the Licensure and Training team, and your six-month review window starts at first contact with that team. Finish and board-approve the manual first.",
+   "Some 27G rule text still refers to the Governor's Advocacy Council for Persons with Disabilities, while the DHSR worksheet names Disability Rights North Carolina. Use the worksheet wording and confirm contacts before printing client rights notices."
+  ],
+  "contacts": [
+   "DHSR Mental Health Licensure and Certification Section: 919-855-3795 (https://info.ncdhhs.gov/dhsr/mhlcs/establish.html)"
+  ],
+  "sources": [
+   "https://info.ncdhhs.gov/dhsr/mhlcs/pdf/PolicyProcedure-Workbook.pdf",
+   "http://reports.oah.state.nc.us/ncac/title%2010a%20-%20health%20and%20human%20services/chapter%2027%20-%20mental%20health,%20community%20facilities%20and%20services/subchapter%20g/subchapter%20g%20rules.html",
+   "https://info.ncdhhs.gov/dhsr/mhlcs/pdf/mhiapp.pdf",
+   "https://info.ncdhhs.gov/dhsr/mhlcs/establish.html"
+  ],
+  "confidence": "medium",
+  "verify": "Subchapter 27D and 27E rule text was confirmed through the DHSR worksheet and the OAH index, not read rule by rule. Read the current .0201 and 27D/27E rules on the OAH site and confirm the advocacy-agency name and contact with DHSR."
+ },
+ "step_9_sub_1": {
+  "instructions": [
+   "Write a documentation policy adopting the NC DHHS Records Management and Documentation Manual, July 2025 edition (effective July 8, 2025), and state that clinical coverage policies and rules control if they conflict with it.",
+   "List the ten content elements for every full service note: individual's name, record or Medicaid number, full date, service name, contact type, place of service, purpose tied to plan goals, interventions, duration, and effectiveness.",
+   "Add the authentication element: the person who delivered the service signs electronically with date stamp and credentials. Add the CCP-specific items, including start and end times for Peer Support under CCP 8G section 5.5.1.",
+   "Set deadlines: licensed-site services (SAIOP, SACOT) documented at the time of service or within one business day, not over 24 hours. Require a separate full note for each group member, with individual response."
+  ],
+  "tips": [
+   "AUDIT TRAP: The ten-element list is not an official label. The manual has ten content bullets plus authentication plus CCP additions, and CCP 8G lists eleven elements (a through k). Build the note template from both, not from a checklist of ten.",
+   "AUDIT TRAP: Each note needs its own newly composed evidence of the service. The manual says notes copied from an earlier date or another person's record, or near-identical to a prior note, are not acceptable as individualized notes.",
+   "The manual says a cursive font in a Word document is not a valid electronic signature. EHR users must write a standard operating procedure for electronic records and ensure compliance with NC Health Connex."
+  ],
+  "contacts": [
+   "DHSR Mental Health Licensure and Certification Section: 919-855-3795 (https://info.ncdhhs.gov/dhsr/mhlcs/establish.html)"
+  ],
+  "sources": [
+   "https://www.ncdhhs.gov/rmdmjuly-2025/download?attachment",
+   "https://www.ncdhhs.gov/divisions/mental-health-developmental-disabilities-and-substance-use-services/records-management-and-documentation-manual",
+   "https://medicaid.ncdhhs.gov/8g-peer-support-services/open",
+   "https://medicaid.ncdhhs.gov/media/15767/download",
+   "https://medicaid.ncdhhs.gov/media/15769/download",
+   "https://info.ncdhhs.gov/dhsr/mhlcs/establish.html"
+  ],
+  "confidence": "high",
+  "verify": "The July 2025 manual text does not print the label APSM 45-2; the December 2016 edition did. Confirm with your plan which edition its auditors use. Confirm the Peer Support documentation window (the manual treats community-based services differently from licensed-site services) with your plan."
+ },
+ "step_9_sub_2": {
+  "instructions": [
+   "Decide which of your services are Part 2 programs: federally assisted programs that hold themselves out as providing SUD diagnosis, treatment or referral. SAIOP and SACOT are expected to qualify; have a healthcare attorney confirm Peer Support.",
+   "Draft a written consent form with every 42 CFR 2.31(a) element: patient name, who discloses, what is disclosed, recipients, purpose, written revocation right, expiration, signature and date. Add the single-consent option for treatment, payment and operations.",
+   "Draft the patient notice required by 42 CFR 2.22 and give it at the start of services. Include the patient's right to revoke consent and how to complain to your program and to the Secretary of HHS.",
+   "Write security and breach procedures under 42 CFR 2.16, covering paper and electronic records, and a rule that Part 2 records are not used in proceedings against a patient without consent or court order."
+  ],
+  "tips": [
+   "Compliance date: the 2024 Part 2 final rule (89 FR 12617, February 16, 2024) required compliance by February 16, 2026, so a program opening now must follow the revised consent, notice, breach and penalty provisions from day one.",
+   "AUDIT TRAP: HIPAA-style penalties now apply to Part 2 violations (42 CFR 2.3). Never copy a general HIPAA authorization form; a missing revocation statement or expiration event makes the consent invalid.",
+   "NC law may be stricter than Part 2 for mental health and SUD information (G.S. 122C-52 and following); the policy should follow whichever rule protects the client more."
+  ],
+  "contacts": [
+   "HHS Office for Civil Rights, Part 2 complaints and guidance: phone NOT VERIFIED (https://www.hhs.gov/hipaa/part-2/index.html)"
+  ],
+  "sources": [
+   "https://www.ecfr.gov/current/title-42/chapter-I/subchapter-A/part-2",
+   "https://www.hhs.gov/hipaa/for-professionals/regulatory-initiatives/fact-sheet-42-cfr-part-2-final-rule/index.html",
+   "https://www.hhs.gov/hipaa/part-2/index.html",
+   "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_122C/GS_122C-52.html",
+   "https://www.legalhie.com/wp-content/uploads/2026/02/Part-2-Checklist-for-Compliance-v.2026.01.pdf"
+  ],
+  "confidence": "high",
+  "verify": "Have a healthcare attorney confirm whether each service is a Part 2 program and review the consent form against 42 CFR 2.31. The February 16, 2026 compliance date appears in a secondary checklist and the final rule; confirm it on the HHS Part 2 page. No OCR phone number was verified; use the HHS complaint portal. Confirm overlap with G.S. 122C-52 and following."
+ },
+ "step_9_sub_3": {
+  "instructions": [
+   "Write an incident policy under 10A NCAC 27G .0603(a) for Level I, II and III incidents: attend to safety, find the cause, set corrective and preventive measures within 45 days, assign owners, document, and protect confidentiality including 42 CFR Part 2.",
+   "Add a Level III procedure under .0603(c): copy the client record, convene an internal review team of uninvolved staff within 24 hours, issue preliminary findings within five working days, and an owner-signed final report within three months.",
+   "Build the IRIS workflow: get an NCID login, sign the 42 CFR 2.53 data-sharing agreement shown on the IRIS login page, and submit Level II (except deaths) and all Level III reports within 72 hours of becoming aware (.0604(a)).",
+   "Add follow-ups: update reports by the end of the next business day when information changes (.0604(b)), send the quarterly summary to the LME/MCO including a no-incident statement (.0604(e)), and copy Level III reports to DMH/DD/SUS within 72 hours (.0604(d)).",
+   "Notify the Health Care Personnel Registry within 24 hours of an allegation against health care personnel, and tell the client's guardian and your LME/MCO. Keep an incident log with timestamps."
+  ],
+  "tips": [
+   "AUDIT TRAP: Trillium's May 8, 2026 bulletin expects zero late reports: Level 3 incidents need notice to Trillium verbally or by email within 24 hours plus IRIS within 72 hours; staff-allegation incidents go into IRIS within 24 hours with the investigation uploaded in five working days. Other plans may differ.",
+   "SAIOP and SACOT are licensed (Category A) providers and peer-only services not needing a license are Category B; both categories report under .0604. Rule text still says LME; Tailored Plans now receive the IRIS reports.",
+   "AUDIT TRAP: Deaths of clients served within 90 days before the incident are reportable under .0604(a), and Category A providers send Level III death reports to DHSR within 72 hours (.0604(d)). Train all staff, not only the director."
+  ],
+  "contacts": [
+   "Health Care Personnel Registry office: 919-855-3969 (https://info.ncdhhs.gov/dhsr/hcpr/index.html)",
+   "Trillium Provider Support Service Line: 855-250-1539 (https://www.trilliumhealthresources.org/contracting-trillium)"
+  ],
+  "sources": [
+   "http://reports.oah.state.nc.us/ncac/title%2010a%20-%20health%20and%20human%20services/chapter%2027%20-%20mental%20health,%20community%20facilities%20and%20services/subchapter%20g/subchapter%20g%20rules.html",
+   "https://iris.ncdhhs.gov/Default.aspx",
+   "https://www.trilliumhealthresources.org/sites/default/files/docs/Network-Communication-Bulletin/466-Network-Communication-Bulletin.pdf",
+   "https://info.ncdhhs.gov/dhsr/mhlcs/pdf/PolicyProcedure-Workbook.pdf",
+   "https://info.ncdhhs.gov/dhsr/hcpr/index.html"
+  ],
+  "confidence": "medium",
+  "verify": "Rule text on the OAH site refers to LMEs and paper forms; confirm with your LME/MCO the current IRIS account setup (NCID), plan-specific notification lines and timelines. Confirm the 24-hour HCPR and Level III timeline in your plan's bulletin; the one verified is Trillium's of May 8, 2026."
+ },
+ "step_9_sub_4": {
+  "instructions": [
+   "Write a compliance plan around the seven elements in the HHS-OIG General Compliance Program Guidance (November 2023): written policies, a compliance officer and committee, training, open lines of communication, auditing, discipline and corrective action.",
+   "Add a False Claims Act section: explain the federal False Claims Act and the NC Medical Assistance Provider False Claims Act (G.S. 108A-70.10 through 70.16), with staff protections for reporting concerns.",
+   "Add billing controls: service order and note checks before billing, a process to return identified overpayments within 60 days, and monthly exclusion screening of all staff and vendors against the OIG exclusion list and SAM.gov.",
+   "Publish reporting routes: an internal hotline or compliance officer email, plus NC Medicaid OCPI and your LME/MCO compliance line. Train staff at hire and annually, and log attendance."
+  ],
+  "tips": [
+   "AUDIT TRAP: Billing for or employing an excluded person can lead to repayment and civil penalties. Keep dated screening printouts for every employee, contractor and owner; plans ask for proof.",
+   "AUDIT TRAP: The 60-day overpayment rule (42 U.S.C. 1320a-7k(d)) starts when an overpayment is identified; log every self-audit finding and refund date.",
+   "Tailored Plan provider contracts require a compliance program; Alliance's January 2026 Medicaid template says the provider shall develop one under 42 U.S.C. 1396a(kk)(5). Compare your plan's contract before you finalize the plan."
+  ],
+  "contacts": [
+   "NC Medicaid Office of Compliance and Program Integrity tip line: 919-527-7749 (https://medicaid.ncdhhs.gov/meetingsnotices/office-compliance-program-integrity-ocpi)",
+   "Vaya Partners 24-hour confidential compliance hotline: 1-866-916-4255 (https://providers.vayahealth.com/enroll/)"
+  ],
+  "sources": [
+   "https://oig.hhs.gov/documents/compliance-guidance/1135/HHS-OIG-GCPG-2023.pdf",
+   "https://medicaid.ncdhhs.gov/meetingsnotices/office-compliance-program-integrity-ocpi",
+   "https://www.alliancehealthplan.org/document-library/Contract-TAILORED-PLAN-Medicaid-template-FINAL-1.14.26.pdf",
+   "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_108A/GS_108A-70.11.html",
+   "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_1/GS_1-607.html",
+   "https://www.govinfo.gov/content/pkg/USCODE-2023-title42/html/USCODE-2023-title42-chap7-subchapXI-partA-sec1320a-7k.htm",
+   "https://oig.hhs.gov/documents/special-advisory-bulletins/881/sab-05092013.pdf",
+   "https://oig.hhs.gov/exclusions/",
+   "https://www.pwwemslaw.com/resources/law-library/compliance/oig-issues-updated-special-advisory-bulletin-excluded-individuals"
+  ],
+  "confidence": "medium",
+  "verify": "NC Medicaid says providers receiving Medicaid payments must educate staff on false claims laws; the federal statute (42 U.S.C. 1396a(a)(68)) has a $5 million threshold that was not checked on a primary page. Have a healthcare attorney confirm. No NC rule number for a compliance plan was verified. Monthly exclusion screening is OIG-bulletin practice cited by a secondary law firm source."
+ },
+ "step_10_sub_0": {
+  "instructions": [
+   "Post the Clinical Supervisor opening requiring an LCAS or CCS in good standing with the NC Addictions Specialist Professional Practice Board (NCASPPB). The CCPs also allow a Clinical Supervisor Intern, and the role may be split between two staff.",
+   "Verify the candidate's license or certification on the NCASPPB site before an offer, and print the result for the personnel file as 10A NCAC 27G .0202(d) and (e) require.",
+   "Run the Health Care Personnel Registry check at ncnar.ncdhhs.gov and keep the confirmation number; .0202(b)(4) bars staff with substantiated findings. Also screen the OIG exclusion list.",
+   "Plan coverage: 27G .4402 requires an LCAS or CCS on site at least 50% of SAIOP operating hours; .4502 requires 90% for SACOT. Schedule the supervisor and a backup to meet those percentages."
+  ],
+  "tips": [
+   "AUDIT TRAP: The LCAS or CCS must be licensed or certified and in good standing on every service day; a lapsed credential puts billing for that period at risk. Calendar renewal dates and recheck each month.",
+   "The CCS credential is separate from the LCAS license, so confirm exactly which one the candidate holds on the board's site rather than from a resume.",
+   "If a rule and a CCP differ, meet both. The rules name only an LCAS or CCS to direct the program, while the CCPs also list a CSI as an eligible Clinical Supervisor."
+  ],
+  "contacts": [
+   "NCASPPB credentialing: phone NOT VERIFIED (https://www.ncsappb.org/credentialing/licensed-clinical-addiction-specialist/)",
+   "Health Care Personnel Registry office: 919-855-3969 (https://info.ncdhhs.gov/dhsr/hcpr/index.html)"
+  ],
+  "sources": [
+   "https://medicaid.ncdhhs.gov/media/15767/download",
+   "https://medicaid.ncdhhs.gov/media/15769/download",
+   "http://reports.oah.state.nc.us/ncac/title%2010a%20-%20health%20and%20human%20services/chapter%2027%20-%20mental%20health,%20community%20facilities%20and%20services/subchapter%20g/subchapter%20g%20rules.html",
+   "https://www.ncsappb.org/credentialing/licensed-clinical-addiction-specialist/",
+   "https://ncnar.ncdhhs.gov/verify_listings1.jsp",
+   "https://info.ncdhhs.gov/dhsr/hcpr/index.html"
+  ],
+  "confidence": "high",
+  "verify": "Confirm the NCASPPB phone number and online credential lookup link on ncsappb.org. Ask your LME/MCO whether it accepts a CSI as sole Clinical Supervisor for credentialing. Confirm whether the CCP 8A-13 reference to a licensure rules waiver for 10A NCAC 27G .4500 applies to you by asking DHSR."
+ },
+ "step_10_sub_1": {
+  "instructions": [
+   "Replace the term Qualified Professional with the CCP term Clinical Staff: Licensed Clinical Staff (LCAS, LCAS-A, LCSW, LCSWA, LCMHC, LCMHCA, LMFT, LMFTA or licensed psychologist) or Certified Clinical Staff (CADC, CADC-I, or Registrant).",
+   "Calculate capacity at one Clinical Staff for every 10 or fewer beneficiaries while facilitating a group counseling session (CCP 8A-13 section 6.2; 10A NCAC 27G .4502(b)). Example: 25 clients need three group facilitators.",
+   "Add the Clinical Supervisor, who may cover caseloads temporarily in emergency staffing shortages and counts toward the ratio. Plan backup staff so a sick call does not break 1:10.",
+   "Keep a group roster showing facilitator names and attendee count for each session, and make sure one direct care staff trained in withdrawal symptoms and secondary complications is present, as .4502(c) requires."
+  ],
+  "tips": [
+   "AUDIT TRAP: The 1:10 ratio applies per group session, based on the census at that time. Unsigned rosters or groups over 10 with one facilitator are a typical finding.",
+   "CCP 8A-13 is for beneficiaries 18 and older at ASAM Level 2.5 and 20 or more programming hours weekly. Staff hours must cover the whole program day, not just group blocks.",
+   "A Registrant must be designated an Alcohol and Drug Counselor Intern by the NCASPPB within one year of hire; track that deadline."
+  ],
+  "contacts": [
+   "DHSR Mental Health Licensure and Certification Section: 919-855-3795 (https://info.ncdhhs.gov/dhsr/mhlcs/establish.html)"
+  ],
+  "sources": [
+   "https://medicaid.ncdhhs.gov/media/15769/download",
+   "http://reports.oah.state.nc.us/ncac/title%2010a%20-%20health%20and%20human%20services/chapter%2027%20-%20mental%20health,%20community%20facilities%20and%20services/subchapter%20g/subchapter%20g%20rules.html",
+   "https://medicaid.ncdhhs.gov/media/15767/download"
+  ],
+  "confidence": "high",
+  "verify": "Confirm with your LME/MCO and DHSR whether surveyors expect the rule's Qualified Professional definition (10A NCAC 27G .0104) or the CCP's Clinical Staff list; plan to satisfy both. The rule cites .0104(18) for Qualified Professional but the text now numbers it (21); confirm in the current rule."
+ },
+ "step_10_sub_2": {
+  "instructions": [
+   "Correct the ratios in your staffing plan: CCP 8G (amended September 1, 2026) sets QP-to-CPSS at 1:8, not 1:6; CPSS-to-beneficiary at 1:15; and CPSS group facilitator-to-beneficiary at 1:12.",
+   "Hire a full-time Qualified Professional (10A NCAC 27G .0104) to direct the program and supervise CPSS staff. Add another QP for every eight CPSS you hire.",
+   "Verify each CPSS on the UNC NC Certified Peer Support Specialist Program verification page before hire and file the result. Assign CPSS only to beneficiaries with similar lived experience.",
+   "Schedule QP supervision at least every other week, and a QP or CPSS contact with each beneficiary within 60 calendar days of start and every 60 days after, as the Program Supervisor duties require."
+  ],
+  "tips": [
+   "AUDIT TRAP: Peer Support cannot be billed at the same time of day a beneficiary receives SAIOP or SACOT. If you run all three services, schedule peers outside program hours.",
+   "CCP 8G section 6.3 (amended September 1, 2026): Peer Support must sit inside an organization offering CCA, psychotherapy and medication management; if you lack medication management, a signed MOU or MOA must be in place and submitted to your plan before you provide Peer Support.",
+   "UNC offers a 3-hour course, Supervising NC Certified Peer Support Specialists; consider it for your QP."
+  ],
+  "contacts": [
+   "NC CPSS Program (UNC Behavioral Health Springboard): nccpssprogram@unc.edu, no phone listed (https://pss.unc.edu/)"
+  ],
+  "sources": [
+   "https://medicaid.ncdhhs.gov/8g-peer-support-services/open",
+   "https://pss.unc.edu/",
+   "https://pss.unc.edu/certification",
+   "https://pss.unc.edu/verification",
+   "https://pss.unc.edu/providers-organizations",
+   "https://bhslearn.unc.edu/nccpss/dashboard"
+  ],
+  "confidence": "high",
+  "verify": "Check the CPSS recovery-time requirement with the NC CPSS program (the certification page says 18 months; older materials said one year). Confirm with your plan how it counts full-time QP hours. Verify the supervision course title and credit on the UNC site."
+ },
+ "step_10_sub_3": {
+  "instructions": [
+   "Write a job description for the director and every position: minimum education, competency, experience and qualifications, plus duties and responsibilities. 10A NCAC 27G .0202(a) requires the staff member and supervisor to sign it, and a copy goes in the staff file.",
+   "Draft the employment agreement: position, required credential and renewal duty, schedule, supervision, pay, at-will or term language, confidentiality including 42 CFR Part 2, and compliance and incident-reporting duties. Have an NC employment attorney review it.",
+   "Before the start date, complete the Health Care Personnel Registry check, the OIG exclusion check, and applicant disclosure of criminal convictions (.0202(c)). For unlicensed positions such as CPSS, add the G.S. 122C-80 criminal history record check.",
+   "File signed agreements, job descriptions, credential verifications and training records in each personnel file (.0202(e)) and track credential renewal dates."
+  ],
+  "tips": [
+   "AUDIT TRAP: Surveyors pull personnel files for the signed job description, license verification, HCPR check and training. A job description missing either signature fails .0202(a)(3).",
+   "AUDIT TRAP: Keep the HCPR confirmation number; DHSR states it is the employer's proof of access, and employers must keep a record of accessing the registries.",
+   "G.S. 122C-80 makes an offer for a position that does not require an occupational license conditional on consent to a State and national check, with fingerprints if the applicant has lived in North Carolina under five years."
+  ],
+  "contacts": [
+   "Health Care Personnel Registry office: 919-855-3969 (https://info.ncdhhs.gov/dhsr/hcpr/index.html)"
+  ],
+  "sources": [
+   "http://reports.oah.state.nc.us/ncac/title%2010a%20-%20health%20and%20human%20services/chapter%2027%20-%20mental%20health,%20community%20facilities%20and%20services/subchapter%20g/subchapter%20g%20rules.html",
+   "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_122C/GS_122C-80.html",
+   "https://ncnar.ncdhhs.gov/verify_listings1.jsp",
+   "https://info.ncdhhs.gov/dhsr/hcpr/index.html",
+   "https://info.ncdhhs.gov/dhsr/hcpr/flonaidv.html",
+   "https://medicaid.ncdhhs.gov/media/15769/download",
+   "https://medicaid.ncdhhs.gov/8g-peer-support-services/open"
+  ],
+  "confidence": "medium",
+  "verify": "Employment agreement terms (non-compete, pay, at-will) were not researched; have an NC employment attorney and CPA review them. Confirm the fingerprinting process and fee with your local sheriff or the NC SBI. Confirm the staff training hours in the CCP training charts for each position."
+ },
+ "step_11_sub_0": {
+  "instructions": [
+   "Open the NC Health Care Personnel Registry (HCPR) Verify Registry Listings page and search each finalist by full legal name, plus any prior or maiden names, before an offer becomes a hire.",
+   "Save or print each result showing the date-specific confirmation number, and write the search date and planned hire date on the printout.",
+   "File the printout in the personnel record and a central business file. G.S. 131E-256 and DHSR require you to note each incident of registry access in your business files.",
+   "Stop the hire if the registry shows a substantiated finding of abuse or neglect. 10A NCAC 27G .0202(b)(4) bars employing staff with such a listing.",
+   "Repeat the search for every direct-care contractor, volunteer who serves clients, and rehire before first client contact."
+  ],
+  "tips": [
+   "AUDIT TRAP: The confirmation date must be earlier than the hire date. A search run after the first shift does not satisfy the pre-hire requirement in G.S. 131E-256 or 10A NCAC 27G .0202(b)(4).",
+   "For the initial licensure review, MHLCS lists HCPR verification for all staff, including the licensee, completed within 90 days of the licensure review. Re-run any older checks.",
+   "The statute defines health care personnel as unlicensed staff, but the licensing rule covers every person who provides services. Check licensed clinicians and owners too, so no one is missed."
+  ],
+  "contacts": [
+   "NC HCPR Registry Office: 919-855-3969, Mon-Fri 8:00am-12:00pm and 1:00pm-3:00pm (https://info.ncdhhs.gov/dhsr/hcpr/index.html)",
+   "Health Care Personnel Investigations: 919-855-3968 (https://info.ncdhhs.gov/dhsr/ciu/provider.html)"
+  ],
+  "sources": [
+   "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_131E/GS_131E-256.html",
+   "https://info.ncdhhs.gov/dhsr/ciu/provider.html",
+   "https://info.ncdhhs.gov/dhsr/hcpr/index.html",
+   "https://ncnar.ncdhhs.gov/verify_listings1.jsp",
+   "http://reports.oah.state.nc.us/ncac/title%2010a%20-%20health%20and%20human%20services/chapter%2027%20-%20mental%20health,%20community%20facilities%20and%20services/subchapter%20g/subchapter%20g%20rules.html",
+   "https://info.ncdhhs.gov/dhsr/mhlcs/pdf/listmaterials.pdf"
+  ],
+  "confidence": "high",
+  "verify": "Confirm with your MHLCS Licensure and Training consultant how they want HCPR proof presented. Confirm that the 90-day window is still in the current List of Required Materials (rev. 09/30/24)."
+ },
+ "step_11_sub_1": {
+  "instructions": [
+   "Make every job offer conditional on the applicant's written consent to a criminal history check and on a satisfactory result. Do not employ anyone who refuses consent (G.S. 122C-80).",
+   "Request the check within five business days of the conditional offer. Applicants who have lived in NC under five years need State plus fingerprint-based national checks. Longer residents need the State check.",
+   "After you receive a DHSR facility license number, activate the DHSR Criminal Background Check system (ABCMS) and use it to submit fingerprint checks. Before licensure, ask your MHLCS consultant how to run them.",
+   "Wait for the DHHS Criminal Records Check Unit to tell you whether a result affects employability. Providers do not receive the national report itself.",
+   "Weigh the statutory factors for any relevant conviction, and document the hire or no-hire decision in the personnel file."
+  ],
+  "tips": [
+   "AUDIT TRAP: MHLCS expects State and national criminal check documentation dated within 180 days of the initial licensure review. Stale checks must be redone.",
+   "ABCMS requires a facility license number, so it cannot be activated before licensure. Pre-licensure fingerprinting logistics are NOT VERIFIED, so ask MHLCS before you pay any vendor.",
+   "G.S. 122C-80 covers positions that do not require an occupational license. Licensed clinicians (LCAS, LCSW, LCMHC) fall outside it, but your own policy should still require checks for them. The NC Sex Offender Registry search is optional good practice, not a rule requirement."
+  ],
+  "contacts": [
+   "NC SBI (fingerprint and access agreement questions): 919-582-8639 (https://info.ncdhhs.gov/dhsr/abcms/index.html)",
+   "DHSR Mental Health Licensure and Certification Section: 919-855-3795 (https://info.ncdhhs.gov/dhsr/mhlcs/establish.html)"
+  ],
+  "sources": [
+   "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_122C/GS_122C-80.html",
+   "https://info.ncdhhs.gov/dhsr/abcms/index.html",
+   "https://info.ncdhhs.gov/dhsr/abcms/pdf/Non-Criminal-Justice-Access-Agreement-Form_SB-41.pdf",
+   "https://info.ncdhhs.gov/dhsr/mhlcs/pdf/listmaterials.pdf",
+   "https://sexoffender.ncsbi.gov/"
+  ],
+  "confidence": "medium",
+  "verify": "NOT VERIFIED: the State-only check fee, and how a not-yet-licensed applicant runs fingerprint checks. The SBI access agreement form lists $38 per fingerprint card for the national check. Ask MHLCS and the DHHS Criminal Records Check Unit. Also confirm whether G.S. 122C-80 applies to a peer-support-only agency that holds no DHSR license."
+ },
+ "step_11_sub_2": {
+  "instructions": [
+   "Search every employee, contractor, owner with 5% or more ownership, and managing employee in the OIG List of Excluded Individuals/Entities (LEIE) online search. Resolve any possible match before hire.",
+   "Search the same names in SAM.gov exclusion records (federal debarment).",
+   "Check each name against the NC Medicaid Provider Termination and Exclusion list (State Excluded Provider List). NC Medicaid updates it monthly, and its last publication was Sept. 24, 2026.",
+   "Save dated screenshots or reports for each person, and keep a separate ownership screening record. Disclose 5%+ owners at enrollment as 42 CFR 455.104 requires.",
+   "Do not employ, contract with, or bill for anyone who matches. Call a healthcare attorney and the NC Medicaid Contact Center to confirm next steps."
+  ],
+  "tips": [
+   "AUDIT TRAP: Medicaid will not pay for items or services furnished, ordered or prescribed by an excluded person. OIG's 2013 bulletin cites civil monetary penalties of up to $10,000 per item or service, so one unscreened hire can create overpayment liability.",
+   "Screen owners, board members, contractors, billing companies and staffing agencies as well as W-2 staff. Keep evidence for each.",
+   "SAMHSA does not appear as an exclusion list in the sources reviewed. The three lists to use are LEIE, SAM.gov and the NC Medicaid exclusion list."
+  ],
+  "contacts": [
+   "NC Medicaid Contact Center: 888-245-0179, Mon-Fri 8am-5pm (https://medicaid.ncdhhs.gov/providers/excluded-providers)"
+  ],
+  "sources": [
+   "https://oig.hhs.gov/exclusions/background.asp",
+   "https://medicaid.ncdhhs.gov/providers/excluded-providers",
+   "https://sam.gov/content/exclusions",
+   "https://www.law.cornell.edu/cfr/text/42/455.104"
+  ],
+  "confidence": "medium",
+  "verify": "Confirm the current civil monetary penalty amounts with your healthcare attorney, since they are adjusted for inflation. Confirm whether your LME/MCO contract adds screening duties. The Cornell page for 42 CFR 455.104 is a secondary reproduction of the eCFR."
+ },
+ "step_11_sub_3": {
+  "instructions": [
+   "Create a recurring calendar task for the 11th of each month. OIG posts its LEIE updates by the 10th.",
+   "Re-screen every employee, contractor and 5%+ owner against the LEIE. For rosters over about 25 people, download the LEIE database file and match it against your HR roster.",
+   "In the same sitting, check the NC Medicaid State Excluded Provider List and SAM.gov.",
+   "Save a dated report with the reviewer name and sign-off, and log months with no matches as well.",
+   "If you find a match, remove the person from client-related work and billing that day. Then call your healthcare attorney and the NC Medicaid Contact Center."
+  ],
+  "tips": [
+   "AUDIT TRAP: OIG says it has no required check frequency but advises routine checks. CMS guidance recommends monthly checks, and auditors and MCOs treat monthly as the norm. A missing month is a gap you must explain.",
+   "Add new hires and terminations to the screening roster the same day, so no one is left unscreened between monthly runs.",
+   "Your LME/MCO contract or provider manual may set its own screening frequency and reporting duty. Read it before signing."
+  ],
+  "contacts": [
+   "NC Medicaid Contact Center: 888-245-0179, Mon-Fri 8am-5pm (https://medicaid.ncdhhs.gov/providers/excluded-providers)"
+  ],
+  "sources": [
+   "https://oig.hhs.gov/exclusions/background.asp",
+   "https://medicaid.ncdhhs.gov/providers/excluded-providers",
+   "https://sam.gov/content/exclusions"
+  ],
+  "confidence": "medium",
+  "verify": "Confirm the exact monthly cadence required by each LME/MCO you contract with. Confirm the LEIE posting schedule on the OIG exclusions page."
+ },
+ "step_12_sub_0": {
+  "instructions": [
+   "Open the NC Peer Support Specialist Certification Program Credential Verification page and search each hire by first and last name. A partial name works but may return several people.",
+   "Confirm the result shows the initial certification date, most recent recertification date and Renew by date. Screenshot it with the date visible.",
+   "Ask the CPSS for a copy of the current certificate. The program encourages employers to request one to confirm status.",
+   "Add the person to your NC CPSS roster: name, date of hire, initial certification date, recertification date and separation date, as CCP 8G requires.",
+   "Do not schedule billable peer support until the verification is on file."
+  ],
+  "tips": [
+   "AUDIT TRAP: CCP 8G (amended effective Sept. 1, 2026) requires a roster of NC CPSS staff with certification and hire dates. Build it now, because payers and DHHS can ask for it.",
+   "A certificate lapses on its expiration date, even if the CPSS later renews inside the 30-day late window. Check the Renew by date for every hire.",
+   "Certificates arrive 10-14 business days after approval. A new CPSS who is still waiting for a certificate cannot be verified yet."
+  ],
+  "contacts": [
+   "NC Peer Support Specialist Certification Program: nccpssprogram@unc.edu (no phone verified) (https://pss.unc.edu/verification)"
+  ],
+  "sources": [
+   "https://pss.unc.edu/verification",
+   "https://medicaid.ncdhhs.gov/blog/2026/10/02/amendment-clinical-coverage-policy-8g-peer-support-services",
+   "https://medicaid.ncdhhs.gov/8g-peer-support-services/download?attachment"
+  ],
+  "confidence": "high",
+  "verify": "Confirm the exact CCP 8G section number for the roster requirement in the current policy PDF. Confirm the program's institutional home. The App context says UNC School of Social Work, which the pages opened did not state."
+ },
+ "step_12_sub_1": {
+  "instructions": [
+   "Collect each CPSS's training proof. For Track A, that is the Foundations of Peer Support certificate (60 hours: 20 online plus 40 in person). For Track B, it is the approved 50-hour course certificate.",
+   "Collect the certificates for the 20-hour prerequisite training (3 hours of ethics plus 17 hours of related training). These are separate from the Foundations or 50-hour course.",
+   "For any CPSS past their first renewal, file recertification proof: 3 hours of ethics plus 17 additional hours (20 total) and the new certificate.",
+   "Record course names, providers, hours and completion dates in a training log, and file copies in the personnel record."
+  ],
+  "tips": [
+   "The App context is wrong here. Foundations is 60 hours on Track A, and the 50-hour course is Track B. The 20 hours are prerequisite training for certification, not general continuing education.",
+   "AUDIT TRAP: Surveyors and payers ask for training documents in the personnel file. A certification number alone does not prove the hours.",
+   "The program certifies the hours when it issues the credential, but your own file is what you produce in an audit."
+  ],
+  "contacts": [
+   "NC Peer Support Specialist Certification Program: nccpssprogram@unc.edu (https://pss.unc.edu/certification)"
+  ],
+  "sources": [
+   "https://pss.unc.edu/certification",
+   "https://pss.unc.edu/training",
+   "https://pss.unc.edu/certification/recertification"
+  ],
+  "confidence": "high",
+  "verify": "Confirm current Track A and Track B requirements on pss.unc.edu before onboarding, since the program may change them (Track B approved courses are being phased out). Confirm who pays certification and recertification fees."
+ },
+ "step_12_sub_2": {
+  "instructions": [
+   "Collect a signed, dated statement from each CPSS confirming personal lived experience of a mental health condition, a substance use disorder, or both.",
+   "Record which lived experience each CPSS has, so supervisors can match CPSS to beneficiaries with similar lived experiences as CCP 8G requires.",
+   "Check that certification is active (step 12 sub 0). Certification requires at least 18 months in recovery before training, so it is the program's proof of that requirement.",
+   "Store the statement in a restricted-access HR file. Do not ask for treatment records, and have your attorney review the form."
+  ],
+  "tips": [
+   "No state-issued employer attestation form was found. The form is your own document. NOT VERIFIED whether an LME/MCO requires a specific format.",
+   "AUDIT TRAP: Assigning a CPSS to a beneficiary without similar lived experience, such as a substance-use-only CPSS for a mental-health-only client, conflicts with CCP 8G.",
+   "The 18 months of recovery is verified on the program's certification page. Earlier policy documents referenced 1 year, so rely on the current page."
+  ],
+  "contacts": [
+   "NC Peer Support Specialist Certification Program: nccpssprogram@unc.edu (https://pss.unc.edu/certification)"
+  ],
+  "sources": [
+   "https://pss.unc.edu/certification",
+   "https://medicaid.ncdhhs.gov/8g-peer-support-services/download?attachment",
+   "https://medicaid.ncdhhs.gov/blog/2026/10/02/amendment-clinical-coverage-policy-8g-peer-support-services"
+  ],
+  "confidence": "medium",
+  "verify": "Have a healthcare or employment attorney review how to collect and store the attestation (ADA and confidentiality). Confirm the exact CCP 8G wording on similar lived experience."
+ },
+ "step_12_sub_3": {
+  "instructions": [
+   "At hire, enter each CPSS's Renew by date from the verification page in a shared calendar. Certification renews every two years from the initial certification date.",
+   "Set reminders at 120, 90 and 60 days before the Renew by date, and tell the CPSS in writing.",
+   "Make sure the CPSS completes the online recertification application with the 20 training hours (3 ethics plus 17) and the reference letters.",
+   "Re-verify on the program's verification page after renewal and update the roster's recertification date.",
+   "Remove the CPSS from billable work if the date passes without renewal. A late application is allowed within 30 days, with an extra $20 late fee."
+  ],
+  "tips": [
+   "AUDIT TRAP: The program says the certificate expiration date is the official deadline, and certification is considered lapsed after it. Billing in a gap between expiration and late renewal is a risk.",
+   "Certificates arrive 10-14 business days after approval, so submit renewals early.",
+   "The renewal clock runs from the initial certification date, not the hire date."
+  ],
+  "contacts": [
+   "NC Peer Support Specialist Certification Program: nccpssprogram@unc.edu (https://pss.unc.edu/certification/recertification)"
+  ],
+  "sources": [
+   "https://pss.unc.edu/verification",
+   "https://pss.unc.edu/certification/recertification",
+   "https://pss.unc.edu/certification"
+  ],
+  "confidence": "high",
+  "verify": "Confirm the regular recertification fee and the reference-letter requirements on the recertification page. Only the $20 late fee was confirmed here."
+ },
+ "step_13_sub_0": {
+  "instructions": [
+   "Call the fire marshal's office for the city or county where the site sits. Request an inspection for the proposed use as a business-type outpatient day program, and ask about fees and wait time.",
+   "Give the inspector the program types (SAIOP under 10A NCAC 27G .4400, SACOT under .4500), the floor plan and the planned maximum client count.",
+   "Correct every deficiency and obtain a dated, signed inspection report from the fire code official. Save a clear copy of the original.",
+   "Include the report in the DHSR application. Put the next inspection on a 12-month calendar, because 10A NCAC 27G .0402(d)(3) requires annual fire and safety compliance for licensure."
+  ],
+  "tips": [
+   "AUDIT TRAP: The NC Fire Code's statewide minimum frequency for business occupancies is every three years, but DHSR's rule requires annual fire and safety compliance. Follow the stricter DHSR rule.",
+   "Programs serving children or adolescents may not be classed as business occupancy. Confirm the occupancy classification with the building official before leasing.",
+   "Fire inspection fees were not found on any state page. They vary by jurisdiction."
+  ],
+  "contacts": [
+   "DHSR Mental Health Licensure and Certification Section: 919-855-3795 (https://info.ncdhhs.gov/dhsr/mhlcs/establish.html)"
+  ],
+  "sources": [
+   "https://info.ncdhhs.gov/dhsr/mhlcs/pdf/mhiapp.pdf",
+   "https://info.ncdhhs.gov/dhsr/mhlcs/faq.html",
+   "http://reports.oah.state.nc.us/ncac/title%2010a%20-%20health%20and%20human%20services/chapter%2027%20-%20mental%20health,%20community%20facilities%20and%20services/subchapter%20g/subchapter%20g%20rules.html",
+   "https://www.ncosfm.gov/codes/codes-current-and-past"
+  ],
+  "confidence": "medium",
+  "verify": "NOT VERIFIED: the fire inspection fee, the local lead time and the current NC Fire Code edition. OSFM's page lists the 2018 code but also mentions a 2024 code update. Ask your local fire marshal which code applies. Also ask whether a peer-support-only site needs an inspection."
+ },
+ "step_13_sub_1": {
+  "instructions": [
+   "Find your county health department's environmental health section in the DHHS local health department directory, and ask whether your site needs a sanitation inspection.",
+   "If you serve any food, request the sanitation inspection. DHSR requires a current report for day programs that serve any food, and food prepared for a fee requires a permit.",
+   "Ask the health department to confirm the water supply and sewage disposal are approved. 10A NCAC 27G .0303 requires local health department approval of water and sewage.",
+   "Check that restrooms are clean, working and private, then attach the written report to your DHSR application. If you serve no food, say so in your cover letter."
+  ],
+  "tips": [
+   "The App context says every day facility needs a sanitation inspection. For day programs, DHSR requires a report only if you serve any food. Portioning counts as food preparation.",
+   "AUDIT TRAP: Do not start a snack or lunch service after licensure without a sanitation report and a health department permit if required.",
+   "Sanitation fees were not found on any state page and vary by county."
+  ],
+  "contacts": [
+   "County health department environmental health section: phone listed per county in the DHHS directory (https://www.ncdhhs.gov/divisions/public-health/county-health-departments)"
+  ],
+  "sources": [
+   "https://info.ncdhhs.gov/dhsr/mhlcs/faq.html",
+   "https://info.ncdhhs.gov/dhsr/mhlcs/pdf/mhiapp.pdf",
+   "https://www.ncdhhs.gov/divisions/public-health/county-health-departments",
+   "http://reports.oah.state.nc.us/ncac/title%2010a%20-%20health%20and%20human%20services/chapter%2027%20-%20mental%20health,%20community%20facilities%20and%20services/subchapter%20g/subchapter%20g%20rules.html"
+  ],
+  "confidence": "medium",
+  "verify": "Ask your county environmental health office what it inspects for a clinic with no food service, and what it charges. If the site uses a private well or septic, ask about approval. Check whether SACOT meals or snacks trigger the food rule."
+ },
+ "step_13_sub_2": {
+  "instructions": [
+   "Ask the fire code official to state in writing the maximum occupant load for each group room, waiting area and office during or right after the inspection.",
+   "Ask whether the fire official requires posted signs. If so, order durable signs with the approved number and post them in a conspicuous place near each room's main exit.",
+   "Cap group sizes in your policies at the posted number. Check that your staffing meets the ratios in 10A NCAC 27G .4402 for SAIOP and .4502 for SACOT.",
+   "Photograph the posted signs and file the photos with the fire report for the DHSR visit."
+  ],
+  "tips": [
+   "NOT VERIFIED: whether the NC Fire Code requires posting in your group rooms. Posting rules tend to apply to assembly-type rooms, and the fire official decides the classification.",
+   "AUDIT TRAP: A group larger than the occupant load the fire official sets is an overcrowding risk, so keep sign-in sheets that show attendance by group.",
+   "Rooms often get rearranged. Re-measure and re-check the posted load whenever furniture or walls change."
+  ],
+  "contacts": [
+   "DHSR Mental Health Licensure and Certification Section: 919-855-3795 (https://info.ncdhhs.gov/dhsr/mhlcs/establish.html)"
+  ],
+  "sources": [
+   "https://www.oah.nc.gov/bcc-fire-code-final-revised-rule/open",
+   "https://www.ncosfm.gov/codes/codes-current-and-past",
+   "http://reports.oah.state.nc.us/ncac/title%2010a%20-%20health%20and%20human%20services/chapter%2027%20-%20mental%20health,%20community%20facilities%20and%20services/subchapter%20g/subchapter%20g%20rules.html"
+  ],
+  "confidence": "low",
+  "verify": "Ask the local fire code official whether posting is required for each room type and what the exact wording must be. No DHSR rule requiring posted occupancy signs was found."
+ },
+ "step_14_sub_0": {
+  "instructions": [
+   "Download the Initial Licensure Application Packet from the DHSR MHLCS Forms and Applications page (form DHHS/DHSR-MHL/5001, Rev 10-01-25), and follow the Day Program Checklist.",
+   "Complete the application pages with facility name, site address, contact, facility director and licensure categories (.4400 SAIOP and .4500 SACOT). Disclose owners with 5% or more, as 10A NCAC 27G .0402 requires.",
+   "Write the cover letter briefly describing the services you will offer, as the packet instructs.",
+   "Sign with an original signature, and enclose a check or money order for the non-residential fee of $265.00.",
+   "Mail the complete packet to DHSR MHLCS, 2718 Mail Service Center, Raleigh, NC 27699-2718. Submit at least 30 days before your planned start date."
+  ],
+  "tips": [
+   "The App context fee of $350 base plus $12.50 per day is wrong. The $350 is the fee for residential facilities of 6 beds or fewer. Non-residential facilities pay $265.00, with no per-capacity charge.",
+   "AUDIT TRAP: Incomplete packets are not processed, and day programs need original zoning approval for the application to move forward. Staff must be in place and the site furnished before a license is issued.",
+   "CCP 8G peer support does not need a DHSR license, so this step applies only if you provide SAIOP or SACOT. The Jan. 1, 2026 CCP 8A-12 and 8A-13 also tie Medicaid enrollment to the licensure rule waiver process, so ask your consultant about timing."
+  ],
+  "contacts": [
+   "DHSR Mental Health Licensure and Certification Section: 919-855-3795, fax 919-715-8078 (https://info.ncdhhs.gov/dhsr/mhlcs/establish.html)"
+  ],
+  "sources": [
+   "https://info.ncdhhs.gov/dhsr/mhlcs/pdf/mhiapp.pdf",
+   "https://info.ncdhhs.gov/dhsr/mhlcs/faq.html",
+   "https://info.ncdhhs.gov/dhsr/mhlcs/establish.html",
+   "https://info.ncdhhs.gov/dhsr/mhlcs/mhforms.html",
+   "https://info.ncdhhs.gov/dhsr/mhlcs/lrwaiver.html",
+   "https://info.ncdhhs.gov/dhsr/mhlcs/pdf/newprovider.pdf",
+   "https://medicaid.ncdhhs.gov/blog/2026/01/07/behavioral-health-clinical-coverage-policy-updates"
+  ],
+  "confidence": "high",
+  "verify": "Confirm with MHLCS whether one application covers both .4400 and .4500 or each needs its own. Confirm the check payee name on the current packet. Confirm the waiver process timing, since the waiver request page was not fully read."
+ },
+ "step_14_sub_1": {
+  "instructions": [
+   "Obtain the original zoning approval from the local zoning office and attach the original. DHSR will not move the application forward without it.",
+   "Attach a clear copy of the current local Fire Marshal inspection report from step 13.",
+   "Attach a current sanitation inspection report only if you serve any food. Otherwise, state in your cover letter that no food is served.",
+   "Add the Secretary of State report showing Active status, a floor plan with dimensions, interior and exterior photographs, and directions if the site cannot be found on Google Maps.",
+   "Leave out the LME/MCO Letter of Support unless MHLCS asks for it. Add a local Building Official approval only for new construction or renovation."
+  ],
+  "tips": [
+   "The App context is wrong that an LME/MCO Letter of Support is attached for these services. 10A NCAC 27G .0406 and the packet require it for 24-hour residential facilities only.",
+   "An existing business-occupancy building with only a change of tenant may not need building official documentation. Ask the local Building Official and show them your application.",
+   "AUDIT TRAP: The 24-hour residential checklist lists LME/MCO letters and inspection appointments, while the Day Program Checklist (Rev 10-01-25) asks for actual reports. Use the Day Program Checklist."
+  ],
+  "contacts": [
+   "DHSR Mental Health Licensure and Certification Section: 919-855-3795 (https://info.ncdhhs.gov/dhsr/mhlcs/establish.html)"
+  ],
+  "sources": [
+   "https://info.ncdhhs.gov/dhsr/mhlcs/pdf/mhiapp.pdf",
+   "https://info.ncdhhs.gov/dhsr/mhlcs/faq.html",
+   "http://reports.oah.state.nc.us/ncac/title%2010a%20-%20health%20and%20human%20services/chapter%2027%20-%20mental%20health,%20community%20facilities%20and%20services/subchapter%20g/subchapter%20g%20rules.html"
+  ],
+  "confidence": "high",
+  "verify": "The LME/MCO letter of support may still matter for the licensure rule waiver request. Confirm the current waiver requirements. Confirm local zoning wording with your zoning office."
+ },
+ "step_14_sub_2": {
+  "instructions": [
+   "Download the MH Licensure Policies and Procedures Worksheets from the packet and cross-walk each policy to the worksheet and the matching 10A NCAC 27G rule, including .4400 for SAIOP and .4500 for SACOT.",
+   "Write procedures for every required area, including personnel, client rights, confidentiality, restrictive interventions and emergency plans, using the packet's rule references.",
+   "Keep the manual ready but do not enclose it. The packet says to send policies later, and the FAQ says to submit the manual to your Licensure and Training Consultant at the first review.",
+   "Include a disaster plan reviewed by county emergency management.",
+   "Plan for the six-month program review window that starts once the consultant is assigned."
+  ],
+  "tips": [
+   "The packet and FAQ conflict on timing. The packet says do not send policies with the application, and the FAQ says submit them at first review. Both are consistent with holding the manual for the consultant.",
+   "AUDIT TRAP: The consultant checks that policies match the rules and that staff are trained on them. Generic manuals bought online often fail.",
+   "DHSR construction does not do a plant review of day programs. The consultant assignment follows within about 5-10 days, and DHSR gives six months to finish."
+  ],
+  "contacts": [
+   "DHSR Mental Health Licensure and Certification Section: 919-855-3795 (https://info.ncdhhs.gov/dhsr/mhlcs/establish.html)"
+  ],
+  "sources": [
+   "https://info.ncdhhs.gov/dhsr/mhlcs/pdf/mhiapp.pdf",
+   "https://info.ncdhhs.gov/dhsr/mhlcs/faq.html",
+   "https://info.ncdhhs.gov/dhsr/mhlcs/pdf/listmaterials.pdf",
+   "http://reports.oah.state.nc.us/ncac/title%2010a%20-%20health%20and%20human%20services/chapter%2027%20-%20mental%20health,%20community%20facilities%20and%20services/subchapter%20g/subchapter%20g%20rules.html"
+  ],
+  "confidence": "medium",
+  "verify": "Ask your MHLCS consultant whether they want the manual before the first meeting, and in what format. Confirm the worksheet version in the current packet."
+ },
+ "step_14_sub_3": {
+  "instructions": [
+   "Build a staff roster of everyone who will work at the site, with name, role, hire date and credential or license number and expiration date.",
+   "Verify each credential at its source board and record the date. SAIOP needs an LCAS or Certified Clinical Supervisor on site 50% of hours, SACOT 90% (10A NCAC 27G .4402 and .4502).",
+   "Assemble a personnel record per person with the documents on the List of Required Materials, including HCPR proof within 90 days and criminal check within 180 days of the licensure review.",
+   "Hold records for the consultant. The packet does not list a roster or personnel files as attachments.",
+   "Enclose the $265.00 fee with the application."
+  ],
+  "tips": [
+   "The App context says to attach a roster to the application. The packet checklist does not list one, and DHSR reviews personnel records at the program review. Confirm with your consultant.",
+   "AUDIT TRAP: Check qualified professional ratios in the rules. SAIOP needs one QP per 12 adults or 6 adolescents, and SACOT one per 10 clients.",
+   "CCP 8A-12 and 8A-13 (effective Jan. 1, 2026) list their own staff types, so check Medicaid qualifications as well as licensure rules."
+  ],
+  "contacts": [
+   "DHSR Mental Health Licensure and Certification Section: 919-855-3795 (https://info.ncdhhs.gov/dhsr/mhlcs/establish.html)"
+  ],
+  "sources": [
+   "https://info.ncdhhs.gov/dhsr/mhlcs/pdf/listmaterials.pdf",
+   "https://info.ncdhhs.gov/dhsr/mhlcs/pdf/mhiapp.pdf",
+   "https://info.ncdhhs.gov/dhsr/mhlcs/faq.html",
+   "http://reports.oah.state.nc.us/ncac/title%2010a%20-%20health%20and%20human%20services/chapter%2027%20-%20mental%20health,%20community%20facilities%20and%20services/subchapter%20g/subchapter%20g%20rules.html",
+   "https://medicaid.ncdhhs.gov/media/15767/download"
+  ],
+  "confidence": "medium",
+  "verify": "Confirm with MHLCS what staff documents they want and when. Confirm whether the OAH rule text for .4400 and .4500 has changed since the OAH copy I read."
+ },
+ "step_15_sub_0": {
+  "instructions": [
+   "Call your Licensure and Training consultant at the DHSR Mental Health Licensure and Certification Section (MHLCS) to confirm the review date. DHSR allows six months from first contact to meet all requirements.",
+   "Download the DHSR Facility Walk-Through form (rev. 12-17-25) from the MHLCS Forms page. Self-inspect every room you will use for SAIOP or SACOT before DHSR arrives.",
+   "Furnish and equip the site fully before the visit, including a visible, working on-site facility telephone. Have your local fire, building and sanitation approvals available (10A NCAC 27G .0301).",
+   "Keep the Facility Director and Clinical Director on site to lead the walkthrough and answer questions. Write down every item the consultant asks you to fix or show again."
+  ],
+  "tips": [
+   "AUDIT TRAP: SAIOP and SACOT require a DHSR Mental Health License on the Provider Permission Matrix. Do not admit clients or bill before the license is issued. DHSR says issuing a license or MHL number may take up to three weeks after compliance.",
+   "There is no separate survey fee. The only DHSR charge is the $265 non-residential initial license fee, which goes in with the application. G.S. 122C-23 bars license issuance until it is paid.",
+   "The Provider Permission Matrix lists no DHSR license for Peer Support (CCP 8G). If you only offer 8G at a site, ask MHLCS in writing whether a walkthrough applies to that site."
+  ],
+  "contacts": [
+   "DHSR Mental Health Licensure and Certification Section: 919-855-3795 (https://info.ncdhhs.gov/dhsr/mhlcs/)"
+  ],
+  "sources": [
+   "https://info.ncdhhs.gov/dhsr/mhlcs/pdf/FacilityWalk-Through.pdf",
+   "https://info.ncdhhs.gov/dhsr/mhlcs/pdf/mhiapp.pdf",
+   "https://info.ncdhhs.gov/dhsr/mhlcs/establish.html",
+   "http://reports.oah.state.nc.us/ncac/title%2010a%20-%20health%20and%20human%20services/chapter%2027%20-%20mental%20health,%20community%20facilities%20and%20services/subchapter%20g/10a%20ncac%2027g%20.0301.pdf",
+   "https://www.nctracks.nc.gov/content/dam/jcr:4f0d2400-62b7-48a3-9617-ad31dd8cf543/Provider%20Permission%20Matrix%2008-16-2026.xlsx",
+   "https://www.ncleg.gov/EnactedLegislation/Statutes/PDF/BySection/Chapter_122C/GS_122C-23.pdf"
+  ],
+  "confidence": "medium",
+  "verify": "NOT VERIFIED: the 4-8 week wait for the on-site visit. Ask your MHLCS consultant for the actual date. Also confirm whether a site offering only 8G Peer Support needs any DHSR walkthrough, and check the .0301 approval list against the rule text."
+ },
+ "step_15_sub_1": {
+  "instructions": [
+   "Run a Health Care Personnel Registry (HCPR) check on every employee before hire, at hcp.ncdhhs.gov/hcpr. Save a dated printout. 10A NCAC 27G .0202(b)(4) requires no substantiated findings.",
+   "Complete a state and national criminal background check with fingerprints for each hire under G.S. 122C-80. DHSR asks for a check dated within 180 days and an HCPR check dated within 90 days.",
+   "Build each personnel file from the DHSR Required Materials for Licensure Review list. Include credentials, client rights training, hands-on CPR, first aid, and restrictive intervention or de-escalation training certificates.",
+   "Add trainer certificates for CPR, first aid and restrictive intervention instructors. Tab every file in the same order, then hand them to the consultant in one set at the review."
+  ],
+  "tips": [
+   "AUDIT TRAP: An HCPR check dated after the hire date, or older than DHSR's 90-day window, is a common citation under 10A NCAC 27G .0202(b)(4). Run it before the offer letter and re-run it if the review slips.",
+   "AUDIT TRAP: DHSR does not accept online-only CPR. Keep proof of the hands-on skills component with the certificate.",
+   "Use the DHSR Staff Record Review worksheet and the Required Materials list as your internal audit sheet, and sample-check 100 percent of files one week before the visit."
+  ],
+  "contacts": [
+   "DHSR Health Care Personnel Registry Office: 919-855-3969 (https://info.ncdhhs.gov/dhsr/hcpr/)",
+   "DHSR Mental Health Licensure and Certification Section: 919-855-3795 (https://info.ncdhhs.gov/dhsr/mhlcs/)"
+  ],
+  "sources": [
+   "https://info.ncdhhs.gov/dhsr/mhlcs/pdf/listmaterials.pdf",
+   "https://info.ncdhhs.gov/dhsr/mhlcs/pdf/train/resource.pdf",
+   "https://info.ncdhhs.gov/dhsr/hcpr/",
+   "https://www.ncleg.gov/EnactedLegislation/Statutes/PDF/BySection/Chapter_122C/GS_122C-80.pdf"
+  ],
+  "confidence": "high",
+  "verify": "Confirm with your consultant whether the 90-day HCPR and 180-day criminal-check windows are measured from the review date or the application date. Confirm which national background-check and fingerprint vendor DHSR accepts."
+ },
+ "step_15_sub_2": {
+  "instructions": [
+   "Use the correct rules. 10A NCAC 27G .0209 is Medication Requirements. Restrictive intervention rules are 10A NCAC 27E .0101 through .0108, including .0104 (seclusion, restraint, time-out) and .0107 and .0108 (training).",
+   "Complete the DHSR MH Licensure Policies and Procedures Worksheet. Map each client rights and intervention rule to a page in your policy manual before the review.",
+   "Write a restrictive intervention policy stating which interventions, if any, you permit. Ask your consultant what training is still required if you permit none. Train every staff member using a DHHS-approved de-escalation curriculum.",
+   "Rehearse interview answers with the Facility Director and Clinical Director on client rights, grievances, least restrictive alternatives (27E .0101) and incident reporting. Keep training rosters and certificates ready."
+  ],
+  "tips": [
+   "AUDIT TRAP: Citing 27G .0209 as the restraint rule in your manual signals that policies were not checked against the rule text. Cite 27E in the policy and on the DHSR worksheet.",
+   "AUDIT TRAP: DHSR asks for the approved curriculum name and instructor certification for de-escalation and restrictive intervention training. Training without a listed curriculum or certified instructor is a common finding.",
+   "SAIOP rules are 10A NCAC 27G .4400 and SACOT rules are 10A NCAC 27G .4500. Check your service descriptions and staffing patterns against those rule sections as well as the CCP."
+  ],
+  "contacts": [
+   "DHSR Mental Health Licensure and Certification Section: 919-855-3795 (https://info.ncdhhs.gov/dhsr/mhlcs/)"
+  ],
+  "sources": [
+   "http://reports.oah.state.nc.us/ncac/title%2010a%20-%20health%20and%20human%20services/chapter%2027%20-%20mental%20health,%20community%20facilities%20and%20services/subchapter%20g/10a%20ncac%2027g%20.0209.pdf",
+   "http://reports.oah.state.nc.us/ncac/title%2010a%20-%20health%20and%20human%20services/chapter%2027%20-%20mental%20health,%20community%20facilities%20and%20services/subchapter%20e/10a%20ncac%2027e%20.0104.pdf",
+   "http://reports.oah.state.nc.us/ncac/title%2010a%20-%20health%20and%20human%20services/chapter%2027%20-%20mental%20health,%20community%20facilities%20and%20services/subchapter%20e/10a%20ncac%2027e%20.0107.pdf",
+   "http://reports.oah.state.nc.us/ncac/title%2010a%20-%20health%20and%20human%20services/chapter%2027%20-%20mental%20health,%20community%20facilities%20and%20services/subchapter%20e/10a%20ncac%2027e%20.0108.pdf",
+   "https://info.ncdhhs.gov/dhsr/mhlcs/pdf/listmaterials.pdf",
+   "https://www.ncdhhs.gov/divisions/mental-health-developmental-disabilities-and-substance-use-services/involuntary-commitment/training-requirements-use-non-restrictive-and-restrictive-intervention-strategies"
+  ],
+  "confidence": "medium",
+  "verify": "Confirm the current text of 10A NCAC 27E .0101 to .0108 and the client rights rules on the OAH site. Ask your consultant whether a no-restraint facility still needs the 27E .0107 and .0108 training. The client rights rule citations beyond 27E were not opened, so confirm them in the DHSR worksheet."
+ },
+ "step_16_sub_0": {
+  "instructions": [
+   "Read the Statement of Deficiencies (SOD) and list every cited rule. Write one plan entry per citation, using the example format in the DHSR Provider Resource Manual.",
+   "State the root cause for each citation, such as a missing policy, untrained staff or no tracking system. Do not blame an individual.",
+   "Describe a systemic change that covers all clients and staff, not just the cited record. Examples are a rewritten policy, retraining with sign-in sheets, or a new checklist.",
+   "Name the responsible person, completion date and monitoring frequency, such as a monthly audit of a set number of records reviewed by the Clinical Director. Keep evidence for the follow-up visit."
+  ],
+  "tips": [
+   "AUDIT TRAP: A plan that fixes only the cited example is the usual reason DHSR rejects a POC. Show that the same gap cannot recur in other files, staff or sites.",
+   "AUDIT TRAP: Correction dates count from the survey exit date, not the SOD receipt date. Type A1/A2 is 23 days, Type B is 45 days, standard level is 60 days, and re-cited standard level is 30 days. A follow-up visit verifies the fix.",
+   "The DHSR Provider Resource Manual is revised 9/4/2019, so older than other sources. Use the deadlines and state form named in your own SOD letter if they differ."
+  ],
+  "contacts": [
+   "DHSR Mental Health Licensure and Certification Section: 919-855-3795 (https://info.ncdhhs.gov/dhsr/mhlcs/)"
+  ],
+  "sources": [
+   "https://info.ncdhhs.gov/dhsr/mhlcs/pdf/train/resource.pdf",
+   "https://info.ncdhhs.gov/dhsr/mhlcs/establish.html"
+  ],
+  "confidence": "medium",
+  "verify": "NOT VERIFIED: how DHSR communicates findings on an initial licensure review (a formal SOD or a correction request before licensing). Ask your consultant. Confirm current POC deadlines and the form against the SOD letter you receive."
+ },
+ "step_16_sub_1": {
+  "instructions": [
+   "Find the return deadline in the DHSR letter that came with the SOD. The Provider Resource Manual letter template says to return the signed form within 10 days of receipt of the SOD.",
+   "Complete the POC on the state form DHSR attached to the letter. Have the authorized owner or director sign and date it.",
+   "Return the original to MHLCS at 2718 Mail Service Center, Raleigh, NC 27699-2718, using tracked delivery. Ask your consultant whether email submission is accepted before relying on it.",
+   "Call your consultant to confirm receipt. Then complete every correction inside the 23, 30, 45 or 60-day window counted from the exit date."
+  ],
+  "tips": [
+   "AUDIT TRAP: Missing the 10-day return or the exit-date correction window can lead to enforcement. Administrative penalties for uncorrected deficiencies are described in the DHSR resource manual. Calendar both dates on the day the SOD arrives.",
+   "Send documents DHSR requested with the POC, such as revised policies and training rosters, and keep a duplicate set. DHSR notes that a follow-up visit verifies all corrections."
+  ],
+  "contacts": [
+   "DHSR Mental Health Licensure and Certification Section: 919-855-3795 (https://info.ncdhhs.gov/dhsr/mhlcs/)"
+  ],
+  "sources": [
+   "https://info.ncdhhs.gov/dhsr/mhlcs/pdf/train/resource.pdf"
+  ],
+  "confidence": "medium",
+  "verify": "The 10-day return and mailing address come from a 2019 template letter. Confirm the due date, form and submission method (mail, fax or email) in the SOD you actually receive."
+ },
+ "step_16_sub_2": {
+  "instructions": [
+   "Confirm DHSR has your initial license fee and has cleared all corrections. Allow up to three weeks for DHSR to issue the license or MHL number after the review is complete.",
+   "Check the license for exact legal name, site address, license number and effective date. Confirm the licensed service categories include SAIOP (10A NCAC 27G .4400) and SACOT (10A NCAC 27G .4500).",
+   "Save a PDF and file the original in your credentials repository. NCTracks, Tailored Plans and CARF or other accreditors will ask for it repeatedly.",
+   "Calendar the annual renewal. Licenses expire at the end of the calendar year and must be renewed annually under G.S. 122C-23."
+  ],
+  "tips": [
+   "AUDIT TRAP: If the service categories on the license do not match the services you enroll in NCTracks, the claim or enrollment can be denied. Ask DHSR for a corrected license before you submit the NCTracks application.",
+   "Any change of address, service or ownership requires a change application to DHSR before it takes effect, so do not move or add a service without checking with MHLCS first.",
+   "Peer Support alone has no DHSR license requirement on the Provider Permission Matrix, so your 8G service will not appear as a separate licensed category. Do not expect it on the license."
+  ],
+  "contacts": [
+   "DHSR Mental Health Licensure and Certification Section: 919-855-3795 (https://info.ncdhhs.gov/dhsr/mhlcs/)"
+  ],
+  "sources": [
+   "https://info.ncdhhs.gov/dhsr/mhlcs/pdf/FacilityWalk-Through.pdf",
+   "https://info.ncdhhs.gov/dhsr/mhlcs/pdf/mhiapp.pdf",
+   "https://www.ncleg.gov/EnactedLegislation/Statutes/PDF/BySection/Chapter_122C/GS_122C-23.pdf",
+   "https://www.nctracks.nc.gov/content/dam/jcr:4f0d2400-62b7-48a3-9617-ad31dd8cf543/Provider%20Permission%20Matrix%2008-16-2026.xlsx"
+  ],
+  "confidence": "medium",
+  "verify": "NOT VERIFIED: the exact wording of service designations printed on the license. Ask MHLCS for a sample or confirm after issuance. The three-week figure comes from DHSR's walk-through form acknowledgment, not a guaranteed timeline."
+ },
+ "step_17_sub_0": {
+  "instructions": [
+   "Download the Full Participation Agreement for traditional health care providers from the NC HIEA Participation Agreement page. It is a PDF, not an online signing portal.",
+   "Fill in your legal entity name, formal notice contact (attachment 1), and three contacts: participant account administrator, contract administrator and technical resource (attachment 2). Add participating entities if any (attachment 4).",
+   "Complete the Business Associate Agreement (attachment 5) with your entity name and sign under Covered Entity. Have an authorized officer sign, ideally after healthcare attorney review.",
+   "Email the completed PDF to hiea@nc.gov (preferred) or mail it to N.C. Health Information Exchange Authority, Mail Service Center 4101, Raleigh, NC 27699-4101. Allow 6 to 8 weeks for the executed copy."
+  ],
+  "tips": [
+   "There is no fee to connect now. Start this step as soon as you have a legal entity, because processing is 6 to 8 weeks. Waiting for the DHSR license is not required by the HIEA.",
+   "AUDIT TRAP: Missing or inaccurate information delays processing. A new agreement replaces any earlier one, so do not sign duplicates.",
+   "SAIOP and SACOT records covered by 42 CFR Part 2 are exempt from submission under G.S. 90-414.4(c), and HIEA says it does not currently receive Part 2 data. Document how your EHR filters those records."
+  ],
+  "contacts": [
+   "N.C. Health Information Exchange Authority: 919-754-6912 (https://hiea.nc.gov/)"
+  ],
+  "sources": [
+   "https://hiea.nc.gov/providers/how-connect/nc-healthconnex-participation-agreement",
+   "https://hiea.nc.gov/providers/what-does-law-mandate",
+   "https://www.ncleg.gov/EnactedLegislation/Statutes/PDF/BySection/Chapter_90/GS_90-414.4.pdf"
+  ],
+  "confidence": "high",
+  "verify": "Attachment and page numbers are from the HIEA page and may shift when the agreement is updated. Ask HIEA whether a Part 2 program should sign Full or Submission-only, and have a healthcare attorney review the business associate terms."
+ },
+ "step_17_sub_1": {
+  "instructions": [
+   "Ask each EHR vendor in writing whether it can send HL7 version 2.0 or higher messages and has connected other providers to NC HealthConnex.",
+   "Ask for ADT messages sent in real time and/or CCD documents within 24 hours of the encounter close, per the HIEA onboarding packet. Ask about sFTP or TLS connection options.",
+   "Confirm in writing that the EHR can filter or withhold 42 CFR Part 2 substance use disorder records and non-state-funded data, as the HIEA expects of submission-only participants.",
+   "Get the vendor's interface fee and timeline in writing before you sign. State fees are zero, but vendor fees vary. Share the technical contact with HIEA."
+  ],
+  "tips": [
+   "The HIEA asks only that your EHR can send HL7 v2.0 or higher. ONC-certified products are preferred. No HIEA vendor certification program was found, and FHIR is used for health plan access, so do not require FHIR of your vendor.",
+   "AUDIT TRAP: If you pick an EHR that cannot filter Part 2 records, you risk disclosing SUD records without consent. Test Part 2 filtering before go-live.",
+   "The onboarding packet found is a 2021 edition. Request the current packet from HIEA before you finalize specs with your vendor."
+  ],
+  "contacts": [
+   "N.C. Health Information Exchange Authority: 919-754-6912 (https://hiea.nc.gov/)"
+  ],
+  "sources": [
+   "https://hiea.nc.gov/providers/how-connect/nc-healthconnex-participation-agreement",
+   "https://hiea.nc.gov/nc-healthconnex-onboarding-packet-and-technical-specifications/download?attachment",
+   "https://hiea.nc.gov/faqs/health-care-provider-faqs",
+   "https://hiea.nc.gov/providers/what-does-law-mandate"
+  ],
+  "confidence": "medium",
+  "verify": "Request the current onboarding packet and message-type requirements from HIEA, because the packet found is a 2021 edition. Ask whether SUD or peer-support-only providers have a reduced data set."
+ },
+ "step_17_sub_2": {
+  "instructions": [
+   "Work through onboarding with HIEA and your EHR vendor after the agreement is executed. Run test messages and go live. Data on state-funded services must flow at least twice daily.",
+   "Request written confirmation of connection status from HIEA at hiea@nc.gov. Save it, with the executed agreement, in your compliance file.",
+   "Ask each Tailored Plan or LME/MCO you contract with, and NC Medicaid enrollment, whether they require proof of HIE connection before billing. Document the answer.",
+   "Do not plan on an extension. The hardship process in G.S. 90-414.4(a3) exists, but it cannot extend beyond the statutory connection date of January 1, 2023. Contact HIEA if you cannot connect."
+  ],
+  "tips": [
+   "AUDIT TRAP: No source found requires filing proof of connection with NCTracks before billing. Do not tell staff that billing is blocked or allowed on this basis until you confirm with HIEA, NC Medicaid and your Tailored Plan.",
+   "Keep records of what you sent, what you withheld under 42 CFR Part 2, and the dates, so you can show good-faith compliance with the HIE Act if asked."
+  ],
+  "contacts": [
+   "N.C. Health Information Exchange Authority: 919-754-6912 (https://hiea.nc.gov/)"
+  ],
+  "sources": [
+   "https://hiea.nc.gov/providers/what-does-law-mandate",
+   "https://www.ncleg.gov/EnactedLegislation/Statutes/PDF/BySection/Chapter_90/GS_90-414.4.pdf",
+   "https://hiea.nc.gov/providers/how-connect/nc-healthconnex-participation-agreement"
+  ],
+  "confidence": "medium",
+  "verify": "NOT VERIFIED: whether a new provider that began billing after January 1, 2023 has a grace period, and whether any payer or NCTracks requires proof of connection. Ask HIEA, NC Medicaid Provider Ombudsman and your Tailored Plan contracting desk."
+ },
+ "step_18_sub_0": {
+  "instructions": [
+   "Pick the Office Administrator (OA). The OA must be listed in the application as an owner or managing employee, such as a director, administrator or general manager.",
+   "Have the OA register at the Register Now link on the NCTracks Provider Portal login page, which leads to the NCID home page. Use a personal NCID, not a shared login.",
+   "Set up multi-factor authentication (MFA), which NCTracks requires, using phone or mobile app. Test login on the portal before starting the application.",
+   "Record the NCID username. You will enter it on the Organization Basic Information page, and add a second managing employee to the record as a backup."
+  ],
+  "tips": [
+   "NCTracks warns that three failed password attempts lock the account. Practice logging in once before the application session.",
+   "AUDIT TRAP: If the OA leaves, only an owner or managing employee on file can replace the OA. Adding a second managing employee now prevents a stuck account."
+  ],
+  "contacts": [
+   "NCTracks CSRA Call Center: 800-688-6696 (https://www.nctracks.nc.gov/content/public/providers/provider-enrollment.html)"
+  ],
+  "sources": [
+   "https://www.nctracks.nc.gov/content/dam/jcr:8d0d2b03-b987-41b2-855c-cb5d1ad4980f/PUGPRV593.pdf",
+   "https://www.nctracks.nc.gov/content/public/providers/provider-enrollment.html"
+  ],
+  "confidence": "high",
+  "verify": "The NCID registration page URL and identity-proofing steps were not opened. Follow the NCTracks Register Now link and the state NCID guidance for current steps."
+ },
+ "step_18_sub_1": {
+  "instructions": [
+   "Confirm your organization NPI is active (Step 3) and your legal name and EIN match IRS records. Review the Provider Permission Matrix dated 08-16-2026 for your services.",
+   "Log in to the NCTracks Provider Portal with the OA's NCID and start the Organization enrollment for NC Medicaid. Enter basic information, ownership and managing employees, the OA, and exclusion and sanction answers.",
+   "Pay the fees. The $100 NC Provider Application Fee applies, and the Provider Permission Matrix flags a federal application fee, site visit and fingerprinting for taxonomy 251S00000X (high risk). The 2026 federal fee is $750.",
+   "Sign the W-9 attestation and application electronically and submit. Within 15 calendar days, finish the NC Medicaid New Provider Training, which is required before initial enrollment under G.S. 108C-9."
+  ],
+  "tips": [
+   "AUDIT TRAP: Taxonomy 251S00000X providers must have at least one Service selected on the Provider Permission Matrix. NC Medicaid extended the deadline to October 1, 2026, so confirm that Peer Support, SAIOP and SACOT show on your record.",
+   "Disclose every owner and managing employee, since high-risk status means fingerprinting for owners. Omitted owners or incomplete sanction documentation are a common cause of denial.",
+   "The NCTracks Organization user guide (D2.0.1, Sept 3, 2025) has no HIE page, so the NCTracks application itself does not ask for NC HealthConnex proof."
+  ],
+  "contacts": [
+   "NCTracks CSRA Call Center: 800-688-6696 (https://www.nctracks.nc.gov/content/public/providers/provider-enrollment.html)",
+   "PCG Provider Enrollment Support: 877-522-1057 option 2 (https://medicaid.ncdhhs.gov/providers/programs-and-services/behavioral-health-mental-health-idd)"
+  ],
+  "sources": [
+   "https://www.nctracks.nc.gov/content/dam/jcr:8d0d2b03-b987-41b2-855c-cb5d1ad4980f/PUGPRV593.pdf",
+   "https://www.nctracks.nc.gov/content/public/providers/provider-enrollment.html",
+   "https://www.nctracks.nc.gov/content/dam/jcr:5088259c-ab17-4c01-bf6d-c64786be1da4/State%20and%20Federal%20Fee%20Amounts%20by%20Year.xlsx",
+   "https://www.nctracks.nc.gov/content/dam/jcr:4f0d2400-62b7-48a3-9617-ad31dd8cf543/Provider%20Permission%20Matrix%2008-16-2026.xlsx",
+   "https://www.nctracks.nc.gov/content/public/providers/faq-main-page/faqs-for-Behavioral-Health-Provider-Enrollment.html",
+   "https://medicaid.ncdhhs.gov/provider-enrollment-2026-summer-and-fall-series-1-powerpoint/open"
+  ],
+  "confidence": "high",
+  "verify": "Check the fee amounts on the NCTracks fee page on the day you apply. Confirm fingerprinting and site-visit steps and timelines with NCTracks, and ask whether any federal fee waiver applies (for example, Medicare enrollment). Processing time was not stated by a source."
+ },
+ "step_18_sub_2": {
+  "instructions": [
+   "Select taxonomy 251S00000X, Agencies - Community/Behavioral Health. The Provider Permission Matrix shows this as the only Medicaid organization taxonomy for these three services.",
+   "Add the services CIS Services - Peer Support Services, Substance Abuse Intensive Outpatient Program, and Substance Abuse Comprehensive Outpatient Treatment Program. Match each to the CCP you are billing (8G, 8A-12, 8A-13).",
+   "Read the matrix rows for each service. SAIOP and SACOT require an NC DHSR Mental Health License and accreditation within 3 years of enrolling the service. Peer Support requires accreditation within 1 year and no DHSR license.",
+   "Calendar the accreditation deadline. Accepted bodies for these services on the matrix are CARF, the Joint Commission, CQL and COA."
+  ],
+  "tips": [
+   "AUDIT TRAP: Enrolling under 251S00000X without a service selected is no longer allowed. NC Medicaid set October 1, 2026 as the deadline for existing providers, and a new application needs services chosen up front.",
+   "Do not choose a different taxonomy to avoid the high-risk screening. The matrix controls which taxonomy supports which service.",
+   "NC Medicaid announced national accreditation changes for behavioral health services. Check the Medicaid behavioral health page for the current accreditation timeline before you apply."
+  ],
+  "contacts": [
+   "NCTracks CSRA Call Center: 800-688-6696 (https://www.nctracks.nc.gov/content/public/providers/provider-enrollment.html)"
+  ],
+  "sources": [
+   "https://www.nctracks.nc.gov/content/dam/jcr:4f0d2400-62b7-48a3-9617-ad31dd8cf543/Provider%20Permission%20Matrix%2008-16-2026.xlsx",
+   "https://medicaid.ncdhhs.gov/providers/programs-and-services/behavioral-health-mental-health-idd",
+   "https://medicaid.ncdhhs.gov/provider-enrollment-2026-summer-and-fall-series-1-powerpoint/open"
+  ],
+  "confidence": "high",
+  "verify": "Re-download the current Provider Permission Matrix on the day you apply, since it is updated often (this entry uses the 08-16-2026 version). Confirm that accreditation is not required earlier by your Tailored Plan contract."
+ },
+ "step_18_sub_3": {
+  "instructions": [
+   "Check the Required Attachments section of the application. In the NCTracks Organization guide (Sept 2025), listed uploads are the CMS Medicare letter, DME, NP certificate, CLIA and sanction documents. A DHSR license is not listed.",
+   "Do not upload a W-9. Organizations electronically sign the W-9 Attestation for Organizations as part of the online application.",
+   "Enter bank details on the EFT Account Information page. All NCTracks payments are by EFT. Use the account in the organization's legal name and EIN.",
+   "If NCTracks asks for any extra document, upload it or send it by email, fax or mail with the NPI shown: NCTracksprovider@nctracks.com, fax 855-710-1965, NCTracks, PO Box 300009, Raleigh, NC 27622-8009."
+  ],
+  "tips": [
+   "NCTracks verifies the DHSR license against the state's own records according to the matrix, so the license number and service categories must be exact on the application. Keep a copy anyway for LME/MCO credentialing.",
+   "AUDIT TRAP: A bank name, account title or EIN that does not match the legal entity delays EFT setup and payment. Use the same name as on your W-9 and IRS records.",
+   "Attach accreditation proof if your taxonomy's Required Attachments section lists it. Documents sent by email, fax or mail must show the NPI or they may be misrouted."
+  ],
+  "contacts": [
+   "NCTracks CSRA Call Center: 800-688-6696 (https://www.nctracks.nc.gov/content/public/providers/provider-enrollment.html)"
+  ],
+  "sources": [
+   "https://www.nctracks.nc.gov/content/dam/jcr:8d0d2b03-b987-41b2-855c-cb5d1ad4980f/PUGPRV593.pdf",
+   "https://per.nctracks.com/content/public/providers/provider-enrollment/terms-and-conditions.html",
+   "https://www.nctracks.nc.gov/content/dam/jcr:7d4728a7-9427-4ebb-9d21-3f1262cbf772/PUG_Human%20Service%20Organization%20Enrollment%20Participant%20User%20Guide.pdf",
+   "https://www.nctracks.nc.gov/content/dam/jcr:4f0d2400-62b7-48a3-9617-ad31dd8cf543/Provider%20Permission%20Matrix%2008-16-2026.xlsx"
+  ],
+  "confidence": "medium",
+  "verify": "NOT VERIFIED: whether NCTracks asks for a voided check or bank letter at the EFT step for organizations. The EFT page description comes from a 2022 Human Service Organization guide. Call the CSRA Call Center to confirm, and confirm whether a DHSR license upload is ever requested."
+ },
+ "step_19_sub_0": {
+  "instructions": [
+   "Check the Office Administrator email in NCTracks for the fingerprinting notice. NCTracks generates an Electronic Fingerprint Submission Release of Information form with a unique case number for each 5% or greater owner.",
+   "Do not get fingerprinted before the notice arrives. Prints taken without the NCTracks-generated form and case number are not accepted.",
+   "Download the 'Locations for Fingerprinting Services' list from the NCTracks Fingerprinting FAQ page. Book LiveScan at a listed sheriff's office or approved site, and bring a government photo ID plus the case-number form.",
+   "Have the law enforcement official complete the Law Enforcement Agency Section of the form at the appointment. Pay the fee at the site; it varies by location.",
+   "Finish before the deadline printed in your notice. Missing it results in denial or termination."
+  ],
+  "tips": [
+   "AUDIT TRAP: Fingerprint results from other agencies cannot be reused. Only Medicare fingerprint results through PECOS are accepted, so a prior DHHS or DSS background check will not satisfy NCTracks.",
+   "Results stay valid for five years for owners holding 5% or more. A risk-level bump-up forces earlier re-fingerprinting.",
+   "Prefer LiveScan to ten-print cards. A card must be mailed to NC SBI with BOTH the Applicant Information form and the Release of Information form."
+  ],
+  "contacts": [
+   "NCTracks Call Center: 1-800-688-6696 (https://www.nctracks.nc.gov/content/public/providers/faq-main-page/faqs-for-fingerprinting.html)"
+  ],
+  "sources": [
+   "https://www.nctracks.nc.gov/content/public/providers/faq-main-page/faqs-for-fingerprinting.html",
+   "https://www.nctracks.nc.gov/content/dam/jcr:4f0d2400-62b7-48a3-9617-ad31dd8cf543/Provider%20Permission%20Matrix%2008-16-2026.xlsx",
+   "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_108C/GS_108C-3.html",
+   "https://www.nctracks.nc.gov/content/public/providers/faq-main-page/faqs-for-Behavioral-Health-Provider-Enrollment.html",
+   "https://www.nctracks.nc.gov/content/public/providers/faq-main-page/faqs-for-OPR-providers.html"
+  ],
+  "confidence": "medium",
+  "verify": "The 30-day window is not stated in the Aug. 11, 2026 NCTracks fingerprinting FAQ; use the deadline printed in your notice. The $38 fee is NOT VERIFIED (the FAQ says cost varies by location); confirm with the site when booking. Confirm your risk level in the notice, because the Aug. 16, 2026 Provider Permission Matrix shows High risk for 251S00000X, but a different taxonomy or national accreditation may change it."
+ },
+ "step_19_sub_1": {
+  "instructions": [
+   "Log in to the NCTracks Secure Provider Portal as Office Administrator and open the Status and Management page.",
+   "Under Submitted Applications, find the NPI with status In Review and click Upload Documents.",
+   "Attach the signed Electronic Fingerprint Submission Release of Information form for each notified owner, then click Submit Now.",
+   "If you used a ten-print card, also mail the card, the Applicant Information form and the Release form to the SBI Civilian Services Unit, 'DHHSDMA00', PO Box 29500, Raleigh NC 27626-0500.",
+   "If a name is misspelled on the form, contact the NCTracks Call Center to withdraw the application and resubmit it so the form regenerates."
+  ],
+  "tips": [
+   "AUDIT TRAP: Forms mailed to NCTracks or to the address on the form's Agency Section are not processed. Only the portal upload counts.",
+   "The form is generated from what you typed in the enrollment application. Spelling, DOB or ownership-percentage errors mean you must withdraw and re-apply.",
+   "Managing employees are not required to be fingerprinted, only providers and owners with 5% or greater direct or indirect ownership. List ownership correctly in the application, because an unlisted owner is a common cause of denial."
+  ],
+  "contacts": [
+   "NCTracks Call Center: 1-800-688-6696 (https://www.nctracks.nc.gov/content/public/providers/faq-main-page/faqs-for-fingerprinting.html)"
+  ],
+  "sources": [
+   "https://www.nctracks.nc.gov/content/public/providers/faq-main-page/faqs-for-fingerprinting.html"
+  ],
+  "confidence": "high",
+  "verify": "The FAQ lists the SBI mailing address as PO Box 29500. Another NCTracks page may list a Garner Road street address, so confirm the current address on the form itself before mailing. No 'Provider Screening Unit' name appears in the FAQ; the process runs through the portal upload."
+ },
+ "step_19_sub_2": {
+  "instructions": [
+   "Confirm your service location address in NCTracks exactly matches the building where services are delivered, and that the site is open and staffed during posted hours.",
+   "Watch the Office Administrator email for the site visit notice. NC Medicaid uses Public Consulting Group (PCG) for pre-enrollment visits required by 42 CFR 455.432 for moderate and high risk taxonomies.",
+   "Have the owner or clinical lead on site with the DHSR license, service descriptions, program schedule and staff list ready.",
+   "Make sure the person who meets the visitor can explain the services you enrolled for (SAIOP, SACOT).",
+   "If you are asked to reschedule or correct information, respond through the NCTracks Call Center promptly and keep the ticket number."
+  ],
+  "tips": [
+   "AUDIT TRAP: If the person at the visit cannot show basic knowledge of the enrolled services, the visit is recorded as a fail, which leads to automatic termination of participation per NC Medicaid's March 2026 provider notice.",
+   "Information on the NCTracks record must match what the visitor finds, including address, services and hours. Keep the record current through Manage Change Requests.",
+   "Do not schedule the visit around an unfinished buildout. The program should be set up to operate."
+  ],
+  "contacts": [
+   "NCTracks Call Center: 1-800-688-6696 (https://www.nctracks.nc.gov/content/public/providers/faq-main-page/faq-general.html)"
+  ],
+  "sources": [
+   "https://medicaid.ncdhhs.gov/blog/2026/03/04/providers-risks-not-accurately-reporting-your-nctracks-provider-record",
+   "https://www.nctracks.nc.gov/content/dam/jcr:4f0d2400-62b7-48a3-9617-ad31dd8cf543/Provider%20Permission%20Matrix%2008-16-2026.xlsx",
+   "https://www.nctracks.nc.gov/content/public/providers/faq-main-page/faqs-for-fingerprinting.html",
+   "https://www.nctracks.nc.gov/content/dam/jcr:b8628768-96d7-406d-8fa5-dd9cb7351ee2/837P%20Professional%20Health%20Care%20Claim.pdf"
+  ],
+  "confidence": "medium",
+  "verify": "NOT VERIFIED: the visit checklist, notice lead time, and PCG scheduling contact number. Ask the NCTracks Call Center for the current PCG site visit contact and what documents the visitor will request."
+ },
+ "step_20_sub_0": {
+  "instructions": [
+   "Open the approval letter and the NCTracks Provider Record. Compare the enrollment effective date for each health plan, service location, taxonomy and service against your DHSR license effective date.",
+   "Confirm the effective date is not earlier than the date of your required license, certification or accreditation on file.",
+   "Check the date is no more than 365 days before the application and no more than 90 days after it.",
+   "If the date is wrong, have the Office Administrator submit a Request to Back-Date Enrollment Effective Dates through Manage Change Request, in a single session.",
+   "Do not bill or schedule Medicaid services before the date shown on the record."
+  ],
+  "tips": [
+   "AUDIT TRAP: Services delivered before the effective date shown on the provider record are not billable. A back-date request cannot precede the license or accreditation begin date on file.",
+   "The 2019 NCTracks notice limits approvals to system issues, emergencies or medically necessary services. Backdating is not routine, so set the requested date correctly at the start.",
+   "Only the Office Administrator sees the back-date page, and it cannot be saved as a draft."
+  ],
+  "contacts": [
+   "NCTracks Call Center: 1-800-688-6696 (https://www.nctracks.nc.gov/content/public/providers/faq-main-page/faq-general.html)"
+  ],
+  "sources": [
+   "https://www.nctracks.nc.gov/content/public/providers/faq-main-page/faqs-for-providerenrollment.html",
+   "https://www.nctracks.nc.gov/content/dam/jcr:89fd797c-32a7-41f8-8dd0-8e078d47152d/JA_PRV702%20Req%20Backdate%20Enroll%20Eff%20Dates_W1.0.1.pdf",
+   "https://www.nctracks.nc.gov/content/public/providers/provider-communications/2019-announcements/Provider-Ability-to-Request-Approval-for-Backdated-Enrollment-Effective-Date.html"
+  ],
+  "confidence": "high",
+  "verify": "The back-date job aid (PRV702, Nov. 2025) may allow a wider range of reasons than the 2019 notice. Confirm with the NCTracks Call Center before relying on backdating. Also confirm separately that each Tailored Plan honors the same effective date in its own contract."
+ },
+ "step_20_sub_1": {
+  "instructions": [
+   "Decide which clinicians need individual NCTracks records, such as an LCAS or other licensed professional who enrolled as an individual provider. Qualified Professionals and CCS-credentialed supervisors are not separate NCTracks provider types.",
+   "Wait until your organization is approved. Newly enrolling organizations must be approved before individuals can affiliate.",
+   "Have each individual provider's Office Administrator log in, open Status and Management, select the individual NPI under Manage Change Request and click Update.",
+   "Select Add/Update Affiliations, enter your organization NPI, click Lookup NPI, tick the organization and location, then click Add.",
+   "Submit the Manage Change Request and confirm the affiliation shows on the individual record."
+  ],
+  "tips": [
+   "AUDIT TRAP: Your organization cannot create or change the affiliation. Only the Office Administrator of the individual's record can. The older Medicaid Bulletin says affiliation-related claims deny if not fixed within the stated period.",
+   "Affiliation begin dates default to the current date and cannot be changed. Affiliate before the clinician delivers billable services.",
+   "A clinician on another organization's record stays there until you become that record's Office Administrator. Alliance says it fills its claim system from daily NCTracks files, so errors here carry into the Tailored Plan network."
+  ],
+  "contacts": [
+   "NCTracks Call Center: 1-800-688-6696 (https://www.nctracks.nc.gov/content/public/providers/faq-main-page/faq-general.html)"
+  ],
+  "sources": [
+   "https://www.nctracks.nc.gov/content/dam/jcr:478f30b7-5d05-4472-bc46-7ba53811d0de/JA%20-%20How%20to%20Affiliate%20an%20Individual%20Provider%20Record%20to%20a%20Group-Organization%20Provider%20Record%20in%20NCTracks%2020170531.pdf",
+   "https://www.nctracks.nc.gov/content/public/providers/faq-main-page/faqs-for-manage-change-requests.html",
+   "https://www.nctracks.nc.gov/content/public/providers/faq-main-page/faqs-for-providerenrollment.html",
+   "https://medicaid.ncdhhs.gov/blog/2021/10/18/provider-reminders-individual-provider-affiliation-and-keeping-nctracks-records-current",
+   "https://medicaid.ncdhhs.gov/documents/files/medicaid-bulletin-2017-06/open",
+   "https://www.alliancehealthplan.org/providers/network/become-a-provider/provider-enrollment/"
+  ],
+  "confidence": "medium",
+  "verify": "NOT VERIFIED: whether agency-based staff (QPs, peer support specialists, associate-level staff) must be enrolled and affiliated in NCTracks for 8G, 8A-12 or 8A-13 claims. Ask NC Medicaid Provider Enrollment and each Tailored Plan. Also check whether your plan requires the rendering NPI on the claim."
+ },
+ "step_20_sub_2": {
+  "instructions": [
+   "Decide how you will bill NCTracks (Medicaid Direct fee-for-service): direct 837P, a clearinghouse or a billing agent. If using an agent, add it to your NCTracks record through the billing agent option in Manage Change Request.",
+   "If submitting 837P directly, sign the Trading Partner Agreement in the NCTracks portal and obtain your Transaction Supplier Number. Email NCMMIS_EDI_Support@gdit.com for the contact form and a Ramp Management invitation.",
+   "Run test 837P files in Ramp Management using the Companion Guide, and fix errors until certified.",
+   "Request the 835 electronic remittance through the same trading partner setup, then confirm the first production remittance arrives and reconciles to payments.",
+   "Submit one low-dollar production claim and trace it through the 835."
+  ],
+  "tips": [
+   "AUDIT TRAP: Medicaid Direct claims go to NCTracks, but Tailored Plan and Standard Plan claims go to the plan, not NCTracks. Test each plan's claim route separately.",
+   "NC DHHS can require re-testing if a trading partner generates too many errors in production.",
+   "Match the service location, taxonomy and NPI on the 837P to the NCTracks record. Mismatches are the usual cause of early denials."
+  ],
+  "contacts": [
+   "NCTracks EDI Support: NCMMIS_EDI_Support@gdit.com (https://www.nctracks.nc.gov/content/public/providers/provider-trading-partners/faqs-for-trading-partners.html)",
+   "NCTracks Call Center: 1-800-688-6696 (https://www.nctracks.nc.gov/content/public/providers/faq-main-page/faqs-for-edi.html)"
+  ],
+  "sources": [
+   "https://www.nctracks.nc.gov/content/public/providers/faq-main-page/faqs-for-edi.html",
+   "https://www.nctracks.nc.gov/content/public/providers/provider-trading-partners/faqs-for-trading-partners.html",
+   "https://www.nctracks.nc.gov/content/dam/jcr:775ac675-c2b9-48ce-9da0-42e045db9a88/JA%20-%20How%20to%20select%20a%20Billing%20Agent%20and%20Other%20Claims%20Submission%20Options%20in%20NCTracks%2020170531.pdf",
+   "https://www.trilliumhealthresources.org/sites/default/files/docs/Provider-documents/Claims/Trillium-Unified-Claims-Platform-Questions-Answer.pdf"
+  ],
+  "confidence": "medium",
+  "verify": "The trading partner FAQ says some trading partners need no certification testing while the EDI page says testing or third-party certification is required. Confirm with NCTracks EDI Support which path applies to a clearinghouse versus a direct submitter, and how a provider requests the 835 specifically."
+ },
+ "step_21_sub_0": {
+  "instructions": [
+   "Confirm NCTracks enrollment is active; Alliance, Trillium and Vaya Partners all require it before network contracting.",
+   "Apply to each plan you want: Alliance Provider Application, Trillium request by email to NetworkServicesSupport@TrilliumNC.org, or Vaya Partners Provider Contract Request Form.",
+   "Ask for the plan's current service-needs list before applying for Peer Support (8G), which is now a closed-network service.",
+   "Sign the contract and keep the welcome letter, which gives orientation, claims and UM instructions.",
+   "Also ask about Medicaid Direct and State-funded contract amendments, and about Standard Plan contracts if you want those members."
+  ],
+  "tips": [
+   "Vaya Health and Partners combined as Vaya Partners on Oct. 1, 2026, so there are three Tailored Plan regions, not four. Use providers.vayapartners.org, not the legacy sites.",
+   "Under Session Law 2026-41, NC Medicaid says plans may close their networks for Peer Support and RB-BHT services as of July 7, 2026. Alliance cites Senate Bill 257 effective July 2, 2026. A new peer-support provider may be turned away unless a need is posted.",
+   "AUDIT TRAP: National accreditation is due within one year of NC Medicaid enrollment for 8G, 8A-12 and 8A-13 per the CCPs. Plans can terminate contracts for missing it."
+  ],
+  "contacts": [
+   "Alliance Health Provider Support: 855-759-9700 (https://www.alliancehealthplan.org/providers/network/become-a-provider/provider-enrollment/)",
+   "Trillium Provider Support Services: 1-855-250-1539 (https://www.trilliumhealthresources.org/contracting-information)",
+   "Vaya Partners ACCESS Provider Services: 1-866-990-9712 (https://providers.vayapartners.org/enrollment/)"
+  ],
+  "sources": [
+   "https://www.alliancehealthplan.org/providers/network/become-a-provider/provider-enrollment/",
+   "https://www.trilliumhealthresources.org/contracting-information",
+   "https://providers.vayapartners.org/enrollment/",
+   "https://providers.vayahealth.com/wp-content/uploads/2026/09/Joint_VP_Merger_Info_Session_9-14-26.pdf",
+   "https://medicaid.ncdhhs.gov/providers/provider-playbook-medicaid-managed-care/fact-sheets/mandatory-closed-networks",
+   "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_108D/GS_108D-23.html",
+   "https://medicaid.ncdhhs.gov/8g-peer-support-services/open",
+   "https://medicaid.ncdhhs.gov/media/15767/download?attachment",
+   "https://medicaid.ncdhhs.gov/media/15769/download?attachment"
+  ],
+  "confidence": "medium",
+  "verify": "NOT VERIFIED: Partners legacy region application path and current timelines after the Oct. 1, 2026 merger. NOT VERIFIED: the 6-12 week estimate; only Alliance states a 5 business day application decision. Confirm which county catchment each plan serves and whether Standard Plan contracts are required for your service mix. The PPM and CCP accreditation timing (1 year) differ from the PPM's note on SAIOP/SACOT; ask NC Medicaid which applies."
+ },
+ "step_21_sub_1": {
+  "instructions": [
+   "Ask each plan's enrollment team which clinician roster process applies after contract. Alliance says practitioners joining a contracted behavioral health entity need no extra submission because it loads daily NCTracks files.",
+   "For Vaya Partners, submit an Enrollment Initiation Form (EIF) to add each new clinician to your agency contract.",
+   "Make sure every rostered clinician is enrolled and affiliated in NCTracks first, then confirm the NPI, name and location match.",
+   "Give plans your DHSR license, accreditation status and insurance certificates when asked.",
+   "Record each plan's confirmation of the roster in your contracting file."
+  ],
+  "tips": [
+   "NC Medicaid says LME/MCOs no longer perform credentialing; NCTracks does. None of the plan pages opened ask for CAQH IDs, so do not build the process around them without a written plan request.",
+   "AUDIT TRAP: Alliance requires professional liability and general liability of at least $1,000,000 per occurrence and $3,000,000 aggregate, plus workers' compensation. Missing certificates stall contracts.",
+   "Alliance requires 30 days' advance notice of site address changes, ownership or tax ID changes."
+  ],
+  "contacts": [
+   "Vaya Partners Provider Enrollment Services Team: 1-855-432-9139 (https://providers.vayapartners.org/enrollment/)",
+   "Alliance Health Provider Support: 855-759-9700 (https://www.alliancehealthplan.org/providers/network/become-a-provider/provider-enrollment/)"
+  ],
+  "sources": [
+   "https://www.alliancehealthplan.org/providers/network/become-a-provider/provider-enrollment/",
+   "https://providers.vayapartners.org/enrollment/",
+   "https://www.trilliumhealthresources.org/contracting-information",
+   "https://www.nctracks.nc.gov/content/public/providers/faq-main-page/faqs-for-Behavioral-Health-Provider-Enrollment.html"
+  ],
+  "confidence": "medium",
+  "verify": "NOT VERIFIED: whether any of the three plans requires CAQH IDs or a separate roster attestation form. Ask each plan's contract manager in writing. Trillium's roster process was not found on the page opened."
+ },
+ "step_21_sub_2": {
+  "instructions": [
+   "Alliance: use EDI Payer ID 23071, return the Trading Partner Agreement and Connectivity Form, and keep your first 837 file to 5 to 10 claims.",
+   "Trillium: from Oct. 1, 2026 Tailored Plan claims use payor ID 43072 via Availity, Change Healthcare or SSI Group, direct SFTP, or the iTransact portal. Medicaid Direct and State-funded claims are unchanged.",
+   "Vaya Partners: use payor ID 13010. Request a Trading Partner Agreement and EDI Enrollment Form at EDI@vayahealth.com, and use the ProviderCONNECT portal or SFTP.",
+   "Send test 837s per plan, confirm acceptance reports, then confirm the first paid claim and remittance match."
+  ],
+  "tips": [
+   "AUDIT TRAP: Alliance's billing-loop address, including zip+4, must exactly match the site address in NCTracks, or claims map to the wrong site and deny.",
+   "Alliance 837 files are not processed if the EDI Certified box is not checked.",
+   "Trillium and Vaya Partners both moved to unified claims systems on Oct. 1, 2026. Use their newest guides, not older Partners, Vaya or Trillium instructions."
+  ],
+  "contacts": [
+   "Alliance Provider Helpdesk (ACS): (919) 651-8500 (https://www.alliancehealthplan.org/providers/network/alliance-claim-system-acs/)",
+   "Trillium Provider Support Services: 1-855-250-1539 (https://www.trilliumhealthresources.org/contracting-information)",
+   "Vaya Partners ACCESS Provider Services: 1-866-990-9712 (https://providers.vayapartners.org/enrollment/)"
+  ],
+  "sources": [
+   "https://www.alliancehealthplan.org/document-library/Claims-and-Enrollment-Guide.pdf",
+   "https://www.alliancehealthplan.org/providers/network/alliance-claim-system-acs/",
+   "https://www.trilliumhealthresources.org/sites/default/files/docs/Provider-documents/Claims/Trillium-Unified-Claims-Platform-Questions-Answer.pdf",
+   "https://providers.vayahealth.com/wp-content/uploads/2026/09/Joint_VP_Merger_Info_Session_9-14-26.pdf",
+   "https://providers.vayahealth.com/wp-content/uploads/2025/02/Vaya_EDI_276_277_Companion_Guide_OOC_20250129.pdf",
+   "https://providers.vayahealth.com/authorization-information/prior-authorization/"
+  ],
+  "confidence": "medium",
+  "verify": "Alliance guide is dated for FY 2026-27 and Trillium's FAQ was revised Sept. 30, 2026; payer IDs and clearinghouse lists can change. The Vaya payor ID was seen in the Sept. 14, 2026 merger presentation and an older companion guide, not on a current claims page. Confirm with each plan's EDI team."
+ },
+ "step_21_sub_3": {
+  "instructions": [
+   "After contract, request portal access: Alliance Claim System (ACS) Provider Portal, Trillium iTransact and Provider Data Management System, or Vaya Partners ProviderCONNECT.",
+   "Attend each plan's live training. Trillium requires System Administrator training for its unified claims system.",
+   "Download each plan's authorization guidelines and look up SAIOP (H0015), SACOT (H2035) and Peer Support (H0038). Peer Support needs prior approval after the 24 unmanaged units.",
+   "Practice a test authorization request with the plan's UM team and record the turnaround time."
+  ],
+  "tips": [
+   "Vaya Partners says prior authorization and admission notification flexibilities run through Dec. 29, 2026 for services after Sept. 30, 2026. Confirm which services this covers; it does not apply to Peer Support units beyond the 8G limits.",
+   "AUDIT TRAP: You may not bill units beyond those authorized by the plan. Vaya Partners states this directly.",
+   "CCP 8G caps unmanaged Peer Support at 24 units once per episode of care, then 176 units per 60 days and no more than 88 per 30 days without extra review."
+  ],
+  "contacts": [
+   "Alliance Provider Helpdesk (ACS): (919) 651-8500 (https://www.alliancehealthplan.org/providers/network/alliance-claim-system-acs/)",
+   "Vaya Partners ACCESS Provider Services: 1-866-990-9712 (https://providers.vayapartners.org/authorization-guidelines/)"
+  ],
+  "sources": [
+   "https://www.alliancehealthplan.org/providers/network/alliance-claim-system-acs/",
+   "https://www.trilliumhealthresources.org/contracting-information",
+   "https://providers.vayapartners.org/authorization-guidelines/",
+   "https://providers.vayahealth.com/authorization-information/prior-authorization/",
+   "https://providers.vayahealth.com/wp-content/uploads/2026/09/Joint_VP_Merger_Info_Session_9-14-26.pdf",
+   "https://medicaid.ncdhhs.gov/8g-peer-support-services/open"
+  ],
+  "confidence": "medium",
+  "verify": "NOT VERIFIED: which plan requires prior authorization or notification for SAIOP and SACOT after the Vaya Partners flexibility window ends. Check each plan's authorization lookup tool. Trillium's training schedule was not confirmed on a page opened."
+ },
+ "step_22_sub_0": {
+  "instructions": [
+   "Build the note template from the DHHS Record Management and Documentation Manual, July 2025 (effective July 8, 2025). Add fields for individual name, record number or Medicaid ID, full date, service name, contact type, place of service and purpose tied to plan goals.",
+   "Add required fields for interventions, duration, effectiveness and response to goals, and electronic authentication with date stamp and credentials.",
+   "Add CCP-specific fields: for 8G, start and end time for each PSS unit; for SAIOP and SACOT, hours attended each day.",
+   "Make group notes require an individual effectiveness entry per person, and enforce documentation within the required timeframe, with late entries flagged.",
+   "Write an EHR standard operating procedure and confirm NC Health Connex (NC HIEA) compliance."
+  ],
+  "tips": [
+   "AUDIT TRAP: Duration billed must match the duration in the note. Late entries are billable only up to seven business days after the service date; after that the service is not billable.",
+   "Group notes need a full note for every person; the intervention can match across members but effectiveness must be individual.",
+   "Cursive font in a Word document is not a valid electronic signature. The EHR must record date-stamped authentication at the time the person signs."
+  ],
+  "contacts": [
+   "NC DHHS Records Management and Documentation Manual: https://www.ncdhhs.gov/rmdmjuly-2025/download?attachment (use the plan's provider relations line for questions)"
+  ],
+  "sources": [
+   "https://www.ncdhhs.gov/rmdmjuly-2025/download?attachment",
+   "https://medicaid.ncdhhs.gov/8g-peer-support-services/open",
+   "https://medicaid.ncdhhs.gov/media/15767/download?attachment",
+   "https://medicaid.ncdhhs.gov/media/15769/download?attachment"
+  ],
+  "confidence": "medium",
+  "verify": "The July 2025 manual lists about 10 core content items plus authentication and CCP-specific additions, and does not mention APSM 45-2 in the text reviewed. Confirm with your Tailored Plan whether it still audits against APSM 45-2 wording. The 8G start-and-end-time element comes from CCP 8G Section 5.5.1; confirm the exact wording of that section in your copy."
+ },
+ "step_22_sub_1": {
+  "instructions": [
+   "Create a claim-scrubber rule that checks for SAIOP (H0015) and SACOT (H2035) within the same episode of care for the same member, not just the same calendar day.",
+   "Allow an exception only on the day of admission or discharge for the program the member is entering or leaving.",
+   "Add a rule blocking SAIOP or SACOT billing in the same episode as individual, family or group SUD therapy, except on admission or discharge days.",
+   "Block 8G Peer Support at the same time of day as SAIOP or SACOT, though PSS in the same episode is allowed.",
+   "Test with sample claims and have the Billing Specialist sign off before go-live."
+  ],
+  "tips": [
+   "AUDIT TRAP: The CCP rule is 'same episode of care', not 'same day'. A member can be in only one of SAIOP or SACOT during a treatment episode, apart from the admission or discharge day.",
+   "SACOT is for beneficiaries 18 and older with a primary SUD diagnosis; add an age check.",
+   "Document each transition between levels of care so the admission or discharge exception can be proven."
+  ],
+  "contacts": [
+   "Alliance Health Provider Support: 855-759-9700 (https://www.alliancehealthplan.org/providers/network/become-a-provider/provider-enrollment/)"
+  ],
+  "sources": [
+   "https://medicaid.ncdhhs.gov/media/15767/download?attachment",
+   "https://medicaid.ncdhhs.gov/media/15769/download?attachment",
+   "https://medicaid.ncdhhs.gov/8g-peer-support-services/open"
+  ],
+  "confidence": "high",
+  "verify": "Plans may add edits beyond the CCP. Ask each Tailored Plan for its claim edit list. Also confirm how the policy defines an episode of care for your EHR's admission dates."
+ },
+ "step_22_sub_2": {
+  "instructions": [
+   "Set the Peer Support (H0038) billing unit as 15 minutes in the EHR charge master. H0038 HQ for group is also 15 minutes, but not telehealth or telephonic eligible.",
+   "Build the unmanaged-unit rule: the first 24 units per beneficiary per episode of care need no prior approval; require authorization after that.",
+   "Build an authorization rule capping billing at 176 units per 60-day authorization period and 88 units per 30-day period unless a higher approval is on file.",
+   "Block overlap with SAIOP, SACOT, partial hospitalization, PSR, respite and ITS at the same time of day.",
+   "Do not hard-code 20 units per day or 80 per week unless a Tailored Plan tells you in writing to."
+  ],
+  "tips": [
+   "AUDIT TRAP: The 20-unit daily and 80-unit weekly limits do not appear in CCP 8G amended Sept. 1, 2026. Hard-coding unsourced caps can block payable services or hide real limits.",
+   "The Sept. 1, 2026 revision of 8G added unmanaged units and prior approval, so older templates are outdated.",
+   "Telehealth and telephonic delivery are limited by the policy; check the current 8G and Policy 1-H before enabling remote delivery."
+  ],
+  "contacts": [
+   "Vaya Partners ACCESS Provider Services: 1-866-990-9712 (https://providers.vayapartners.org/authorization-guidelines/)"
+  ],
+  "sources": [
+   "https://medicaid.ncdhhs.gov/8g-peer-support-services/open"
+  ],
+  "confidence": "medium",
+  "verify": "NOT VERIFIED: any daily or weekly Peer Support limits in Tailored Plan authorization guidelines. Check each plan's Behavioral Health Prior Authorization Look-up Tool. I did not confirm whether 8G's telehealth limits changed in the Sept. 2026 revision."
+ },
+ "step_22_sub_3": {
+  "instructions": [
+   "Set SAIOP H0015 as one unit per day (an event) and require at least 3 hours of documented service that day before the claim can release.",
+   "Set SACOT as H2035, one unit per hour, and require at least 4 hours of SACOT that day before any hours can be billed.",
+   "Add scheduling checks: SAIOP at least 3 service days per week; SACOT at least 4 hours per day, 5 days per week, 20 hours per week.",
+   "Reject claims where billed duration differs from the note.",
+   "Test with sample days of 2.5, 3 and 4 hours."
+  ],
+  "tips": [
+   "AUDIT TRAP: The SACOT code is H2035, not H2036. A wrong code will deny or be paid incorrectly.",
+   "CCP 8A-12 says adolescents may be scheduled for 2 hours per SAIOP service day, but billing requires 3 hours. Do not bill adolescent days under 3 hours without plan confirmation.",
+   "SACOT must operate at least 20 hours per week, with no more than two consecutive days without services."
+  ],
+  "contacts": [
+   "Trillium Provider Support Services: 1-855-250-1539 (https://www.trilliumhealthresources.org/contracting-information)"
+  ],
+  "sources": [
+   "https://medicaid.ncdhhs.gov/media/15767/download?attachment",
+   "https://medicaid.ncdhhs.gov/media/15769/download?attachment"
+  ],
+  "confidence": "high",
+  "verify": "Confirm with each Tailored Plan how it treats an adolescent SAIOP day of 2 hours, since the CCP's scheduling minimum and billing minimum differ. Confirm the SAIOP weekly service-day rule in your copy of 8A-12."
+ }
+}

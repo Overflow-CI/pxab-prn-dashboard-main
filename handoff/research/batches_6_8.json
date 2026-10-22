@@ -1,0 +1,997 @@
+{
+ "step_23_sub_0": {
+  "instructions": [
+   "Build a 24/7 crisis response roster in which every hour of the week has one named on-call clinician. CCP 8A-12 and 8A-13 Section 6.1 require crisis response 24 hours a day, seven days a week, delivered in person, by telehealth or by phone based on the client's need.",
+   "Name a backup for every shift. Use your Clinical Supervisor (LCAS, CCS or CSI) or Licensed Clinical Staff as the second call. The policies do not mandate an LCAS/CCS on-call backup, so record it as your own escalation rule.",
+   "Publish the schedule to all staff, the answering service and the front desk. Give every client a written crisis contingency plan with the 24-hour number. 10A NCAC 27G .4401(c)(6) lists crisis contingency planning as a required SAIOP service component.",
+   "Test the call path before launch and monthly after. Require a crisis log entry for each contact showing time, responder, mode (in person, telehealth, phone) and disposition. Cover swaps and holidays by updating the published schedule.",
+   "Confirm the clinical supervisor schedule separately. 10A NCAC 27G .4402 and .4502 set required on-site LCAS/CCS time (50 percent of SAIOP hours, 90 percent of SACOT hours). The CCP says the supervisor position may be shared by up to two staff."
+  ],
+  "tips": [
+   "AUDIT TRAP: Auditors and surveyors ask for proof that crisis response actually ran. A schedule alone is not enough. Keep the call log, the after-hours number test results and the notes written by the on-call clinician.",
+   "The older app wording of mandatory 24/7/365 first-responder coverage is not in the current policies. The January 1, 2026 text says crisis response must be available 24 hours a day, seven days a week, by an in-person, telehealth or phone method based on client need. Write your policy to that standard and add your own coverage rules.",
+   "Staff cannot rely on a voicemail or answering machine as crisis response. Train the on-call clinician on the crisis response module before the first on-call shift. It is a required training before service delivery."
+  ],
+  "contacts": [
+   "NC DHSR Mental Health Licensure and Certification Section: (919) 855-3795 (https://info.ncdhhs.gov/dhsr/mhlcs/)",
+   "NC Medicaid Provider Ombudsman: (866) 304-7062 (https://medicaid.ncdhhs.gov/)"
+  ],
+  "sources": [
+   "https://medicaid.ncdhhs.gov/media/15767/download?attachment",
+   "https://medicaid.ncdhhs.gov/media/15769/download",
+   "https://www.law.cornell.edu/regulations/north-carolina/10A-N-C-Admin-Code-27G-4401",
+   "https://www.law.cornell.edu/regulations/north-carolina/10A-N-C-Admin-Code-27G-4402",
+   "https://www.law.cornell.edu/regulations/north-carolina/10A-N-C-Admin-Code-27G-4502"
+  ],
+  "confidence": "high",
+  "verify": "Confirm with each LME/MCO or plan whether it sets extra crisis-line or response-time rules in its provider manual. Confirm whether the DHSR phone number on the MHLC page is still current. Have a healthcare attorney confirm your on-call and staffing arrangement."
+ },
+ "step_23_sub_1": {
+  "instructions": [
+   "Build a training matrix from the CCP 8A-12 and 8A-13 staff training table. Before service: crisis response, naloxone and harm reduction, and the level-of-care definition. Within 90 days: ASAM Criteria and person-centered planning. Within 180 days: introductory motivational interviewing. Annually: continuing education including crisis response and cultural competency.",
+   "Deliver client rights and confidentiality training that covers the rules named in 10A NCAC 27G .0202(g)(2): 10A NCAC 27C, 27D, 27E, 27F and 26B. Add 42 CFR Part 2 and HIPAA content, since the program handles SUD records.",
+   "Deliver de-escalation and alternatives to restrictive interventions training under 10A NCAC 27E .0107. Use a curriculum from the DMH/DD/SUS approved-curricula list. Test competence by written test and observation before staff give direct care.",
+   "Record the date, trainer, curriculum, hours, test result and attendee signature for every session. Keep a sign-in sheet and the curriculum outline. Schedule refresher training before each annual due date."
+  ],
+  "tips": [
+   "AUDIT TRAP: Before-service trainings gate billing. If an employee delivered SAIOP or SACOT before completing crisis response, naloxone or harm reduction training, the claims are exposed. Do not put new hires on the schedule until the first block is documented.",
+   "AUDIT TRAP: A bare attendance certificate for restrictive-intervention or de-escalation training is not enough. 10A NCAC 27E .0107 expects competency testing and documentation, so keep the test results. The curriculum must be an approved one.",
+   "The app's citation of 10A NCAC 27G .0209 is wrong. That rule covers medication requirements. Cite 27E .0107 for de-escalation training and 27G .0202 for personnel training."
+  ],
+  "contacts": [
+   "NC DHSR Mental Health Licensure and Certification Section: (919) 855-3795 (https://info.ncdhhs.gov/dhsr/mhlcs/)"
+  ],
+  "sources": [
+   "https://medicaid.ncdhhs.gov/media/15767/download?attachment",
+   "https://medicaid.ncdhhs.gov/media/15769/download",
+   "https://www.law.cornell.edu/regulations/north-carolina/10A-N-C-Admin-Code-27G-0202",
+   "http://ncrules.state.nc.us/ncac/title%2010a%20-%20health%20and%20human%20services/chapter%2027%20-%20mental%20health,%20community%20facilities%20and%20services/subchapter%20e/10a%20ncac%2027e%20.0107",
+   "https://www.ncdhhs.gov/approved-curricula-6-24-24/open",
+   "https://www.law.cornell.edu/regulations/north-carolina/10A-N-C-Admin-Code-27G-0209"
+  ],
+  "confidence": "high",
+  "verify": "Check the current DMH/DD/SUS approved-curricula list, because the copy found is dated June 2024 and a newer one may exist. Confirm retention periods for training records with your attorney or LME/MCO. Check the full 27G .0202 text for first aid, CPR and bloodborne pathogen timelines."
+ },
+ "step_23_sub_2": {
+  "instructions": [
+   "Create one personnel file per employee and contractor. 10A NCAC 27G .0202 requires documentation of training, experience and qualifications, including verification of licensure or certification.",
+   "Collect a signed and dated certificate for each course showing the training title, curriculum, hours, date, trainer name and pass/fail result. Reject certificates that lack a date or a trainer.",
+   "File each certificate within five business days of the session. Use the same folder order for every employee: hire date, credentials, before-service trainings, 90-day, 180-day and annual items.",
+   "Add a due-date column for each recurring item, such as CPR or first aid and annual refreshers. Run a monthly report of items due within 60 days.",
+   "Keep restrictive-intervention training records for at least the period stated in 10A NCAC 27E .0107, and keep them accessible to surveyors and auditors."
+  ],
+  "tips": [
+   "AUDIT TRAP: Missing or undated certificates are a common DHSR deficiency. Surveyors ask for the personnel file during the first-day record pull. Keep files ready on site or retrievable immediately from the EHR.",
+   "Prior training counts only if it is recent. The policy table says some previously completed trainings are acceptable if completed no more than 48 months before the hire date. Confirm that wording for each item before accepting old certificates.",
+   "Keep the credentials repository separate from clinical records so that contracting desks at LME/MCOs can see staff qualifications without any client information."
+  ],
+  "contacts": [
+   "NC DHSR Mental Health Licensure and Certification Section: (919) 855-3795 (https://info.ncdhhs.gov/dhsr/mhlcs/)"
+  ],
+  "sources": [
+   "https://www.law.cornell.edu/regulations/north-carolina/10A-N-C-Admin-Code-27G-0202",
+   "https://medicaid.ncdhhs.gov/media/15769/download",
+   "http://ncrules.state.nc.us/ncac/title%2010a%20-%20health%20and%20human%20services/chapter%2027%20-%20mental%20health,%20community%20facilities%20and%20services/subchapter%20e/10a%20ncac%2027e%20.0107"
+  ],
+  "confidence": "medium",
+  "verify": "NOT VERIFIED: exact retention period for training records; check 27E .0107 and your record-retention policy with a healthcare attorney. Confirm which trainings qualify for the 48-month credit in the CCP table."
+ },
+ "step_24_sub_0": {
+  "instructions": [
+   "Confirm that a licensed professional completed a CCA or a Diagnostic Assessment that determines an ASAM level of care before the first SAIOP (ASAM Level 2.1) or SACOT (ASAM Level 2.5) service. CCP 8A-12 and 8A-13 Section 3.2.2 require this.",
+   "Check that the written assessment rates all six ASAM dimensions: acute intoxication and withdrawal, biomedical conditions, emotional/behavioral/cognitive conditions, readiness to change, relapse potential, and recovery/living environment. Each should show severity and a level-of-care recommendation.",
+   "Verify the assessor's credential and signature date. Confirm ASAM training is on file: 8A-12 and 8A-13 require ASAM Criteria training within 90 days of hire for staff.",
+   "If you reuse an earlier assessment, document that it is substantially equivalent, reflects current functioning and covers every required element. Add an addendum for any gaps.",
+   "Review all six dimensions again at continued stay, discharge or transfer, as Section 3.2.3 requires. Record the decision in the chart."
+  ],
+  "tips": [
+   "AUDIT TRAP: An assessment that addresses ASAM in narrative form but does not name the six dimensions or the level recommended is a common medical necessity finding. Use a template with six labeled sections.",
+   "The app says the CCA must be done within one year. Neither 8A-12 nor 8A-13 contains that rule. The policies require the assessment before service, and for 8G the service order lasts nine months. Treat the one-year idea as unverified.",
+   "Peer Support (8G) clients need a CCA or a substantially equivalent assessment too. Use the same intake workflow, but 8G does not require an ASAM level of care."
+  ],
+  "contacts": [
+   "NC Medicaid Contact Center: (888) 245-0179 (https://medicaid.ncdhhs.gov/)"
+  ],
+  "sources": [
+   "https://medicaid.ncdhhs.gov/media/15767/download?attachment",
+   "https://medicaid.ncdhhs.gov/media/15769/download",
+   "https://medicaid.ncdhhs.gov/8c-outpatient-behavioral-health-services-provided-direct-enrolled-providers/download?attachment",
+   "https://medicaid.ncdhhs.gov/8g-peer-support-services/download?attachment"
+  ],
+  "confidence": "medium",
+  "verify": "Confirm the six-dimension list against your ASAM Third Edition materials. Confirm assessor qualifications and training hours in 8C if a direct-enrolled outpatient provider completes the assessment. Check each plan for any assessment form it requires."
+ },
+ "step_24_sub_1": {
+  "instructions": [
+   "Obtain a signed service order for every SAIOP and SACOT client. CCP 8A-12 and 8A-13 Section 5.4 say it must be completed by a physician, physician assistant, nurse practitioner or licensed psychologist within their scope of practice.",
+   "Execute the order before or on the first day of service. Do not backdate. Block scheduling and billing in the EHR until the signed order is uploaded.",
+   "Write the order start date on a tracking sheet. The order is valid for twelve months, and medical necessity must be revisited at least annually.",
+   "For Peer Support (8G), check the longer list of eligible signers and the nine-month validity in the September 1, 2026 policy. Schedule reorders before the nine months end."
+  ],
+  "tips": [
+   "AUDIT TRAP: A service order dated after the first billed date is a recoupment risk. Keep order and first-service date together in one report so a supervisor can catch gaps before claims go out.",
+   "The app lists only physician, NP and PA as signers. The policy also lists licensed psychologists for 8A-12 and 8A-13. 8G has its own list, so check it before assigning intake duties.",
+   "Service orders cannot be signed by your own unlicensed staff or a QP. If you have no prescriber on staff, line up a contracted prescriber before launch."
+  ],
+  "contacts": [
+   "NC Medicaid Provider Ombudsman: (866) 304-7062 (https://medicaid.ncdhhs.gov/)"
+  ],
+  "sources": [
+   "https://medicaid.ncdhhs.gov/media/15767/download?attachment",
+   "https://medicaid.ncdhhs.gov/media/15769/download",
+   "https://medicaid.ncdhhs.gov/8g-peer-support-services/download?attachment"
+  ],
+  "confidence": "high",
+  "verify": "For 8G, read the current service order section to confirm the eligible signers and the nine-month term. Confirm any additional plan-specific rules with each LME/MCO or Standard Plan."
+ },
+ "step_24_sub_2": {
+  "instructions": [
+   "Do not build a 30-day or 60-day pass-through clock for SAIOP or SACOT. CCP 8A-12 and 8A-13 (effective January 1, 2026) say Medicaid shall not require prior approval for these services.",
+   "Replace it with tracking that applies today: service order expiry at twelve months, with reminders at 90, 60 and 30 days. Add ASAM reassessment dates.",
+   "For Peer Support (8G), track the authorization periods in the September 1, 2026 policy. It lists 176 units per 60 days and 88 units per 30 days, with reauthorization beyond that. Set alerts before each period ends.",
+   "Ask each LME/MCO or plan in writing whether it applies utilization review, notification or continued-stay requirements to SAIOP and SACOT. Add any plan-specific date to the tracker."
+  ],
+  "tips": [
+   "AUDIT TRAP: The old 30-day and 60-day pass-through rules appear only in the revision history of CCP 8A (entries dated 01/01/2010). Staff copying from older provider guides may still track them. Remove those fields from the EHR.",
+   "State-funded services can differ from Medicaid. The state-funded SAIOP definition has changed over time, so confirm the status of any non-Medicaid clients with the LME/MCO.",
+   "Test the alerts with a dummy client before launch, and name a second person who receives each alert."
+  ],
+  "contacts": [
+   "NC Medicaid Provider Ombudsman: (866) 304-7062 (https://medicaid.ncdhhs.gov/)"
+  ],
+  "sources": [
+   "https://medicaid.ncdhhs.gov/media/15767/download?attachment",
+   "https://medicaid.ncdhhs.gov/media/15769/download",
+   "https://medicaid.ncdhhs.gov/8a-enhanced-mental-health-and-substance-abuse-services/download?attachment",
+   "https://medicaid.ncdhhs.gov/8g-peer-support-services/download?attachment",
+   "https://medicaid.ncdhhs.gov/blog/2026/01/07/behavioral-health-clinical-coverage-policy-updates"
+  ],
+  "confidence": "medium",
+  "verify": "NOT VERIFIED: whether any Tailored Plan or Standard Plan adds notification or concurrent review for SAIOP/SACOT. Ask each plan's provider relations office. Re-read the 8G authorization section before setting unit alerts."
+ },
+ "step_24_sub_3": {
+  "instructions": [
+   "Replace legacy consent forms with a Part 2 consent that has the elements in 42 CFR 2.31(a). Include the one-time consent for treatment, payment and health care operations that the 2024 final rule permits.",
+   "Collect the client's signature and date at intake, on paper or electronically, before any disclosure. Give the client a copy and file the original.",
+   "Update your Part 2 patient notice so it matches the HIPAA Notice of Privacy Practices. Add the breach notification language the rule now requires.",
+   "Use a separate, specific consent or court order for uses in legal proceedings against the client. Use separate consent for disclosures outside treatment, payment and operations, such as family or employers.",
+   "Document the revocation process. Give the client written instructions on how to revoke consent."
+  ],
+  "tips": [
+   "The compliance date for the 2024 Part 2 final rule was February 16, 2026, so consent and notice forms dated before then should already be replaced.",
+   "AUDIT TRAP: Using a generic HIPAA authorization for SUD records is a violation. SUD records need the Part 2 elements, including the redisclosure statement.",
+   "A single TPO consent lets HIPAA-covered recipients redisclose under HIPAA, but records still cannot be used against the client in legal proceedings without specific consent or a court order."
+  ],
+  "contacts": [
+   "HHS Office for Civil Rights: NOT VERIFIED; use the HHS Part 2 fact sheet page (https://www.hhs.gov/hipaa/for-professionals/regulatory-initiatives/fact-sheet-42-cfr-part-2-final-rule/index.html)"
+  ],
+  "sources": [
+   "https://www.hhs.gov/hipaa/for-professionals/regulatory-initiatives/fact-sheet-42-cfr-part-2-final-rule/index.html",
+   "https://www.ecfr.gov/current/title-42/chapter-I/subchapter-A/part-2/subpart-C/section-2.31"
+  ],
+  "confidence": "medium",
+  "verify": "Have a healthcare attorney review your final consent and notice forms against 42 CFR 2.31 and 2.22. Check the NC statutes on confidentiality (G.S. 122C-52 to 122C-56) separately; they were not reviewed for this entry."
+ },
+ "step_25_sub_0": {
+  "instructions": [
+   "Confirm your accreditation deadline first. CCP 8A-12 and 8A-13 require national accreditation with a designated agency within one year of Medicaid enrollment. Plan to that date.",
+   "Compare CARF, Joint Commission and COA, the accreditors accepted by NC Medicaid. Choose CARF Behavioral Health if it fits your services, then submit the New Organization Questionnaire at carf.org.",
+   "Request a survey-fee estimate. CARF bases the fee on surveyors, survey days and travel, so use its quote instead of the app's $8,000 to $14,000 range.",
+   "Schedule the milestones in G.S. 122C-81(d): self-study and on-site review scheduling by month 3, on-site review scheduled by month 6, and review completed by month 9.",
+   "After the decision, upload the accreditation to your NCTracks enrollment record and calendar the expiration date."
+  ],
+  "tips": [
+   "AUDIT TRAP: Missing the accreditation deadline can lead to loss of enrollment. NC Medicaid's April 16, 2026 bulletin describes the notice and enforcement steps.",
+   "Source conflict: the CCPs and G.S. 122C-81 say one year, but the April 16, 2026 NC Medicaid bulletin and Provider Permission Matrix entry indicate three years for SAIOP and SACOT. Ask the Ombudsman which date NCTracks enforces, and plan to the earlier date.",
+   "CARF also offers Inaugural One-Year Accreditation for new organizations, with a follow-up survey about six months after services begin. Ask your CARF resource specialist whether it fits."
+  ],
+  "contacts": [
+   "CARF International: (888) 281-6531 (https://carf.org/)",
+   "NC Medicaid Provider Ombudsman: (866) 304-7062 (https://medicaid.ncdhhs.gov/)"
+  ],
+  "sources": [
+   "https://medicaid.ncdhhs.gov/media/15767/download?attachment",
+   "https://medicaid.ncdhhs.gov/media/15769/download",
+   "https://medicaid.ncdhhs.gov/blog/2026/04/16/post-enrollment-national-accreditation-update",
+   "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_122C/GS_122C-81.html",
+   "https://carf.org/accreditation/steps-accreditation/",
+   "https://carf.org/wp-content/uploads/2025/12/Answering-Your-Questions-About-CARF-brochure.pdf",
+   "https://carf.org/accreditation/providers/accreditation-decisions/"
+  ],
+  "confidence": "medium",
+  "verify": "Resolve the one-year versus three-year deadline conflict with the NC Medicaid Provider Ombudsman before relying on either. Get a written CARF fee quote. Confirm that the 2026 CARF Behavioral Health manual lists the survey conditions you plan around."
+ },
+ "step_25_sub_1": {
+  "instructions": [
+   "Set a demonstration period of at least six months of full operation. CARF's accreditation conditions in the 2026 CCRC manual require six months of service delivery (three months if the organization already holds a five-year accreditation). Confirm the same rule in the Behavioral Health manual.",
+   "Seat a QI Committee with the Clinical Director, Quality Director and a frontline clinician. Meet monthly with minutes, and review outcomes, incidents, complaints and client feedback.",
+   "Run monthly chart peer reviews on a fixed sample. Check ASAM six-dimension completeness, service orders, PCP updates and consent forms. Record findings and corrective actions.",
+   "Keep dated evidence of each cycle: agenda, data, decisions and follow-up. Surveyors look for use of the standards over time, not a one-time binder.",
+   "Run a mock survey in month 5 or 6 against your chosen CARF standards."
+  ],
+  "tips": [
+   "Timing conflict: a six-month demonstration period plus G.S. 122C-81(d) requiring the on-site review completed by month 9 leaves little room. Book the survey application early.",
+   "AUDIT TRAP: Peer reviews with no corrective-action follow-up look like paper compliance. Track every finding to closure.",
+   "CARF surveyors use a consultative approach, but they interview clients and staff. Prepare staff to explain the QI process in their own words."
+  ],
+  "contacts": [
+   "CARF International: (888) 281-6531 (https://carf.org/)"
+  ],
+  "sources": [
+   "https://carf.org/wp-content/uploads/2026/02/2026-CCRC-SM.pdf",
+   "https://carf.org/accreditation/survey-preparation-accreditation/",
+   "https://carf.org/accreditation/providers/accreditation-decisions/",
+   "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_122C/GS_122C-81.html"
+  ],
+  "confidence": "low",
+  "verify": "The six-month rule was found in the CARF CCRC manual, not the Behavioral Health manual. Confirm the demonstration period and QI standards with your CARF resource specialist before building the calendar."
+ },
+ "step_25_sub_2": {
+  "instructions": [
+   "Find your recredentialing due date in your NCTracks provider record and put it on a shared calendar. NCTracks reverification is every five years.",
+   "Add reminders at 70, 50, 20 and 5 days before the due date, matching the NCTracks notification schedule in its re-credentialing FAQs.",
+   "Name two staff who can log in to the NCTracks provider portal and submit the recredentialing. Start at the first alert, not the last.",
+   "Gather current documents before the 70-day alert: licenses, accreditation, insurance, ownership and managing-employee information, and any updates to your DHSR license.",
+   "Submit in the portal and keep the confirmation. Watch the status until approval."
+  ],
+  "tips": [
+   "AUDIT TRAP: Missing the deadline can lead to suspension and then termination of Medicaid enrollment. Claims stop paying during suspension.",
+   "An older NCTracks page mentions a 45-day notice. The 70/50/20/5 schedule is the newer one. Use it, and keep notification emails going to a monitored shared inbox.",
+   "Update NCTracks within the required window when ownership, address or licenses change. Do not wait for recredentialing to correct them."
+  ],
+  "contacts": [
+   "NCTracks Call Center: NOT VERIFIED; use the contact page at https://www.nctracks.nc.gov/",
+   "NC Medicaid Provider Ombudsman: (866) 304-7062 (https://medicaid.ncdhhs.gov/)"
+  ],
+  "sources": [
+   "https://www.nctracks.nc.gov/content/public/providers/faq-main-page/faqs-for-re-credentialing0.html",
+   "https://www.nctracks.nc.gov/content/public/providers/provider-recredentialing/recredentialing-announcements/Responding-to-Recred-Invitations.html",
+   "https://medicaid.ncdhhs.gov/providers/provider-enrollment/provider-enrollment-recredentialing"
+  ],
+  "confidence": "medium",
+  "verify": "Confirm the alert schedule and any fee on the current NCTracks recredentialing page. Check the effective date and any applicable application fee for your provider type."
+ },
+ "step_25_sub_3": {
+  "instructions": [
+   "Screen every employee, contractor and owner against the OIG LEIE and SAM.gov exclusion lists at hire and every month. The NC DHHS Provider Administrative Participation Agreement requires monthly screening.",
+   "Also check the NC Medicaid Excluded Providers list monthly. Save a dated screenshot or report of each search, including no-hit results.",
+   "Remove any excluded person from Medicaid-funded duties immediately and tell your compliance officer or attorney. Do not bill for their services.",
+   "Calendar the two-year renewal for each Certified Peer Support Specialist, per the NC CPSS program policies from February 2026. Track each date in the personnel file and send reminders 90 days ahead.",
+   "Check the renewal requirements and fee at pss.unc.edu before each due date."
+  ],
+  "tips": [
+   "AUDIT TRAP: Payments for services by an excluded person can be recouped, and civil penalties can apply. Monthly screening is the standard auditors expect, and gaps in your log are a finding.",
+   "Peer Support Services require a current CPSS certification for billing. A lapsed certificate means services delivered during the lapse are at risk.",
+   "CPSS renewals are the individual's responsibility, but the provider is on the hook. Make it a job requirement and collect proof each cycle."
+  ],
+  "contacts": [
+   "NC Peer Support Specialist Certification Program (UNC): NOT VERIFIED; see https://pss.unc.edu/",
+   "HHS-OIG Exclusions Program: NOT VERIFIED; see https://oig.hhs.gov/exclusions/"
+  ],
+  "sources": [
+   "https://www.nctracks.nc.gov/content/public/providers/provider-enrollment/terms-and-conditions/admin-participation-rev.html",
+   "https://medicaid.ncdhhs.gov/providers/excluded-providers",
+   "https://oig.hhs.gov/exclusions/",
+   "https://oig.hhs.gov/exclusions/leie-quick-tips-instructions/",
+   "https://pss.unc.edu/certification/recertification",
+   "https://pss.unc.edu/sites/default/files/downloads/NCCPSS-Program-Policies-Final---2-2026_0.pdf"
+  ],
+  "confidence": "medium",
+  "verify": "NOT VERIFIED: the current CPSS renewal fee and continuing education hours; confirm at pss.unc.edu. Confirm the exact monthly-screening wording in the current Administrative Participation Agreement."
+ },
+ "step_26_sub_0": {
+  "instructions": [
+   "Read the CMS informational bulletin of Nov. 18, 2025 (CIB) on Public Law 119-21 for the federal dates in sections 71107, 71109, 71112, 71119 and 71120.",
+   "Read the NC Medicaid page Federal Medicaid Changes: What Providers Need to Know and its linked Work and Community Engagement Requirement page for NC's dates and steps.",
+   "Read the draft NC Medicaid H.R.1 Medical Frailty Exclusions policy (Policy No. HR-1), the DSS-8209 Medical Report and the code list. Public comment closes Nov. 5, 2026.",
+   "Read G.S. 108A-55.7, effective Jan. 1, 2027. NC applicants must show 3 consecutive compliant months before applying, and 3 of the last 6 months at each renewal.",
+   "Write a one-page memo marking each provision as affecting your clients' coverage, your billing, or your documentation, and file it with compliance records."
+  ],
+  "tips": [
+   "Cost sharing (section 71120, starting Oct. 1, 2028) exempts behavioral health services, so it should not apply to 8G, SAIOP or SACOT claims. Confirm against NC's final State Plan before telling clients.",
+   "Most H.R. 1 changes hit client eligibility, not your license. The provider-facing items are eligibility checks, faster coverage churn, shorter retroactive coverage, and DSS-8209 medical reports.",
+   "AUDIT TRAP: NC's medical frailty policy is a DRAFT until NC Medicaid posts the final version, expected late Nov. or early Dec. 2026. Check the date on your memo against the final policy."
+  ],
+  "contacts": [
+   "NC Medicaid Contact Center: 888-245-0179 (medicaid.ncdhhs.gov)",
+   "NC Medicaid public comments on H.R. 1 medical frailty policy: medicaid.public.comment@dhhs.nc.gov (medicaid.ncdhhs.gov/providers/medical-frailty-clinical-coverage-policy-and-comment-period)"
+  ],
+  "sources": [
+   "https://www.congress.gov/bill/119th-congress/house-bill/1",
+   "https://www.medicaid.gov/federal-policy-guidance/downloads/cib11182025.pdf",
+   "https://www.medicaid.gov/resources-for-states/working-families-tax-cut-legislation",
+   "https://medicaid.ncdhhs.gov/providers/federal-medicaid-changes-what-providers-need-know",
+   "https://medicaid.ncdhhs.gov/beneficiaries/impact-hr-1-and-federal-changes-medicaid/work-and-community-engagement-requirement",
+   "https://medicaid.ncdhhs.gov/providers/medical-frailty-clinical-coverage-policy-and-comment-period",
+   "https://medicaid.ncdhhs.gov/media/16285/download?attachment",
+   "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_108A/GS_108A-55.7.html"
+  ],
+  "confidence": "high",
+  "verify": "Not a legal duty. Suggested wording: Review H.R. 1 provisions and NC Medicaid H.R. 1 provider guidance that affect client eligibility, billing and documentation. Re-check the final Medical Frailty policy (late Nov. or early Dec. 2026). Also check whether CMS has approved any NC good-faith extension, since NCDHHS told CMS on July 30, 2026 that full implementation by Jan. 1, 2027 is unlikely.",
+  "basis": "recommended",
+  "effective_date": "unknown"
+ },
+ "step_26_sub_1": {
+  "instructions": [
+   "Draft a governing body resolution naming one H.R. 1 compliance owner and one backup, with duties: monitoring, calendar, staff training, DSS-8209 process and quarterly reporting.",
+   "Approve the resolution at a governing body meeting and record it in signed, dated minutes kept with your 10A NCAC 27G governing body policies.",
+   "Add the owner and backup to your compliance plan, organizational chart and job descriptions, and give both login access to bulletin subscriptions and Tailored Plan portals.",
+   "Re-confirm both names at each annual policy review, and within 30 days of any staffing change."
+  ],
+  "tips": [
+   "Pick a backup who is not the billing manager, so eligibility-denial trends are reviewed independently from the people who submit claims.",
+   "Make sure the owner, or a named clinician, holds a credential on the DSS-8209 signer list. The current draft form (REV. 08/2026 and 09/2026) does not list LCAS or certified peer support specialists."
+  ],
+  "contacts": [
+   "NC Medicaid Contact Center: 888-245-0179 (medicaid.ncdhhs.gov)"
+  ],
+  "sources": [
+   "https://medicaid.ncdhhs.gov/providers/federal-medicaid-changes-what-providers-need-know",
+   "https://medicaid.ncdhhs.gov/media/16282/download?attachment"
+  ],
+  "confidence": "medium",
+  "verify": "No statute, CCP or Tailored Plan source I found requires a named H.R. 1 owner. This is internal good practice. Suggested wording: Assign H.R. 1 monitoring to your existing compliance officer, with a backup, and record it in governing body minutes. Have your healthcare attorney confirm your governing body documentation format.",
+  "basis": "recommended",
+  "effective_date": "unknown"
+ },
+ "step_26_sub_2": {
+  "instructions": [
+   "Sign up for NCTracks email communications through the NCTracks Provider Communications page (Sign up for NCTracks Communications). Per NC Medicaid, these emails link each Medicaid Bulletin shortly after it posts.",
+   "Bookmark NC Medicaid's provider page Federal Medicaid Changes: What Providers Need to Know and the Medical Frailty policy page. Check both weekly until Jan. 31, 2027.",
+   "Sign up for Alliance Health's Provider News Service emails, Trillium's Provider Communication Bulletins and Urgent Notifications, and Vaya Partners' Provider Communication Bulletins.",
+   "Use a shared compliance mailbox for every subscription, so notices still arrive if staff leave. Log each H.R. 1 notice with its date and the action taken."
+  ],
+  "tips": [
+   "Vaya Health and Partners Health Management merged into Vaya Partners on Oct. 1, 2026. NC now has three Tailored Plan LME/MCOs: Alliance, Trillium and Vaya Partners. Update old Partners or Vaya subscriptions.",
+   "SAIOP, SACOT and peer support are also covered for Standard Plan members, so sign up for notices from each Standard Plan you contract with.",
+   "AUDIT TRAP: Tailored Plan bulletins can change contract or billing requirements. Keep a dated log showing you received and acted on each notice."
+  ],
+  "contacts": [
+   "NC Medicaid Communications: Medicaid.Communications@dhhs.nc.gov (medicaid.ncdhhs.gov/providers/medicaid-bulletin/medicaid-bulletin-digests)",
+   "Trillium Health Resources Provider Support Service: 1-855-250-1539 (trilliumhealthresources.org)",
+   "Vaya Partners ACCESS Provider Services: 1-866-990-9712 (providers.vayapartners.org)"
+  ],
+  "sources": [
+   "https://medicaid.ncdhhs.gov/providers/medicaid-bulletin/medicaid-bulletin-digests",
+   "https://medicaid.ncdhhs.gov/documents/providers/bulletins/archives/0813bulletin/download",
+   "https://medicaid.ncdhhs.gov/providers/federal-medicaid-changes-what-providers-need-know",
+   "https://www.alliancehealthplan.org/provider-updates/provider-news-service-email-sign-up/",
+   "https://www.trilliumhealthresources.org/for-providers/provider-communications",
+   "https://providers.vayapartners.org/bulletins/",
+   "https://medicaid.ncdhhs.gov/information-regarding-vaya-health-and-partners-health-management-merger/open"
+  ],
+  "confidence": "medium",
+  "verify": "The NCTracks sign-up link location comes from a 2013 Medicaid Bulletin. Check that the link still appears on the NCTracks Provider Communications page. Vaya Partners' bulletin page says Subscribe but shows no sign-up link: call ACCESS Provider Services. Alliance's sign-up page is dated 2021. This is recommended practice, not a stated legal duty.",
+  "basis": "recommended",
+  "effective_date": "unknown"
+ },
+ "step_26_sub_3": {
+  "instructions": [
+   "Build a dated calendar: Oct. 1, 2026 immigrant eligibility (in effect); Nov. 5, 2026 comment deadline; Jan. 1, 2027 work requirement, six-month renewals and retroactive limits; Oct. 1, 2028 cost sharing.",
+   "For each date, set an internal deadline at least 30 days earlier and assign an owner. Add a watch item for the final Medical Frailty policy, expected late Nov. or early Dec. 2026.",
+   "Mark each item as statute, CMS guidance or rule, NC announcement, or NC draft, with the source date. Show it as tentative until NC finalizes it.",
+   "Review the calendar monthly in compliance meetings and update it within 5 business days of any new NC Medicaid or Tailored Plan notice."
+  ],
+  "tips": [
+   "Six-month renewals apply to renewals scheduled on or after Jan. 1, 2027, per the CMS bulletin, CMS letter SMD 26-001 and NC Medicaid. The Dec. 2026 date in some materials is imprecise.",
+   "Retroactive coverage limits apply to applications filed on or after Jan. 1, 2027: one month for expansion adults, two months for others. Plan for less retroactive recovery on uninsured intakes.",
+   "Optional: track NC ROOTS (the Rural Health Transformation Program) funding rounds. NC was awarded $213 million on Dec. 29, 2025. This is a funding opportunity, not a compliance duty."
+  ],
+  "contacts": [
+   "NC Medicaid Contact Center: 888-245-0179 (medicaid.ncdhhs.gov)"
+  ],
+  "sources": [
+   "https://www.medicaid.gov/federal-policy-guidance/downloads/cib11182025.pdf",
+   "https://www.medicaid.gov/federal-policy-guidance/downloads/smd26001.pdf",
+   "https://medicaid.ncdhhs.gov/medicaid-hr1-essentials-deck-speakers-notes/download?attachment",
+   "https://medicaid.ncdhhs.gov/providers/medical-frailty-clinical-coverage-policy-and-comment-period",
+   "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_108A/GS_108A-55.7.html",
+   "https://www.ncdhhs.gov/news/press-releases/2025/12/29/north-carolina-awarded-213-million-rural-health-transformation-program-strategic-roadmap-and-federal"
+  ],
+  "confidence": "high",
+  "verify": "Internal planning tool, not a legal duty. Watch for any CMS good-faith exemption for NC (the statute allows these through Dec. 31, 2028), which could move the work requirement date. NC's IFC comment letter of July 30, 2026 says full implementation by Jan. 1, 2027 is unlikely.",
+  "basis": "recommended",
+  "effective_date": "unknown"
+ },
+ "step_27_sub_0": {
+  "instructions": [
+   "Check eligibility in the NCTracks Provider Portal, AVRS or a 270/271 transaction at intake and on every date of service, as CCP 8G and 8A-12 Section 2.1.1 require.",
+   "Record the health plan shown in NCTracks (Medicaid Direct, Standard Plan or Tailored Plan) and route claims and authorizations to that plan.",
+   "If NCTracks shows no eligibility but the client has a card, call the NCTracks Call Center, which can check NC FAST directly. Updates can take up to a week.",
+   "Save a screenshot or 271 response of each check in the EHR. Before each authorization renewal, also confirm the client's next six-month renewal date."
+  ],
+  "tips": [
+   "AUDIT TRAP: The CCPs require eligibility checks each time a service is rendered, not once per billing period. Keep dated proof of every check for post-payment reviews.",
+   "Before submitting claims, confirm eligibility shows in NCTracks, or the claim may deny even if NC FAST showed the client eligible.",
+   "Starting Jan. 1, 2027, expansion adults renew every six months, so plan changes and lapses will be more frequent."
+  ],
+  "contacts": [
+   "NCTracks Call Center: 1-800-688-6696 (nctracks.nc.gov)",
+   "NC Medicaid Contact Center: 888-245-0179 (medicaid.ncdhhs.gov)"
+  ],
+  "sources": [
+   "https://medicaid.ncdhhs.gov/8g-peer-support-services/download?attachment",
+   "https://medicaid.ncdhhs.gov/media/15767/download",
+   "https://www.nctracks.nc.gov/content/public/providers/provider-communications/provider-announcements/Verify-Recipient-Eligibility-with-NCTracks-Call-Center.html",
+   "https://medicaid.ncdhhs.gov/managed-care-claims-submission-what-providers-need-know-part-1/open",
+   "https://www.medicaid.gov/federal-policy-guidance/downloads/smd26001.pdf"
+  ],
+  "confidence": "high",
+  "verify": "Confirm that CCP 8A-13 (SACOT) has the same Section 2.1.1 wording (each time a service is rendered) as 8G and 8A-12. Suggested wording: Verify Medicaid eligibility and health plan at intake and on every date of service.",
+  "basis": "required",
+  "effective_date": "In effect now (CCP eligibility check); six-month renewals begin 2027-01-01"
+ },
+ "step_27_sub_1": {
+  "instructions": [
+   "Set an EHR flag that holds claims automatically when NCTracks shows no eligibility for a date of service. Route held claims to the billing manager within 2 business days.",
+   "Tell the client the same day, and document whether a renewal or application is pending with county DSS. Do not discharge for lapsed coverage alone without a clinical transition plan.",
+   "If the client chooses to continue as self-pay, give the written private-pay notice required by 10A NCAC 22J .0106 before services. Refund any self-pay if retroactive Medicaid is later approved and billed.",
+   "Ask the client's LME/MCO whether state-funded (non-Medicaid) services are available, and release or void held claims once eligibility is restored."
+  ],
+  "tips": [
+   "AUDIT TRAP: Under 10A NCAC 22J .0106(f), once you are paid by Medicaid for a retroactively eligible client, you must refund what the client paid. Track this in the hold log.",
+   "Retroactive coverage drops to one month (expansion adults) or two months (others) for applications filed on or after Jan. 1, 2027, so held claims may never become billable.",
+   "Check each plan's timely filing limit before holding claims for a long time. Limits were not verified in this batch."
+  ],
+  "contacts": [
+   "NCTracks Call Center: 1-800-688-6696 (nctracks.nc.gov)",
+   "Trillium Health Resources Provider Support Service: 1-855-250-1539 (trilliumhealthresources.org)",
+   "Vaya Partners ACCESS Provider Services: 1-866-990-9712 (providers.vayapartners.org)"
+  ],
+  "sources": [
+   "http://reports.oah.state.nc.us/ncac/title%2010a%20-%20health%20and%20human%20services/chapter%2022%20-%20medical%20assistance%20eligibility/subchapter%20j/10a%20ncac%2022j%20.0106.pdf",
+   "https://www.medicaid.gov/federal-policy-guidance/downloads/cib11182025.pdf",
+   "https://www.nctracks.nc.gov/content/public/providers/provider-communications/provider-announcements/Verify-Recipient-Eligibility-with-NCTracks-Call-Center.html"
+  ],
+  "confidence": "medium",
+  "verify": "NOT VERIFIED: timely filing limits for NC Medicaid Direct and each Tailored Plan or Standard Plan, and whether state-funded SAIOP, SACOT or peer support is available in your catchment area. Check the plan provider manuals or call provider services. Have a healthcare attorney review your self-pay notice. The hold workflow is good practice; the billing rules are required.",
+  "basis": "recommended",
+  "effective_date": "2027-01-01"
+ },
+ "step_27_sub_2": {
+  "instructions": [
+   "Train intake and peer staff to remind clients at each review to update their address and phone with local DSS and to answer DSS letters right away.",
+   "Show clients how to find their local DSS at dhhs.nc.gov/localdss and how to call the NC Medicaid Contact Center. Encourage an enhanced ePASS account for uploading documents.",
+   "Hand out NC Medicaid's Know What's Next toolkit flyers instead of making your own explanations of eligibility rules.",
+   "Document each reminder or referral in the EHR, and record staff training completion with the date and materials used."
+  ],
+  "tips": [
+   "Tell staff they may remind, refer and help with logistics, but not decide whether someone is eligible or exempt. Only DSS makes that decision.",
+   "Starting Jan. 1, 2027, NC says most adults renew every six months, including many who do not have to meet the work requirement, so set reminders at every treatment plan review."
+  ],
+  "contacts": [
+   "NC Medicaid Contact Center: 888-245-0179 (medicaid.ncdhhs.gov)",
+   "Local DSS directory: dhhs.nc.gov/localdss"
+  ],
+  "sources": [
+   "https://medicaid.ncdhhs.gov/medicaid-hr1-essentials-deck-speakers-notes/download?attachment",
+   "https://medicaid.ncdhhs.gov/providers/federal-medicaid-changes-what-providers-need-know",
+   "https://medicaid.ncdhhs.gov/beneficiaries/impact-hr-1-and-federal-changes-medicaid/work-and-community-engagement-requirement"
+  ],
+  "confidence": "high",
+  "verify": "Not a legal duty. Good practice only. Check that the dhhs.nc.gov/localdss shortcut still redirects to the county DSS directory.",
+  "basis": "recommended",
+  "effective_date": "2027-01-01"
+ },
+ "step_27_sub_3": {
+  "instructions": [
+   "Add a required coverage-loss reason field to the EHR or billing log: procedural or paperwork, work requirement, income, immigration status, moved, regained coverage, or unknown.",
+   "Run a monthly report of lapses by service line (8G, SAIOP, SACOT), payer and reason, plus days to restore coverage and dollars held or written off.",
+   "Present the report quarterly to the governing body, and record its review and any corrective actions in the minutes.",
+   "Share trends without client identifiers with your Tailored Plan provider network contact when lapses rise, and adjust staffing or intake reminders as needed."
+  ],
+  "tips": [
+   "Record only reasons the client or a DSS notice states. Do not guess at an eligibility reason, and keep SUD details out of governing body reports to protect 42 CFR Part 2 records.",
+   "Starting Jan. 1, 2027, compare monthly lapses to each client's six-month renewal month to catch paperwork-related losses early."
+  ],
+  "contacts": [
+   "NC Medicaid Contact Center: 888-245-0179 (medicaid.ncdhhs.gov)"
+  ],
+  "sources": [
+   "https://www.medicaid.gov/federal-policy-guidance/downloads/smd26001.pdf",
+   "https://www.ecfr.gov/current/title-42/chapter-I/subchapter-A/part-2/subpart-C/section-2.31"
+  ],
+  "confidence": "medium",
+  "verify": "Not a legal or contract duty that I found. Internal quality improvement only. Suggested wording: Track monthly Medicaid coverage lapses and reasons for quality improvement and governing body review.",
+  "basis": "recommended",
+  "effective_date": "unknown"
+ },
+ "step_28_sub_0": {
+  "instructions": [
+   "Read NC Medicaid's Work and Community Engagement page for who must comply: most adults ages 19 through 64 in the expansion group, starting Jan. 1, 2027 ($580 a month or 80 hours).",
+   "Note the exclusions that fit your clients: people in a drug or alcohol treatment and rehabilitation program, a substance use disorder, a disabling mental disorder, or medical frailty.",
+   "Read the draft H.R.1 Medical Frailty policy. NC checks Tier 1 codes in claims automatically. Providers complete a DSS-8209 Medical Report, signed by the client, for submission to the client's local DSS.",
+   "Send comments by Nov. 5, 2026 to medicaid.public.comment@dhhs.nc.gov. Then ask each Tailored Plan how it will support members, while recognizing that DSS makes the determination."
+  ],
+  "tips": [
+   "Tailored Plan-eligible members are automatically placed in Tier 1 under the draft policy. SAIOP (H0015) and SACOT (H2035) are Tier 1 service codes. Peer support (H0038) is not listed.",
+   "Accurate coding matters. Mild use disorder codes such as F10.10 and F11.10 are not on the draft Tier 1 list, while F11.20 is. Never change a diagnosis to trigger an exclusion.",
+   "AUDIT TRAP: Exemption documents go to county DSS, not to NCTracks or the Tailored Plan. Keep a copy of every DSS-8209 you sign and the date it was sent."
+  ],
+  "contacts": [
+   "NC Medicaid public comments: medicaid.public.comment@dhhs.nc.gov (medicaid.ncdhhs.gov)",
+   "NC Medicaid Contact Center: 888-245-0179 (medicaid.ncdhhs.gov)",
+   "Alliance Health Provider Network: ProviderNetwork@alliancehealthplan.org (medicaid.ncdhhs.gov/about-nc-medicaid/health-plans)"
+  ],
+  "sources": [
+   "https://medicaid.ncdhhs.gov/beneficiaries/impact-hr-1-and-federal-changes-medicaid/work-and-community-engagement-requirement",
+   "https://medicaid.ncdhhs.gov/providers/medical-frailty-clinical-coverage-policy-and-comment-period",
+   "https://medicaid.ncdhhs.gov/media/16285/download?attachment",
+   "https://medicaid.ncdhhs.gov/media/16283/download?attachment",
+   "https://www.medicaid.gov/federal-policy-guidance/downloads/cib11182025.pdf",
+   "https://medicaid.ncdhhs.gov/about-nc-medicaid/health-plans"
+  ],
+  "confidence": "high",
+  "verify": "Policy HR-1, the DSS-8209 and the code list are drafts, with final versions expected late Nov. or early Dec. 2026. Suggested wording: Confirm NC Medicaid's final medical frailty policy and DSS-8209 process; providers document, and county DSS decides. Also check whether peer support (H0038) or mild SUD codes are added to the final list.",
+  "basis": "expected",
+  "effective_date": "2027-01-01"
+ },
+ "step_28_sub_1": {
+  "instructions": [
+   "Have a healthcare attorney confirm whether each service line (SAIOP, SACOT, and peer support if SUD-focused) is a 42 CFR Part 2 program.",
+   "Use the DSS-8209 Section B client permission, and check the separate 42 CFR Part 2 box whenever the report includes any SUD diagnosis or treatment information.",
+   "If you use your own consent instead, include every 42 CFR 2.31(a) element: client name, discloser, specific information, recipient, purpose, revocation right, expiration, signature and date.",
+   "Attach the 42 CFR 2.32 redisclosure notice to every Part 2 disclosure, and log each disclosure in the client record."
+  ],
+  "tips": [
+   "The 2024 Part 2 final rule compliance date was Feb. 16, 2026, and HHS OCR began civil enforcement that day. Older consent forms may be out of date.",
+   "HHS OCR guidance says a state Medicaid agency may use Part 2 records received under a valid treatment, payment and operations (TPO) consent to verify an exclusion. Send the consent or a clear explanation of its scope with the records.",
+   "AUDIT TRAP: The DSS-8209 permission ends when the eligibility decision is complete. A new report at the next six-month renewal needs a new signed consent."
+  ],
+  "contacts": [
+   "NC Medicaid Contact Center: 888-245-0179 (medicaid.ncdhhs.gov)"
+  ],
+  "sources": [
+   "https://www.ecfr.gov/current/title-42/chapter-I/subchapter-A/part-2/subpart-C/section-2.31",
+   "https://www.hhs.gov/sites/default/files/ocr-faq-part-2-sud.pdf",
+   "https://www.hhs.gov/hipaa/for-professionals/regulatory-initiatives/fact-sheet-42-cfr-part-2-final-rule/index.html",
+   "https://medicaid.ncdhhs.gov/media/16282/download?attachment"
+  ],
+  "confidence": "high",
+  "verify": "Have a healthcare attorney review whether the draft DSS-8209 Section B wording meets all 42 CFR 2.31(a) elements, and check NC confidentiality law (G.S. 122C) consent requirements. G.S. 122C was not reviewed in this batch.",
+  "basis": "required",
+  "effective_date": "2026-02-16"
+ },
+ "step_28_sub_2": {
+  "instructions": [
+   "Do not draft a free-form letter. Plan to use NC's DSS-8209 Medical Report (Work Requirement Exclusions and Exemptions), and download the final version when NC Medicaid posts it.",
+   "Have only an eligible signer complete Questions 3 to 5, for example LCMHC, LPC, social worker, psychologist, physician, NP, CADC or CSAC, and only with an established clinical relationship (Policy HR-1 Section 5.0).",
+   "For SAIOP or SACOT participation, any program representative may complete Question 2 with the program name and the date participation began.",
+   "Have the client sign Section B before submission, send the form to the client's local DSS, and file a copy in the record."
+  ],
+  "tips": [
+   "In the draft form, a substance use disorder qualifies without current treatment, but stable recovery of 5 years or more does not. Answer from the documented assessment.",
+   "The draft signer list leaves out LCAS, LCAS-A and certified peer support specialists for Questions 3 and 4. Consider commenting by Nov. 5, 2026, and assign a listed clinician for now.",
+   "AUDIT TRAP: A DSS-8209 is a certification to the state. Each answer must match the diagnosis, assessment and service notes in the chart."
+  ],
+  "contacts": [
+   "NC Medicaid public comments: medicaid.public.comment@dhhs.nc.gov (medicaid.ncdhhs.gov)",
+   "NC Medicaid Contact Center: 888-245-0179 (medicaid.ncdhhs.gov)"
+  ],
+  "sources": [
+   "https://medicaid.ncdhhs.gov/media/16282/download?attachment",
+   "https://medicaid.ncdhhs.gov/media/16285/download?attachment",
+   "https://medicaid.ncdhhs.gov/providers/medical-frailty-clinical-coverage-policy-and-comment-period"
+  ],
+  "confidence": "high",
+  "verify": "Suggested wording: Prepare clinicians to complete NC's DSS-8209 Medical Report for SUD treatment participation, SUD, disabling mental disorder or medical frailty exclusions. The form is a draft and its revision label is inconsistent (REV. 08/2026 and 09/2026 DRAFT), so re-check the final version and signer list.",
+  "basis": "expected",
+  "effective_date": "2027-01-01"
+ },
+ "step_28_sub_3": {
+  "instructions": [
+   "Build an EHR report for each client showing program (8G, SAIOP, SACOT), admission date, last service date, discharge status and dates attended.",
+   "Add a session-hours column calculated from the start and stop times in each service note, and confirm your 8G, SAIOP and SACOT note templates capture those times.",
+   "Restrict the report to the compliance owner and clinical director, and release it only with a valid Part 2 consent or a written DSS request.",
+   "Test the report against 5 charts before Jan. 1, 2027, and keep the test results."
+  ],
+  "tips": [
+   "For the treatment-program exclusion, DSS-8209 Question 2 asks for the program name and start date, not monthly hours. Treatment attendance hours are not a listed qualifying activity toward the 80-hour test.",
+   "AUDIT TRAP: Report totals must match the signed service notes and claims. A mismatch between a DSS-8209 and your billing is a program integrity risk."
+  ],
+  "contacts": [
+   "NC Medicaid Contact Center: 888-245-0179 (medicaid.ncdhhs.gov)"
+  ],
+  "sources": [
+   "https://medicaid.ncdhhs.gov/media/16282/download?attachment",
+   "https://medicaid.ncdhhs.gov/beneficiaries/impact-hr-1-and-federal-changes-medicaid/work-and-community-engagement-requirement",
+   "https://medicaid.ncdhhs.gov/8g-peer-support-services/download?attachment",
+   "https://www.hhs.gov/sites/default/files/ocr-faq-part-2-sud.pdf"
+  ],
+  "confidence": "medium",
+  "verify": "Not required by any source I found. Suggested wording: Set up EHR reports showing each client's program enrollment dates and active participation to support DSS-8209 Question 2 and DSS verification requests. NOT VERIFIED: whether peer support alone counts as a treatment and rehabilitation program; ask NC Medicaid. Also check the current CCP 8G (amended 2026), 8A-12 and 8A-13 documentation sections for required start and stop times.",
+  "basis": "recommended",
+  "effective_date": "2027-01-01"
+ },
+ "step_28_sub_4": {
+  "instructions": [
+   "Train all staff using NC Medicaid's Know What's Next toolkit and September 2026 webinar. Cover the Jan. 1, 2027 start, the $580 or 80-hour test, exclusions and six-month renewals.",
+   "Script staff to say that DSS decides who must comply, then refer the client to local DSS (dhhs.nc.gov/localdss) or the NC Medicaid Contact Center.",
+   "Tell clients who may qualify to collect proof and submit it to local DSS, and offer a DSS-8209 from an eligible clinician when appropriate.",
+   "Record training dates and attendee sign-in sheets, and refresh the training when the final medical frailty policy posts."
+  ],
+  "tips": [
+   "Staff should never tell a client they are exempt or will keep coverage. NC itself tells unsure beneficiaries to call DSS and not guess.",
+   "NC law (G.S. 108A-55.7) requires applicants to show 3 consecutive compliant months before the month they apply, and 3 of the last 6 months at renewal. Refer applicants to DSS early."
+  ],
+  "contacts": [
+   "NC Medicaid Contact Center: 888-245-0179 (medicaid.ncdhhs.gov)",
+   "Local DSS directory: dhhs.nc.gov/localdss"
+  ],
+  "sources": [
+   "https://medicaid.ncdhhs.gov/providers/federal-medicaid-changes-what-providers-need-know",
+   "https://medicaid.ncdhhs.gov/beneficiaries/impact-hr-1-and-federal-changes-medicaid/work-and-community-engagement-requirement",
+   "https://medicaid.ncdhhs.gov/medicaid-hr1-essentials-deck-speakers-notes/download?attachment",
+   "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_108A/GS_108A-55.7.html"
+  ],
+  "confidence": "high",
+  "verify": "Not a legal duty. Good practice. Register staff for the NC Medicaid Back Porch Chat on Nov. 19, 2026 (noon to 1 p.m.) for updates.",
+  "basis": "recommended",
+  "effective_date": "2027-01-01"
+ },
+ "step_29_sub_0": {
+  "instructions": [
+   "Revise intake so staff verify Medicaid eligibility and health plan assignment in the NCTracks Provider Portal (Eligibility > Inquiry) or AVRS at 1-800-723-4337 before the first SAIOP, SACOT or peer support service.",
+   "Re-check eligibility at every authorization request and at least monthly, because most adults 19 to 64 move to 6-month recertifications starting January 1, 2027.",
+   "Write a pending-application rule: for applications made on or after January 1, 2027, retroactive coverage reaches back 1 month for expansion adults and 2 months for children, adults 65+ and people with disabilities.",
+   "Send uninsured clients who may be eligible to the local DSS the same day, and record the application date, so services you deliver fall inside the shorter retroactive window.",
+   "Add a retro-eligibility claims workflow: contact the new plan when eligibility moves to managed care, and rebill NC Medicaid Direct within 180 days of any plan recoupment."
+  ],
+  "tips": [
+   "AUDIT TRAP: Applications filed by December 31, 2026 still get up to 3 months of retroactive coverage. Do not apply the 1-month rule to those clients, and do not write off claims for those months.",
+   "AUDIT TRAP: Under 10A NCAC 22J .0106, once you accept someone as a Medicaid patient you cannot bill them for covered services. Decide private-pay status in writing before the service is delivered.",
+   "SL 2026-1 Section 3C.5 adds G.S. 108A-55.7, which requires applicants to prove community engagement for the 3 months before they apply. Clients with a substance use disorder may need clinical documentation from you. Watch NC Medicaid's draft medical frailty policy."
+  ],
+  "contacts": [
+   "NCTracks Call Center: 800-688-6696 (https://www.nctracks.nc.gov)",
+   "NCTracks AVRS eligibility line: 1-800-723-4337 (https://www.nctracks.nc.gov/content/public/providers/faq-main-page/nctracks-glossary-of-terms.html)",
+   "NC Medicaid Contact Center: 888-245-0179 (https://medicaid.ncdhhs.gov)"
+  ],
+  "sources": [
+   "https://www.medicaid.gov/federal-policy-guidance/downloads/cib11182025.pdf",
+   "https://medicaid.ncdhhs.gov/beneficiaries/medicaid-is-changing",
+   "https://medicaid.ncdhhs.gov/dcdl-re-hr-1-beneficiary-mailings/open",
+   "https://medicaid.ncdhhs.gov/provider-quick-reference-guide-tailored-plans/open",
+   "https://www.nctracks.nc.gov/content/public/providers/faq-main-page/nctracks-glossary-of-terms.html",
+   "https://medicaid.ncdhhs.gov/blog/2026/08/10/claim-submission-process-when-eligibility-retroactively-updated",
+   "https://medicaid.ncdhhs.gov/providers-billing-beneficiaries/open",
+   "https://www.ncleg.gov/EnactedLegislation/SessionLaws/HTML/2025-2026/SL2026-1.html",
+   "https://medicaid.ncdhhs.gov/providers/federal-medicaid-changes-what-providers-need-know"
+  ],
+  "confidence": "high",
+  "verify": "Statute: H.R. 1 Sec. 71112 (July 4, 2025). CMS guidance: CMCS Informational Bulletin of November 18, 2025. NC has announced the change on its Medicaid is Changing page and in the June 18, 2026 DCDL letter. Confirm with each Tailored Plan how it handles claims for retroactive months, which may sit in NC Medicaid Direct. The effective date of G.S. 108A-55.7 (SL 2026-1 Section 3C.5) is NOT VERIFIED; check the session law text.",
+  "basis": "expected",
+  "effective_date": "2027-01-01 (applications made on or after this date)"
+ },
+ "step_29_sub_1": {
+  "instructions": [
+   "Write a financial responsibility policy covering clients who lose Medicaid, including noncitizens who lost full coverage on October 1, 2026, and people who are denied or not yet approved.",
+   "Before scheduling a self-pay or uninsured client, give a written No Surprises Act Good Faith Estimate of expected charges, and ask every client about their insurance status.",
+   "Use a signed private-pay acknowledgment, completed before the service, that meets 10A NCAC 22J .0106(a) and (c)(2). Never use it for a Medicaid-covered service once you have accepted the client as a Medicaid patient.",
+   "Ask each LME/MCO whether uninsured clients can get state-funded SAIOP, SACOT or peer support, and what fee or sliding-scale rules the LME/MCO contract sets.",
+   "Adopt a board-approved sliding-fee schedule tied to the current federal poverty guidelines, and post client notices in English and Spanish at the front desk."
+  ],
+  "tips": [
+   "AUDIT TRAP: If a client turns out to be retroactively eligible, 10A NCAC 22J .0106(f) lets you file with Medicaid, but you must refund what the client paid. Track self-pay receipts by date of service.",
+   "AUDIT TRAP: CMS FAQs say Good Faith Estimates apply to all provider types and must be given in writing. Keep a copy in each self-pay record, because a missing estimate opens the door to patient-provider dispute claims.",
+   "Noncitizens limited to emergency Medicaid are removed from health plans under G.S. 108D-40, effective October 1, 2026. Emergency Medicaid does not cover routine SAIOP, SACOT or peer support."
+  ],
+  "contacts": [
+   "NC Medicaid Contact Center: 888-245-0179 (https://medicaid.ncdhhs.gov)",
+   "Alliance Health Provider Support: 855-759-9700 (https://www.alliancehealthplan.org/providers/)",
+   "Vaya Partners ACCESS Provider Services: 1-866-990-9712 (https://providers.vayahealth.com/contact/)"
+  ],
+  "sources": [
+   "https://medicaid.ncdhhs.gov/providers-billing-beneficiaries/open",
+   "https://www.cms.gov/cciio/resources/regulations-and-guidance/downloads/guidance-good-faith-estimates-faq.pdf",
+   "https://www.cms.gov/newsroom/fact-sheets/requirements-related-surprise-billing-part-ii-interim-final-rule-comment-period",
+   "https://medicaid.ncdhhs.gov/about-nc-medicaid/eligibility/immigration-status-and-eligibility-nc-medicaid",
+   "https://ncleg.gov/EnactedLegislation/Statutes/HTML/ByArticle/Chapter_108D/Article_4.html",
+   "https://policies.ncdhhs.gov/wp-content/uploads/MA-2504-Final.pdf"
+  ],
+  "confidence": "medium",
+  "verify": "The Good Faith Estimate and 10A NCAC 22J .0106 are current duties. A sliding fee is good practice unless your LME/MCO state-funded contract requires one. NOT VERIFIED: whether DMH/DD/SUS or LME/MCO contracts require a sliding-fee schedule for state-funded SAIOP, SACOT or peer support. Check with each LME/MCO's contracting staff. Have a healthcare attorney review the client notices.",
+  "basis": "required",
+  "effective_date": "2026-10-01 (noncitizen coverage loss); Good Faith Estimate in effect since 2022-01-01"
+ },
+ "step_29_sub_2": {
+  "instructions": [
+   "Note that H.R. 1 Sec. 71120 cost sharing for expansion adults above 100 percent of the poverty line starts October 1, 2028, and exempts mental health and substance use disorder services.",
+   "Confirm that NC Medicaid's managed care billing guidance currently treats behavioral health claims as exempt from copayments.",
+   "Email Alliance Health, Trillium Health Resources and Vaya Partners. Ask whether any copayment will apply to peer support, SAIOP or SACOT codes, citing new G.S. 108A-58.3 (effective July 1, 2027), and request written answers.",
+   "Write a front-desk script that says no copay is collected for these services, unless a plan confirms otherwise in writing."
+  ],
+  "tips": [
+   "AUDIT TRAP: Collecting a copay that is not allowed is billing a Medicaid member for a covered service, which 10A NCAC 22J .0106 prohibits. Refund it right away and document the refund.",
+   "SL 2026-1 Section 3C.16 directs DHHS to set all Medicaid copays at the federal maximum starting July 1, 2027. Watch Medicaid Bulletins for any change to the behavioral health exemption.",
+   "There are now 3 Tailored Plans. Vaya Health and Partners Health Management merged into Vaya Partners on October 1, 2026."
+  ],
+  "contacts": [
+   "Alliance Health Provider Support: 855-759-9700 (https://www.alliancehealthplan.org/providers/)",
+   "Trillium Health Resources Provider Support Services: 1-855-250-1539 (https://www.trilliumhealthresources.org/NCRootsHub)",
+   "Vaya Partners ACCESS Provider Services: 1-866-990-9712 (https://providers.vayahealth.com/contact/)"
+  ],
+  "sources": [
+   "https://www.congress.gov/bill/119th-congress/house-bill/1",
+   "https://www.medicaid.gov/federal-policy-guidance/downloads/cib11182025.pdf",
+   "https://medicaid.ncdhhs.gov/health-plan-billing-guide-version-32/open",
+   "https://www.ncleg.gov/EnactedLegislation/SessionLaws/HTML/2025-2026/SL2026-1.html",
+   "https://medicaid.ncdhhs.gov/providers-billing-beneficiaries/open",
+   "https://medicaid.ncdhhs.gov/information-regarding-vaya-health-and-partners-health-management-merger/download?attachment"
+  ],
+  "confidence": "high",
+  "verify": "Mostly not a provider obligation. Statute (Sec. 71120) and CMS (November 18, 2025 bulletin) exempt behavioral health and SUD services from the new cost sharing, and NC's billing guide exempts behavioral health claims from copays. Suggested rewording: Confirm in writing that peer support, SAIOP and SACOT remain copay-exempt, and set a front-desk no-copay script.",
+  "basis": "recommended",
+  "effective_date": "2028-10-01 (federal cost sharing start; MH/SUD exempt); 2027-07-01 (G.S. 108A-58.3)"
+ },
+ "step_29_sub_3": {
+  "instructions": [
+   "Map the eligibility responses from NCTracks or the 270/271 transaction into your billing system, and add a hard stop when a client shows emergency-services-only coverage, no coverage, or an end date.",
+   "Flag noncitizen clients for review: since October 1, 2026, only citizens, green card holders, Cuban/Haitian entrants, COFA migrants, lawfully residing children under 19 and pregnant or postpartum people keep full Medicaid.",
+   "Add an edit for the 6-month recertification date of adults 19 to 64 starting January 1, 2027, so an expiring eligibility triggers an outreach task 30 days ahead.",
+   "Send test claims for each payer (NC Medicaid Direct, Alliance, Trillium, Vaya Partners) for every planned code, and confirm the remittance results before you launch."
+  ],
+  "tips": [
+   "AUDIT TRAP: Under G.S. 108D-40 (effective October 1, 2026), emergency-only noncitizens are not in Tailored Plans. Claims sent to a plan for these clients will deny and cannot be rebilled as SAIOP or SACOT.",
+   "Vaya Partners began using payer ID 13010 and added claim validation checks on October 1, 2026. Update clearinghouse payer tables for former Partners clients.",
+   "Keep eligibility screenshots or 271 responses in the record for each date of service. LME/MCO post-payment reviews ask for proof of eligibility."
+  ],
+  "contacts": [
+   "NCTracks Call Center: 800-688-6696 (https://www.nctracks.nc.gov)",
+   "Vaya Partners ACCESS Provider Services: 1-866-990-9712 (https://providers.vayahealth.com/contact/)",
+   "NC Medicaid Claims TA: Medicaid.ClaimsTA@dhhs.nc.gov (https://medicaid.ncdhhs.gov/blog/2026/08/10/claim-submission-process-when-eligibility-retroactively-updated)"
+  ],
+  "sources": [
+   "https://www.medicaid.gov/medicaid/downloads/State-Implementation-Tool-Sect-71109.pdf",
+   "https://medicaid.ncdhhs.gov/about-nc-medicaid/eligibility/immigration-status-and-eligibility-nc-medicaid",
+   "https://policies.ncdhhs.gov/wp-content/uploads/MA-2504-Final.pdf",
+   "https://ncleg.gov/EnactedLegislation/Statutes/HTML/ByArticle/Chapter_108D/Article_4.html",
+   "https://www.medicaid.gov/federal-policy-guidance/downloads/smd26001.pdf",
+   "https://medicaid.ncdhhs.gov/0814specialbulletinrecipienteligibility/download?attachment",
+   "https://providers.vayahealth.com/wp-content/uploads/2026/09/pcb-09-10-26-issue-17.pdf"
+  ],
+  "confidence": "medium",
+  "verify": "Statute: Sec. 71109 (effective October 1, 2026) and Sec. 71107 (renewals on or after January 1, 2027). CMS: Sec. 71109 State Implementation Tool and SMD 26-001. NC: MA-2504 revised October 2, 2026 and SL 2026-1 Section 3C.4. NOT VERIFIED: the exact NCTracks benefit plan or aid category codes that mark emergency-only coverage. Ask the NCTracks Call Center or your clearinghouse for the current code list.",
+  "basis": "expected",
+  "effective_date": "2026-10-01"
+ },
+ "step_30_sub_0": {
+  "instructions": [
+   "Each month, screen every owner, managing employee, employee, contractor and rendering staff member against the OIG LEIE and the SAM.gov exclusions, as the NCDHHS Provider Administrative Participation Agreement requires.",
+   "Also check the NC Medicaid State Excluded Provider List, which is updated monthly, and NPPES. Alliance Health's manual also lists the SSA Death Master File and OFAC.",
+   "Save dated search results or vendor reports for each person, and screen new hires before their start date.",
+   "If you find a match, stop the person from billable work, notify NCTracks by Managed Change Request within 30 days, and notify Alliance Health within 2 business days or Trillium within 5 business days."
+  ],
+  "tips": [
+   "AUDIT TRAP: Payments for services ordered or furnished by an excluded person are overpayments, and OIG can impose civil money penalties on whoever hired them. Monthly screening matches OIG's monthly LEIE updates.",
+   "Checking the Death Master File quarterly is a state duty under H.R. 1 Sec. 71105, starting January 1, 2028. It is not a new provider duty, so keep NPPES and NCTracks records current to avoid false matches.",
+   "Search under name variants and former names, and use dates of birth to clear near-matches. Surveyors want to see how you resolved each possible match."
+  ],
+  "contacts": [
+   "NCTracks Call Center: 800-688-6696 (https://www.nctracks.nc.gov)",
+   "NC Medicaid Contact Center: 888-245-0179 (https://medicaid.ncdhhs.gov/providers/excluded-providers)",
+   "Alliance Health Provider Support: 855-759-9700 (https://www.alliancehealthplan.org/providers/)"
+  ],
+  "sources": [
+   "https://www.nctracks.nc.gov/content/public/providers/provider-enrollment/terms-and-conditions/admin-participation-rev.html",
+   "https://oig.hhs.gov/exclusions/",
+   "https://oig.hhs.gov/exclusions/special-advisory-bulletin-and-other-guidance/the-effect-of-exclusion-from-participation-in-federal-health-care-programs/",
+   "https://sam.gov/content/exclusions",
+   "https://medicaid.ncdhhs.gov/providers/excluded-providers",
+   "https://www.alliancehealthplan.org/document-library/79431/",
+   "https://www.trilliumhealthresources.org/sites/default/files/docs/Provider-documents/Provider-Manual/Trillium-Provider-Manual.pdf",
+   "https://www.medicaid.gov/federal-policy-guidance/downloads/cib11182025.pdf",
+   "https://www.cms.gov/sites/default/files/repo-new/24/Toolkit%20for%20Database%20Checks%2042%20CFR%20455%20436.pdf"
+  ],
+  "confidence": "high",
+  "verify": "Monthly LEIE and SAM screening comes from the NCDHHS participation agreement and predates H.R. 1. NC Medicaid does not appear to require providers to check death records, but Alliance's manual lists the SSA DMF. Ask Alliance which DMF access method it accepts. Vaya Partners' screening and reporting rules are NOT VERIFIED; check its provider manual.",
+  "basis": "required",
+  "effective_date": "In effect now; state quarterly provider DMF checks begin 2028-01-01"
+ },
+ "step_30_sub_1": {
+  "instructions": [
+   "Put the change-of-ownership deadline on the calendar: notify NCDHHS at least 30 days before the effective date with the Change of Ownership Disclosure Form, then submit 42 CFR 455.104 owner data within 35 days after.",
+   "For changes to license, tax ID, NPI, bankruptcy, group membership, address, phone or email, submit an NCTracks Managed Change Request within 30 calendar days of the change.",
+   "Report any adverse action against a required license, certification, accreditation or endorsement within 30 calendar days of learning about it, and upload supporting documents to the pending Managed Change Request.",
+   "Run the NCTracks reverification report monthly. Complete reverification within 70 days of the invitation, and pay the $100 NC application fee by 5 p.m. on the due date.",
+   "After each NCTracks change, update every Tailored Plan contract and directory record within that plan's required timeframe."
+  ],
+  "tips": [
+   "AUDIT TRAP: NC Medicaid says that missing the 30-day deadline for disclosing an adverse action will terminate your NCTracks provider record.",
+   "AUDIT TRAP: Errors in a reverification application cannot be corrected after you submit it. A rejected application after the suspension date automatically terminates your enrollment.",
+   "Changes to a DHSR license, site address or service line usually require NCTracks and Tailored Plan updates too, so route all three through one change log."
+  ],
+  "contacts": [
+   "NCTracks Call Center: 800-688-6696 (https://www.nctracks.nc.gov)",
+   "NC Medicaid Provider Ombudsman: 866-304-7062 (https://medicaid.ncdhhs.gov/blog/2025/11/04/reminders-about-required-provider-disclosures)"
+  ],
+  "sources": [
+   "https://www.nctracks.nc.gov/content/public/providers/provider-enrollment/terms-and-conditions/admin-participation-rev.html",
+   "https://medicaid.ncdhhs.gov/blog/2025/11/04/reminders-about-required-provider-disclosures",
+   "https://medicaid.ncdhhs.gov/blog/2026/04/16/quarterly-provider-update-spring-2026",
+   "https://www.nctracks.nc.gov/content/public/providers/provider-recredentialing.html",
+   "https://medicaid.ncdhhs.gov/providers/provider-data-management-credentialing-verification-organization"
+  ],
+  "confidence": "high",
+  "verify": "This is not an H.R. 1 change. It rests on G.S. 108C-4, G.S. 108C-10 and the participation agreement. Taxonomy and managing-employee changes are not expressly listed in the agreement; treat them as 30-day changes and confirm with NCTracks (NOT VERIFIED). The PDM/CVO replacement is paused, so keep using NCTracks. Each Tailored Plan's update timeframe is NOT VERIFIED.",
+  "basis": "required",
+  "effective_date": "In effect now"
+ },
+ "step_30_sub_2": {
+  "instructions": [
+   "Build a 12-month cash-flow model by payer (Alliance, Trillium, Vaya Partners, Medicaid Direct, state-funded) and service (8G, 8A-12, 8A-13), with base, 10 percent and 20 percent decline scenarios.",
+   "Model the volume risk from H.R. 1 enrollment rules: noncitizen coverage loss on October 1, 2026, and 6-month renewals plus work requirements for adults 19 to 64 starting January 1, 2027.",
+   "Model rate risk using the October 1, 2025 NC precedent: a 3 percent cut to enhanced mental health fee schedules, reversed on December 10, 2025.",
+   "Identify fixed costs, such as qualified professional and peer salaries and the lease, that you must cover in the 20 percent scenario, and list the actions and timing that would trigger staffing changes."
+  ],
+  "tips": [
+   "H.R. 1's provider-tax and state-directed-payment limits mainly affect hospital payments in NC (HASP). NC has not announced any H.R. 1-based cut to SAIOP, SACOT or peer support rates.",
+   "NC Medicaid says the FY2025-26 state funding shortfall was unresolved when its budget page was posted. Rate risk from state appropriations is more immediate than risk from federal financing limits.",
+   "Have a CPA review the model, and keep it with your board minutes. LME/MCO network staff and lenders may ask for proof of financial viability."
+  ],
+  "contacts": [
+   "NC Medicaid Contact Center: 888-245-0179 (https://medicaid.ncdhhs.gov)"
+  ],
+  "sources": [
+   "https://www.medicaid.gov/federal-policy-guidance/downloads/cib11182025.pdf",
+   "https://www.ncleg.gov/Sessions/2025/FiscalNotes/House/PDF/HFN696v4.pdf",
+   "https://medicaid.ncdhhs.gov/providers/claims-and-billing/october-1-2025-nc-medicaid-rate-reduction-questions-and-answers",
+   "https://medicaid.ncdhhs.gov/about-nc-medicaid/understanding-impact-cuts-nc-medicaid-budget",
+   "https://webservices.ncleg.gov/ViewDocSiteFile/104990",
+   "https://medicaid.ncdhhs.gov/about-nc-medicaid/eligibility/immigration-status-and-eligibility-nc-medicaid"
+  ],
+  "confidence": "medium",
+  "verify": "Good practice, not a legal duty. The 10 to 20 percent range is an assumption for planning, not an NC forecast. Confirm whether SL 2026-1 or a later budget closed the Medicaid funding gap; the budget page is dated March 2026. Confirm which fee schedules hold your codes.",
+  "basis": "recommended",
+  "effective_date": "unknown"
+ },
+ "step_30_sub_3": {
+  "instructions": [
+   "Set a cash reserve target, for example 60 to 90 days of operating expenses, using the 20 percent scenario from your reimbursement-risk budget, and have the board approve it in writing.",
+   "Schedule a reserve review each quarter and whenever NC Medicaid publishes a rate bulletin or fee schedule change, or a Tailored Plan issues a rate schedule or contract amendment.",
+   "Subscribe to NC Medicaid Bulletins and to Alliance, Trillium and Vaya Partners provider communications. Log each rate notice with its effective date.",
+   "Add fixed review dates on October 1 and January 1, the H.R. 1 eligibility milestones, and July 1, the start of the state fiscal year and the date G.S. 108A-58.3 takes effect."
+  ],
+  "tips": [
+   "Vaya Partners standard rate schedules took effect for its whole network on October 1, 2026. Former Partners providers should compare their old rates with the new ones now.",
+   "Health plans get 45 days to load DHB rate changes and 30 more days to reprocess claims, as in the August 1, 2026 PCS increase. Expect a similar cash lag when rates change.",
+   "Keep reserves in a separate account with a written drawdown policy. Auditors and LME/MCO financial reviewers look for board control."
+  ],
+  "contacts": [
+   "NC Medicaid Contact Center: 888-245-0179 (https://medicaid.ncdhhs.gov)",
+   "Vaya Partners ACCESS Provider Services: 1-866-990-9712 (https://providers.vayahealth.com/contact/)",
+   "Trillium Health Resources Provider Support Services: 1-855-250-1539 (https://www.trilliumhealthresources.org/NCRootsHub)"
+  ],
+  "sources": [
+   "https://resources.vayapartners.org/",
+   "https://medicaid.ncdhhs.gov/blog/2026/08/04/updates-rate-increase-personal-care-services-and-community-alternatives-program",
+   "https://medicaid.ncdhhs.gov/blog/2025/10/30/updated-nc-medicaid-rate-reductions-effective-oct-1-2025",
+   "https://medicaid.ncdhhs.gov/about-nc-medicaid/understanding-impact-cuts-nc-medicaid-budget",
+   "https://www.ncleg.gov/EnactedLegislation/SessionLaws/HTML/2025-2026/SL2026-1.html"
+  ],
+  "confidence": "medium",
+  "verify": "Good practice only. No NC or federal source sets a reserve level for these providers; the 60 to 90 days figure is a common planning benchmark, not a verified rule. Check whether any Tailored Plan contract or accreditor sets a financial-solvency standard (NOT VERIFIED).",
+  "basis": "recommended",
+  "effective_date": "unknown"
+ },
+ "step_31_sub_0": {
+  "instructions": [
+   "Bookmark the NCDHHS Rural Health Transformation Program page and its Grant Opportunities page. NC calls the program NCRHTP; NC ROOTS is its regional hub network.",
+   "Review the Rural Health Innovation Fund: complete the readiness intake on ncbroadband.gov, then apply in the NCDIT grant portal by 11:59 p.m. on November 16, 2026.",
+   "Confirm eligibility: a facility in one of the 85 federally designated rural counties or at least 40 percent rural patients, no SAM.gov or NC Medicaid sanction, and a low or medium risk rating.",
+   "Check your county's NC ROOTS Hub Lead page for regional sub-award requests for applications, and sign up for its updates list."
+  ],
+  "tips": [
+   "The sources conflict: the Governor's September 30, 2026 release limits the first RHIF round to primary care, FQHCs, community health centers and certain safety-net providers, while ncbroadband.gov lists behavioral health providers. Email RHIF@nc.gov before you apply.",
+   "RHIF is reimbursement-based, awards are expected in January 2027, and projects must be finished by July 30, 2027. You will need cash to pay for project costs up front.",
+   "Several earlier NCRHTP opportunities, including the hub lead application and the school health, diabetes and EMS programs, are closed. Do not plan around them."
+  ],
+  "contacts": [
+   "Rural Health Innovation Fund: RHIF@nc.gov (https://www.ncdhhs.gov/about/department-initiatives/rural-health-transformation-program/rural-health-transformation-program-grant-opportunities)",
+   "NCDIT Division of Broadband and Digital Opportunity: 919-754-6733 (https://www.ncbroadband.gov/ruralhealthinnovation)",
+   "NCDHHS Customer Service Center: 1-800-662-7030 (https://www.ncdhhs.gov/about/department-initiatives/rural-health-transformation-program)"
+  ],
+  "sources": [
+   "https://www.medicaid.gov/resources-for-states/rural-health",
+   "https://www.ncdhhs.gov/about/department-initiatives/rural-health-transformation-program",
+   "https://www.ncdhhs.gov/about/department-initiatives/rural-health-transformation-program/rural-health-transformation-program-grant-opportunities",
+   "https://www.ncdhhs.gov/about/department-initiatives/rural-health-transformation-program/ncrhtp-initiative-six-digital-health",
+   "https://www.ncbroadband.gov/ruralhealthinnovation",
+   "https://governor.nc.gov/news/press-releases/2026/09/30/governor-stein-launches-20-million-fund-increase-access-care-rural-north-carolina",
+   "https://governor.nc.gov/news/press-releases/2025/12/29/north-carolina-awarded-213-million-rural-health-transformation-program"
+  ],
+  "confidence": "high",
+  "verify": "Optional funding, not a provider obligation. Statute: H.R. 1 Sec. 71401, $50 billion over FY2026 to FY2030. CMS awarded NC $213,008,356.47 for year 1 on December 29, 2025. Settle the conflict over first-round RHIF eligibility with RHIF@nc.gov. Suggested rewording: Check whether NCRHTP or NC ROOTS funding is open to your organization and counties.",
+  "basis": "recommended",
+  "effective_date": "RHIF application deadline 2026-11-16"
+ },
+ "step_31_sub_1": {
+  "instructions": [
+   "Find your counties' Medicaid region on the NCDHHS ROOTS Hub Leads map, and match each county to its hub lead.",
+   "Email the hub lead: Region 1 Impact Health (t.smith@impacthealth.org), Regions 2 and 5 Trillium, Region 3 Vaya (RHTP@vayahealth.com), Region 4 UNC Health, Region 6 Access East (rhtp@accesseast.org).",
+   "Ask how providers join the partner network, when the next request for applications opens, which behavioral health and substance use priorities the regional needs assessment found, and what data reporting is required.",
+   "Sign up for each hub's interest or contact list, then log the replies and next-contact dates in your grants tracker."
+  ],
+  "tips": [
+   "Trillium's first round of requests for applications for Regions 2 and 5 is closed, and Trillium says more will follow. Region 3 (Vaya) and Region 4 (UNC Health) are still building their application processes.",
+   "Hub regions include urban counties such as Mecklenburg, but funding generally targets rural residents. Be ready to show the rural share of the people you serve.",
+   "Use the hub's official mailbox rather than staff personal emails, so your request is logged."
+  ],
+  "contacts": [
+   "Trillium NC ROOTS Hub Regions 2 and 5: Region2NCRootsHub@trilliumnc.org, Region5NCRootsHub@trilliumnc.org (https://www.trilliumhealthresources.org/NCRootsHub)",
+   "UNC Health NC ROOTS Region 4: NCROOTSRegion4@unchealth.unc.edu (https://www.unchealth.org/ncroots)",
+   "Access East NC ROOTS Region 6: rhtp@accesseast.org (https://accesseast.org/nc-roots-hub-region-6/)"
+  ],
+  "sources": [
+   "https://www.ncdhhs.gov/about/department-initiatives/rural-health-transformation-program/rural-organizations-orchestrating-transformation-sustainability-roots-hub-leads",
+   "https://www.ncdhhs.gov/news/press-releases/2026/05/01/ncdhhs-selects-nc-roots-hub-leads-strengthen-rural-health-care-across-north-carolina",
+   "https://www.trilliumhealthresources.org/NCRootsHub",
+   "https://www.trilliumhealthresources.org/NC-ROOTS-Region-2",
+   "https://rhtp.vayapartners.org/",
+   "https://www.unchealth.org/ncroots",
+   "https://impacthealth.org/rural-health/",
+   "https://accesseast.org/nc-roots-hub-region-6/"
+  ],
+  "confidence": "high",
+  "verify": "Optional, not a provider obligation. The email addresses come from the NCDHHS hub lead page (October 2026). Check whether Vaya's Region 3 mailbox changed after the October 1, 2026 Vaya Partners merger. The Region 4 and Region 5 county lists were not checked here.",
+  "basis": "recommended",
+  "effective_date": "unknown"
+ },
+ "step_31_sub_2": {
+  "instructions": [
+   "Draft a one-page capability statement listing your legal name, NPI, DHSR license numbers and services (CCP 8G peer support, 8A-12 SAIOP, 8A-13 SACOT).",
+   "List the counties you serve, marking which are among the 85 federally designated rural counties, and give the percentage of rural clients.",
+   "Describe your peer workforce: number of NC Certified Peer Support Specialists, their lived-experience focus, supervision structure and training pipeline.",
+   "State expected outcomes tied to NCRHTP behavioral health and workforce initiatives, such as engagement in treatment, step-down from SACOT to SAIOP, emergency department diversion, and NCCARE360 referral closure."
+  ],
+  "tips": [
+   "Match your wording to NCRHTP's six initiatives, especially Behavioral Health Expansion and Workforce Development. Hub reviewers score how well you fit regional priorities.",
+   "Add SAM.gov registration status, your NC Medicaid enrollment status and Tailored Plan contracts. RHIF eligibility excludes applicants sanctioned in SAM.gov or by NC Medicaid.",
+   "Use only outcomes you can measure from your EHR or NC-TOPPS data, because grant reports will hold you to them."
+  ],
+  "contacts": [
+   "NCDHHS Customer Service Center: 1-800-662-7030 (https://www.ncdhhs.gov/about/department-initiatives/rural-health-transformation-program)"
+  ],
+  "sources": [
+   "https://www.ncdhhs.gov/about/department-initiatives/rural-health-transformation-program",
+   "https://www.ncdhhs.gov/about/department-initiatives/rural-health-transformation-program/ncrhtp-initiative-six-digital-health",
+   "https://rhtp.vayapartners.org/",
+   "https://www.trilliumhealthresources.org/NC-ROOTS-Region-2"
+  ],
+  "confidence": "medium",
+  "verify": "Good practice only; no NC source requires a capability statement. Check the content against the specific request for applications, since hubs may require their own forms. Confirm the exact NC peer certification title and the count of certified staff before publishing.",
+  "basis": "recommended",
+  "effective_date": "unknown"
+ },
+ "step_31_sub_3": {
+  "instructions": [
+   "Add these dates to the compliance calendar: RHIF application due 11:59 p.m. November 16, 2026; awards expected January 2027; RHIF projects complete by July 30, 2027.",
+   "Calendar a 21-day appeal window after any RHIF ineligibility or non-approval email, with appeals sent to RHIF@nc.gov.",
+   "Check whether your EHR can send HL7 v2 data to NC HealthConnex, which G.S. 90-414.4 requires for providers that receive state funds. Ask RHTP.HIEA@nc.gov about one-time rural connection funding.",
+   "Plan NCCARE360 adoption if you apply for hub sub-awards, because Trillium's Region 2 and 5 requests for applications build in NCCARE360 closed-loop referrals.",
+   "After any award, calendar the reporting dates, invoice deadlines and data submissions in the sub-award agreement."
+  ],
+  "tips": [
+   "AUDIT TRAP: RHIF and hub funds are federal money. Expect a risk assessment, reimbursement-only payment and records of allowable costs, and keep receipts tied to each budget line.",
+   "The HIEA says enforcement of the NC HealthConnex funding penalty is temporarily suspended, but the duty to connect still applies. Connecting now strengthens rural grant applications.",
+   "Hub request-for-application windows have been short; Trillium's Region 2 round ran from July 30 to August 24, 2026. Check hub pages every two weeks."
+  ],
+  "contacts": [
+   "NC HIEA: (919) 754-6912 (https://hiea.nc.gov/programs/nc-rural-health-transformation-program)",
+   "Rural Health Innovation Fund: RHIF@nc.gov (https://www.ncdhhs.gov/about/department-initiatives/rural-health-transformation-program/ncrhtp-initiative-six-digital-health)",
+   "NCDIT Division of Broadband and Digital Opportunity: 919-754-6733 (https://www.ncbroadband.gov/ruralhealthinnovation)"
+  ],
+  "sources": [
+   "https://governor.nc.gov/news/press-releases/2026/09/30/governor-stein-launches-20-million-fund-increase-access-care-rural-north-carolina",
+   "https://www.ncdhhs.gov/about/department-initiatives/rural-health-transformation-program/ncrhtp-initiative-six-digital-health",
+   "https://hiea.nc.gov/programs/nc-rural-health-transformation-program",
+   "https://hiea.nc.gov/faqs/health-care-provider-faqs",
+   "https://www.trilliumhealthresources.org/NC-ROOTS-Region-2",
+   "https://www.ncbroadband.gov/ruralhealthinnovation"
+  ],
+  "confidence": "medium",
+  "verify": "The grant conditions apply only if you apply or receive an award. The NC HealthConnex connection duty under G.S. 90-414.4 is a current legal duty. Federal sub-award conditions, such as single audit thresholds and SAM UEI registration, are NOT VERIFIED for NCRHTP; read the award agreement and ask a CPA.",
+  "basis": "recommended",
+  "effective_date": "2026-11-16 (RHIF deadline); 2027-07-30 (RHIF project completion)"
+ }
+}
