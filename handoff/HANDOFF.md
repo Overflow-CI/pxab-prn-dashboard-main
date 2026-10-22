@@ -26,13 +26,13 @@ This document lets you (or a new Claude Code session in another account) continu
 
 | Item | Value |
 |---|---|
-| GitHub repository | `tasha-a-coder/pxab-prn-dashboard-main` (renamed from `hello-world`). https://github.com/tasha-a-coder/pxab-prn-dashboard-main |
-| Old name | `hello-world`. GitHub redirects it. A local clone made before the rename may still show `https://github.com/tasha-a-coder/hello-world`. See step 8.9. |
+| GitHub repository | **`Overflow-CI/pxab-prn-dashboard-main`**. https://github.com/Overflow-CI/pxab-prn-dashboard-main. The repo is owned by the `Overflow-CI` organization (moved from the `tasha-a-coder` account on or before 2026-10-22). It was first named `hello-world`, then renamed `pxab-prn-dashboard-main`. |
+| Old names and addresses | `tasha-a-coder/hello-world` and `tasha-a-coder/pxab-prn-dashboard-main`. GitHub redirects both to the current address. A clone made earlier may still show one of them as its remote. See step 9 in section 8. |
 | Default branch | `master` |
-| Working branch | `claude/code-review-optimize-dty0gi` |
+| Branch used so far | `claude/code-review-optimize-dty0gi` (fully merged into `master`; start new work on a new branch from `master`) |
 | Main deliverable | `nc_medicaid_bh_dashboard.html` (one self-contained file, about 440 KB, version 4.0) |
-| Pull requests | #1 merged (v3 optimizations). #2 merged by squash (`11a8c97`, v4.0). #3 merged by merge commit (`3558167`, checklist and sources CSV). |
-| Not yet in `master` | The commit(s) on the working branch after PR #3: `b070c0b` (specification, quick start guide, README placeholder) and the commit that adds this `handoff/` folder. **No PR is open for them.** |
+| Pull requests | #1 merged (v3 optimizations). #2 merged by squash (`11a8c97`, v4.0). #3 merged by merge commit (`3558167`, checklist and sources CSV). #5 merged by merge commit (`71546f0`, specification, quick start guide and handoff). Note: the PR numbers 1, 2, 3 and 5 are as GitHub reported them; #4 was not created in this session. |
+| Documentation status | Specification, quick start guide, README placeholder and this `handoff/` folder were merged into `master` by PR #5. The only later changes are the repo-name fixes in this file and `conversation_context.json` (see git history). |
 | Browser storage key | `NC_MEDICAID_NAVIGATOR_FULL_STATE_V3` (unchanged since v3, so saved progress carries over) |
 
 ## 2. What the project is
@@ -195,7 +195,7 @@ Treat these as **cited but unverified** research.
 - `NC_Medicaid_Verification_Checklist.md` and `nc_medicaid_sources.csv`.
 - A stray `pm_modal.png` in the repo root (a leftover screenshot from an earlier session).
 
-### 5.2 On the working branch only (not merged)
+### 5.2 Added by PR #5 (now in `master`)
 - `docs/SPECIFICATION.md`, `docs/QUICK_START.md`, `docs/images/` (16 screenshots).
 - A `README.md` update with a **placeholder** for the quick start guide URL: the text `QUICK_START_GUIDE_URL` appears twice in one line near the top (the link text and the link target). Replace both once the guide has a published address.
 - This `handoff/` folder.
@@ -231,9 +231,9 @@ Parts B to H of the checklist hold the remaining items (NCTracks, plans, backgro
 | ID | Decision | Options and my recommendation |
 |---|---|---|
 | D1 | **Which services will you actually offer, and in which counties?** | Not stated anywhere in the conversation. It decides which steps matter and which plan intake status applies. Recommendation: say so in the next session and I will set the filters in the checklist scripts. |
-| D2 | **How to deliver the next round of changes** | Answers to the checklist will update the app and the checklist (your instruction: one PR, same session). Recommendation: start a new branch from `master` after the docs branch is merged. |
+| D2 | **How to deliver the next round of changes** | Answers to the checklist will update the app and the checklist (your instruction: one PR, same session). Recommendation: start a new branch from `master`. |
 | D3 | **Which research tool to use for the next research round.** | You said Perplexity could not be used and asked for Gemini/NotebookLM, then supplied Perplexity-format results. A NotebookLM kit exists. Please confirm which you will use. |
-| D4 | **Merge the documentation branch?** | The specification, quick start guide, README placeholder and this handoff are on `claude/code-review-optimize-dty0gi`. Recommendation: open a PR and merge it so `master` holds them. |
+| D4 | ~~Merge the documentation branch?~~ | Done: merged by PR #5. |
 | D5 | **Where to publish the quick start guide, so the README placeholder can be filled.** | Options: link to `docs/QUICK_START.md` on GitHub, publish with GitHub Pages, or host elsewhere. Tell me the URL. |
 | D6 | **Where to host the app itself** (optional). | Today you open the HTML file locally. GitHub Pages would give users a link. Not requested yet. |
 | D7 | **Keep the planning assumption "plan for 1 year" for accreditation until NC Medicaid answers?** | Recommended. Confirm. |
@@ -264,8 +264,8 @@ Do these in order. Steps 1 to 4 are on the account you use now. Steps 5 to 15 ar
 
 **Step 1. Get all work into GitHub.**
 Everything must be pushed because the cloud session's disk is temporary.
-- The working branch `claude/code-review-optimize-dty0gi` is pushed. This handoff folder is committed and pushed with it.
-- Optional but recommended: open a pull request from that branch to `master` and merge it, so `master` holds the specification, quick start guide and handoff. If you skip this, tell the new session to start from the branch, not `master`.
+- Everything is merged into `master` (PR #5). The branch `claude/code-review-optimize-dty0gi` is fully merged.
+- The repo-name corrections in this file are committed after PR #5. If they are not in `master` yet, merge them (or tell the new session to start from the branch that holds them).
 
 **Step 2. Download the handoff files.**
 Download these three files from this chat (they were also sent as file attachments), or from the repo under `handoff/`:
@@ -284,11 +284,11 @@ Open the dashboard, tap **Export**, and keep the downloaded JSON. Progress lives
 **Step 5. Make sure the new account can reach the repository.**
 - *Same GitHub user on both Claude accounts:* connect GitHub at https://claude.ai/connect-github in the new Claude account, and install the Claude GitHub App on the repo at https://github.com/apps/claude/installations/select_target.
 - *Different GitHub user:* in GitHub, go to the repo, **Settings → Collaborators**, and add the new user with **Write** access. Then have that user accept the invite, connect GitHub in the new Claude account, and install the Claude app on the repo. If you will not grant write access, have them **fork** the repo, and work in the fork.
-- *Organization-owned repos* may need an owner to approve the Claude app.
+- *The repo is now owned by the `Overflow-CI` organization.* Whichever GitHub user the new Claude account connects must be a member or outside collaborator of `Overflow-CI` with write access to this repo, and an organization owner may need to approve the Claude GitHub App. Ask an owner of `Overflow-CI` for this. Without it, the new account cannot read or push to the repo.
 
 **Step 6. Start a new Claude Code session on that repo.**
-- On the web: go to https://claude.ai/code, choose the repository `tasha-a-coder/pxab-prn-dashboard-main`, and choose the branch (see step 1). Start the session.
-- Or in a terminal: `git clone https://github.com/tasha-a-coder/pxab-prn-dashboard-main.git`, then `cd pxab-prn-dashboard-main`, then `git checkout claude/code-review-optimize-dty0gi` (or stay on `master` if you merged), then run `claude`.
+- On the web: go to https://claude.ai/code, choose the repository `Overflow-CI/pxab-prn-dashboard-main`, and choose the branch (see step 1). Use `master`, since the documentation is merged. Start the session.
+- Or in a terminal: `git clone https://github.com/Overflow-CI/pxab-prn-dashboard-main.git`, then `cd pxab-prn-dashboard-main`, then run `claude`. You are on `master`, which has everything. Create a new branch for new work.
 
 **Step 7. Paste the starter prompt (section 9)** as your first message. It tells the new session to read this file, the specification and the checklist before doing anything.
 
@@ -296,7 +296,7 @@ Open the dashboard, tap **Export**, and keep the downloaded JSON. Progress lives
 If you already have answers to checklist items, paste them in the first message, or add them to the checklist file's answer log and commit. The new session will update the app and the checklist in one PR.
 
 **Step 9. Fix the git remote on any older clone.**
-If a clone was made before the rename: `git remote set-url origin https://github.com/tasha-a-coder/pxab-prn-dashboard-main.git`. A fresh clone does not need this.
+If a clone was made before the rename: `git remote set-url origin https://github.com/Overflow-CI/pxab-prn-dashboard-main.git`. A fresh clone does not need this.
 
 **Step 10. Check the tools work.**
 - Needs Node 18 or later, Python 3, and Chromium. The Claude Code web environment has Chromium at `/opt/pw-browsers/chromium`. For a local machine, install Chromium and set `CHROMIUM=/path/to/chromium`.
@@ -322,8 +322,8 @@ Ask the new session to report, without changing anything: the current branch and
 
 ```
 I am continuing work from another Claude Code account. The repository is
-tasha-a-coder/pxab-prn-dashboard-main. Start on branch
-claude/code-review-optimize-dty0gi (or master if I say it has been merged).
+Overflow-CI/pxab-prn-dashboard-main. Start on the master branch and create a
+new branch for new work (the old branch claude/code-review-optimize-dty0gi is fully merged).
 
 Before doing anything, read these files in order:
 1. handoff/HANDOFF.md  (what exists, what I asked for, open decisions, how to test)
@@ -408,15 +408,15 @@ Expected values you can check against: `t_p6.js` prints `0 / 31 Steps Done`, `of
 | File | Purpose |
 |---|---|
 | `nc_medicaid_bh_dashboard.html` | The app. |
-| `README.md` | Overview, quick start (with the guide-URL placeholder on the branch), file list, feature list. |
+| `README.md` | Overview, quick start (with the guide-URL placeholder), file list, feature list. |
 | `NC_Medicaid_Verification_Checklist.md` | What to verify, with contacts and scripts. |
 | `nc_medicaid_sources.csv` | 642 source URLs (242 cited in the app, 400 from research only), categorized. |
 | `pm_modal.png` | Stray old screenshot. See decision D8. |
 
-### `docs/` (on the branch)
+### `docs/`
 `SPECIFICATION.md`, `QUICK_START.md`, and `images/` (16 PNGs).
 
-### `handoff/` (on the branch)
+### `handoff/`
 | Path | Purpose |
 |---|---|
 | `HANDOFF.md` | This document. |
