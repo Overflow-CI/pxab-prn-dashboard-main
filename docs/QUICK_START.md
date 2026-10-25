@@ -244,6 +244,9 @@ On a larger screen the same page shows more at once. Each phase opens with all i
 
 ## Getting help
 
+- **Email the coaching team:** tap **Email the coaching team** in the top bar, or **Email the coaching team about this step** on any step. Your email app opens with the section and step already in the subject line. Send it to prn.guidance@adaptbridge.praxiomllc.com.
+- **Find a task fast:** type in **Search steps and tasks**, or press `/` on a computer. Use **Show tasks for** to see only the steps owned by one role.
+- **Calendar dates:** enter a **Plan start date** under Fees and timeline, then tap **Download calendar (.ics)** to add every step to your calendar.
 - **What to confirm and who to call:** `NC_Medicaid_Verification_Checklist.md`
 - **Where each fact came from:** `nc_medicaid_sources.csv`
 - **How the app works (for developers):** `docs/SPECIFICATION.md`

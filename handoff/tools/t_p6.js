@@ -1,3 +1,7 @@
+// v006: the setup wizard opens for new users and would block clicks, so tests close it after load.
+async function dismissSetupWizard(page) {
+  await page.evaluate(() => { const d = document.getElementById('setup-wizard'); if (d && d.open) d.close(); });
+}
 const { chromium } = require('playwright-core');
 const log = (k, v) => console.log(k.padEnd(48), JSON.stringify(v));
 (async () => {
@@ -6,7 +10,7 @@ const log = (k, v) => console.log(k.padEnd(48), JSON.stringify(v));
   const p = await (await b.newContext({ viewport: { width: 390, height: 844 }, isMobile: true, hasTouch: true })).newPage();
   p.on('pageerror', e => errs.push(e.message));
   await p.route(/fonts\./, r => r.abort());
-  await p.goto((process.env.APP_URL||'file://'+require('path').resolve(__dirname,'../../nc_medicaid_bh_dashboard.html')));
+  await p.goto((process.env.APP_URL||'file://'+require('path').resolve(__dirname,'../../nc_medicaid_bh_dashboard.html'))); await dismissSetupWizard(p);
   log('tabs', await p.$$eval('#phase-tabs-container button', e => e.map(x => x.innerText.replace(/\s+/g, ' ').trim())));
   log('totals', [await p.textContent('#metric-steps-ratio'), await p.textContent('#metric-subtasks-total'), await p.textContent('#metric-span-weeks'), await p.textContent('#metric-cost-tally')]);
   await p.tap('#phase-tabs-container button:nth-child(6)');

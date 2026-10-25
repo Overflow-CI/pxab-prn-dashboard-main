@@ -1,3 +1,7 @@
+// v006: the setup wizard opens for new users and would block clicks, so tests close it after load.
+async function dismissSetupWizard(page) {
+  await page.evaluate(() => { const d = document.getElementById('setup-wizard'); if (d && d.open) d.close(); });
+}
 const { chromium } = require('playwright-core');
 const fs = require('fs');
 const log = (k, v) => console.log(k.padEnd(46), JSON.stringify(v));
@@ -7,7 +11,7 @@ const log = (k, v) => console.log(k.padEnd(46), JSON.stringify(v));
   const errs = []; p.on('pageerror', e => errs.push(e.message));
   p.on('dialog', d => d.accept());
   await p.route(/fonts\./, r => r.abort());
-  await p.goto((process.env.APP_URL||'file://'+require('path').resolve(__dirname,'../../nc_medicaid_bh_dashboard.html')));
+  await p.goto((process.env.APP_URL||'file://'+require('path').resolve(__dirname,'../../nc_medicaid_bh_dashboard.html'))); await dismissSetupWizard(p);
 
   log('desktop: steps open in phase 1', await p.$$eval('[id^=step-body-]:not(.hidden)', e => e.length));
   log('desktop first run: panels open (setup only)', await p.$$eval('.panel', e => e.map(x => x.open)));
@@ -55,6 +59,7 @@ const log = (k, v) => console.log(k.padEnd(46), JSON.stringify(v));
   await p.click('button:has-text("Reset")');
   log('after reset: subtasks / storage', [await p.textContent('#metric-subtasks-count'), await p.evaluate(() => localStorage.getItem('NC_MEDICAID_NAVIGATOR_FULL_STATE_V3'))]);
   await p.reload();
+  await dismissSetupWizard(p);
   log('after reload: subtasks', await p.textContent('#metric-subtasks-count'));
   // print: real window.print() path (stub to avoid blocking) + Ctrl+P hook
   await p.evaluate(() => { window.__printed = 0; window.print = () => { window.__printed++; }; });

@@ -1,7 +1,11 @@
+// v006: the setup wizard opens for new users and would block clicks, so tests close it after load.
+async function dismissSetupWizard(page) {
+  await page.evaluate(() => { const d = document.getElementById('setup-wizard'); if (d && d.open) d.close(); });
+}
 const { chromium } = require('playwright-core');
 (async()=>{const b=await chromium.launch({executablePath:(process.env.CHROMIUM||'/opt/pw-browsers/chromium')});
 const p=await b.newPage({viewport:{width:390,height:844}});const errs=[];p.on('pageerror',e=>errs.push(e.message));
-await p.goto((process.env.APP_URL||'file://'+require('path').resolve(__dirname,'../../nc_medicaid_bh_dashboard.html')));
+await p.goto((process.env.APP_URL||'file://'+require('path').resolve(__dirname,'../../nc_medicaid_bh_dashboard.html'))); await dismissSetupWizard(p);
 const r=await p.evaluate(()=>{
  const cs=['Wake','Cabarrus','Dare','Buncombe','Guilford','Mecklenburg'];
  appState.selectedCounties=cs; updateRegionalContactsDisplay();

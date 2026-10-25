@@ -1,3 +1,7 @@
+// v006: the setup wizard opens for new users and would block clicks, so tests close it after load.
+async function dismissSetupWizard(page) {
+  await page.evaluate(() => { const d = document.getElementById('setup-wizard'); if (d && d.open) d.close(); });
+}
 const { chromium } = require('playwright-core');
 const URL = (process.env.APP_URL||'file://'+require('path').resolve(__dirname,'../../nc_medicaid_bh_dashboard.html'));
 const log = (k, v) => console.log(k.padEnd(46), JSON.stringify(v));
@@ -10,7 +14,7 @@ const log = (k, v) => console.log(k.padEnd(46), JSON.stringify(v));
   p.on('console', m => { if (m.type() === 'error' && !/fonts|ERR_/.test(m.text())) errs.push('console: ' + m.text()); });
   p.on('dialog', d => d.accept());
   await p.route(/fonts\./, r => r.abort());
-  await p.goto(URL);
+  await p.goto(URL); await dismissSetupWizard(p);
 
   // --- step cards
   log('open steps on first phone visit', await p.$$eval('[id^=step-body-]:not(.hidden)', e => e.map(x => x.id)));
