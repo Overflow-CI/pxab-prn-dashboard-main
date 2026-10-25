@@ -20,8 +20,8 @@ const log = (k, v) => console.log(k.padEnd(48), JSON.stringify(v));
       await p.evaluate(() => toggleAllSteps()); // opens (or closes) all; make sure they are open
       if (await p.$$eval('[id^=step-body-].hidden', e => e.length)) await p.evaluate(() => toggleAllSteps());
       report.push(await p.evaluate(() => {
-        const rows = [...document.querySelectorAll('#current-phase-container li')];
-        const ok = rows.filter(li => { const b = li.querySelector('button'); const r = b.getBoundingClientRect(); return r.width > 0 && b.innerText.trim() === 'Instructions' && r.height >= 44; });
+        const rows = [...document.querySelectorAll('#current-phase-container li')].filter(li => li.querySelector('button'));
+        const ok = rows.filter(li => { const b = [...li.querySelectorAll('button')].find(x => x.innerText.trim() === 'Instructions'); if (!b) return false; const r = b.getBoundingClientRect(); return r.width > 0 && r.height >= 44; });
         return [rows.length, ok.length];
       }));
     }

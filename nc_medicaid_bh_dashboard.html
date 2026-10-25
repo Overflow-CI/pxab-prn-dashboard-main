@@ -3743,6 +3743,19 @@ unicode-range: U+0102-0103, U+01CD-01DC, U+1E0C-1E0D, U+1E12-1E13, U+1E24-1E25, 
 
     // Opening and closing use the stylesheet's slide animations. A closing body is hidden when its animation ends;
     // with reduced motion there is no animation, so it is hidden at once.
+    // A warning counts as a DHSR audit trap only when its text names DHSR or a DHSR rule (10A NCAC 27G or 27E, G.S. 131E, MHLCS).
+    // Other agencies' warnings (NCTracks, the Tailored Plans, IRS, OIG, DSS, CMS) keep their tips and get no DHSR tag.
+    const DHSR_PATTERN = /\bDHSR\b|\bMHLCS\b|10A NCAC 27[GE]|\b27[GE] \.|G\.S\. 131E/;
+    const auditTrapsFor = checkKey => ((SUBTASK_DETAILS_MAP[checkKey] || {}).tips || []).filter(tip => tip.includes('AUDIT TRAP'));
+    const dhsrTrapsFor = checkKey => auditTrapsFor(checkKey).filter(tip => DHSR_PATTERN.test(tip));
+
+    // Info button on a task: shows the risk text the tag is based on
+    function toggleRiskInfo(checkKey) {
+      const panel = document.getElementById(`risk-${checkKey}`);
+      const open = !panel.classList.toggle('hidden');
+      document.querySelector(`[aria-controls="risk-${checkKey}"]`).setAttribute('aria-expanded', String(open));
+    }
+
     function toggleStep(stepId) {
       const body = document.getElementById(`step-body-${stepId}`);
       const toggle = document.getElementById(`step-toggle-${stepId}`);
@@ -3835,7 +3848,7 @@ unicode-range: U+0102-0103, U+01CD-01DC, U+1E0C-1E0D, U+1E12-1E13, U+1E24-1E25, 
         const verify = appState.verification[step.id] || { status: 'not_checked', source: '', date: '' };
         const helpLink = helpHref(viewSection, step);
         const nctracksStep = /NCTracks/i.test(`${step.title} ${step.description} ${step.resourceName}`);
-        const auditTrapStep = step.subtasks.some((_, idx) => JSON.stringify(SUBTASK_DETAILS_MAP[subtaskKey(step.id, idx)] || {}).includes('AUDIT TRAP'));
+        const dhsrTasks = step.subtasks.filter((_, idx) => dhsrTrapsFor(subtaskKey(step.id, idx)).length > 0).length;
 
         return `
           <article id="step-card-${step.id}" class="scroll-mt-20 bg-white  border border-[color:var(--ab-black)] border-l-4 ${meta.accent}">
@@ -3848,7 +3861,7 @@ unicode-range: U+0102-0103, U+01CD-01DC, U+1E0C-1E0D, U+1E12-1E13, U+1E24-1E25, 
                   <span data-status="${status}" class="px-2.5 py-1  text-xs font-bold border ${meta.badge}">${meta.label}</span>
                   ${noteText ? '<span class="px-2.5 py-1  text-xs font-bold border border-[color:var(--ab-blue)] bg-[color:var(--ab-fog)] text-[color:var(--ab-navy)]">i Note</span>' : ''}
                   ${nctracksStep ? '<span class="compliance-alert-tag tag-nctracks">NCTracks credentialing cycle</span>' : ''}
-                  ${auditTrapStep ? '<span class="compliance-alert-tag tag-dhsr-warning">DHSR audit trap: read the tips</span>' : ''}
+                  ${dhsrTasks ? `<span class="compliance-alert-tag tag-dhsr-warning">DHSR audit trap: ${dhsrTasks} ${dhsrTasks === 1 ? 'task' : 'tasks'}</span>` : ''}
                   ${overdue ? '<span data-status="overdue" class="px-2.5 py-1  text-xs font-bold border border-[color:var(--ab-black)] bg-white text-[color:var(--ab-black)]">Past planned end</span>' : ''}
                 </span>
                 <span class="block text-base font-bold text-[color:var(--ab-black)] leading-snug">${step.title}</span>
@@ -3929,6 +3942,7 @@ unicode-range: U+0102-0103, U+01CD-01DC, U+1E0C-1E0D, U+1E12-1E13, U+1E24-1E25, 
                   ${step.subtasks.map((sub, subIdx) => {
                     const checkKey = subtaskKey(step.id, subIdx);
                     const isChecked = !!appState.subtaskChecks[checkKey];
+                    const dhsrTraps = dhsrTrapsFor(checkKey);
                     return `
                   <li class="sm:flex sm:items-stretch  border ${isChecked ? 'border-[color:var(--ab-navy)] bg-white' : 'border-[color:var(--ab-black)] bg-white'}">
                     <label class="flex sm:flex-1 min-w-0 items-start gap-3 p-3 min-h-[52px] cursor-pointer">
@@ -3936,12 +3950,18 @@ unicode-range: U+0102-0103, U+01CD-01DC, U+1E0C-1E0D, U+1E12-1E13, U+1E24-1E25, 
                       <span class="text-sm ${isChecked ? 'line-through text-[color:var(--ab-black)] font-normal' : 'font-semibold text-[color:var(--ab-black)]'}">${sub}</span>
                     </label>
                     <div class="px-3 pb-3 pl-12 sm:p-0 sm:flex sm:shrink-0 sm:border-l sm:border-[color:var(--ab-black)]">
+                      ${dhsrTraps.length ? `<span class="compliance-alert-tag tag-dhsr-warning">DHSR audit trap</span>
+                      <button type="button" onclick="toggleRiskInfo('${checkKey}')" aria-expanded="false" aria-controls="risk-${checkKey}" class="touch-target inline-flex items-center justify-center gap-1.5 px-3 border border-[color:var(--ab-black)] bg-white text-[color:var(--ab-black)] text-sm font-bold">i Risk</button>` : ''}
                       <button type="button" onclick="openSubtaskDetailModal('${checkKey}', ${step.id}, ${subIdx})" aria-label="Instructions and contacts: ${escapeHtml(sub)}" class="touch-target inline-flex items-center justify-center gap-1.5 px-3  border border-[color:var(--ab-blue)] bg-[color:var(--ab-fog)] hover:bg-[color:var(--ab-fog)] text-[color:var(--ab-navy)] text-sm font-semibold sm:w-full sm:px-4   sm:border-0 sm:bg-transparent sm:hover:bg-[color:var(--ab-fog)]">
                         <svg class="w-5 h-5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
                         Instructions
                       </button>
                     </div>
-                  </li>`;
+                  </li>${dhsrTraps.length ? `
+                  <li id="risk-${checkKey}" class="hidden p-3 text-sm text-[color:var(--ab-black)] bg-[color:var(--ab-fog)] border border-[color:var(--ab-black)] border-l-4 border-l-[color:var(--ab-amber)]">
+                    <p class="font-bold mb-1">DHSR audit trap: the risk</p>
+                    ${dhsrTraps.map(tip => `<p class="mt-1">${escapeHtml(tip.replace(/^AUDIT TRAP:\s*/, ''))}</p>`).join('')}
+                  </li>` : ''}`;
                   }).join('')}
                 </ul>
               </div>
