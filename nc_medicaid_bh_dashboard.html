@@ -14,439 +14,397 @@ v4.0 | 2026-10-18 | Printable plan, mobile-first redesign, instructions for ever
        npx tailwindcss@3 --content nc_medicaid_bh_dashboard.html --minify -o tw.css  and paste tw.css here. -->
   <style>*,::backdrop,:after,:before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:#3b82f680;--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/*! tailwindcss v3.4.19 | MIT License | https://tailwindcss.com*/*,:after,:before{box-sizing:border-box;border:0 solid #e5e7eb}:after,:before{--tw-content:""}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;-o-tab-size:4;tab-size:4;font-family:ui-sans-serif,system-ui,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:initial}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:initial;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:initial}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{opacity:1;color:#9ca3af}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.container{width:100%}@media (min-width:640px){.container{max-width:640px}}@media (min-width:768px){.container{max-width:768px}}@media (min-width:1024px){.container{max-width:1024px}}@media (min-width:1280px){.container{max-width:1280px}}@media (min-width:1536px){.container{max-width:1536px}}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border-width:0}.pointer-events-none{pointer-events:none}.pointer-events-auto{pointer-events:auto}.visible{visibility:visible}.collapse{visibility:collapse}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.sticky{position:sticky}.inset-0{inset:0}.bottom-0{bottom:0}.bottom-4{bottom:1rem}.left-0{left:0}.left-4{left:1rem}.right-4{right:1rem}.top-0{top:0}.top-full{top:100%}.z-10{z-index:10}.z-30{z-index:30}.z-50{z-index:50}.col-span-12{grid-column:span 12/span 12}.m-auto{margin:auto}.mx-auto{margin-left:auto;margin-right:auto}.mb-1{margin-bottom:.25rem}.mb-1\.5{margin-bottom:.375rem}.mb-2{margin-bottom:.5rem}.mb-3{margin-bottom:.75rem}.ml-2{margin-left:.5rem}.mt-0\.5{margin-top:.125rem}.mt-1{margin-top:.25rem}.mt-1\.5{margin-top:.375rem}.mt-2{margin-top:.5rem}.mt-3{margin-top:.75rem}.mt-5{margin-top:1.25rem}.block{display:block}.flex{display:flex}.inline-flex{display:inline-flex}.table{display:table}.grid{display:grid}.contents{display:contents}.hidden{display:none}.h-1{height:.25rem}.h-1\.5{height:.375rem}.h-2\.5{height:.625rem}.h-3{height:.75rem}.h-4{height:1rem}.h-5{height:1.25rem}.h-6{height:1.5rem}.h-full{height:100%}.max-h-80{max-height:20rem}.max-h-\[90dvh\]{max-height:90dvh}.min-h-0{min-height:0}.min-h-\[36px\]{min-height:36px}.min-h-\[44px\]{min-height:44px}.min-h-\[48px\]{min-height:48px}.min-h-\[52px\]{min-height:52px}.min-h-\[56px\]{min-height:56px}.min-h-full{min-height:100%}.w-1\.5{width:.375rem}.w-2\.5{width:.625rem}.w-3{width:.75rem}.w-4{width:1rem}.w-5{width:1.25rem}.w-6{width:1.5rem}.w-\[min\(34rem\2c calc\(100vw_-_2rem\)\)\]{width:min(34rem,calc(100vw - 2rem))}.w-full{width:100%}.min-w-0{min-width:0}.max-w-2xl{max-width:42rem}.max-w-7xl{max-width:80rem}.max-w-lg{max-width:32rem}.flex-1{flex:1 1 0%}.shrink-0{flex-shrink:0}.border-collapse{border-collapse:collapse}.-translate-x-1\/2{--tw-translate-x:-50%}.-translate-x-1\/2,.-translate-x-full{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.-translate-x-full{--tw-translate-x:-100%}.rotate-180{--tw-rotate:180deg}.rotate-180,.transform{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@keyframes pulse{50%{opacity:.5}}.animate-pulse{animation:pulse 2s cubic-bezier(.4,0,.6,1) infinite}.cursor-pointer{cursor:pointer}.select-none{-webkit-user-select:none;-moz-user-select:none;user-select:none}.snap-x{scroll-snap-type:x var(--tw-scroll-snap-strictness)}.scroll-mt-20{scroll-margin-top:5rem}.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}.grid-cols-12{grid-template-columns:repeat(12,minmax(0,1fr))}.grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-end{align-items:flex-end}.items-center{align-items:center}.items-baseline{align-items:baseline}.items-stretch{align-items:stretch}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-0\.5{gap:.125rem}.gap-1{gap:.25rem}.gap-1\.5{gap:.375rem}.gap-2{gap:.5rem}.gap-2\.5{gap:.625rem}.gap-3{gap:.75rem}.gap-4{gap:1rem}.gap-x-1{-moz-column-gap:.25rem;column-gap:.25rem}.gap-x-2{-moz-column-gap:.5rem;column-gap:.5rem}.gap-x-4{-moz-column-gap:1rem;column-gap:1rem}.gap-y-1{row-gap:.25rem}.space-y-1>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.25rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.25rem*var(--tw-space-y-reverse))}.space-y-1\.5>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.375rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.375rem*var(--tw-space-y-reverse))}.space-y-2>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.5rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.5rem*var(--tw-space-y-reverse))}.space-y-2\.5>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.625rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.625rem*var(--tw-space-y-reverse))}.space-y-3>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.75rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.75rem*var(--tw-space-y-reverse))}.space-y-3\.5>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.875rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.875rem*var(--tw-space-y-reverse))}.space-y-4>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem*var(--tw-space-y-reverse))}.space-y-5>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.25rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.25rem*var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.overflow-x-auto{overflow-x:auto}.overflow-y-auto{overflow-y:auto}.truncate{overflow:hidden;text-overflow:ellipsis}.truncate,.whitespace-nowrap{white-space:nowrap}.whitespace-pre-wrap{white-space:pre-wrap}.break-words{overflow-wrap:break-word}.break-all{word-break:break-all}.rounded{border-radius:.25rem}.border{border-width:1px}.border-2{border-width:2px}.border-y{border-top-width:1px}.border-b,.border-y{border-bottom-width:1px}.border-b-2{border-bottom-width:2px}.border-l-4{border-left-width:4px}.border-t{border-top-width:1px}.border-\[color\:var\(--accent-teal\)\]{border-color:var(--accent-teal)}.border-\[color\:var\(--border-color\)\]{border-color:var(--border-color)}.border-l-\[color\:var\(--accent-teal\)\]{border-left-color:var(--accent-teal)}.border-l-\[color\:var\(--border-color\)\]{border-left-color:var(--border-color)}.bg-\[color\:var\(--accent-teal-hover\)\]{background-color:var(--accent-teal-hover)}.bg-\[color\:var\(--bg-card\)\]{background-color:var(--bg-card)}.bg-\[color\:var\(--bg-main\)\]{background-color:var(--bg-main)}.bg-\[color\:var\(--bg-surface\)\]{background-color:var(--bg-surface)}.bg-\[rgba\(15\2c 23\2c 42\2c 0\.7\)\]{background-color:#0f172ab3}.bg-slate-50{--tw-bg-opacity:1;background-color:rgb(248 250 252/var(--tw-bg-opacity,1))}.p-0{padding:0}.p-1\.5{padding:.375rem}.p-2{padding:.5rem}.p-2\.5{padding:.625rem}.p-3{padding:.75rem}.p-3\.5{padding:.875rem}.p-4{padding:1rem}.p-5{padding:1.25rem}.p-6{padding:1.5rem}.p-8{padding:2rem}.px-1{padding-left:.25rem;padding-right:.25rem}.px-1\.5{padding-left:.375rem;padding-right:.375rem}.px-2{padding-left:.5rem;padding-right:.5rem}.px-2\.5{padding-left:.625rem;padding-right:.625rem}.px-3{padding-left:.75rem;padding-right:.75rem}.px-3\.5{padding-left:.875rem;padding-right:.875rem}.px-4{padding-left:1rem;padding-right:1rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.py-0\.5{padding-top:.125rem;padding-bottom:.125rem}.py-1{padding-top:.25rem;padding-bottom:.25rem}.py-1\.5{padding-top:.375rem;padding-bottom:.375rem}.py-2{padding-top:.5rem;padding-bottom:.5rem}.py-2\.5{padding-top:.625rem;padding-bottom:.625rem}.py-3{padding-top:.75rem;padding-bottom:.75rem}.py-4{padding-top:1rem;padding-bottom:1rem}.pb-1{padding-bottom:.25rem}.pb-1\.5{padding-bottom:.375rem}.pb-2{padding-bottom:.5rem}.pb-2\.5{padding-bottom:.625rem}.pb-3{padding-bottom:.75rem}.pb-4{padding-bottom:1rem}.pl-12{padding-left:3rem}.pr-2{padding-right:.5rem}.pr-3{padding-right:.75rem}.pt-0\.5{padding-top:.125rem}.pt-1{padding-top:.25rem}.pt-2{padding-top:.5rem}.pt-2\.5{padding-top:.625rem}.pt-3{padding-top:.75rem}.pt-4{padding-top:1rem}.text-left{text-align:left}.text-center{text-align:center}.text-right{text-align:right}.font-mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-\[16px\]{font-size:16px}.text-base{font-size:1rem;line-height:1.5rem}.text-sm{font-size:.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:.75rem;line-height:1rem}.font-bold{font-weight:700}.font-medium{font-weight:500}.font-normal{font-weight:400}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.normal-case{text-transform:none}.italic{font-style:italic}.leading-none{line-height:1}.leading-relaxed{line-height:1.625}.leading-snug{line-height:1.375}.leading-tight{line-height:1.25}.tracking-normal{letter-spacing:0}.tracking-tight{letter-spacing:-.025em}.tracking-wide{letter-spacing:.025em}.tracking-wider{letter-spacing:.05em}.text-\[color\:var\(--text-primary\)\]{color:var(--text-primary)}.text-\[color\:var\(--text-secondary\)\]{color:var(--text-secondary)}.underline{text-decoration-line:underline}.line-through{text-decoration-line:line-through}.underline-offset-2{text-underline-offset:2px}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.accent-\[color\:var\(--accent-teal\)\]{accent-color:var(--accent-teal)}.outline-none{outline:2px solid #0000;outline-offset:2px}.outline{outline-style:solid}.filter{filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.backdrop-blur{--tw-backdrop-blur:blur(8px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition{transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,-webkit-backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter,-webkit-backdrop-filter;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.duration-300{transition-duration:.3s}.ease-in{transition-timing-function:cubic-bezier(.4,0,1,1)}.ease-out{transition-timing-function:cubic-bezier(0,0,.2,1)}.selection\:bg-\[color\:var\(--bg-main\)\] ::-moz-selection{background-color:var(--bg-main)}.selection\:bg-\[color\:var\(--bg-main\)\] ::selection{background-color:var(--bg-main)}.selection\:text-\[color\:var\(--text-primary\)\] ::-moz-selection{color:var(--text-primary)}.selection\:text-\[color\:var\(--text-primary\)\] ::selection{color:var(--text-primary)}.selection\:bg-\[color\:var\(--bg-main\)\]::-moz-selection{background-color:var(--bg-main)}.selection\:bg-\[color\:var\(--bg-main\)\]::selection{background-color:var(--bg-main)}.selection\:text-\[color\:var\(--text-primary\)\]::-moz-selection{color:var(--text-primary)}.selection\:text-\[color\:var\(--text-primary\)\]::selection{color:var(--text-primary)}.backdrop\:bg-\[rgba\(15\2c 23\2c 42\2c 0\.7\)\]::backdrop{background-color:#0f172ab3}.focus-within\:ring-2:focus-within{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000)}.focus-within\:ring-\[color\:var\(--accent-teal\)\]:focus-within{--tw-ring-color:var(--accent-teal)}.hover\:border-\[color\:var\(--accent-teal\)\]:hover{border-color:var(--accent-teal)}.hover\:border-\[color\:var\(--border-color\)\]:hover{border-color:var(--border-color)}.hover\:bg-\[color\:var\(--accent-teal-hover\)\]:hover{background-color:var(--accent-teal-hover)}.hover\:bg-\[color\:var\(--bg-card\)\]:hover{background-color:var(--bg-card)}.hover\:bg-\[color\:var\(--bg-main\)\]:hover{background-color:var(--bg-main)}.hover\:bg-\[color\:var\(--bg-surface\)\]:hover{background-color:var(--bg-surface)}.hover\:text-\[color\:var\(--text-primary\)\]:hover{color:var(--text-primary)}.hover\:underline:hover{text-decoration-line:underline}.focus\:not-sr-only:focus{position:static;width:auto;height:auto;padding:0;margin:0;overflow:visible;clip:auto;white-space:normal}.focus\:absolute:focus{position:absolute}.focus\:left-2:focus{left:.5rem}.focus\:top-2:focus{top:.5rem}.focus\:z-50:focus{z-index:50}.focus\:bg-\[color\:var\(--bg-card\)\]:focus{background-color:var(--bg-card)}.focus\:px-4:focus{padding-left:1rem;padding-right:1rem}.focus\:py-3:focus{padding-top:.75rem;padding-bottom:.75rem}.focus\:font-bold:focus{font-weight:700}.focus\:text-\[color\:var\(--text-primary\)\]:focus{color:var(--text-primary)}.focus\:ring-2:focus{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000)}.focus\:ring-\[color\:var\(--accent-teal\)\]:focus{--tw-ring-color:var(--accent-teal)}.focus\:ring-\[color\:var\(--border-color\)\]:focus{--tw-ring-color:var(--border-color)}.active\:bg-\[color\:var\(--accent-teal-hover\)\]:active{background-color:var(--accent-teal-hover)}.active\:bg-\[color\:var\(--bg-main\)\]:active{background-color:var(--bg-main)}.active\:bg-\[color\:var\(--bg-surface\)\]:active{background-color:var(--bg-surface)}.disabled\:cursor-not-allowed:disabled{cursor:not-allowed}.disabled\:border-dashed:disabled{border-style:dashed}.disabled\:bg-\[color\:var\(--bg-main\)\]:disabled{background-color:var(--bg-main)}.disabled\:text-\[color\:var\(--text-primary\)\]:disabled{color:var(--text-primary)}.has-\[\:disabled\]\:cursor-not-allowed:has(:disabled){cursor:not-allowed}.has-\[\:checked\]\:border-\[color\:var\(--accent-teal\)\]:has(:checked){border-color:var(--accent-teal)}.has-\[\:checked\]\:bg-\[color\:var\(--bg-main\)\]:has(:checked){background-color:var(--bg-main)}.has-\[\:disabled\]\:opacity-60:has(:disabled){opacity:.6}@media (min-width:640px){.sm\:left-auto{left:auto}.sm\:col-span-5{grid-column:span 5/span 5}.sm\:col-span-7{grid-column:span 7/span 7}.sm\:block{display:block}.sm\:inline{display:inline}.sm\:flex{display:flex}.sm\:hidden{display:none}.sm\:h-4{height:1rem}.sm\:w-4{width:1rem}.sm\:w-full{width:100%}.sm\:max-w-sm{max-width:24rem}.sm\:flex-1{flex:1 1 0%}.sm\:flex-none{flex:none}.sm\:shrink-0{flex-shrink:0}.sm\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.sm\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.sm\:flex-row{flex-direction:row}.sm\:items-center{align-items:center}.sm\:items-stretch{align-items:stretch}.sm\:gap-1\.5{gap:.375rem}.sm\:truncate{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.sm\:border-0{border-width:0}.sm\:border-l{border-left-width:1px}.sm\:border-\[color\:var\(--border-color\)\]{border-color:var(--border-color)}.sm\:bg-transparent{background-color:initial}.sm\:p-0{padding:0}.sm\:p-4{padding:1rem}.sm\:p-6{padding:1.5rem}.sm\:px-3\.5{padding-left:.875rem;padding-right:.875rem}.sm\:px-4{padding-left:1rem;padding-right:1rem}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\:py-2{padding-top:.5rem;padding-bottom:.5rem}.sm\:py-6{padding-top:1.5rem;padding-bottom:1.5rem}.sm\:text-2xl{font-size:1.5rem;line-height:2rem}.sm\:text-base{font-size:1rem;line-height:1.5rem}.sm\:text-lg{font-size:1.125rem;line-height:1.75rem}.sm\:text-sm{font-size:.875rem;line-height:1.25rem}.sm\:hover\:bg-\[color\:var\(--bg-main\)\]:hover{background-color:var(--bg-main)}}@media (min-width:1024px){.lg\:col-span-6{grid-column:span 6/span 6}.lg\:grid-cols-12{grid-template-columns:repeat(12,minmax(0,1fr))}.lg\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.lg\:grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}.lg\:px-8{padding-left:2rem;padding-right:2rem}}</style>
   <style>
-/* ==========================================================================
-   NC MEDICAID BH OPERATIONS NAVIGATOR - VARIATION B: MINIMALIST DARK
-   ========================================================================== */
+    /* ==========================================================================
+       OPTION B: DATA-DRIVEN DASHBOARD STYLESHEET (corrected master, applied verbatim)
+       ========================================================================== */
 
-/* --- 1. Production Design Tokens --- */
-:root {
-  /* Flat Muted Slate Palette ($2,000 Tier Concept) */
-  --bg-main: #0f172a; /* Dark slate background canvas */
-  --bg-card: #1e293b; /* Uniform block containers */
-  --bg-surface: #334155; /* Headers, dropdowns, filled cells */
-  --border-color: #475569; /* High-visibility structural grids */
+    /* --- 1. Premium Operational Design Tokens --- */
+    :root {
+      /* Brand Palette Canvas */
+      --bg-main: #0B1E2D;              /* Deep midnight canvas backdrop */
+      --bg-card: #152E3F;              /* Secondary dark blue premium containers */
+      --bg-surface: #1B3B51;           /* Filled input panels, section title blocks */
+      --border-color: #244B66;         /* Thin, razor-sharp vector dividing gridlines */
 
-  /* Typographic Contrast Engine */
-  --text-primary: #f8fafc; /* Clean white text */
-  --text-secondary: #94a3b8; /* Metadata, clinical policy subtitles */
-  --text-muted: #64748b; /* Quiet indicators, unselected counts */
+      /* Executive Typography Contrast */
+      --text-main: #FFFFFF;            /* Pure white primary headers & focuses */
+      --text-sub: #A0C3D2;             /* Muted teal-cyan for clinical descriptions */
+      --text-dim: #648B9E;             /* Quiet metrics, unselected items, placeholders */
 
-  /* Operational Semantic States */
-  --accent-teal: #338a9e; /* Primary functional focus and confirmations */
-  --accent-teal-hover: #256a7a; /* Focus state hover */
-  --color-gold: #d29543; /* Progress, active milestones, "In Progress" glyphs */
-  --color-red: #e74c3c; /* "Blocked" timeline indicators */
+      /* Semantic High-End Highlights */
+      --accent-gold: #D29543;          /* Next critical milestones, calendar paths, highlights */
+      --accent-teal: #1ABC9C;          /* Successful compliance checkpoints, active counts */
+      --accent-red: #E74C3C;           /* Core regulatory alerts & timeline blocks */
 
-  /* Sizing Foundations */
-  --font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    sans-serif;
-  --radius-sm: 4px;
-  --radius-md: 6px;
-  --transition-fast: 0.15s cubic-bezier(0.4, 0, 0.2, 1);
-}
+      /* Global Architectural Scaling */
+      --font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      --radius-sm: 6px;
+      --radius-md: 12px;
+      --radius-lg: 18px;
+      --transition-smooth: 0.25s cubic-bezier(0.25, 1, 0.5, 1);
+    }
 
-/* ==========================================================================
-   2. Core HTML Framework Override Resets
-   ========================================================================== */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+    /* Token names used by the markup, mapped onto the tokens above */
+    :root {
+      --text-primary: var(--text-main);
+      --text-secondary: var(--text-sub);
+      --text-muted: var(--text-dim);
+      --accent-teal-hover: #0E7C66;
+      --color-gold: var(--accent-gold);
+      --color-red: var(--accent-red);
+    }
 
-body {
-  font-family: var(--font-stack);
-  background-color: var(--bg-main);
-  color: var(--text-primary);
-  font-size: 15px;
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
-}
+    /* ==========================================================================
+       2. Base Structural Resets & Mobile-First Boundary
+       ========================================================================== */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-/* Application Top Utility Navigation Bar */
-.app-header,
-header,
-div[role="navigation"] {
-  background-color: var(--bg-main);
-  padding: 1rem 1.5rem;
-  border-bottom: 2px solid var(--border-color);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+    body {
+      font-family: var(--font-stack);
+      background-color: var(--bg-main);
+      color: var(--text-main);
+      font-size: 15px;
+      line-height: 1.45;
+      -webkit-font-smoothing: antialiased;
+      padding-bottom: 80px; /* Leave clean headroom for fixed bottom sticky nav */
+    }
 
-/* Header Text Blocks */
-.app-header h1,
-.brand-title {
-  font-size: 1.3rem;
-  font-weight: 700;
-  letter-spacing: -0.01em;
-}
+    /* Constrain view cleanly to mimic a mobile-first premium device execution */
+    .app-container,
+    #app-root,
+    main {
+      max-width: 480px;
+      margin: 0 auto;
+      padding: 1.25rem;
+    }
 
-.breadcrumbs {
-  font-size: 0.8rem;
-  color: var(--text-secondary);
-}
+    /* ==========================================================================
+       3. Top Sticky Branding Header Navigation
+       ========================================================================== */
+    header,
+    .app-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.5rem 0 1.25rem 0;
+      border-bottom: 2px solid var(--border-color);
+      background-color: var(--bg-main);
+      position: sticky;
+      top: 0;
+      z-index: 200;
+    }
 
-/* Global Platform Actions Bar (Print, Export, Import, Reset) */
-.action-controls,
-.header-actions {
-  display: flex;
-  gap: 0.5rem;
-}
+    /* Top metadata subtitle branding */
+    header h1,
+    .header-title-text {
+      font-size: 1.15rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: var(--text-main);
+    }
 
-.btn-utility,
-button[id*="print"],
-button[id*="export"],
-button[id*="import"],
-button[id*="reset"] {
-  background-color: var(--accent-gray-btn, #475569);
-  color: var(--text-primary);
-  border: 1px solid var(--border-color);
-  font-weight: 600;
-  padding: 0.4rem 0.9rem;
-  border-radius: var(--radius-sm);
-  font-size: 0.85rem;
-  cursor: pointer;
-  transition: background var(--transition-fast),
-    border-color var(--transition-fast);
-}
+    .version-tag {
+      font-size: 0.75rem;
+      color: var(--text-sub);
+      font-family: monospace;
+    }
 
-.btn-utility:hover {
-  background-color: var(--bg-surface);
-  border-color: var(--text-secondary);
-}
+    /* Global Platform Actions Bar (Print, Export, Import, Reset) */
+    .global-button-actions,
+    header div button {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-color);
+      color: var(--text-main);
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 0.4rem 0.8rem;
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      transition: transform 0.1s, background var(--transition-smooth);
+    }
 
-/* ==========================================================================
-   3. Workspace Column Configurations & Layout Modules
-   ========================================================================== */
-.main-layout-wrapper {
-  display: grid;
-  grid-template-columns: 340px 1fr;
-  gap: 1.5rem;
-  padding: 1.5rem;
-  max-width: 1600px;
-  margin: 0 auto;
-}
+    header div button:hover {
+      background-color: var(--bg-surface);
+      border-color: var(--text-sub);
+    }
 
-/* Uniform Section Block Containers */
-.section-card,
-section,
-.module-block {
-  background-color: var(--bg-card);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-md);
-  padding: 1.25rem;
-  margin-bottom: 1.5rem;
-}
+    /* Emphasize primary printable click-trigger buttons */
+    button[id*="print"],
+    .btn-print-priority {
+      background-color: var(--accent-gold) !important;
+      color: var(--bg-main) !important;
+      border: none !important;
+      font-weight: 700 !important;
+    }
 
-/* Card Section Header Text Formatting */
-.card-header-bar,
-h2,
-.section-title {
-  font-size: 0.85rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: var(--text-primary);
-  background-color: var(--bg-surface);
-  padding: 0.5rem 0.75rem;
-  margin: -1.25rem -1.25rem 1.25rem -1.25rem;
-  border-top-left-radius: var(--radius-sm);
-  border-top-right-radius: var(--radius-sm);
-  border-bottom: 1px solid var(--border-color);
-}
+    /* ==========================================================================
+       4. Section 1: Plan Progress Performance Metrics (Telemetry Core)
+       ========================================================================== */
+    .plan-overview-card,
+    section:first-of-type {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 1.25rem;
+      margin-top: 1.25rem;
+      display: grid;
+      grid-template-columns: 100px 1fr;
+      gap: 1.25rem;
+      align-items: center;
+    }
 
-/* ==========================================================================
-   4. Left Parameters Panel (Plan Overview, Progress & Filters)
-   ========================================================================== */
+    /* Radial Progress Percentage Indicator Ring */
+    .radial-progress-wrapper {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      border: 6px solid var(--bg-surface);
+      border-top-color: var(--accent-teal); /* Highlights active operational work tracks */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
 
-/* Flat Linear & Circle Progress Displays */
-.progress-box {
-  display: flex;
-  align-items: center;
-  gap: 1.25rem;
-  background-color: rgba(0, 0, 0, 0.15);
-  padding: 1rem;
-  border-radius: var(--radius-sm);
-  margin-bottom: 1rem;
-}
+    .percentage-display {
+      font-size: 1.85rem;
+      font-weight: 800;
+      color: var(--text-main);
+      line-height: 1;
+    }
 
-.radial-percentage {
-  width: 76px;
-  height: 76px;
-  border-radius: 50%;
-  border: 6px solid var(--bg-surface);
-  border-top-color: var(--color-gold); /* Solid progress color indicator */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.3rem;
-  font-weight: 800;
-}
+    .percentage-label {
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      color: var(--text-sub);
+      margin-top: 2px;
+    }
 
-/* Setup Dropdowns & Checkbox Arrays (Geographic Footprint & CCP Selection) */
-.setup-group-box {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
+    /* Right Metrics Grid Stack */
+    .stats-telemetry-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.5rem;
+    }
 
-.field-container label {
-  display: block;
-  font-size: 0.8rem;
-  color: var(--text-secondary);
-  margin-bottom: 0.4rem;
-  font-weight: 600;
-}
+    .telemetry-item-block {
+      background-color: var(--bg-surface);
+      padding: 0.6rem;
+      border-radius: var(--radius-sm);
+      text-align: center;
+      border: 1px solid rgba(255, 255, 255, 0.02);
+    }
 
-.flat-select,
-select,
-input[type="text"] {
-  width: 100%;
-  background-color: var(--bg-main);
-  border: 1px solid var(--border-color);
-  color: var(--text-primary);
-  padding: 0.65rem;
-  border-radius: var(--radius-sm);
-  font-size: 0.9rem;
-  outline: none;
-  transition: border-color var(--transition-fast);
-}
+    .telemetry-number {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--text-main);
+    }
 
-.flat-select:focus,
-select:focus {
-  border-color: var(--accent-teal);
-}
+    .telemetry-label {
+      font-size: 0.7rem;
+      color: var(--text-sub);
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+    }
 
-/* Active Service Lists Checkbox Overrides */
-.ccp-checkbox-row {
-  display: flex;
-  align-items: flex-start;
-  gap: 0.75rem;
-  padding: 0.75rem;
-  background-color: rgba(255, 255, 255, 0.02);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-sm);
-  margin-bottom: 0.5rem;
-}
+    /* ==========================================================================
+       5. Section 2: Setup Workspace Elements (Counties & Services Forms)
+       ========================================================================== */
+    .setup-workspace-panel {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 1.25rem;
+      margin-top: 1.25rem;
+    }
 
-.ccp-checkbox-row:hover {
-  background-color: rgba(255, 255, 255, 0.04);
-}
+    .setup-title-row {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--text-sub);
+      margin-bottom: 1rem;
+      border-left: 3px solid var(--accent-gold);
+      padding-left: 0.5rem;
+    }
 
-/* Action Control Row (Apply Filters / Discard Changes) */
-.filter-action-block {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 1rem;
-  padding-top: 1rem;
-  border-top: 1px solid var(--border-color);
-}
+    /* Functional Select Dropdowns and Text Inputs */
+    .form-input-container {
+      margin-bottom: 1rem;
+    }
 
-.btn-primary-action {
-  background-color: var(--accent-teal);
-  color: var(--text-primary);
-  border: none;
-  font-weight: 700;
-  padding: 0.7rem 1.25rem;
-  border-radius: var(--radius-sm);
-  cursor: pointer;
-  text-transform: uppercase;
-  font-size: 0.85rem;
-  letter-spacing: 0.02em;
-}
+    .form-input-container label {
+      display: block;
+      font-size: 0.75rem;
+      color: var(--text-sub);
+      margin-bottom: 0.4rem;
+    }
 
-.btn-primary-action:hover {
-  background-color: var(--accent-teal-hover);
-}
+    select,
+    input[type="text"],
+    .custom-select-trigger {
+      width: 100%;
+      background-color: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      color: var(--text-main);
+      padding: 0.75rem;
+      border-radius: var(--radius-sm);
+      font-size: 0.9rem;
+      appearance: none;
+      outline: none;
+      transition: border-color var(--transition-smooth);
+    }
 
-/* ==========================================================================
-   5. Right Panel Components (32-Week Interactive Timeline Roadmap)
-   ========================================================================== */
+    select:focus,
+    input[type="text"]:focus {
+      border-color: var(--accent-gold);
+    }
 
-/* Checklist Task Stacking */
-.timeline-stream {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-}
+    /* Operational Verification Summary Badges */
+    .filter-summary-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.5rem;
+      margin-top: 1.25rem;
+    }
 
-.phase-step-container {
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-md);
-  background-color: var(--bg-main);
-  overflow: hidden;
-}
+    .summary-pill {
+      background-color: rgba(0, 0, 0, 0.2);
+      border: 1px solid var(--border-color);
+      padding: 0.6rem;
+      border-radius: var(--radius-sm);
+      display: flex;
+      flex-direction: column;
+    }
 
-/* Step Header Elements */
-.step-heading-trigger {
-  padding: 1rem;
-  background-color: var(--bg-card);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  cursor: pointer;
-  user-select: none;
-}
+    .summary-pill-count {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--accent-teal);
+    }
 
-/* Status Glyphs Matrix Mapping */
-.status-indicator {
-  width: 14px;
-  height: 14px;
-  border-radius: 3px;
-  display: inline-block;
-  border: 2px solid var(--text-muted);
-  margin-right: 0.5rem;
-}
+    /* Action Control Buttons (Apply Filters / Discard Changes) */
+    .form-action-row {
+      display: flex;
+      gap: 0.5rem;
+      margin-top: 1rem;
+    }
 
-.status-indicator[data-status="in-progress"] {
-  border-color: var(--color-gold);
-  background-color: rgba(210, 149, 67, 0.2);
-}
+    .form-action-row button {
+      flex: 1;
+      padding: 0.75rem;
+      font-weight: 700;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+    }
 
-.status-indicator[data-status="completed"] {
-  border-color: var(--accent-teal);
-  background-color: var(--accent-teal);
-}
+    button[id*="apply"],
+    .btn-apply-focus {
+      background-color: var(--accent-teal);
+      color: var(--bg-main); /* dark text on teal: white fails WCAG AA here */
+      border: none;
+    }
 
-.status-indicator[data-status="blocked"] {
-  border-color: var(--color-red);
-  background-color: var(--color-red);
-}
+    button[id*="discard"],
+    .btn-discard-quiet {
+      background-color: transparent;
+      color: var(--text-dim);
+      border: 1px solid var(--border-color);
+    }
 
-/* --- High Performance Keyframe Expand & Collapse Engine --- */
-@keyframes slideDownContent {
-  from {
-    max-height: 0;
-    opacity: 0;
-  }
-  to {
-    max-height: 1500px;
-    opacity: 1;
-  }
-}
+    /* ==========================================================================
+       6. Section 3: 32-Week Interleaved Timeline & Active Steps
+       ========================================================================== */
+    .timeline-header-text {
+      font-size: 1rem;
+      font-weight: 800;
+      margin: 1.5rem 0 0.75rem 0;
+      color: var(--text-main);
+    }
 
-@keyframes slideUpContent {
-  from {
-    max-height: 1500px;
-    opacity: 1;
-  }
-  to {
-    max-height: 0;
-    opacity: 0;
-  }
-}
+    .roadmap-stream-container {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
 
-/* Apply directly to active task details block panels */
-.step-body-expanded {
-  animation: slideDownContent 0.3s ease-out forwards;
-  padding: 1.25rem;
-  border-top: 1px solid var(--border-color);
-  background-color: var(--bg-card);
-}
+    /* Individual Phase Containers */
+    .phase-wrapper-card {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+    }
 
-.step-body-collapsed {
-  animation: slideUpContent 0.2s ease-in forwards;
-  overflow: hidden;
-}
+    /* Clickable Expandable Step Headers */
+    .step-trigger-row {
+      padding: 1rem 1.25rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      background-color: rgba(255, 255, 255, 0.01);
+      transition: background var(--transition-smooth);
+    }
 
-/* ==========================================================================
-   6. Regional Contacts Matrix & Interactive Metrics
-   ========================================================================== */
-.regional-network-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 1rem;
-  margin-top: 1rem;
-}
+    .step-trigger-row:hover {
+      background-color: rgba(255, 255, 255, 0.03);
+    }
 
-.network-contact-card {
-  background-color: var(--bg-main);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-sm);
-  padding: 1rem;
-  transition: transform var(--transition-fast),
-    border-color var(--transition-fast);
-}
+    /* Status Glyphs Matrix Rendering */
+    .status-bullet-glyph {
+      width: 12px;
+      height: 12px;
+      border-radius: 3px;
+      display: inline-block;
+      border: 2px solid var(--text-dim);
+      margin-right: 0.5rem;
+    }
 
-/* Interactive Hover Interaction Layer */
-.network-contact-card:hover {
-  transform: translateY(-2px);
-  border-color: var(--accent-teal);
-}
+    .status-bullet-glyph[data-status="in-progress"] {
+      border-color: var(--accent-gold);
+      background-color: rgba(210, 149, 67, 0.15);
+    }
 
-.network-contact-card h4 {
-  font-size: 0.95rem;
-  margin-bottom: 0.5rem;
-  color: var(--text-primary);
-  border-bottom: 1px solid var(--border-color);
-  padding-bottom: 0.25rem;
-}
+    .status-bullet-glyph[data-status="completed"] {
+      border-color: var(--accent-teal);
+      background-color: var(--accent-teal);
+    }
 
-.contact-link-element {
-  color: var(--text-primary);
-  font-weight: 600;
-  text-decoration: underline;
-  transition: color var(--transition-fast);
-}
+    .status-bullet-glyph[data-status="blocked"] {
+      border-color: var(--accent-red);
+      background-color: var(--accent-red);
+    }
 
-.contact-link-element:hover {
-  color: var(--accent-teal);
-}
+    /* Hardware-Accelerated Dynamic Expand & Collapse Panels */
+    @keyframes slideOpen {
+      from { max-height: 0; opacity: 0; transform: translateY(-4px); }
+      to { max-height: 1600px; opacity: 1; transform: translateY(0); }
+    }
 
-/* ==========================================================================
-   7. Mobile UI Layout Adaptation Engine
-   ========================================================================== */
-@media (max-width: 960px) {
-  .main-layout-wrapper {
-    grid-template-columns: 1fr;
-    padding: 1rem;
-  }
+    @keyframes slideClose {
+      from { max-height: 1600px; opacity: 1; transform: translateY(0); }
+      to { max-height: 0; opacity: 0; transform: translateY(-4px); }
+    }
 
-  .radial-percentage {
-    width: 64px;
-    height: 64px;
-  }
-}
-/* ==========================================================================
-8. System Level Printing & PDF Template Mapping
-========================================================================== */
-@media print {
-  body {
-    background-color: #ffffff !important;
-    color: #000000 !important;
-  }
-  .main-layout-wrapper {
-    display: block !important;
-    padding: 0 !important;
-  }
-  .action-controls,
-  .global-actions,
-  .setup-group-box,
-  .app-header {
-    display: none !important;
-  }
-  .phase-step-container {
-    page-break-inside: avoid;
-    border: 1px solid #000000 !important;
-    margin-bottom: 1.5rem;
-    background: transparent !important;
-  }
-  .step-heading-trigger {
-    background-color: #f1f5f9 !important;
-    color: #000000 !important;
-    border-bottom: 1px solid #000000 !important;
-  }
-  .step-body-expanded {
-    display: block !important;
-    max-height: none !important;
-    opacity: 1 !important;
-    background: transparent !important;
-    color: #000000 !important;
-  }
-}
+    .step-panel-expanded {
+      animation: slideOpen 0.3s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+      padding: 1.25rem;
+      background-color: rgba(0, 0, 0, 0.15);
+      border-top: 1px solid var(--border-color);
+    }
+
+    .step-panel-collapsed {
+      animation: slideClose 0.2s cubic-bezier(0.5, 0, 0.75, 0) forwards;
+      overflow: hidden;
+    }
 
     /* Functional and accessibility rules kept alongside the master stylesheet:
        touch-target size and focus visibility (WCAG 2.2), phone input size (stops iOS zoom),
@@ -457,6 +415,8 @@ select:focus {
       input[type="search"], input[type="text"], select, textarea { font-size: 16px !important; }
     }
     body.modal-open { overflow: hidden; }
+    /* The sticky header (z-index 200) would otherwise sit above the dialog overlays (z-50) */
+    .fixed[role="dialog"] { z-index: 300; }
     summary { list-style: none; }
     summary::-webkit-details-marker { display: none; }
     details[open] > summary .chev { transform: rotate(180deg); }
@@ -3667,14 +3627,14 @@ select:focus {
       const isOpen = body.classList.contains('hidden');
       // The master stylesheet's slide runs on open and close. With reduced motion, a closed body is hidden at once.
       const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-      body.classList.remove('step-body-expanded', 'step-body-collapsed');
+      body.classList.remove('step-panel-expanded', 'step-panel-collapsed');
       if (isOpen) {
         body.classList.remove('hidden');
-        body.classList.add('step-body-expanded');
+        body.classList.add('step-panel-expanded');
       } else if (reduce) {
         body.classList.add('hidden');
       } else {
-        body.classList.add('step-body-collapsed');
+        body.classList.add('step-panel-collapsed');
       }
       toggle.setAttribute('aria-expanded', String(isOpen));
       toggle.querySelector('svg').classList.toggle('rotate-180', isOpen);
@@ -3685,9 +3645,9 @@ select:focus {
     // When a closing slide ends, hide the body
     document.addEventListener('animationend', event => {
       const el = event.target;
-      if (!el.id || !el.id.startsWith('step-body-') || !el.classList.contains('step-body-collapsed')) return;
+      if (!el.id || !el.id.startsWith('step-body-') || !el.classList.contains('step-panel-collapsed')) return;
       el.classList.add('hidden');
-      el.classList.remove('step-body-collapsed');
+      el.classList.remove('step-panel-collapsed');
     });
 
     function updateExpandAllButton(phaseSteps) {
@@ -3763,7 +3723,7 @@ select:focus {
           <article id="step-card-${step.id}" class="phase-step-container scroll-mt-20 bg-[color:var(--bg-card)]  border border-[color:var(--border-color)] border-l-4 ${meta.accent}">
 
             <!-- Always-visible summary: tap to open or close the step -->
-            <button type="button" id="step-toggle-${step.id}" onclick="toggleStep(${step.id})" aria-expanded="${isOpen}" aria-controls="step-body-${step.id}" class="step-heading-trigger w-full text-left p-4 flex items-start gap-3">
+            <button type="button" id="step-toggle-${step.id}" onclick="toggleStep(${step.id})" aria-expanded="${isOpen}" aria-controls="step-body-${step.id}" class="step-trigger-row w-full text-left p-4 flex items-start gap-3">
               <span class="min-w-0 flex-1 space-y-1.5">
                 <span class="flex flex-wrap items-center gap-2">
                   <span class="px-2.5 py-1  text-xs font-bold bg-[color:var(--bg-surface)] text-[color:var(--text-primary)]">${step.stepNumber}</span>

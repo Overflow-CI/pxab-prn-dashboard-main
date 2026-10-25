@@ -71,10 +71,12 @@ user action ─► mutate appState ─► saveState() ─► renderDashboard()
 ### 3.3 Styling
 
 - **Tailwind CSS v3.4, precompiled and inlined.** The browser never compiles CSS. If you add a new Tailwind class, regenerate: `npx tailwindcss@3 --content nc_medicaid_bh_dashboard.html --minify -o tw.css`, then paste the output into the first `<style>` block. Classes that are not in the compiled CSS silently do nothing.
-- **Master stylesheet block** (second `<style>`) is the Variation B minimalist dark stylesheet, applied unchanged apart from the functional rules below. It defines the colour tokens on `:root` (`--bg-main`, `--bg-card`, `--bg-surface`, `--border-color`, `--text-primary`, `--text-secondary`, `--accent-teal`, `--color-gold`, `--color-red`), the header, card, step, contact-card and mobile (960 px) layout rules, and the print rules.
+- **Master stylesheet block** (second `<style>`) is the corrected Option B data-driven dashboard stylesheet, applied unchanged apart from the notes below. It defines the colour tokens on `:root` (`--bg-main`, `--bg-card`, `--bg-surface`, `--border-color`, `--text-main`, `--text-sub`, `--text-dim`, `--accent-gold`, `--accent-teal`, `--accent-red`). A short alias block maps the older token names the markup uses (`--text-primary`, `--text-secondary`, `--text-muted`, `--accent-teal-hover`, `--color-gold`, `--color-red`). Its layout rules include a sticky header, the `section:first-of-type` overview grid, `.step-trigger-row` and `.step-panel-expanded` / `.step-panel-collapsed` for steps.
+- **Deviations from the master, to meet WCAG AA:** the teal accent is used as a fill only with dark text (`--bg-main`) on the Apply button, and the hover teal is `#0E7C66` (white text on it passes).
 - **Functional rules kept alongside it:** `.touch-target` (min 48 px), a visible focus ring, 16 px input text on phones (prevents iOS zoom on focus), `details`/`summary` chevrons, the `body.modal-open` scroll lock, and the `@page` margin boxes and `#print-report` / `.pr-*` print layout for the binder printout.
 - **Reduced motion** is handled in JavaScript: `toggleStep` checks `prefers-reduced-motion` and skips the slide animation.
-- **Minimum text size** is 12 px (Tailwind `text-xs`). The master stylesheet removed the earlier 14 px override. Form fields are 16 px on phones.
+- **Dialog stacking:** the sticky header has `z-index: 200`, so a functional rule lifts `.fixed[role="dialog"]` to 300. Without it the header covers the dialogs.
+- **Minimum text size** is 12 px (Tailwind `text-xs`). The master stylesheet does not set a text floor. Form fields are 16 px on phones.
 
 ## 4. Data model
 
