@@ -369,7 +369,7 @@
   },
   "environment_notes": {
     "ran_on": "Claude Code on the web (cloud container)",
-    "model": "claude-sonnet-5-5 (set with /model on 2026-10-18)",
+    "model": "set with /model on 2026-10-18 (name not recorded)",
     "nc_government_sites_blocked_403_from_sandbox": true,
     "force_push_required_permission": true,
     "git_remote_may_show_old_name_hello_world": true

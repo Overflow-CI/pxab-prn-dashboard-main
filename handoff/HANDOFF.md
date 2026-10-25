@@ -310,7 +310,7 @@ The previous session needed a permission to **force-push** after a squash merge.
 The NC government sites (ncdhhs.gov, medicaid.ncdhhs.gov, nctracks.nc.gov) returned **403** from the old sandbox, so none of the sources could be checked first-hand. In the new environment, test one of them. If they are blocked, look at the environment's network policy (in Claude Code on the web: the environment settings, then network access) and allow those hosts if your plan lets you. This lets the new session verify sources itself.
 
 **Step 13. Decide the model.**
-This session ran on `claude-sonnet-5-5` (selected with `/model claude-sonnet-5-5` on 2026-10-18). The new session will use its account's default. Pick the model you want with `/model`.
+This session used a model chosen with `/model` on 2026-10-18. The new session will use its account's default. Pick the model you want with `/model`.
 
 **Step 14. Do not rebuild old context by hand.**
 The new session has no memory of this conversation. It learns everything from the repo: this file, `docs/SPECIFICATION.md`, `NC_Medicaid_Verification_Checklist.md`, `nc_medicaid_sources.csv`, and `handoff/conversation_transcript.json` if it needs the exact history.
