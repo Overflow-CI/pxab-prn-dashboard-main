@@ -320,6 +320,8 @@ Ask the new session to report, without changing anything: the current branch and
 
 ## 9. Prompt to paste into the new session
 
+**The maintained, up-to-date version of this prompt is `handoff/NEXT_SESSION_PROMPT.md`.** Use that file. The repo also has a root `CLAUDE.md`, which Claude Code loads automatically and which points to this document. The block below is kept as a shorter summary.
+
 ```
 I am continuing work from another Claude Code account. The repository is
 Overflow-CI/pxab-prn-dashboard-main. Start on the master branch and create a
@@ -411,6 +413,7 @@ Expected values you can check against: `t_p6.js` prints `0 / 31 Steps Done`, `of
 | `README.md` | Overview, quick start (with the guide-URL placeholder), file list, feature list. |
 | `NC_Medicaid_Verification_Checklist.md` | What to verify, with contacts and scripts. |
 | `nc_medicaid_sources.csv` | 642 source URLs (242 cited in the app, 400 from research only), categorized. |
+| `CLAUDE.md` | Project rules and a pointer to this handoff. Claude Code loads it automatically in every session. |
 | `pm_modal.png` | Stray old screenshot. See decision D8. |
 
 ### `docs/`
@@ -420,6 +423,7 @@ Expected values you can check against: `t_p6.js` prints `0 / 31 Steps Done`, `of
 | Path | Purpose |
 |---|---|
 | `HANDOFF.md` | This document. |
+| `NEXT_SESSION_PROMPT.md` | The prompt to paste in the new account, with troubleshooting. |
 | `conversation_context.json` | Structured summary of the project, decisions, state and open items. |
 | `conversation_transcript.json` | Every user and assistant message from the session, in order. |
 | `inputs/` | Files you provided (14). |
