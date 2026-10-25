@@ -27,8 +27,8 @@ v4.0 | 2026-10-18 | Printable plan, mobile-first redesign, instructions for ever
       --ab-font: "IBM Plex Sans", sans-serif;
       --ab-font-mono: "IBM Plex Mono", monospace;
     }
-    /* Sharp corners and no shadows anywhere, including native controls (guide s.10 and s.14.2). */
-    *, *::before, *::after { border-radius: 0 !important; box-shadow: none !important; }
+    /* No shadows anywhere (guide s.14.2). Corner radii come from the system stylesheet below. */
+    *, *::before, *::after { box-shadow: none !important; }
     /* Self-hosted IBM Plex, Latin subsets inlined. No third-party font requests (guide s.14.2 and s.14.11). */
 @font-face {
 font-family: 'IBM Plex Sans';
@@ -272,6 +272,423 @@ unicode-range: U+0102-0103, U+01CD-01DC, U+1E0C-1E0D, U+1E12-1E13, U+1E24-1E25, 
       .pr-notes-page { break-before: page; }
       .pr-notes-page .pr-line { height: 26pt; }
     }
+  </style>
+  <style>
+    /* ==========================================================================
+       NC MEDICAID BH OPERATIONS NAVIGATOR - SYSTEM STYLESHEET (OPTION B)
+       Applied as supplied. Overrides conflicting brand-guide styling.
+       ========================================================================== */
+
+    /* --- Modern System Design Tokens --- */
+    :root {
+      /* Brand Palette (Option B UI Paradigm) */
+      --color-bg-deep: #0B1E2D;         /* Deep background canvas */
+      --color-bg-card: #152E3F;         /* Container cards */
+      --color-bg-surface: #1B3B51;      /* Secondary data blocks, active text fields */
+      --color-border: #244B66;          /* Clean interface guidelines */
+
+      /* Text & Contrast Strategy */
+      --color-text-main: #FFFFFF;       /* High-priority focus headers */
+      --color-text-sub: #A0C3D2;        /* Clinical annotations, metadata */
+      --color-text-dim: #648B9E;        /* Muted logs, labels, empty states */
+
+      /* Semantic Highlight Accents */
+      --color-gold: #D29543;            /* Operational path alerts, print priority buttons */
+      --color-teal: #1ABC9C;            /* Compliance active status, checked targets */
+      --color-red: #E74C3C;             /* Overdue milestones, blocked path warning */
+
+      /* Layout Boundaries */
+      --font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      --radius-inner: 6px;
+      --radius-outer: 12px;
+      --transition-speed: 0.2s;
+    }
+
+    /* ==========================================================================
+       1. System Core Resets & Defaults
+       ========================================================================== */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-stack);
+      background-color: var(--color-bg-deep);
+      color: var(--color-text-main);
+      font-size: 16px;
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ==========================================================================
+       2. Desktop Grid Layout (Default Target)
+       ========================================================================== */
+    .app-container {
+      display: grid;
+      grid-template-columns: 320px 1fr;
+      grid-template-rows: auto 1fr;
+      grid-template-areas:
+        "topbar topbar"
+        "sidebar content";
+      min-height: 100vh;
+      max-width: 1600px;
+      margin: 0 auto;
+    }
+
+    /* Top Sticky Header Row */
+    .app-header {
+      grid-area: topbar;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.25rem 2rem;
+      background-color: var(--color-bg-deep);
+      border-bottom: 2px solid var(--color-border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .brand-block h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    .brand-meta {
+      font-size: 0.8rem;
+      color: var(--color-text-sub);
+      margin-top: 0.25rem;
+    }
+
+    /* Shared UI Controls Layout */
+    .global-actions {
+      display: flex;
+      gap: 0.75rem;
+    }
+
+    .btn-primary {
+      background-color: var(--color-gold);
+      color: var(--color-bg-deep);
+      font-weight: 600;
+      border: none;
+      padding: 0.5rem 1.25rem;
+      border-radius: var(--radius-inner);
+      cursor: pointer;
+    }
+
+    .btn-secondary {
+      background-color: var(--color-bg-card);
+      border: 1px solid var(--color-border);
+      color: var(--color-text-main);
+      padding: 0.5rem 1rem;
+      border-radius: var(--radius-inner);
+      cursor: pointer;
+    }
+
+    /* ==========================================================================
+       3. Sidebar Parameters Block (Fixed Control Workspace)
+       ========================================================================== */
+    .sidebar-panel {
+      grid-area: sidebar;
+      background-color: var(--color-bg-card);
+      border-right: 1px solid var(--color-border);
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      overflow-y: auto;
+      max-height: calc(100vh - 80px);
+    }
+
+    .panel-card {
+      background-color: var(--color-bg-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-outer);
+      padding: 1.2rem;
+    }
+
+    /* Plan Progress Gauge Visualization */
+    .progress-container {
+      text-align: center;
+    }
+
+    .progress-value {
+      font-size: 3rem;
+      font-weight: 800;
+      line-height: 1;
+      color: var(--color-text-main);
+    }
+
+    .progress-label {
+      font-size: 0.8rem;
+      color: var(--color-text-sub);
+      margin-top: 0.5rem;
+    }
+
+    /* Selection Dropdowns & Form Scaffolding */
+    .field-group {
+      margin-bottom: 1rem;
+    }
+
+    .field-group label {
+      display: block;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--color-text-sub);
+      margin-bottom: 0.5rem;
+    }
+
+    .form-dropdown {
+      width: 100%;
+      background-color: var(--color-bg-deep);
+      border: 1px solid var(--color-border);
+      color: var(--color-text-main);
+      padding: 0.75rem;
+      border-radius: var(--radius-inner);
+      font-size: 0.9rem;
+      appearance: none;
+    }
+
+    /* ==========================================================================
+       4. Core Roadmap Workspace Content
+       ========================================================================== */
+    .main-content {
+      grid-area: content;
+      padding: 2rem;
+      overflow-y: auto;
+      max-height: calc(100vh - 80px);
+    }
+
+    /* 32-Week Execution Dynamic Streams */
+    .roadmap-timeline {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .timeline-phase-wrapper {
+      background-color: var(--color-bg-card);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-outer);
+      overflow: hidden;
+    }
+
+    .phase-header {
+      background-color: rgba(255, 255, 255, 0.02);
+      padding: 1.25rem;
+      border-bottom: 1px solid var(--color-border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    /* Interactive Interactive Checklist Steps */
+    .step-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 1.25rem;
+      border-bottom: 1px solid var(--color-border);
+      transition: background var(--transition-speed);
+      cursor: pointer;
+    }
+
+    .step-row:last-child {
+      border-bottom: none;
+    }
+
+    .step-row:hover {
+      background-color: rgba(255, 255, 255, 0.02);
+    }
+
+    .step-identity {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    /* Task Status Glyphs (Not Started, In Progress, Blocked) */
+    .status-indicator {
+      width: 14px;
+      height: 14px;
+      border-radius: 3px;
+      border: 2px solid var(--color-text-dim);
+    }
+
+    .status-indicator.in-progress {
+      border-color: var(--color-gold);
+      background-color: rgba(210, 149, 67, 0.2);
+    }
+
+    .status-indicator.completed {
+      border-color: var(--color-teal);
+      background-color: var(--color-teal);
+    }
+
+    .status-indicator.blocked {
+      border-color: var(--color-red);
+      background-color: var(--color-red);
+    }
+
+    /* Regional Contacts & State Provider Feeds */
+    .regional-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    .contact-card {
+      background-color: var(--color-bg-card);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-outer);
+      padding: 1.25rem;
+    }
+
+    /* ==========================================================================
+       5. Mobile UI & Responsive Engine Overrides
+       ========================================================================== */
+    @media (max-width: 900px) {
+      .app-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 1fr;
+        grid-template-areas:
+          "topbar"
+          "sidebar"
+          "content";
+      }
+
+      .sidebar-panel {
+        border-right: none;
+        border-bottom: 1px solid var(--color-border);
+        max-height: none;
+        padding: 1.25rem;
+      }
+
+      .main-content {
+        max-height: none;
+        padding: 1.25rem;
+      }
+
+      .app-header {
+        padding: 1rem 1.25rem;
+        position: relative;
+      }
+
+      .brand-block h1 {
+        font-size: 1.2rem;
+      }
+
+      /* Structural adjustment for smaller click interfaces */
+      .step-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+      }
+
+      .global-actions {
+        width: 100%;
+        justify-content: flex-end;
+      }
+    }
+
+    /* ==========================================================================
+       6. Native System Print Template (Clean PDF Output Mapping)
+       ========================================================================== */
+    @media print {
+      body {
+        background-color: #FFFFFF !important;
+        color: #000000 !important;
+      }
+
+      .sidebar-panel,
+      .global-actions,
+      .app-header {
+        display: none !important;
+      }
+
+      .app-container {
+        display: block !important;
+      }
+
+      .main-content {
+        padding: 0 !important;
+        max-height: none !important;
+        overflow: visible !important;
+      }
+
+      .timeline-phase-wrapper {
+        page-break-inside: avoid;
+        border: 1px solid #000000 !important;
+        margin-bottom: 2rem;
+      }
+
+      .step-row {
+        background-color: transparent !important;
+        border-bottom: 1px solid #666666 !important;
+      }
+    }
+
+    /* ==========================================================================
+       7. Compatibility layer (added for this app)
+       The app's markup uses the brand tokens and utility classes. These rules point
+       them at the Option B palette so the stylesheet above governs the whole app.
+       ========================================================================== */
+    :root {
+      --ab-fog: var(--color-bg-deep);        /* page and recessed areas */
+      --ab-navy: var(--color-bg-surface);    /* dark fills */
+      --ab-amber: var(--color-gold);         /* primary actions */
+      --ab-blue: var(--color-teal);          /* secondary actions, links, focus */
+      --ab-black: var(--color-text-main);    /* text (light on dark) */
+      --ab-white: var(--color-bg-card);
+      --ab-scrim: rgba(11, 30, 45, 0.7);
+    }
+
+    /* Surfaces and borders */
+    .bg-white { background-color: var(--color-bg-card) !important; }
+    .hover\:bg-white:hover { background-color: var(--color-bg-card) !important; }
+    .border-\[color\:var\(--ab-black\)\],
+    .border-\[color\:var\(--ab-navy\)\],
+    .border-\[color\:var\(--ab-fog\)\] { border-color: var(--color-border) !important; }
+    .border-l-\[color\:var\(--ab-black\)\] { border-left-color: var(--color-border) !important; }
+    .border-\[color\:var\(--ab-blue\)\] { border-color: var(--color-teal) !important; }
+    .border-\[color\:var\(--ab-amber\)\] { border-color: var(--color-gold) !important; }
+
+    /* Text: navy text is unreadable on dark surfaces */
+    .text-\[color\:var\(--ab-navy\)\],
+    .hover\:text-\[color\:var\(--ab-navy\)\]:hover { color: var(--color-text-main) !important; }
+
+    /* Primary (gold) buttons take the deep canvas colour as their label */
+    .bg-\[color\:var\(--ab-amber\)\] { color: var(--color-bg-deep) !important; }
+    .hover\:bg-\[color\:var\(--ab-black\)\]:hover { background-color: var(--color-text-main) !important; }
+    .hover\:text-\[color\:var\(--ab-amber\)\]:hover { color: var(--color-bg-deep) !important; }
+
+    /* Teal (secondary) buttons take the deep canvas colour as their label */
+    .bg-\[color\:var\(--ab-blue\)\] { color: var(--color-bg-deep) !important; }
+    .hover\:bg-\[color\:var\(--ab-blue\)\]:hover { background-color: var(--color-teal) !important; }
+
+    /* Checked targets and focus use the teal accent */
+    .accent-\[color\:var\(--ab-navy\)\] { accent-color: var(--color-teal); }
+    :focus-visible { outline-color: var(--color-teal); }
+
+    /* Status and overdue markers: colour plus text, never colour alone */
+    [data-status="blocked"] { border-color: var(--color-red) !important; color: var(--color-red) !important; }
+    [data-status="overdue"] { border-color: var(--color-red) !important; color: var(--color-red) !important; }
+    [data-status="completed"] { border-color: var(--color-teal) !important; color: var(--color-teal) !important; }
+
+    /* Active phase tab: surface fill, white label, gold bar (the tab keeps its bottom border width) */
+    .tab-active { background-color: var(--color-bg-surface) !important; color: var(--color-text-main) !important; border-bottom-color: var(--color-gold) !important; }
+
+    /* Header takes the deep canvas and the stylesheet border */
+    #site-header { background-color: var(--color-bg-deep) !important; border-bottom: 2px solid var(--color-border); }
+
+    /* Rounded corners per the stylesheet (the brand zero-radius rule is replaced here) */
+    button, input, select, textarea, summary { border-radius: var(--radius-inner); }
+    article, details, dialog { border-radius: var(--radius-outer); }
   </style>
 </head>
 <body class="min-h-full flex flex-col text-[color:var(--ab-black)] antialiased selection:bg-[color:var(--ab-fog)] selection:text-[color:var(--ab-navy)] bg-[color:var(--ab-fog)]">
@@ -3336,9 +3753,9 @@ unicode-range: U+0102-0103, U+01CD-01DC, U+1E0C-1E0D, U+1E12-1E13, U+1E24-1E25, 
               <span class="min-w-0 flex-1 space-y-1.5">
                 <span class="flex flex-wrap items-center gap-2">
                   <span class="px-2.5 py-1  text-xs font-bold bg-[color:var(--ab-navy)] text-white">${step.stepNumber}</span>
-                  <span class="px-2.5 py-1  text-xs font-bold border ${meta.badge}">${meta.label}</span>
+                  <span data-status="${status}" class="px-2.5 py-1  text-xs font-bold border ${meta.badge}">${meta.label}</span>
                   ${noteText ? '<span class="px-2.5 py-1  text-xs font-bold border border-[color:var(--ab-blue)] bg-[color:var(--ab-fog)] text-[color:var(--ab-navy)]">i Note</span>' : ''}
-                  ${overdue ? '<span class="px-2.5 py-1  text-xs font-bold border border-[color:var(--ab-black)] bg-white text-[color:var(--ab-black)]">Past planned end</span>' : ''}
+                  ${overdue ? '<span data-status="overdue" class="px-2.5 py-1  text-xs font-bold border border-[color:var(--ab-black)] bg-white text-[color:var(--ab-black)]">Past planned end</span>' : ''}
                 </span>
                 <span class="block text-base font-bold text-[color:var(--ab-black)] leading-snug">${step.title}</span>
                 <span class="flex items-center gap-2">
