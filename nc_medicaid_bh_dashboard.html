@@ -680,6 +680,9 @@ unicode-range: U+0102-0103, U+01CD-01DC, U+1E0C-1E0D, U+1E12-1E13, U+1E24-1E25, 
     [data-status="overdue"] { border-color: var(--color-red) !important; color: var(--color-red) !important; }
     [data-status="completed"] { border-color: var(--color-teal) !important; color: var(--color-teal) !important; }
 
+    /* Compliance tags keep the stylesheet's tint and border. The label is white, because teal (4.5:1) and red (3.2:1) text on the tint fails WCAG AA for small bold text. */
+    .tag-nctracks, .tag-dhsr-warning { color: var(--color-text-main) !important; }
+
     /* Active phase tab: surface fill, white label, gold bar (the tab keeps its bottom border width) */
     .tab-active { background-color: var(--color-bg-surface) !important; color: var(--color-text-main) !important; border-bottom-color: var(--color-gold) !important; }
 
@@ -689,6 +692,74 @@ unicode-range: U+0102-0103, U+01CD-01DC, U+1E0C-1E0D, U+1E12-1E13, U+1E24-1E25, 
     /* Rounded corners per the stylesheet (the brand zero-radius rule is replaced here) */
     button, input, select, textarea, summary { border-radius: var(--radius-inner); }
     article, details, dialog { border-radius: var(--radius-outer); }
+  </style>
+  <style>
+    /* ==========================================================================
+       NC MEDICAID BH NAVIGATOR - INTERACTIVE ANIMATIONS & CRITICAL PATH UTILITIES
+       Applied as supplied. Animations stop under prefers-reduced-motion (see the reset above).
+       ========================================================================== */
+
+    /* --- 1. Hardware-Accelerated Expansion Keyframes --- */
+    @keyframes slideDown {
+      from { max-height: 0; opacity: 0; transform: translateY(-8px); }
+      to { max-height: 2000px; opacity: 1; transform: translateY(0); }
+    }
+    @keyframes slideUp {
+      from { max-height: 2000px; opacity: 1; transform: translateY(0); }
+      to { max-height: 0; opacity: 0; transform: translateY(-8px); }
+    }
+
+    /* --- 2. Interactive Animation Utility Classes --- */
+    .phase-expanded {
+      animation: slideDown 0.35s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+      overflow: hidden;
+      display: block;
+    }
+    .phase-collapsed {
+      animation: slideUp 0.25s cubic-bezier(0.5, 0, 0.75, 0) forwards;
+      overflow: hidden;
+    }
+    .chevron-icon {
+      transition: transform 0.25s cubic-bezier(0.25, 1, 0.5, 1);
+      transform: rotate(0deg);
+    }
+    .phase-header[aria-expanded="true"] .chevron-icon {
+      transform: rotate(180deg);
+    }
+
+    /* --- 3. NCTracks Credentialing & DHSR Licensure Audit Badges --- */
+    .compliance-alert-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--spacing-xs, 6px);
+      font-family: var(--font-stack);
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      padding: 4px 10px;
+      border-radius: 4px;
+      margin-bottom: 0.5rem;
+      border: 1px solid transparent;
+    }
+    .tag-nctracks {
+      background-color: rgba(26, 188, 156, 0.12);
+      color: var(--color-teal, #1ABC9C);
+      border-color: rgba(26, 188, 156, 0.25);
+      box-shadow: 0 0 8px rgba(26, 188, 156, 0.05);
+    }
+    .tag-dhsr-warning {
+      background-color: rgba(231, 76, 60, 0.12);
+      color: var(--color-red, #E74C3C);
+      border-color: rgba(231, 76, 60, 0.3);
+      box-shadow: 0 0 10px rgba(231, 76, 60, 0.08);
+      animation: pulseWarning 2s infinite ease-in-out;
+    }
+    @keyframes pulseWarning {
+      0% { border-color: rgba(231, 76, 60, 0.3); }
+      50% { border-color: rgba(231, 76, 60, 0.6); background-color: rgba(231, 76, 60, 0.18); }
+      100% { border-color: rgba(231, 76, 60, 0.3); }
+    }
   </style>
 </head>
 <body class="min-h-full flex flex-col text-[color:var(--ab-black)] antialiased selection:bg-[color:var(--ab-fog)] selection:text-[color:var(--ab-navy)] bg-[color:var(--ab-fog)]">
@@ -3670,15 +3741,34 @@ unicode-range: U+0102-0103, U+01CD-01DC, U+1E0C-1E0D, U+1E12-1E13, U+1E24-1E25, 
       if (card) card.scrollIntoView({ block: 'start', behavior: 'smooth' });
     }
 
+    // Opening and closing use the stylesheet's slide animations. A closing body is hidden when its animation ends;
+    // with reduced motion there is no animation, so it is hidden at once.
     function toggleStep(stepId) {
       const body = document.getElementById(`step-body-${stepId}`);
       const toggle = document.getElementById(`step-toggle-${stepId}`);
-      const isOpen = !body.classList.toggle('hidden');
+      const isOpen = body.classList.contains('hidden');
+      body.classList.remove('phase-expanded', 'phase-collapsed');
+      if (isOpen) {
+        body.classList.remove('hidden');
+        body.classList.add('phase-expanded');
+      } else if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        body.classList.add('hidden');
+      } else {
+        body.classList.add('phase-collapsed');
+      }
       toggle.setAttribute('aria-expanded', String(isOpen));
       toggle.querySelector('svg').classList.toggle('rotate-180', isOpen);
       if (isOpen) expandedSteps.add(stepId); else expandedSteps.delete(stepId);
       updateExpandAllButton(getFilteredSteps().filter(s => s.phase === appState.activePhase));
     }
+
+    // When a slide ends, hide a closed body and drop the animation class, so the class can't clip content later
+    document.addEventListener('animationend', event => {
+      const el = event.target;
+      if (!el.id || !el.id.startsWith('step-body-')) return;
+      if (el.classList.contains('phase-collapsed')) el.classList.add('hidden');
+      el.classList.remove('phase-expanded', 'phase-collapsed');
+    });
 
     function updateExpandAllButton(phaseSteps) {
       const btn = document.getElementById('expand-all-btn');
@@ -3744,17 +3834,21 @@ unicode-range: U+0102-0103, U+01CD-01DC, U+1E0C-1E0D, U+1E12-1E13, U+1E24-1E25, 
         const overdue = !!dates && status !== 'completed' && todayStart() > dates.end;
         const verify = appState.verification[step.id] || { status: 'not_checked', source: '', date: '' };
         const helpLink = helpHref(viewSection, step);
+        const nctracksStep = /NCTracks/i.test(`${step.title} ${step.description} ${step.resourceName}`);
+        const auditTrapStep = step.subtasks.some((_, idx) => JSON.stringify(SUBTASK_DETAILS_MAP[subtaskKey(step.id, idx)] || {}).includes('AUDIT TRAP'));
 
         return `
           <article id="step-card-${step.id}" class="scroll-mt-20 bg-white  border border-[color:var(--ab-black)] border-l-4 ${meta.accent}">
 
             <!-- Always-visible summary: tap to open or close the step -->
-            <button type="button" id="step-toggle-${step.id}" onclick="toggleStep(${step.id})" aria-expanded="${isOpen}" aria-controls="step-body-${step.id}" class="w-full text-left p-4 flex items-start gap-3">
+            <button type="button" id="step-toggle-${step.id}" onclick="toggleStep(${step.id})" aria-expanded="${isOpen}" aria-controls="step-body-${step.id}" class="phase-header w-full text-left p-4 flex items-start gap-3">
               <span class="min-w-0 flex-1 space-y-1.5">
                 <span class="flex flex-wrap items-center gap-2">
                   <span class="px-2.5 py-1  text-xs font-bold bg-[color:var(--ab-navy)] text-white">${step.stepNumber}</span>
                   <span data-status="${status}" class="px-2.5 py-1  text-xs font-bold border ${meta.badge}">${meta.label}</span>
                   ${noteText ? '<span class="px-2.5 py-1  text-xs font-bold border border-[color:var(--ab-blue)] bg-[color:var(--ab-fog)] text-[color:var(--ab-navy)]">i Note</span>' : ''}
+                  ${nctracksStep ? '<span class="compliance-alert-tag tag-nctracks">NCTracks credentialing cycle</span>' : ''}
+                  ${auditTrapStep ? '<span class="compliance-alert-tag tag-dhsr-warning">DHSR audit trap: read the tips</span>' : ''}
                   ${overdue ? '<span data-status="overdue" class="px-2.5 py-1  text-xs font-bold border border-[color:var(--ab-black)] bg-white text-[color:var(--ab-black)]">Past planned end</span>' : ''}
                 </span>
                 <span class="block text-base font-bold text-[color:var(--ab-black)] leading-snug">${step.title}</span>
@@ -3763,7 +3857,7 @@ unicode-range: U+0102-0103, U+01CD-01DC, U+1E0C-1E0D, U+1E12-1E13, U+1E24-1E25, 
                   <span class="text-sm font-semibold text-[color:var(--ab-black)] shrink-0">${done} of ${total}</span>
                 </span>
               </span>
-              <svg class="w-5 h-5 text-[color:var(--ab-black)] shrink-0 mt-1 transition-transform ${isOpen ? 'rotate-180' : ''}" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              <svg class="chevron-icon w-5 h-5 text-[color:var(--ab-black)] shrink-0 mt-1 transition-transform ${isOpen ? 'rotate-180' : ''}" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
             </button>
 
             <div id="step-body-${step.id}" class="${isOpen ? '' : 'hidden'} px-4 pb-4 pt-4 space-y-4 border-t border-[color:var(--ab-black)]">
