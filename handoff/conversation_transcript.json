@@ -918,13 +918,13 @@
    "timestamp": "2026-10-18T04:56:54.857Z",
    "role": "user",
    "kind": "message",
-   "text": "<command-name>/model</command-name>\n            <command-message>model</command-message>\n            <command-args>claude-sonnet-5-5</command-args>"
+   "text": "<command-name>/model</command-name>\n            <command-message>model</command-message>\n            <command-args>[model name removed]</command-args>"
   },
   {
    "timestamp": "2026-10-18T04:56:54.857Z",
    "role": "user",
    "kind": "message",
-   "text": "<local-command-stdout>Set model to `claude-sonnet-5-5`</local-command-stdout>"
+   "text": "<local-command-stdout>Set model to `[model name removed]`</local-command-stdout>"
   },
   {
    "timestamp": "2026-10-18T04:56:56.757Z",
@@ -3214,7 +3214,7 @@
    "tool_calls": [
     {
      "tool": "Bash",
-     "input_preview": "{\"command\": \"git fetch -q origin master 2>&1 | tail -1; git checkout -q -B claude/code-review-optimize-dty0gi origin/master && git add NC_Medicaid_Verification_Checklist.md nc_medicaid_sources.csv && git commit -q -m \\\"Add verification checklist and sources CSV\\n\\nCo-Authored-By: Claude Sonnet 5.5 <"
+     "input_preview": "{\"command\": \"git fetch -q origin master 2>&1 | tail -1; git checkout -q -B claude/code-review-optimize-dty0gi origin/master && git add NC_Medicaid_Verification_Checklist.md nc_medicaid_sources.csv && git commit -q -m \\\"Add verification checklist and sources CSV\\n\\nCo-Authored-By: Claude <"
     }
    ]
   },
@@ -3250,7 +3250,7 @@
    "tool_calls": [
     {
      "tool": "Bash",
-     "input_preview": "{\"command\": \"git add NC_Medicaid_Verification_Checklist.md nc_medicaid_sources.csv && git commit -q -m \\\"Add verification checklist and sources CSV\\n\\nCo-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>\\nClaude-Session: https://claude.ai/code/session_01L4asUaKCkFCGgeY4LrdCWJ\\\" && git push -q -"
+     "input_preview": "{\"command\": \"git add NC_Medicaid_Verification_Checklist.md nc_medicaid_sources.csv && git commit -q -m \\\"Add verification checklist and sources CSV\\n\\nCo-Authored-By: Claude <noreply@anthropic.com>\\nClaude-Session: https://claude.ai/code/session_01L4asUaKCkFCGgeY4LrdCWJ\\\" && git push -q -"
     }
    ]
   },
@@ -3736,7 +3736,7 @@
    "tool_calls": [
     {
      "tool": "Bash",
-     "input_preview": "{\"command\": \"git add README.md docs && git commit -q -m \\\"Add technical specification, illustrated quick start guide and README placeholder\\n\\nCo-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>\\nClaude-Session: https://claude.ai/code/session_01L4asUaKCkFCGgeY4LrdCWJ\\\" && git push -q -u origin"
+     "input_preview": "{\"command\": \"git add README.md docs && git commit -q -m \\\"Add technical specification, illustrated quick start guide and README placeholder\\n\\nCo-Authored-By: Claude <noreply@anthropic.com>\\nClaude-Session: https://claude.ai/code/session_01L4asUaKCkFCGgeY4LrdCWJ\\\" && git push -q -u origin"
     }
    ]
   },

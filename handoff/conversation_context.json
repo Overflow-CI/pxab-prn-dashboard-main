@@ -3,9 +3,12 @@
   "written": "2026-10-22",
   "source_session": "91141d82-7be3-5ffc-bd0c-f501091745a6",
   "read_first": [
+    "CLAUDE.md",
     "handoff/HANDOFF.md",
     "docs/SPECIFICATION.md",
-    "NC_Medicaid_Verification_Checklist.md"
+    "NC_Medicaid_Verification_Checklist.md",
+    "handoff/conversation_context.json",
+    "handoff/NEXT_SESSION_PROMPT.md"
   ],
   "project": {
     "name": "NC Medicaid Behavioral Health Operations & Compliance Dashboard (Navigator)",
@@ -222,7 +225,9 @@
     "handoff/prompts/notebooklm_research_kit_v1.md",
     "handoff/prompts/followup_research_prompts.md",
     "handoff/research/* (structured research data)",
-    "handoff/tools/* (tests, rebuild, screenshot script)"
+    "handoff/tools/* (tests, rebuild, screenshot script)",
+    "CLAUDE.md",
+    "handoff/NEXT_SESSION_PROMPT.md"
   ],
   "decisions_made_by_user": [
     "Keep the dashboard one HTML file",
@@ -364,7 +369,7 @@
   },
   "environment_notes": {
     "ran_on": "Claude Code on the web (cloud container)",
-    "model": "claude-sonnet-5-5 (set with /model on 2026-10-18)",
+    "model": "set with /model on 2026-10-18 (name not recorded)",
     "nc_government_sites_blocked_403_from_sandbox": true,
     "force_push_required_permission": true,
     "git_remote_may_show_old_name_hello_world": true

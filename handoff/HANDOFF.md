@@ -310,7 +310,7 @@ The previous session needed a permission to **force-push** after a squash merge.
 The NC government sites (ncdhhs.gov, medicaid.ncdhhs.gov, nctracks.nc.gov) returned **403** from the old sandbox, so none of the sources could be checked first-hand. In the new environment, test one of them. If they are blocked, look at the environment's network policy (in Claude Code on the web: the environment settings, then network access) and allow those hosts if your plan lets you. This lets the new session verify sources itself.
 
 **Step 13. Decide the model.**
-This session ran on `claude-sonnet-5-5` (selected with `/model claude-sonnet-5-5` on 2026-10-18). The new session will use its account's default. Pick the model you want with `/model`.
+This session used a model chosen with `/model` on 2026-10-18. The new session will use its account's default. Pick the model you want with `/model`.
 
 **Step 14. Do not rebuild old context by hand.**
 The new session has no memory of this conversation. It learns everything from the repo: this file, `docs/SPECIFICATION.md`, `NC_Medicaid_Verification_Checklist.md`, `nc_medicaid_sources.csv`, and `handoff/conversation_transcript.json` if it needs the exact history.
@@ -319,6 +319,8 @@ The new session has no memory of this conversation. It learns everything from th
 Ask the new session to report, without changing anything: the current branch and latest commit; the number of steps (31) and tasks (116); the result of `node t_main.js` and `node t_details.js` (both end with no errors); and the list of open decisions from section 6. If any of these differ, stop and compare with this document.
 
 ## 9. Prompt to paste into the new session
+
+**The maintained, up-to-date version of this prompt is `handoff/NEXT_SESSION_PROMPT.md`.** Use that file. The repo also has a root `CLAUDE.md`, which Claude Code loads automatically and which points to this document. The block below is kept as a shorter summary.
 
 ```
 I am continuing work from another Claude Code account. The repository is
@@ -411,6 +413,7 @@ Expected values you can check against: `t_p6.js` prints `0 / 31 Steps Done`, `of
 | `README.md` | Overview, quick start (with the guide-URL placeholder), file list, feature list. |
 | `NC_Medicaid_Verification_Checklist.md` | What to verify, with contacts and scripts. |
 | `nc_medicaid_sources.csv` | 642 source URLs (242 cited in the app, 400 from research only), categorized. |
+| `CLAUDE.md` | Project rules and a pointer to this handoff. Claude Code loads it automatically in every session. |
 | `pm_modal.png` | Stray old screenshot. See decision D8. |
 
 ### `docs/`
@@ -420,6 +423,7 @@ Expected values you can check against: `t_p6.js` prints `0 / 31 Steps Done`, `of
 | Path | Purpose |
 |---|---|
 | `HANDOFF.md` | This document. |
+| `NEXT_SESSION_PROMPT.md` | The prompt to paste in the new account, with troubleshooting. |
 | `conversation_context.json` | Structured summary of the project, decisions, state and open items. |
 | `conversation_transcript.json` | Every user and assistant message from the session, in order. |
 | `inputs/` | Files you provided (14). |
