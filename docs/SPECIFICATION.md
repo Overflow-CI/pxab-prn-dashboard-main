@@ -38,7 +38,7 @@ Every task has researched instructions, tips, contacts, sources and a confidence
 |---|---|
 | Single HTML file | CSS, JavaScript and data are inline. Nothing to build or deploy. |
 | No backend | State is saved in `localStorage` and can be exported or imported as JSON. |
-| Works offline after load | The only network request is Google Fonts (Inter, JetBrains Mono). If blocked, the page falls back to system fonts. |
+| Works offline | The file makes no network requests and uses the device's system fonts. |
 | Mobile first | Layout starts at 390 px. Wider layouts are enhancements (`sm` 640 px, `lg` 1024 px). |
 | Accessible | Labeled controls, focus-trapped dialogs, Escape to close, 44 px touch targets, reduced-motion support, skip link. |
 | Printable | A separate print-only report is built from state on demand. |
@@ -49,7 +49,7 @@ Every task has researched instructions, tips, contacts, sources and a confidence
 
 | Region of `nc_medicaid_bh_dashboard.html` | Contents |
 |---|---|
-| `<head>` | Meta tags, a large inline `<style>` with the **precompiled Tailwind CSS v3.4**, Google Fonts links, then a second `<style>` with custom CSS (see 3.3). |
+| `<head>` | Meta tags, a large inline `<style>` with the **precompiled Tailwind CSS v3.4**, then a second `<style>` with the master stylesheet and functional CSS (see 3.3). No font or script links. |
 | `<body>` markup | Header, overview card, "Next up" card, Setup, Regional contacts and Fees & timeline panels, phase tabs, step cards container, three dialogs (instructions, notes, print), toast container, `#print-report`. |
 | `<script>` | All data constants, then state, rendering and event code, in that order. No modules, no libraries. |
 
@@ -71,8 +71,13 @@ user action ─► mutate appState ─► saveState() ─► renderDashboard()
 ### 3.3 Styling
 
 - **Tailwind CSS v3.4, precompiled and inlined.** The browser never compiles CSS. If you add a new Tailwind class, regenerate: `npx tailwindcss@3 --content nc_medicaid_bh_dashboard.html --minify -o tw.css`, then paste the output into the first `<style>` block. Classes that are not in the compiled CSS silently do nothing.
-- **Custom CSS block** holds: base font sizes, `.touch-target` (min 48 px), `details`/`summary` chevrons, `body.modal-open` scroll lock, a `.text-xs` override to 14 px, the `prefers-reduced-motion` rule, `@page` margin boxes and the `#print-report` / `.pr-*` print styles.
-- **Minimum text size** is 14 px. Form fields are 16 px (prevents iOS zoom on focus).
+- **Master stylesheet block** (second `<style>`) is the corrected Option B data-driven dashboard stylesheet, applied unchanged apart from the notes below. It defines the colour tokens on `:root` (`--bg-main`, `--bg-card`, `--bg-surface`, `--border-color`, `--text-main`, `--text-sub`, `--text-dim`, `--accent-gold`, `--accent-teal`, `--accent-red`). A short alias block maps the older token names the markup uses (`--text-primary`, `--text-secondary`, `--text-muted`, `--accent-teal-hover`, `--color-gold`, `--color-red`). Its layout rules include a sticky header, `.plan-overview-card` for the Plan Progress card, `.step-trigger-row` and `.step-panel-expanded` / `.step-panel-collapsed` for steps.
+- **Overview card scope:** the sheet's overview rule matched `section:first-of-type`, which squeezed the first section that follows the header. The rule now applies only to the `.plan-overview-card` class on the overview section, and a functional rule stacks its grid into one column so the progress and next-step content fits.
+- **Deviations from the master, to meet WCAG AA:** the teal accent is used as a fill only with dark text (`--bg-main`) on the Apply button, and the hover teal is `#0E7C66` (white text on it passes).
+- **Functional rules kept alongside it:** `.touch-target` (min 48 px), a visible focus ring, 16 px input text on phones (prevents iOS zoom on focus), `details`/`summary` chevrons, the `body.modal-open` scroll lock, and the `@page` margin boxes and `#print-report` / `.pr-*` print layout for the binder printout.
+- **Reduced motion** is handled in JavaScript: `toggleStep` checks `prefers-reduced-motion` and skips the slide animation.
+- **Dialog stacking:** the sticky header has `z-index: 200`, so a functional rule lifts `.fixed[role="dialog"]` to 300. Without it the header covers the dialogs.
+- **Minimum text size** is 12 px (Tailwind `text-xs`). The master stylesheet does not set a text floor. Form fields are 16 px on phones.
 
 ## 4. Data model
 
@@ -290,7 +295,7 @@ Plan cards show provider line, UM contact, network email, office, claims payer I
 
 | Topic | Behavior |
 |---|---|
-| Data leaves the device? | **No.** There is no network call that carries user data. Fonts are the only request. |
+| Data leaves the device? | **No.** There is no network call that carries user data. No request is made after the page loads. |
 | Stored data | Checks, statuses, notes, counties and services in `localStorage` for this file's origin. |
 | XSS | Notes and imported values are escaped before display. `linkify` escapes first, then wraps recognized phones, emails and URLs. Imports are validated by `normalizeState`. |
 | External links | `target="_blank"` with `rel="noopener noreferrer"`. |

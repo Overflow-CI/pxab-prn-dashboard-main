@@ -236,7 +236,7 @@ On a larger screen the same page shows more at once. Each phase opens with all i
 
 **The printout has no page numbers.** Page numbers need Chrome or Edge.
 
-**The text looks different or plain.** The page uses Google Fonts when it is online. Offline, it uses your device's standard font. Nothing else changes.
+**The text looks different or plain.** The page uses your device's standard font, so the letters may look slightly different on each device. Nothing else changes.
 
 **I pressed Reset by mistake.** Tap **Import** and load your last backup. If you have no backup, the progress cannot be recovered.
 
