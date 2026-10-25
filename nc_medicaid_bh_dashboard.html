@@ -144,8 +144,7 @@ v4.0 | 2026-10-18 | Printable plan, mobile-first redesign, instructions for ever
     /* ==========================================================================
        4. Section 1: Plan Progress Performance Metrics (Telemetry Core)
        ========================================================================== */
-    .plan-overview-card,
-    section:first-of-type {
+    .plan-overview-card {
       background-color: var(--bg-card);
       border: 1px solid var(--border-color);
       border-radius: var(--radius-md);
@@ -417,6 +416,8 @@ v4.0 | 2026-10-18 | Printable plan, mobile-first redesign, instructions for ever
     body.modal-open { overflow: hidden; }
     /* The sticky header (z-index 200) would otherwise sit above the dialog overlays (z-50) */
     .fixed[role="dialog"] { z-index: 300; }
+    /* The overview card's 100px first column squeezed its content; its children stack in one column instead */
+    .plan-overview-card { grid-template-columns: 1fr; }
     summary { list-style: none; }
     summary::-webkit-details-marker { display: none; }
     details[open] > summary .chev { transform: rotate(180deg); }
@@ -558,7 +559,7 @@ v4.0 | 2026-10-18 | Printable plan, mobile-first redesign, instructions for ever
   </header>
 
   <!-- Overview: progress and the next thing to do, first thing on a phone screen -->
-  <section class="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 pt-4" aria-labelledby="overview-heading">
+  <section class="plan-overview-card max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 pt-4" aria-labelledby="overview-heading">
     <h2 id="overview-heading" class="sr-only">Plan overview</h2>
     <div class="bg-[color:var(--bg-card)]  border border-[color:var(--border-color)]  p-4 space-y-3">
       <div class="flex items-end justify-between gap-3">
