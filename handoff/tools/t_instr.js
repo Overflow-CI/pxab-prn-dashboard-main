@@ -1,3 +1,7 @@
+// v006: the setup wizard opens for new users and would block clicks, so tests close it after load.
+async function dismissSetupWizard(page) {
+  await page.evaluate(() => { const d = document.getElementById('setup-wizard'); if (d && d.open) d.close(); });
+}
 const { chromium } = require('playwright-core');
 const URL = (process.env.APP_URL||'file://'+require('path').resolve(__dirname,'../../nc_medicaid_bh_dashboard.html'));
 const log = (k, v) => console.log(k.padEnd(48), JSON.stringify(v));
@@ -8,7 +12,7 @@ const log = (k, v) => console.log(k.padEnd(48), JSON.stringify(v));
     const p = await (await b.newContext(opts)).newPage();
     p.on('pageerror', e => errs.push(e.message));
     await p.route(/fonts\./, r => r.abort());
-    await p.goto(URL);
+    await p.goto(URL); await dismissSetupWizard(p);
     // every row in every phase has a visible, labeled button
     const report = [];
     for (let ph = 1; ph <= 6; ph++) {

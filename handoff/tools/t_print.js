@@ -1,3 +1,7 @@
+// v006: the setup wizard opens for new users and would block clicks, so tests close it after load.
+async function dismissSetupWizard(page) {
+  await page.evaluate(() => { const d = document.getElementById('setup-wizard'); if (d && d.open) d.close(); });
+}
 const { chromium } = require('playwright-core');
 const URL = (process.env.APP_URL||'file://'+require('path').resolve(__dirname,'../../nc_medicaid_bh_dashboard.html'));
 (async () => {
@@ -14,7 +18,7 @@ const URL = (process.env.APP_URL||'file://'+require('path').resolve(__dirname,'.
       stepNotes: { 2: 'EIN letter filed in Drive/Legal. Ref #CP575 <b>not bold</b> & more', 4: 'Landlord waiting on zoning letter.\nFollow up Monday 9am.' },
       activePhase: 1 }));
   });
-  await p.goto(URL);
+  await p.goto(URL); await dismissSetupWizard(p);
   // the real user flow
   await p.tap('button:has-text("Print")');
   console.log('modal open', await p.isVisible('#print-modal'), '|', await p.textContent('#print-preview-text'));

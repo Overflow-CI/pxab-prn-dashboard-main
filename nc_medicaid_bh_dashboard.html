@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <!-- CHANGELOG
-v4.1 | 2026-10-25 | Applied AdaptBridge Brand Guide v002, section 14 (app interface formatting): Regulatory Authority palette only, IBM Plex Sans and Mono self-hosted (Google Fonts removed), zero rounded corners and no shadows or gradients, status shown as symbol plus text (emoji removed), AdaptBridge breadcrumb and Home (Praxiom) link in the header, print and export views use the document header and footer. Tawk.to live chat not yet added (decision pending).
+v006 | 2026-10-25 | Ease of use: setup wizard (services, starting point, optional start date), calendar dates on every step, plan start date with calendar download (.ics), search across all phases (press /), owner-role filter, verification status and source per step, email help links to the coaching team by section and step, and "Get help" in the header. Replaces Tawk.to.
+v005 | 2026-10-25 | Applied AdaptBridge Brand Guide v002, section 14 (app interface formatting): Regulatory Authority palette only, IBM Plex Sans and Mono self-hosted (Google Fonts removed), zero rounded corners and no shadows or gradients, status shown as symbol plus text (emoji removed), AdaptBridge breadcrumb and Home (Praxiom) link in the header, print and export views use the document header and footer. Tawk.to live chat not yet added (decision pending).
 v4.0 | 2026-10-18 | Printable plan, mobile-first redesign, instructions for every task, H.R. 1 phase.
 -->
 <html lang="en" class="h-full bg-slate-50 text-[16px]">
@@ -11,7 +12,7 @@ v4.0 | 2026-10-18 | Printable plan, mobile-first redesign, instructions for ever
   <!-- Precompiled Tailwind CSS v3.4 (replaces the cdn.tailwindcss.com in-browser compiler).
        If you add new Tailwind classes, regenerate with:
        npx tailwindcss@3 --content nc_medicaid_bh_dashboard.html --minify -o tw.css  and paste tw.css here. -->
-  <style>*,::backdrop,:after,:before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:#3b82f680;--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/*! tailwindcss v3.4.19 | MIT License | https://tailwindcss.com*/*,:after,:before{box-sizing:border-box;border:0 solid #e5e7eb}:after,:before{--tw-content:""}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;-o-tab-size:4;tab-size:4;font-family:ui-sans-serif,system-ui,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:initial}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:initial;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:initial}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{opacity:1;color:#9ca3af}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.container{width:100%}@media (min-width:640px){.container{max-width:640px}}@media (min-width:768px){.container{max-width:768px}}@media (min-width:1024px){.container{max-width:1024px}}@media (min-width:1280px){.container{max-width:1280px}}@media (min-width:1536px){.container{max-width:1536px}}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border-width:0}.pointer-events-none{pointer-events:none}.pointer-events-auto{pointer-events:auto}.visible{visibility:visible}.collapse{visibility:collapse}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.sticky{position:sticky}.inset-0{inset:0}.bottom-0{bottom:0}.bottom-4{bottom:1rem}.left-0{left:0}.left-4{left:1rem}.right-4{right:1rem}.top-0{top:0}.top-full{top:100%}.z-10{z-index:10}.z-30{z-index:30}.z-50{z-index:50}.col-span-12{grid-column:span 12/span 12}.mx-auto{margin-left:auto;margin-right:auto}.mb-1{margin-bottom:.25rem}.mb-1\.5{margin-bottom:.375rem}.mb-2{margin-bottom:.5rem}.mb-3{margin-bottom:.75rem}.ml-2{margin-left:.5rem}.mt-0\.5{margin-top:.125rem}.mt-1{margin-top:.25rem}.mt-1\.5{margin-top:.375rem}.mt-2{margin-top:.5rem}.mt-3{margin-top:.75rem}.mt-5{margin-top:1.25rem}.block{display:block}.flex{display:flex}.inline-flex{display:inline-flex}.table{display:table}.grid{display:grid}.contents{display:contents}.hidden{display:none}.h-1{height:.25rem}.h-1\.5{height:.375rem}.h-2\.5{height:.625rem}.h-3{height:.75rem}.h-4{height:1rem}.h-5{height:1.25rem}.h-6{height:1.5rem}.h-full{height:100%}.max-h-80{max-height:20rem}.max-h-\[90dvh\]{max-height:90dvh}.min-h-\[36px\]{min-height:36px}.min-h-\[44px\]{min-height:44px}.min-h-\[48px\]{min-height:48px}.min-h-\[52px\]{min-height:52px}.min-h-\[56px\]{min-height:56px}.min-h-full{min-height:100%}.w-1\.5{width:.375rem}.w-2\.5{width:.625rem}.w-3{width:.75rem}.w-4{width:1rem}.w-5{width:1.25rem}.w-6{width:1.5rem}.w-full{width:100%}.min-w-0{min-width:0}.max-w-2xl{max-width:42rem}.max-w-7xl{max-width:80rem}.max-w-lg{max-width:32rem}.flex-1{flex:1 1 0%}.shrink-0{flex-shrink:0}.border-collapse{border-collapse:collapse}.-translate-x-1\/2{--tw-translate-x:-50%}.-translate-x-1\/2,.-translate-x-full{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.-translate-x-full{--tw-translate-x:-100%}.rotate-180{--tw-rotate:180deg}.rotate-180,.transform{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@keyframes pulse{50%{opacity:.5}}.animate-pulse{animation:pulse 2s cubic-bezier(.4,0,.6,1) infinite}.cursor-pointer{cursor:pointer}.select-none{-webkit-user-select:none;-moz-user-select:none;user-select:none}.snap-x{scroll-snap-type:x var(--tw-scroll-snap-strictness)}.scroll-mt-20{scroll-margin-top:5rem}.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}.grid-cols-12{grid-template-columns:repeat(12,minmax(0,1fr))}.grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-end{align-items:flex-end}.items-center{align-items:center}.items-baseline{align-items:baseline}.items-stretch{align-items:stretch}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-0\.5{gap:.125rem}.gap-1{gap:.25rem}.gap-1\.5{gap:.375rem}.gap-2{gap:.5rem}.gap-2\.5{gap:.625rem}.gap-3{gap:.75rem}.gap-4{gap:1rem}.gap-x-1{-moz-column-gap:.25rem;column-gap:.25rem}.gap-x-2{-moz-column-gap:.5rem;column-gap:.5rem}.gap-x-4{-moz-column-gap:1rem;column-gap:1rem}.gap-y-1{row-gap:.25rem}.space-y-1>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.25rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.25rem*var(--tw-space-y-reverse))}.space-y-1\.5>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.375rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.375rem*var(--tw-space-y-reverse))}.space-y-2>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.5rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.5rem*var(--tw-space-y-reverse))}.space-y-2\.5>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.625rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.625rem*var(--tw-space-y-reverse))}.space-y-3>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.75rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.75rem*var(--tw-space-y-reverse))}.space-y-3\.5>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.875rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.875rem*var(--tw-space-y-reverse))}.space-y-4>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem*var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.overflow-x-auto{overflow-x:auto}.overflow-y-auto{overflow-y:auto}.truncate{overflow:hidden;text-overflow:ellipsis}.truncate,.whitespace-nowrap{white-space:nowrap}.whitespace-pre-wrap{white-space:pre-wrap}.break-words{overflow-wrap:break-word}.break-all{word-break:break-all}.rounded{border-radius:.25rem}.border{border-width:1px}.border-2{border-width:2px}.border-y{border-top-width:1px}.border-b,.border-y{border-bottom-width:1px}.border-b-2{border-bottom-width:2px}.border-l-4{border-left-width:4px}.border-t{border-top-width:1px}.border-\[color\:var\(--ab-amber\)\]{border-color:var(--ab-amber)}.border-\[color\:var\(--ab-black\)\]{border-color:var(--ab-black)}.border-\[color\:var\(--ab-blue\)\]{border-color:var(--ab-blue)}.border-\[color\:var\(--ab-navy\)\]{border-color:var(--ab-navy)}.border-\[color\:var\(--ab-white\)\]{border-color:var(--ab-white)}.border-l-\[color\:var\(--ab-amber\)\]{border-left-color:var(--ab-amber)}.border-l-\[color\:var\(--ab-black\)\]{border-left-color:var(--ab-black)}.border-l-\[color\:var\(--ab-navy\)\]{border-left-color:var(--ab-navy)}.bg-\[color\:var\(--ab-amber\)\]{background-color:var(--ab-amber)}.bg-\[color\:var\(--ab-blue\)\]{background-color:var(--ab-blue)}.bg-\[color\:var\(--ab-fog\)\]{background-color:var(--ab-fog)}.bg-\[color\:var\(--ab-navy\)\]{background-color:var(--ab-navy)}.bg-\[color\:var\(--ab-scrim\)\]{background-color:var(--ab-scrim)}.bg-\[color\:var\(--ab-white\)\]{background-color:var(--ab-white)}.bg-slate-50{--tw-bg-opacity:1;background-color:rgb(248 250 252/var(--tw-bg-opacity,1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity,1))}.p-1\.5{padding:.375rem}.p-2{padding:.5rem}.p-2\.5{padding:.625rem}.p-3{padding:.75rem}.p-3\.5{padding:.875rem}.p-4{padding:1rem}.p-5{padding:1.25rem}.p-6{padding:1.5rem}.p-8{padding:2rem}.px-1{padding-left:.25rem;padding-right:.25rem}.px-1\.5{padding-left:.375rem;padding-right:.375rem}.px-2{padding-left:.5rem;padding-right:.5rem}.px-2\.5{padding-left:.625rem;padding-right:.625rem}.px-3{padding-left:.75rem;padding-right:.75rem}.px-3\.5{padding-left:.875rem;padding-right:.875rem}.px-4{padding-left:1rem;padding-right:1rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.py-0\.5{padding-top:.125rem;padding-bottom:.125rem}.py-1{padding-top:.25rem;padding-bottom:.25rem}.py-1\.5{padding-top:.375rem;padding-bottom:.375rem}.py-2{padding-top:.5rem;padding-bottom:.5rem}.py-2\.5{padding-top:.625rem;padding-bottom:.625rem}.py-3{padding-top:.75rem;padding-bottom:.75rem}.py-4{padding-top:1rem;padding-bottom:1rem}.pb-1{padding-bottom:.25rem}.pb-1\.5{padding-bottom:.375rem}.pb-2{padding-bottom:.5rem}.pb-2\.5{padding-bottom:.625rem}.pb-3{padding-bottom:.75rem}.pb-4{padding-bottom:1rem}.pl-12{padding-left:3rem}.pr-2{padding-right:.5rem}.pr-3{padding-right:.75rem}.pt-0\.5{padding-top:.125rem}.pt-1{padding-top:.25rem}.pt-2{padding-top:.5rem}.pt-2\.5{padding-top:.625rem}.pt-3{padding-top:.75rem}.pt-4{padding-top:1rem}.text-left{text-align:left}.text-center{text-align:center}.text-right{text-align:right}.font-mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-\[16px\]{font-size:16px}.text-base{font-size:1rem;line-height:1.5rem}.text-sm{font-size:.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:.75rem;line-height:1rem}.font-bold{font-weight:700}.font-medium{font-weight:500}.font-normal{font-weight:400}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.normal-case{text-transform:none}.italic{font-style:italic}.leading-none{line-height:1}.leading-relaxed{line-height:1.625}.leading-snug{line-height:1.375}.leading-tight{line-height:1.25}.tracking-normal{letter-spacing:0}.tracking-tight{letter-spacing:-.025em}.tracking-wide{letter-spacing:.025em}.tracking-wider{letter-spacing:.05em}.text-\[color\:var\(--ab-black\)\]{color:var(--ab-black)}.text-\[color\:var\(--ab-blue\)\]{color:var(--ab-blue)}.text-\[color\:var\(--ab-navy\)\]{color:var(--ab-navy)}.text-white{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.underline{text-decoration-line:underline}.line-through{text-decoration-line:line-through}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.outline-none{outline:2px solid #0000;outline-offset:2px}.outline{outline-style:solid}.filter{filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.backdrop-blur{--tw-backdrop-blur:blur(8px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition{transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,-webkit-backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter,-webkit-backdrop-filter;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.duration-300{transition-duration:.3s}.selection\:bg-\[color\:var\(--ab-fog\)\] ::-moz-selection{background-color:var(--ab-fog)}.selection\:bg-\[color\:var\(--ab-fog\)\] ::selection{background-color:var(--ab-fog)}.selection\:text-\[color\:var\(--ab-navy\)\] ::-moz-selection{color:var(--ab-navy)}.selection\:text-\[color\:var\(--ab-navy\)\] ::selection{color:var(--ab-navy)}.selection\:bg-\[color\:var\(--ab-fog\)\]::-moz-selection{background-color:var(--ab-fog)}.selection\:bg-\[color\:var\(--ab-fog\)\]::selection{background-color:var(--ab-fog)}.selection\:text-\[color\:var\(--ab-navy\)\]::-moz-selection{color:var(--ab-navy)}.selection\:text-\[color\:var\(--ab-navy\)\]::selection{color:var(--ab-navy)}.focus-within\:ring-2:focus-within{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000)}.focus-within\:ring-\[color\:var\(--ab-blue\)\]:focus-within{--tw-ring-color:var(--ab-blue)}.hover\:border-\[color\:var\(--ab-black\)\]:hover{border-color:var(--ab-black)}.hover\:border-\[color\:var\(--ab-blue\)\]:hover{border-color:var(--ab-blue)}.hover\:border-\[color\:var\(--ab-navy\)\]:hover{border-color:var(--ab-navy)}.hover\:bg-\[color\:var\(--ab-amber\)\]:hover{background-color:var(--ab-amber)}.hover\:bg-\[color\:var\(--ab-black\)\]:hover{background-color:var(--ab-black)}.hover\:bg-\[color\:var\(--ab-blue\)\]:hover{background-color:var(--ab-blue)}.hover\:bg-\[color\:var\(--ab-fog\)\]:hover{background-color:var(--ab-fog)}.hover\:bg-\[color\:var\(--ab-navy\)\]:hover{background-color:var(--ab-navy)}.hover\:bg-white:hover{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity,1))}.hover\:text-\[color\:var\(--ab-amber\)\]:hover{color:var(--ab-amber)}.hover\:text-\[color\:var\(--ab-black\)\]:hover{color:var(--ab-black)}.hover\:text-\[color\:var\(--ab-navy\)\]:hover{color:var(--ab-navy)}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.hover\:underline:hover{text-decoration-line:underline}.focus\:not-sr-only:focus{position:static;width:auto;height:auto;padding:0;margin:0;overflow:visible;clip:auto;white-space:normal}.focus\:absolute:focus{position:absolute}.focus\:left-2:focus{left:.5rem}.focus\:top-2:focus{top:.5rem}.focus\:z-50:focus{z-index:50}.focus\:bg-white:focus{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity,1))}.focus\:px-4:focus{padding-left:1rem;padding-right:1rem}.focus\:py-3:focus{padding-top:.75rem;padding-bottom:.75rem}.focus\:font-bold:focus{font-weight:700}.focus\:text-\[color\:var\(--ab-navy\)\]:focus{color:var(--ab-navy)}.focus\:ring-2:focus{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000)}.focus\:ring-\[color\:var\(--ab-amber\)\]:focus{--tw-ring-color:var(--ab-amber)}.focus\:ring-\[color\:var\(--ab-blue\)\]:focus{--tw-ring-color:var(--ab-blue)}.focus\:ring-\[color\:var\(--ab-navy\)\]:focus{--tw-ring-color:var(--ab-navy)}.active\:bg-\[color\:var\(--ab-amber\)\]:active{background-color:var(--ab-amber)}.active\:bg-\[color\:var\(--ab-black\)\]:active{background-color:var(--ab-black)}.active\:bg-\[color\:var\(--ab-blue\)\]:active{background-color:var(--ab-blue)}.active\:bg-\[color\:var\(--ab-fog\)\]:active{background-color:var(--ab-fog)}.active\:bg-\[color\:var\(--ab-navy\)\]:active{background-color:var(--ab-navy)}.has-\[\:disabled\]\:cursor-not-allowed:has(:disabled){cursor:not-allowed}.has-\[\:checked\]\:border-\[color\:var\(--ab-blue\)\]:has(:checked){border-color:var(--ab-blue)}.has-\[\:checked\]\:bg-\[color\:var\(--ab-fog\)\]:has(:checked){background-color:var(--ab-fog)}.has-\[\:disabled\]\:opacity-60:has(:disabled){opacity:.6}@media (min-width:640px){.sm\:left-auto{left:auto}.sm\:col-span-5{grid-column:span 5/span 5}.sm\:col-span-7{grid-column:span 7/span 7}.sm\:block{display:block}.sm\:inline{display:inline}.sm\:flex{display:flex}.sm\:hidden{display:none}.sm\:h-4{height:1rem}.sm\:w-4{width:1rem}.sm\:w-full{width:100%}.sm\:max-w-sm{max-width:24rem}.sm\:flex-1{flex:1 1 0%}.sm\:flex-none{flex:none}.sm\:shrink-0{flex-shrink:0}.sm\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.sm\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.sm\:flex-row{flex-direction:row}.sm\:items-center{align-items:center}.sm\:items-stretch{align-items:stretch}.sm\:gap-1\.5{gap:.375rem}.sm\:truncate{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.sm\:border-0{border-width:0}.sm\:border-l{border-left-width:1px}.sm\:border-\[color\:var\(--ab-black\)\]{border-color:var(--ab-black)}.sm\:bg-transparent{background-color:initial}.sm\:p-0{padding:0}.sm\:p-4{padding:1rem}.sm\:p-6{padding:1.5rem}.sm\:px-3\.5{padding-left:.875rem;padding-right:.875rem}.sm\:px-4{padding-left:1rem;padding-right:1rem}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\:py-2{padding-top:.5rem;padding-bottom:.5rem}.sm\:py-6{padding-top:1.5rem;padding-bottom:1.5rem}.sm\:text-2xl{font-size:1.5rem;line-height:2rem}.sm\:text-base{font-size:1rem;line-height:1.5rem}.sm\:text-lg{font-size:1.125rem;line-height:1.75rem}.sm\:text-sm{font-size:.875rem;line-height:1.25rem}.sm\:hover\:bg-\[color\:var\(--ab-fog\)\]:hover{background-color:var(--ab-fog)}}@media (min-width:1024px){.lg\:col-span-6{grid-column:span 6/span 6}.lg\:grid-cols-12{grid-template-columns:repeat(12,minmax(0,1fr))}.lg\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.lg\:grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}.lg\:px-8{padding-left:2rem;padding-right:2rem}}</style>
+  <style>*,::backdrop,:after,:before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:#3b82f680;--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/*! tailwindcss v3.4.19 | MIT License | https://tailwindcss.com*/*,:after,:before{box-sizing:border-box;border:0 solid #e5e7eb}:after,:before{--tw-content:""}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;-o-tab-size:4;tab-size:4;font-family:ui-sans-serif,system-ui,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:initial}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:initial;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:initial}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{opacity:1;color:#9ca3af}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.container{width:100%}@media (min-width:640px){.container{max-width:640px}}@media (min-width:768px){.container{max-width:768px}}@media (min-width:1024px){.container{max-width:1024px}}@media (min-width:1280px){.container{max-width:1280px}}@media (min-width:1536px){.container{max-width:1536px}}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border-width:0}.pointer-events-none{pointer-events:none}.pointer-events-auto{pointer-events:auto}.visible{visibility:visible}.collapse{visibility:collapse}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.sticky{position:sticky}.inset-0{inset:0}.bottom-0{bottom:0}.bottom-4{bottom:1rem}.left-0{left:0}.left-4{left:1rem}.right-4{right:1rem}.top-0{top:0}.top-full{top:100%}.z-10{z-index:10}.z-30{z-index:30}.z-50{z-index:50}.col-span-12{grid-column:span 12/span 12}.m-auto{margin:auto}.mx-auto{margin-left:auto;margin-right:auto}.mb-1{margin-bottom:.25rem}.mb-1\.5{margin-bottom:.375rem}.mb-2{margin-bottom:.5rem}.mb-3{margin-bottom:.75rem}.ml-2{margin-left:.5rem}.mt-0\.5{margin-top:.125rem}.mt-1{margin-top:.25rem}.mt-1\.5{margin-top:.375rem}.mt-2{margin-top:.5rem}.mt-3{margin-top:.75rem}.mt-5{margin-top:1.25rem}.block{display:block}.flex{display:flex}.inline-flex{display:inline-flex}.table{display:table}.grid{display:grid}.contents{display:contents}.hidden{display:none}.h-1{height:.25rem}.h-1\.5{height:.375rem}.h-2\.5{height:.625rem}.h-3{height:.75rem}.h-4{height:1rem}.h-5{height:1.25rem}.h-6{height:1.5rem}.h-full{height:100%}.max-h-80{max-height:20rem}.max-h-\[90dvh\]{max-height:90dvh}.min-h-\[36px\]{min-height:36px}.min-h-\[44px\]{min-height:44px}.min-h-\[48px\]{min-height:48px}.min-h-\[52px\]{min-height:52px}.min-h-\[56px\]{min-height:56px}.min-h-full{min-height:100%}.w-1\.5{width:.375rem}.w-2\.5{width:.625rem}.w-3{width:.75rem}.w-4{width:1rem}.w-5{width:1.25rem}.w-6{width:1.5rem}.w-\[min\(34rem\2c calc\(100vw_-_2rem\)\)\]{width:min(34rem,calc(100vw - 2rem))}.w-full{width:100%}.min-w-0{min-width:0}.max-w-2xl{max-width:42rem}.max-w-7xl{max-width:80rem}.max-w-lg{max-width:32rem}.flex-1{flex:1 1 0%}.shrink-0{flex-shrink:0}.border-collapse{border-collapse:collapse}.-translate-x-1\/2{--tw-translate-x:-50%}.-translate-x-1\/2,.-translate-x-full{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.-translate-x-full{--tw-translate-x:-100%}.rotate-180{--tw-rotate:180deg}.rotate-180,.transform{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@keyframes pulse{50%{opacity:.5}}.animate-pulse{animation:pulse 2s cubic-bezier(.4,0,.6,1) infinite}.cursor-pointer{cursor:pointer}.select-none{-webkit-user-select:none;-moz-user-select:none;user-select:none}.snap-x{scroll-snap-type:x var(--tw-scroll-snap-strictness)}.scroll-mt-20{scroll-margin-top:5rem}.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}.grid-cols-12{grid-template-columns:repeat(12,minmax(0,1fr))}.grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-end{align-items:flex-end}.items-center{align-items:center}.items-baseline{align-items:baseline}.items-stretch{align-items:stretch}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-0\.5{gap:.125rem}.gap-1{gap:.25rem}.gap-1\.5{gap:.375rem}.gap-2{gap:.5rem}.gap-2\.5{gap:.625rem}.gap-3{gap:.75rem}.gap-4{gap:1rem}.gap-x-1{-moz-column-gap:.25rem;column-gap:.25rem}.gap-x-2{-moz-column-gap:.5rem;column-gap:.5rem}.gap-x-4{-moz-column-gap:1rem;column-gap:1rem}.gap-y-1{row-gap:.25rem}.space-y-1>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.25rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.25rem*var(--tw-space-y-reverse))}.space-y-1\.5>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.375rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.375rem*var(--tw-space-y-reverse))}.space-y-2>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.5rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.5rem*var(--tw-space-y-reverse))}.space-y-2\.5>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.625rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.625rem*var(--tw-space-y-reverse))}.space-y-3>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.75rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.75rem*var(--tw-space-y-reverse))}.space-y-3\.5>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.875rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.875rem*var(--tw-space-y-reverse))}.space-y-4>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem*var(--tw-space-y-reverse))}.space-y-5>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.25rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.25rem*var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.overflow-x-auto{overflow-x:auto}.overflow-y-auto{overflow-y:auto}.truncate{overflow:hidden;text-overflow:ellipsis}.truncate,.whitespace-nowrap{white-space:nowrap}.whitespace-pre-wrap{white-space:pre-wrap}.break-words{overflow-wrap:break-word}.break-all{word-break:break-all}.rounded{border-radius:.25rem}.border{border-width:1px}.border-2{border-width:2px}.border-y{border-top-width:1px}.border-b,.border-y{border-bottom-width:1px}.border-b-2{border-bottom-width:2px}.border-l-4{border-left-width:4px}.border-t{border-top-width:1px}.border-\[color\:var\(--ab-amber\)\]{border-color:var(--ab-amber)}.border-\[color\:var\(--ab-black\)\]{border-color:var(--ab-black)}.border-\[color\:var\(--ab-blue\)\]{border-color:var(--ab-blue)}.border-\[color\:var\(--ab-navy\)\]{border-color:var(--ab-navy)}.border-\[color\:var\(--ab-white\)\]{border-color:var(--ab-white)}.border-l-\[color\:var\(--ab-amber\)\]{border-left-color:var(--ab-amber)}.border-l-\[color\:var\(--ab-black\)\]{border-left-color:var(--ab-black)}.border-l-\[color\:var\(--ab-navy\)\]{border-left-color:var(--ab-navy)}.bg-\[color\:var\(--ab-amber\)\]{background-color:var(--ab-amber)}.bg-\[color\:var\(--ab-blue\)\]{background-color:var(--ab-blue)}.bg-\[color\:var\(--ab-fog\)\]{background-color:var(--ab-fog)}.bg-\[color\:var\(--ab-navy\)\]{background-color:var(--ab-navy)}.bg-\[color\:var\(--ab-scrim\)\]{background-color:var(--ab-scrim)}.bg-\[color\:var\(--ab-white\)\]{background-color:var(--ab-white)}.bg-slate-50{--tw-bg-opacity:1;background-color:rgb(248 250 252/var(--tw-bg-opacity,1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity,1))}.p-0{padding:0}.p-1\.5{padding:.375rem}.p-2{padding:.5rem}.p-2\.5{padding:.625rem}.p-3{padding:.75rem}.p-3\.5{padding:.875rem}.p-4{padding:1rem}.p-5{padding:1.25rem}.p-6{padding:1.5rem}.p-8{padding:2rem}.px-1{padding-left:.25rem;padding-right:.25rem}.px-1\.5{padding-left:.375rem;padding-right:.375rem}.px-2{padding-left:.5rem;padding-right:.5rem}.px-2\.5{padding-left:.625rem;padding-right:.625rem}.px-3{padding-left:.75rem;padding-right:.75rem}.px-3\.5{padding-left:.875rem;padding-right:.875rem}.px-4{padding-left:1rem;padding-right:1rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.py-0\.5{padding-top:.125rem;padding-bottom:.125rem}.py-1{padding-top:.25rem;padding-bottom:.25rem}.py-1\.5{padding-top:.375rem;padding-bottom:.375rem}.py-2{padding-top:.5rem;padding-bottom:.5rem}.py-2\.5{padding-top:.625rem;padding-bottom:.625rem}.py-3{padding-top:.75rem;padding-bottom:.75rem}.py-4{padding-top:1rem;padding-bottom:1rem}.pb-1{padding-bottom:.25rem}.pb-1\.5{padding-bottom:.375rem}.pb-2{padding-bottom:.5rem}.pb-2\.5{padding-bottom:.625rem}.pb-3{padding-bottom:.75rem}.pb-4{padding-bottom:1rem}.pl-12{padding-left:3rem}.pr-2{padding-right:.5rem}.pr-3{padding-right:.75rem}.pt-0\.5{padding-top:.125rem}.pt-1{padding-top:.25rem}.pt-2{padding-top:.5rem}.pt-2\.5{padding-top:.625rem}.pt-3{padding-top:.75rem}.pt-4{padding-top:1rem}.text-left{text-align:left}.text-center{text-align:center}.text-right{text-align:right}.font-mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-\[16px\]{font-size:16px}.text-base{font-size:1rem;line-height:1.5rem}.text-sm{font-size:.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:.75rem;line-height:1rem}.font-bold{font-weight:700}.font-medium{font-weight:500}.font-normal{font-weight:400}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.normal-case{text-transform:none}.italic{font-style:italic}.leading-none{line-height:1}.leading-relaxed{line-height:1.625}.leading-snug{line-height:1.375}.leading-tight{line-height:1.25}.tracking-normal{letter-spacing:0}.tracking-tight{letter-spacing:-.025em}.tracking-wide{letter-spacing:.025em}.tracking-wider{letter-spacing:.05em}.text-\[color\:var\(--ab-black\)\]{color:var(--ab-black)}.text-\[color\:var\(--ab-blue\)\]{color:var(--ab-blue)}.text-\[color\:var\(--ab-navy\)\]{color:var(--ab-navy)}.text-white{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.underline{text-decoration-line:underline}.line-through{text-decoration-line:line-through}.underline-offset-2{text-underline-offset:2px}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.accent-\[color\:var\(--ab-navy\)\]{accent-color:var(--ab-navy)}.outline-none{outline:2px solid #0000;outline-offset:2px}.outline{outline-style:solid}.filter{filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.backdrop-blur{--tw-backdrop-blur:blur(8px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition{transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,-webkit-backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter,-webkit-backdrop-filter;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.duration-300{transition-duration:.3s}.selection\:bg-\[color\:var\(--ab-fog\)\] ::-moz-selection{background-color:var(--ab-fog)}.selection\:bg-\[color\:var\(--ab-fog\)\] ::selection{background-color:var(--ab-fog)}.selection\:text-\[color\:var\(--ab-navy\)\] ::-moz-selection{color:var(--ab-navy)}.selection\:text-\[color\:var\(--ab-navy\)\] ::selection{color:var(--ab-navy)}.selection\:bg-\[color\:var\(--ab-fog\)\]::-moz-selection{background-color:var(--ab-fog)}.selection\:bg-\[color\:var\(--ab-fog\)\]::selection{background-color:var(--ab-fog)}.selection\:text-\[color\:var\(--ab-navy\)\]::-moz-selection{color:var(--ab-navy)}.selection\:text-\[color\:var\(--ab-navy\)\]::selection{color:var(--ab-navy)}.backdrop\:bg-\[color\:var\(--ab-scrim\)\]::backdrop{background-color:var(--ab-scrim)}.focus-within\:ring-2:focus-within{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000)}.focus-within\:ring-\[color\:var\(--ab-blue\)\]:focus-within{--tw-ring-color:var(--ab-blue)}.hover\:border-\[color\:var\(--ab-black\)\]:hover{border-color:var(--ab-black)}.hover\:border-\[color\:var\(--ab-blue\)\]:hover{border-color:var(--ab-blue)}.hover\:border-\[color\:var\(--ab-navy\)\]:hover{border-color:var(--ab-navy)}.hover\:bg-\[color\:var\(--ab-amber\)\]:hover{background-color:var(--ab-amber)}.hover\:bg-\[color\:var\(--ab-black\)\]:hover{background-color:var(--ab-black)}.hover\:bg-\[color\:var\(--ab-blue\)\]:hover{background-color:var(--ab-blue)}.hover\:bg-\[color\:var\(--ab-fog\)\]:hover{background-color:var(--ab-fog)}.hover\:bg-\[color\:var\(--ab-navy\)\]:hover{background-color:var(--ab-navy)}.hover\:bg-white:hover{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity,1))}.hover\:text-\[color\:var\(--ab-amber\)\]:hover{color:var(--ab-amber)}.hover\:text-\[color\:var\(--ab-black\)\]:hover{color:var(--ab-black)}.hover\:text-\[color\:var\(--ab-navy\)\]:hover{color:var(--ab-navy)}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.hover\:underline:hover{text-decoration-line:underline}.focus\:not-sr-only:focus{position:static;width:auto;height:auto;padding:0;margin:0;overflow:visible;clip:auto;white-space:normal}.focus\:absolute:focus{position:absolute}.focus\:left-2:focus{left:.5rem}.focus\:top-2:focus{top:.5rem}.focus\:z-50:focus{z-index:50}.focus\:bg-white:focus{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity,1))}.focus\:px-4:focus{padding-left:1rem;padding-right:1rem}.focus\:py-3:focus{padding-top:.75rem;padding-bottom:.75rem}.focus\:font-bold:focus{font-weight:700}.focus\:text-\[color\:var\(--ab-navy\)\]:focus{color:var(--ab-navy)}.focus\:ring-2:focus{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000)}.focus\:ring-\[color\:var\(--ab-amber\)\]:focus{--tw-ring-color:var(--ab-amber)}.focus\:ring-\[color\:var\(--ab-blue\)\]:focus{--tw-ring-color:var(--ab-blue)}.focus\:ring-\[color\:var\(--ab-navy\)\]:focus{--tw-ring-color:var(--ab-navy)}.active\:bg-\[color\:var\(--ab-amber\)\]:active{background-color:var(--ab-amber)}.active\:bg-\[color\:var\(--ab-black\)\]:active{background-color:var(--ab-black)}.active\:bg-\[color\:var\(--ab-blue\)\]:active{background-color:var(--ab-blue)}.active\:bg-\[color\:var\(--ab-fog\)\]:active{background-color:var(--ab-fog)}.active\:bg-\[color\:var\(--ab-navy\)\]:active{background-color:var(--ab-navy)}.disabled\:cursor-not-allowed:disabled{cursor:not-allowed}.disabled\:border-dashed:disabled{border-style:dashed}.disabled\:bg-\[color\:var\(--ab-fog\)\]:disabled{background-color:var(--ab-fog)}.disabled\:text-\[color\:var\(--ab-black\)\]:disabled{color:var(--ab-black)}.has-\[\:disabled\]\:cursor-not-allowed:has(:disabled){cursor:not-allowed}.has-\[\:checked\]\:border-\[color\:var\(--ab-blue\)\]:has(:checked){border-color:var(--ab-blue)}.has-\[\:checked\]\:bg-\[color\:var\(--ab-fog\)\]:has(:checked){background-color:var(--ab-fog)}.has-\[\:disabled\]\:opacity-60:has(:disabled){opacity:.6}@media (min-width:640px){.sm\:left-auto{left:auto}.sm\:col-span-5{grid-column:span 5/span 5}.sm\:col-span-7{grid-column:span 7/span 7}.sm\:block{display:block}.sm\:inline{display:inline}.sm\:flex{display:flex}.sm\:hidden{display:none}.sm\:h-4{height:1rem}.sm\:w-4{width:1rem}.sm\:w-full{width:100%}.sm\:max-w-sm{max-width:24rem}.sm\:flex-1{flex:1 1 0%}.sm\:flex-none{flex:none}.sm\:shrink-0{flex-shrink:0}.sm\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.sm\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.sm\:flex-row{flex-direction:row}.sm\:items-center{align-items:center}.sm\:items-stretch{align-items:stretch}.sm\:gap-1\.5{gap:.375rem}.sm\:truncate{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.sm\:border-0{border-width:0}.sm\:border-l{border-left-width:1px}.sm\:border-\[color\:var\(--ab-black\)\]{border-color:var(--ab-black)}.sm\:bg-transparent{background-color:initial}.sm\:p-0{padding:0}.sm\:p-4{padding:1rem}.sm\:p-6{padding:1.5rem}.sm\:px-3\.5{padding-left:.875rem;padding-right:.875rem}.sm\:px-4{padding-left:1rem;padding-right:1rem}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\:py-2{padding-top:.5rem;padding-bottom:.5rem}.sm\:py-6{padding-top:1.5rem;padding-bottom:1.5rem}.sm\:text-2xl{font-size:1.5rem;line-height:2rem}.sm\:text-base{font-size:1rem;line-height:1.5rem}.sm\:text-lg{font-size:1.125rem;line-height:1.75rem}.sm\:text-sm{font-size:.875rem;line-height:1.25rem}.sm\:hover\:bg-\[color\:var\(--ab-fog\)\]:hover{background-color:var(--ab-fog)}}@media (min-width:1024px){.lg\:col-span-6{grid-column:span 6/span 6}.lg\:grid-cols-12{grid-template-columns:repeat(12,minmax(0,1fr))}.lg\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.lg\:grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}.lg\:px-8{padding-left:2rem;padding-right:2rem}}</style>
   
   <style>
     /* AdaptBridge brand tokens (brand guide v002, s.14.2). Every colour in the app comes from these. */
@@ -198,7 +199,7 @@ unicode-range: U+0102-0103, U+01CD-01DC, U+1E0C-1E0D, U+1E12-1E13, U+1E24-1E25, 
       margin: 1in 0.75in 1in 1.25in;
       @top-left { content: "NC Medicaid BH Operations Navigator"; font: 10pt "IBM Plex Mono", monospace; color: #1A1A2E; vertical-align: bottom; padding-bottom: 6pt; border-bottom: 2pt solid #D4782A; }
       @top-right { content: "AdaptBridge"; font: 10pt "IBM Plex Mono", monospace; color: #1A1A2E; vertical-align: bottom; padding-bottom: 6pt; border-bottom: 2pt solid #D4782A; }
-      @bottom-left { content: "AdaptBridge | Praxiom LLC d/b/a AdaptBridge | v4.1"; font: 10pt "IBM Plex Mono", monospace; color: #1A1A2E; vertical-align: top; padding-top: 6pt; border-top: 0.5pt solid #1A1A2E; }
+      @bottom-left { content: "AdaptBridge | Praxiom LLC d/b/a AdaptBridge | v006"; font: 10pt "IBM Plex Mono", monospace; color: #1A1A2E; vertical-align: top; padding-top: 6pt; border-top: 0.5pt solid #1A1A2E; }
       @bottom-right { content: "Page " counter(page) " of " counter(pages); font: 10pt "IBM Plex Mono", monospace; color: #1A1A2E; vertical-align: top; padding-top: 6pt; border-top: 0.5pt solid #1A1A2E; }
     }
     /* The first page carries its own masthead, so the running header is left off it. */
@@ -283,7 +284,10 @@ unicode-range: U+0102-0103, U+01CD-01DC, U+1E0C-1E0D, U+1E12-1E13, U+1E24-1E25, 
       <nav aria-label="Breadcrumb" class="flex flex-wrap items-center gap-x-2 font-medium text-white">
         <span>Praxiom LLC</span><span aria-hidden="true">&rarr;</span><span>AdaptBridge</span><span aria-hidden="true">&rarr;</span><span aria-current="page">NC Medicaid BH Navigator</span>
       </nav>
-      <a href="https://PraxiomLLC.com" class="font-semibold text-white border-b-2 border-[color:var(--ab-amber)] px-1 hover:underline">Home (Praxiom)</a>
+      <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
+        <a id="header-help" href="mailto:prn.guidance@adaptbridge.praxiomllc.com" class="font-semibold text-white underline underline-offset-2 px-1">Email the coaching team</a>
+        <a href="https://PraxiomLLC.com" class="font-semibold text-white border-b-2 border-[color:var(--ab-amber)] px-1 hover:underline">Home (Praxiom)</a>
+      </div>
     </div>
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
       <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
@@ -291,7 +295,7 @@ unicode-range: U+0102-0103, U+01CD-01DC, U+1E0C-1E0D, U+1E12-1E13, U+1E24-1E25, 
           <div class="min-w-0">
             <div class="flex flex-wrap items-center gap-x-2">
               <h1 class="text-base sm:text-lg font-bold tracking-tight text-white leading-tight">NC Medicaid BH Operations Navigator</h1>
-              <span class="inline-flex items-center px-2 py-0.5  text-xs font-bold bg-[color:var(--ab-blue)] text-white border border-[color:var(--ab-blue)]">v4.1</span>
+              <span class="inline-flex items-center px-2 py-0.5  text-xs font-bold bg-[color:var(--ab-blue)] text-white border border-[color:var(--ab-blue)]">v006</span>
             </div>
             <p class="text-sm text-white mt-0.5 truncate">CCP 8G &bull; CCP 8A-12 &bull; CCP 8A-13 &bull; 10A NCAC 27G &bull; SL 2026-1</p>
           </div>
@@ -490,6 +494,16 @@ unicode-range: U+0102-0103, U+01CD-01DC, U+1E0C-1E0D, U+1E12-1E13, U+1E24-1E25, 
         <svg class="chev w-5 h-5 text-[color:var(--ab-black)] shrink-0 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
       </summary>
       <div class="px-4 pb-4 space-y-4">
+        <div class="bg-white border border-[color:var(--ab-black)] p-3.5 space-y-3">
+          <div class="flex flex-wrap items-end gap-3">
+            <label class="block">
+              <span class="block text-sm font-bold text-[color:var(--ab-black)] mb-1">Plan start date (optional)</span>
+              <input id="plan-start-date" type="date" onchange="onStartDateChange(this.value)" class="touch-target px-3 py-2 border border-[color:var(--ab-black)] bg-white text-[color:var(--ab-black)] text-base">
+            </label>
+            <button type="button" id="download-ics-btn" onclick="downloadCalendar()" disabled class="touch-target px-4 py-2 border-2 border-[color:var(--ab-navy)] bg-white text-[color:var(--ab-navy)] text-sm font-bold hover:bg-[color:var(--ab-fog)] disabled:border-dashed disabled:bg-[color:var(--ab-fog)] disabled:text-[color:var(--ab-black)] disabled:cursor-not-allowed">Download calendar (.ics)</button>
+          </div>
+          <p id="start-date-note" class="text-sm text-[color:var(--ab-black)]">Add a start date to see calendar dates on every step.</p>
+        </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
           <div class="bg-[color:var(--ab-fog)] border border-[color:var(--ab-black)]  p-3.5">
             <div class="text-sm font-bold text-[color:var(--ab-black)] uppercase tracking-wider">Estimated Statutory Fees</div>
@@ -526,6 +540,21 @@ unicode-range: U+0102-0103, U+01CD-01DC, U+1E0C-1E0D, U+1E12-1E13, U+1E24-1E25, 
     </details>
 
   </div>
+
+  <section aria-label="Find steps" class="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 pt-4">
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+      <label class="block">
+        <span class="block text-sm font-bold text-[color:var(--ab-black)] mb-1">Search steps and tasks</span>
+        <input id="plan-search" type="search" autocomplete="off" oninput="onSearchInput(this.value)" placeholder="For example: EIN, NCTracks, fire safety" class="touch-target w-full px-3 py-2 border border-[color:var(--ab-black)] bg-white text-[color:var(--ab-black)] text-base">
+        <span class="block text-sm text-[color:var(--ab-black)] mt-1">Press / to jump here. Results come from every phase.</span>
+      </label>
+      <label class="block">
+        <span class="block text-sm font-bold text-[color:var(--ab-black)] mb-1">Show tasks for</span>
+        <select id="role-filter" onchange="onRoleFilterChange(this.value)" class="touch-target w-full px-3 py-2 border border-[color:var(--ab-black)] bg-white text-[color:var(--ab-black)] text-base"></select>
+        <span class="block text-sm text-[color:var(--ab-black)] mt-1">Matches the owner or lead named on each step.</span>
+      </label>
+    </div>
+  </section>
 
   <!-- Phase tabs stay pinned under the top of the screen while you work through a phase -->
   <nav id="phase-nav" aria-label="Plan phases" class="sticky top-0 z-30 mt-3 bg-white backdrop-blur border-y border-[color:var(--ab-black)]">
@@ -679,6 +708,55 @@ unicode-range: U+0102-0103, U+01CD-01DC, U+1E0C-1E0D, U+1E12-1E13, U+1E24-1E25, 
 
   <!-- Print-only report, rebuilt from the current state each time the user prints -->
   <div id="print-report" aria-hidden="true"></div>
+
+  <dialog id="setup-wizard" aria-labelledby="wizard-title" class="m-auto w-[min(34rem,calc(100vw_-_2rem))] max-h-[90dvh] p-0 border-2 border-[color:var(--ab-black)] bg-white text-[color:var(--ab-black)] backdrop:bg-[color:var(--ab-scrim)]">
+    <form id="wizard-form" onsubmit="submitSetupWizard(event)" class="p-6 space-y-5">
+      <div>
+        <p class="text-xs font-bold uppercase tracking-wider text-[color:var(--ab-blue)]">Set up your plan</p>
+        <h2 id="wizard-title" class="text-xl font-bold mt-1">Which services will you offer?</h2>
+        <p class="text-sm mt-1">Choose at least one. You can change this later in Setup.</p>
+      </div>
+      <fieldset class="space-y-2">
+        <legend class="sr-only">Service lines</legend>
+        <label class="flex items-start gap-3 p-3 min-h-[52px] border border-[color:var(--ab-black)] cursor-pointer">
+          <input type="checkbox" name="service" value="8G" checked class="w-6 h-6 mt-0.5 accent-[color:var(--ab-navy)]">
+          <span class="text-sm font-semibold">CCP 8G Peer Support Services</span>
+        </label>
+        <label class="flex items-start gap-3 p-3 min-h-[52px] border border-[color:var(--ab-black)] cursor-pointer">
+          <input type="checkbox" name="service" value="8A-12" checked class="w-6 h-6 mt-0.5 accent-[color:var(--ab-navy)]">
+          <span class="text-sm font-semibold">CCP 8A-12 Substance Abuse Intensive Outpatient Program (SAIOP)</span>
+        </label>
+        <label class="flex items-start gap-3 p-3 min-h-[52px] border border-[color:var(--ab-black)] cursor-pointer">
+          <input type="checkbox" name="service" value="8A-13" checked class="w-6 h-6 mt-0.5 accent-[color:var(--ab-navy)]">
+          <span class="text-sm font-semibold">CCP 8A-13 Substance Abuse Comprehensive Outpatient Treatment (SACOT)</span>
+        </label>
+      </fieldset>
+      <fieldset class="space-y-2">
+        <legend class="text-base font-bold mb-2">Where are you now?</legend>
+        <label class="flex items-start gap-3 p-3 min-h-[52px] border border-[color:var(--ab-black)] cursor-pointer">
+          <input type="radio" name="stage" value="starting" checked class="w-6 h-6 mt-0.5 accent-[color:var(--ab-navy)]">
+          <span class="text-sm font-semibold">Just starting</span>
+        </label>
+        <label class="flex items-start gap-3 p-3 min-h-[52px] border border-[color:var(--ab-black)] cursor-pointer">
+          <input type="radio" name="stage" value="dhsr" class="w-6 h-6 mt-0.5 accent-[color:var(--ab-navy)]">
+          <span class="text-sm font-semibold">Applying for a DHSR license</span>
+        </label>
+        <label class="flex items-start gap-3 p-3 min-h-[52px] border border-[color:var(--ab-black)] cursor-pointer">
+          <input type="radio" name="stage" value="nctracks" class="w-6 h-6 mt-0.5 accent-[color:var(--ab-navy)]">
+          <span class="text-sm font-semibold">Licensed, working on NCTracks and plan contracts</span>
+        </label>
+      </fieldset>
+      <label class="block">
+        <span class="block text-base font-bold mb-1">Plan start date (optional)</span>
+        <input type="date" name="startDate" class="touch-target px-3 py-2 border border-[color:var(--ab-black)] bg-white text-base">
+        <span class="block text-sm mt-1">Week 1 of your plan. You can change it later.</span>
+      </label>
+      <div class="flex flex-wrap items-center justify-end gap-3 pt-2">
+        <button type="button" onclick="document.getElementById('setup-wizard').close()" class="touch-target px-3 py-2 text-sm font-semibold underline text-[color:var(--ab-blue)]">Skip for now</button>
+        <button type="submit" class="touch-target px-5 py-2.5 bg-[color:var(--ab-amber)] border-2 border-[color:var(--ab-black)] text-[color:var(--ab-black)] text-sm font-bold hover:bg-[color:var(--ab-black)] hover:text-[color:var(--ab-amber)]">Start my plan</button>
+      </div>
+    </form>
+  </dialog>
 
   <script>
     // Load the embedded monospace face now, so citations and figures in the print view are not missing when the page prints.
@@ -2656,7 +2734,11 @@ unicode-range: U+0102-0103, U+01CD-01DC, U+1E0C-1E0D, U+1E12-1E13, U+1E24-1E25, 
         subtaskChecks: {},
         stepStatuses: {},
         stepNotes: {},
-        activePhase: 1
+        activePhase: 1,
+        startDate: '',
+        verification: {},
+        roleFilter: '',
+        setupDone: false
       };
     }
 
@@ -2685,6 +2767,21 @@ unicode-range: U+0102-0103, U+01CD-01DC, U+1E0C-1E0D, U+1E12-1E13, U+1E24-1E25, 
         });
       }
       if (PHASE_TITLES[raw.activePhase]) state.activePhase = raw.activePhase;
+      if (typeof raw.startDate === 'string') state.startDate = cleanDate(raw.startDate);
+      if (isPlainObject(raw.verification)) {
+        Object.entries(raw.verification).forEach(([id, v]) => {
+          if (isPlainObject(v) && VERIFY_META[v.status]) {
+            state.verification[id] = {
+              status: v.status,
+              source: typeof v.source === 'string' ? v.source.slice(0, 300) : '',
+              date: cleanDate(typeof v.date === 'string' ? v.date : '')
+            };
+          }
+        });
+      }
+      if (ROLE_GROUPS.some(group => group.id === raw.roleFilter)) state.roleFilter = raw.roleFilter;
+      // Saves from earlier versions always carry their service lines, so those users are not shown the wizard again
+      state.setupDone = raw.setupDone === true || Array.isArray(raw.selectedServices);
       return state;
     }
 
@@ -3182,8 +3279,19 @@ unicode-range: U+0102-0103, U+01CD-01DC, U+1E0C-1E0D, U+1E12-1E13, U+1E24-1E25, 
     function renderCurrentPhaseCards(filteredSteps) {
       const container = document.getElementById('current-phase-container');
       const phase = appState.activePhase;
-      const phaseSteps = filteredSteps.filter(s => s.phase === phase);
-      document.getElementById('phase-heading').innerText = PHASE_NAMES[phase];
+      const query = searchQuery.trim().toLowerCase();
+      const roleGroup = appState.roleFilter;
+      const inRole = step => !roleGroup || roleGroupsFor(step).includes(roleGroup);
+      const phaseSteps = query
+        ? filteredSteps.filter(step => inRole(step) && stepMatches(step, query))
+        : filteredSteps.filter(step => step.phase === phase && inRole(step));
+      const viewSection = currentSectionName();
+      const heading = query ? `Search results for "${searchQuery.trim()}"` : PHASE_NAMES[phase];
+      document.getElementById('phase-heading').innerText = roleGroup ? `${heading} · ${roleLabel(roleGroup)}` : heading;
+      document.getElementById('phase-pager').classList.toggle('hidden', !!query);
+      updateHeaderHelp();
+      // Search results open straight away, so the match is visible without another tap
+      if (query) phaseSteps.forEach(step => expandedSteps.add(step.id));
 
       // First visit to a phase: everything open on desktop, only the first unfinished step on a phone
       if (!initializedPhases.has(phase)) {
@@ -3201,7 +3309,7 @@ unicode-range: U+0102-0103, U+01CD-01DC, U+1E0C-1E0D, U+1E12-1E13, U+1E24-1E25, 
       if (phaseSteps.length === 0) {
         container.innerHTML = `
           <div class="p-8 text-center bg-white  border border-[color:var(--ab-black)] text-[color:var(--ab-black)]">
-            No steps match the active Clinical Coverage Policy filter in this phase.
+            ${query ? 'No steps match that search. Try a shorter word.' : roleGroup ? 'No steps in this phase are assigned to that role. Choose Everyone to see all steps.' : 'No steps match the active Clinical Coverage Policy filter in this phase.'}
           </div>
         `;
         return;
@@ -3215,6 +3323,10 @@ unicode-range: U+0102-0103, U+01CD-01DC, U+1E0C-1E0D, U+1E12-1E13, U+1E24-1E25, 
         const total = step.subtasks.length;
         const pct = total > 0 ? Math.round((done / total) * 100) : 0;
         const isOpen = expandedSteps.has(step.id);
+        const dates = stepDates(step);
+        const overdue = !!dates && status !== 'completed' && todayStart() > dates.end;
+        const verify = appState.verification[step.id] || { status: 'not_checked', source: '', date: '' };
+        const helpLink = helpHref(viewSection, step);
 
         return `
           <article id="step-card-${step.id}" class="scroll-mt-20 bg-white  border border-[color:var(--ab-black)] border-l-4 ${meta.accent}">
@@ -3226,6 +3338,7 @@ unicode-range: U+0102-0103, U+01CD-01DC, U+1E0C-1E0D, U+1E12-1E13, U+1E24-1E25, 
                   <span class="px-2.5 py-1  text-xs font-bold bg-[color:var(--ab-navy)] text-white">${step.stepNumber}</span>
                   <span class="px-2.5 py-1  text-xs font-bold border ${meta.badge}">${meta.label}</span>
                   ${noteText ? '<span class="px-2.5 py-1  text-xs font-bold border border-[color:var(--ab-blue)] bg-[color:var(--ab-fog)] text-[color:var(--ab-navy)]">i Note</span>' : ''}
+                  ${overdue ? '<span class="px-2.5 py-1  text-xs font-bold border border-[color:var(--ab-black)] bg-white text-[color:var(--ab-black)]">Past planned end</span>' : ''}
                 </span>
                 <span class="block text-base font-bold text-[color:var(--ab-black)] leading-snug">${step.title}</span>
                 <span class="flex items-center gap-2">
@@ -3270,7 +3383,31 @@ unicode-range: U+0102-0103, U+01CD-01DC, U+1E0C-1E0D, U+1E12-1E13, U+1E24-1E25, 
                   <dt class="text-xs font-bold text-[color:var(--ab-black)] uppercase tracking-wide">Plan Dependency</dt>
                   <dd class="text-[color:var(--ab-black)] mt-0.5">${step.dependencies}</dd>
                 </div>
+                <div>
+                  <dt class="text-xs font-bold text-[color:var(--ab-black)] uppercase tracking-wide">Who does this</dt>
+                  <dd class="text-[color:var(--ab-black)] mt-0.5">${escapeHtml(step.responsible)}</dd>
+                </div>
+                <div>
+                  <dt class="text-xs font-bold text-[color:var(--ab-black)] uppercase tracking-wide">Planned dates</dt>
+                  <dd class="text-[color:var(--ab-black)] mt-0.5">${dates ? `${formatDate(dates.start)} to ${formatDate(dates.end)}` : 'Set a start date in Fees and timeline'}</dd>
+                </div>
               </dl>
+
+              <div class="bg-white border border-[color:var(--ab-black)] p-3.5 space-y-3">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  <label class="block">
+                    <span class="block text-sm font-bold text-[color:var(--ab-black)] mb-1">Verification status</span>
+                    <select id="verify-status-${step.id}" onchange="onVerificationChange(${step.id})" class="touch-target w-full px-3 py-2 border border-[color:var(--ab-black)] bg-white text-[color:var(--ab-black)] text-sm font-semibold">
+                      ${Object.entries(VERIFY_META).map(([key, label]) => `<option value="${key}" ${verify.status === key ? 'selected' : ''}>${label}</option>`).join('')}
+                    </select>
+                  </label>
+                  <label class="block">
+                    <span class="block text-sm font-bold text-[color:var(--ab-black)] mb-1">Source or note</span>
+                    <input id="verify-source-${step.id}" type="text" value="${escapeHtml(verify.source)}" maxlength="300" onchange="onVerificationChange(${step.id})" placeholder="For example: sosnc.gov, checked Oct 22" class="touch-target w-full px-3 py-2 border border-[color:var(--ab-black)] bg-white text-[color:var(--ab-black)] text-sm">
+                  </label>
+                </div>
+                <p id="verify-date-${step.id}" class="text-sm text-[color:var(--ab-black)]">${verificationNote(verify)}</p>
+              </div>
 
               <div>
                 <div class="flex items-center justify-between text-sm text-[color:var(--ab-black)] font-bold border-b border-[color:var(--ab-black)] pb-1.5 mb-2">
@@ -3297,6 +3434,10 @@ unicode-range: U+0102-0103, U+01CD-01DC, U+1E0C-1E0D, U+1E12-1E13, U+1E24-1E25, 
                   }).join('')}
                 </ul>
               </div>
+
+              <p class="text-sm">
+                <a href="${helpLink}" class="inline-flex items-center font-bold text-[color:var(--ab-blue)] underline underline-offset-2 break-words">Email the coaching team about this step</a>
+              </p>
 
               ${noteText ? `
                 <div class="text-sm bg-[color:var(--ab-fog)] border border-[color:var(--ab-amber)]  p-3.5 text-[color:var(--ab-black)]">
@@ -3647,6 +3788,7 @@ unicode-range: U+0102-0103, U+01CD-01DC, U+1E0C-1E0D, U+1E12-1E13, U+1E24-1E25, 
             <div class="min-w-0 flex-1">
               <div class="text-sm font-bold ${status === 'blocked' ? 'text-[color:var(--ab-black)]' : 'text-[color:var(--ab-black)]'} uppercase tracking-wider">${label}</div>
               <div class="font-bold text-[color:var(--ab-black)] leading-snug">${next.stepNumber}: ${next.title}</div>
+              ${stepDates(next) ? `<div class="text-sm text-[color:var(--ab-black)] mt-0.5">${formatDate(stepDates(next).start)} to ${formatDate(stepDates(next).end)}</div>` : ''}
             </div>
             <button type="button" onclick="goToStep(${next.id})" class="touch-target shrink-0 px-4 py-2  bg-[color:var(--ab-amber)] hover:bg-[color:var(--ab-black)] hover:text-[color:var(--ab-amber)] active:bg-[color:var(--ab-black)] border-2 border-[color:var(--ab-black)] text-[color:var(--ab-black)] text-sm font-bold">Open</button>
           </div>`;
@@ -4012,7 +4154,7 @@ unicode-range: U+0102-0103, U+01CD-01DC, U+1E0C-1E0D, U+1E12-1E13, U+1E24-1E25, 
           <div class="pr-kicker">AdaptBridge &middot; NC Medicaid Behavioral Health</div>
           <h1>Operations &amp; Compliance Plan</h1>
           <p class="pr-sub">Progress report printed ${e(today)}</p>
-          <p class="pr-meta-line">AdaptBridge | Praxiom LLC d/b/a AdaptBridge | v4.1 | ${e(today)}</p>
+          <p class="pr-meta-line">AdaptBridge | Praxiom LLC d/b/a AdaptBridge | v006 | ${e(today)}</p>
           <dl class="pr-scope">
             <dt>Service lines</dt><dd>${ALL_SERVICES.filter(s => appState.selectedServices.includes(s)).map(s => e(SERVICE_NAMES[s])).join('<br>')}</dd>
             <dt>Footprint</dt><dd>${footprint}</dd>
@@ -4070,9 +4212,175 @@ unicode-range: U+0102-0103, U+01CD-01DC, U+1E0C-1E0D, U+1E12-1E13, U+1E24-1E25, 
       syncDraftServiceCheckboxes();
       updateRegionalContactsDisplay();
       updateSetupSummary();
+      syncPlanToolbar();
+      syncScheduleControls();
     }
 
+    /* v006: help email, calendar dates, owner roles, search, verification and the setup wizard */
+    const HELP_EMAIL = 'prn.guidance@adaptbridge.praxiomllc.com';
+    const APP_LABEL = 'NC Medicaid BH Operations Navigator v006';
+    const ROLE_GROUPS = [
+      { id: 'owner', label: 'Owner or executive', match: /Owner|Executive Director|CEO|Governing Board/ },
+      { id: 'clinical', label: 'Clinical lead', match: /Clinical|Facility Director|Quality Director/ },
+      { id: 'billing', label: 'Billing and finance', match: /Billing|CFO|Treasurer|Grants/ },
+      { id: 'compliance', label: 'Compliance and HR', match: /Compliance|\bHR\b|Office Administrator|EHR/ }
+    ];
+    const VERIFY_META = {
+      not_checked: 'Not checked yet',
+      source_checked: 'Checked against an official source',
+      owner_verified: 'Verified by you'
+    };
+    const STAGE_PHASE = { starting: 1, dhsr: 2, nctracks: 3 };
+    let searchQuery = '';
+
+    const parseLocalDate = iso => { const [y, m, d] = iso.split('-').map(Number); return new Date(y, m - 1, d); };
+    const cleanDate = value => (/^\d{4}-\d{2}-\d{2}$/.test(value) && !isNaN(parseLocalDate(value)) ? value : '');
+    const addDays = (date, days) => new Date(date.getFullYear(), date.getMonth(), date.getDate() + days);
+    const formatDate = date => date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+    const todayStart = () => { const t = new Date(); return new Date(t.getFullYear(), t.getMonth(), t.getDate()); };
+    const isoOf = date => `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
+    const roleGroupsFor = step => ROLE_GROUPS.filter(group => group.match.test(step.responsible)).map(group => group.id);
+    const roleLabel = id => (ROLE_GROUPS.find(group => group.id === id) || {}).label || '';
+    const stepMatches = (step, query) => [step.stepNumber, step.title, step.description, step.responsible, step.resourceName, ...step.subtasks]
+      .join(' ').toLowerCase().includes(query);
+
+    // Calendar dates for a step: its scheduled weeks counted from the plan start date
+    function stepDates(step) {
+      if (!appState.startDate) return null;
+      const start = parseLocalDate(appState.startDate);
+      return {
+        start: addDays(start, (step.timelineStartWeek - 1) * 7),
+        end: addDays(start, stepEndWeek(step) * 7 - 1)
+      };
+    }
+
+    // Help email: section and step go into the subject line, so the coaching team knows where the user is
+    function currentSectionName() {
+      return searchQuery.trim() ? 'Search results' : PHASE_NAMES[appState.activePhase];
+    }
+    function helpHref(section, step) {
+      const subject = `User Support Request for ${APP_LABEL} App ${section} and ${step ? `${step.stepNumber}: ${step.title}` : 'General question'}`;
+      const body = 'Tell us what you were trying to do and where you got stuck:\n\n';
+      return `mailto:${HELP_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    }
+    function updateHeaderHelp() {
+      document.getElementById('header-help').href = helpHref(currentSectionName(), null);
+    }
+
+    // Verification: the status and the source the user checked, so unverified content is visible
+    const verificationNote = verify => (verify && verify.date
+      ? `Last updated ${formatDate(parseLocalDate(verify.date))}`
+      : 'Choose a status after you check the official source.');
+    function onVerificationChange(stepId) {
+      const status = document.getElementById(`verify-status-${stepId}`).value;
+      const source = document.getElementById(`verify-source-${stepId}`).value.trim().slice(0, 300);
+      const previous = appState.verification[stepId];
+      const changed = !previous || previous.status !== status;
+      appState.verification[stepId] = { status, source, date: changed ? isoOf(todayStart()) : previous.date };
+      saveState();
+      document.getElementById(`verify-date-${stepId}`).innerText = verificationNote(appState.verification[stepId]);
+    }
+
+    // Search and owner filter: both only change which cards are listed
+    function onSearchInput(value) {
+      searchQuery = value;
+      renderCurrentPhaseCards(getFilteredSteps());
+    }
+    function onRoleFilterChange(value) {
+      appState.roleFilter = value;
+      saveState();
+      renderCurrentPhaseCards(getFilteredSteps());
+    }
+    function buildRoleOptions() {
+      document.getElementById('role-filter').innerHTML = '<option value="">Everyone</option>'
+        + ROLE_GROUPS.map(group => `<option value="${group.id}">${group.label}</option>`).join('');
+    }
+    function syncPlanToolbar() {
+      document.getElementById('role-filter').value = appState.roleFilter;
+    }
+
+    // Calendar: plan start date and the .ics download
+    function syncScheduleControls() {
+      const hasDate = !!appState.startDate;
+      document.getElementById('plan-start-date').value = appState.startDate;
+      document.getElementById('start-date-note').innerText = hasDate
+        ? `Calendar dates show on every step. Week 1 starts on ${formatDate(parseLocalDate(appState.startDate))}.`
+        : 'Add a start date to see calendar dates on every step.';
+      document.getElementById('download-ics-btn').disabled = !hasDate;
+    }
+    function onStartDateChange(value) {
+      appState.startDate = cleanDate(value);
+      saveState();
+      renderDashboard();
+    }
+    const icsEscape = text => String(text).replace(/\\/g, '\\\\').replace(/[;,]/g, '\\$&').replace(/\n/g, '\\n');
+    const icsDay = date => `${date.getFullYear()}${String(date.getMonth() + 1).padStart(2, '0')}${String(date.getDate()).padStart(2, '0')}`;
+    function downloadCalendar() {
+      if (!appState.startDate) return;
+      const stamp = new Date().toISOString().replace(/[-:]/g, '').replace(/\.\d{3}Z$/, 'Z');
+      const lines = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//AdaptBridge//NC Medicaid BH Operations Navigator//EN', 'CALSCALE:GREGORIAN', 'METHOD:PUBLISH'];
+      getFilteredSteps().forEach(step => {
+        const dates = stepDates(step);
+        lines.push('BEGIN:VEVENT',
+          `UID:step-${step.id}-${appState.startDate}@adaptbridge-navigator`,
+          `DTSTAMP:${stamp}`,
+          `DTSTART;VALUE=DATE:${icsDay(dates.start)}`,
+          `DTEND;VALUE=DATE:${icsDay(addDays(dates.end, 1))}`,
+          `SUMMARY:${icsEscape(`${step.stepNumber}: ${step.title}`)}`,
+          `DESCRIPTION:${icsEscape(`${PHASE_NAMES[step.phase]}. Owner: ${step.responsible}.`)}`,
+          'END:VEVENT');
+      });
+      lines.push('END:VCALENDAR');
+      const url = URL.createObjectURL(new Blob([lines.join('\r\n')], { type: 'text/calendar;charset=utf-8' }));
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = 'nc-medicaid-bh-plan.ics';
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+      setTimeout(() => URL.revokeObjectURL(url), 1000);
+    }
+
+    // Setup wizard: shown once, to new users. Any way of closing it counts as done.
+    function openSetupWizard() {
+      const dialog = document.getElementById('setup-wizard');
+      if (!dialog.open) dialog.showModal();
+    }
+    function finishSetup() {
+      appState.setupDone = true;
+      saveState();
+    }
+    function submitSetupWizard(event) {
+      event.preventDefault();
+      const form = event.currentTarget;
+      const services = [...form.querySelectorAll('input[name="service"]:checked')].map(input => input.value);
+      if (services.length === 0) {
+        showToast('Service Required', 'Choose at least one service line to continue.');
+        return;
+      }
+      appState.selectedServices = services;
+      draftFilters.selectedServices = [...services];
+      appState.activePhase = STAGE_PHASE[form.querySelector('input[name="stage"]:checked').value];
+      appState.startDate = cleanDate(form.elements.startDate.value);
+      finishSetup();
+      document.getElementById('setup-wizard').close();
+      checkFilterChanges();
+      renderDashboard();
+    }
+
+    // Keyboard: "/" moves focus to the search box, unless the user is typing or a dialog is open
+    document.addEventListener('keydown', event => {
+      if (event.key !== '/' || event.ctrlKey || event.metaKey || event.altKey) return;
+      if (/^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement.tagName) || document.body.classList.contains('modal-open') || document.querySelector('dialog[open]')) return;
+      event.preventDefault();
+      document.getElementById('plan-search').focus();
+    });
+
+    buildRoleOptions();
+    document.getElementById('setup-wizard').addEventListener('close', finishSetup);
+
     initState();
+    if (!appState.setupDone) openSetupWizard();
 
     // The reference panels start folded so the plan is the first thing on screen. The exception is a
     // desktop first run, where Setup stays open until the user has chosen their counties.

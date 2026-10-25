@@ -156,9 +156,15 @@ An array of 242 unique URLs. Index positions are referenced from `SUBTASK_DETAIL
   "subtaskChecks": { "step_1_sub_0": true },
   "stepStatuses": { "1": "in_progress" },
   "stepNotes": { "1": "Called the Secretary of State." },
-  "activePhase": 1
+  "activePhase": 1,
+  "startDate": "2027-03-01",
+  "verification": { "1": { "status": "source_checked", "source": "sosnc.gov", "date": "2026-10-25" } },
+  "roleFilter": "billing",
+  "setupDone": true
 }
 ```
+
+`startDate`, `verification`, `roleFilter` and `setupDone` were added in v006. Saves from earlier versions load without them, and `setupDone` is treated as true for any save that already has service lines, so existing users are not shown the setup wizard again.
 
 ### 5.2 Validation (`normalizeState`)
 
