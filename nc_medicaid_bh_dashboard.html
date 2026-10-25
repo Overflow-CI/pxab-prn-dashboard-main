@@ -683,6 +683,9 @@ unicode-range: U+0102-0103, U+01CD-01DC, U+1E0C-1E0D, U+1E12-1E13, U+1E24-1E25, 
     /* Compliance tags keep the stylesheet's tint and border. The label is white, because teal (4.5:1) and red (3.2:1) text on the tint fails WCAG AA for small bold text. */
     .tag-nctracks, .tag-dhsr-warning { color: var(--color-text-main) !important; }
 
+    /* Neutral risk tag for the authorities without a stylesheet tag */
+    .tag-risk { background-color: var(--color-bg-surface); color: var(--color-text-main) !important; border-color: var(--color-border); box-shadow: none; }
+
     /* Active phase tab: surface fill, white label, gold bar (the tab keeps its bottom border width) */
     .tab-active { background-color: var(--color-bg-surface) !important; color: var(--color-text-main) !important; border-bottom-color: var(--color-gold) !important; }
 
@@ -3743,11 +3746,134 @@ unicode-range: U+0102-0103, U+01CD-01DC, U+1E0C-1E0D, U+1E12-1E13, U+1E24-1E25, 
 
     // Opening and closing use the stylesheet's slide animations. A closing body is hidden when its animation ends;
     // with reduced motion there is no animation, so it is hidden at once.
-    // A warning counts as a DHSR audit trap only when its text names DHSR or a DHSR rule (10A NCAC 27G or 27E, G.S. 131E, MHLCS).
-    // Other agencies' warnings (NCTracks, the Tailored Plans, IRS, OIG, DSS, CMS) keep their tips and get no DHSR tag.
-    const DHSR_PATTERN = /\bDHSR\b|\bMHLCS\b|10A NCAC 27[GE]|\b27[GE] \.|G\.S\. 131E/;
-    const auditTrapsFor = checkKey => ((SUBTASK_DETAILS_MAP[checkKey] || {}).tips || []).filter(tip => tip.includes('AUDIT TRAP'));
-    const dhsrTrapsFor = checkKey => auditTrapsFor(checkKey).filter(tip => DHSR_PATTERN.test(tip));
+    // Authority for each AUDIT TRAP tip, keyed by task and tip position. Each warning names one authority.
+    const TRAP_AUTHORITY = {
+      'step_1_sub_4#0': 'OTHER',
+      'step_4_sub_0#0': 'DHSR',
+      'step_4_sub_1#0': 'DHSR',
+      'step_4_sub_2#0': 'OTHER',
+      'step_5_sub_0#0': 'PLANS',
+      'step_5_sub_1#0': 'PLANS',
+      'step_5_sub_2#0': 'OTHER',
+      'step_5_sub_3#0': 'PLANS',
+      'step_6_sub_0#0': 'PLANS',
+      'step_6_sub_1#0': 'NCTRACKS',
+      'step_6_sub_2#0': 'IRS',
+      'step_7_sub_0#0': 'DHSR',
+      'step_7_sub_1#0': 'DHSR',
+      'step_7_sub_2#0': 'DHSR',
+      'step_7_sub_3#0': 'DHSR',
+      'step_8_sub_0#1': 'NCTRACKS',
+      'step_8_sub_1#1': 'POLICY',
+      'step_8_sub_1#2': 'POLICY',
+      'step_8_sub_2#0': 'DHSR',
+      'step_9_sub_0#0': 'DHSR',
+      'step_9_sub_1#0': 'POLICY',
+      'step_9_sub_1#1': 'POLICY',
+      'step_9_sub_2#1': 'OTHER',
+      'step_9_sub_3#0': 'PLANS',
+      'step_9_sub_3#2': 'DHSR',
+      'step_9_sub_4#0': 'OIG',
+      'step_9_sub_4#1': 'CMS',
+      'step_10_sub_0#0': 'OTHER',
+      'step_10_sub_1#0': 'POLICY',
+      'step_10_sub_2#0': 'POLICY',
+      'step_10_sub_3#0': 'DHSR',
+      'step_10_sub_3#1': 'DHSR',
+      'step_11_sub_0#0': 'DHSR',
+      'step_11_sub_1#0': 'DHSR',
+      'step_11_sub_2#0': 'OIG',
+      'step_11_sub_3#0': 'OIG',
+      'step_12_sub_0#0': 'POLICY',
+      'step_12_sub_1#1': 'DHSR',
+      'step_12_sub_2#1': 'POLICY',
+      'step_12_sub_3#0': 'POLICY',
+      'step_13_sub_0#0': 'DHSR',
+      'step_13_sub_1#1': 'OTHER',
+      'step_13_sub_2#1': 'OTHER',
+      'step_14_sub_0#1': 'DHSR',
+      'step_14_sub_1#2': 'DHSR',
+      'step_14_sub_2#1': 'DHSR',
+      'step_14_sub_3#1': 'DHSR',
+      'step_15_sub_0#0': 'DHSR',
+      'step_15_sub_1#0': 'DHSR',
+      'step_15_sub_1#1': 'DHSR',
+      'step_15_sub_2#0': 'DHSR',
+      'step_15_sub_2#1': 'DHSR',
+      'step_16_sub_0#0': 'DHSR',
+      'step_16_sub_0#1': 'DHSR',
+      'step_16_sub_1#0': 'DHSR',
+      'step_16_sub_2#0': 'DHSR',
+      'step_17_sub_0#1': 'OTHER',
+      'step_17_sub_1#1': 'OTHER',
+      'step_17_sub_2#0': 'NCTRACKS',
+      'step_18_sub_0#1': 'NCTRACKS',
+      'step_18_sub_1#0': 'NCTRACKS',
+      'step_18_sub_2#0': 'NCTRACKS',
+      'step_18_sub_3#1': 'NCTRACKS',
+      'step_19_sub_0#0': 'NCTRACKS',
+      'step_19_sub_1#0': 'NCTRACKS',
+      'step_19_sub_2#0': 'NCTRACKS',
+      'step_20_sub_0#0': 'NCTRACKS',
+      'step_20_sub_1#0': 'NCTRACKS',
+      'step_20_sub_2#0': 'NCTRACKS',
+      'step_21_sub_0#2': 'POLICY',
+      'step_21_sub_1#1': 'PLANS',
+      'step_21_sub_2#0': 'PLANS',
+      'step_21_sub_3#1': 'PLANS',
+      'step_22_sub_0#0': 'POLICY',
+      'step_22_sub_1#0': 'POLICY',
+      'step_22_sub_2#0': 'POLICY',
+      'step_22_sub_3#0': 'NCTRACKS',
+      'step_23_sub_0#0': 'DHSR',
+      'step_23_sub_1#0': 'POLICY',
+      'step_23_sub_1#1': 'DHSR',
+      'step_23_sub_2#0': 'DHSR',
+      'step_24_sub_0#0': 'POLICY',
+      'step_24_sub_1#0': 'POLICY',
+      'step_24_sub_2#0': 'POLICY',
+      'step_24_sub_3#1': 'OTHER',
+      'step_25_sub_0#0': 'POLICY',
+      'step_25_sub_1#1': 'OTHER',
+      'step_25_sub_2#0': 'NCTRACKS',
+      'step_25_sub_3#0': 'OIG',
+      'step_26_sub_0#2': 'POLICY',
+      'step_26_sub_2#2': 'PLANS',
+      'step_27_sub_0#0': 'POLICY',
+      'step_27_sub_1#0': 'POLICY',
+      'step_28_sub_0#2': 'DSS',
+      'step_28_sub_1#2': 'DSS',
+      'step_28_sub_2#2': 'DSS',
+      'step_28_sub_3#1': 'DSS',
+      'step_29_sub_0#0': 'DSS',
+      'step_29_sub_0#1': 'POLICY',
+      'step_29_sub_1#0': 'POLICY',
+      'step_29_sub_1#1': 'CMS',
+      'step_29_sub_2#0': 'POLICY',
+      'step_29_sub_3#0': 'OTHER',
+      'step_30_sub_0#0': 'OIG',
+      'step_30_sub_1#0': 'NCTRACKS',
+      'step_30_sub_1#1': 'NCTRACKS',
+      'step_31_sub_3#0': 'CMS',
+      'step_28_sub_5#0': 'POLICY'
+    };
+
+    // Labels and styles for each authority. DHSR and NCTracks keep their stylesheet tags; the others share a neutral tag.
+    const RISK_TAGS = {
+      DHSR: { name: 'DHSR', label: 'DHSR audit trap', cls: 'tag-dhsr-warning' },
+      NCTRACKS: { name: 'NCTracks', label: 'NCTracks risk', cls: 'tag-nctracks' },
+      PLANS: { name: 'Medicaid plans', label: 'Medicaid plan risk', cls: 'tag-risk' },
+      IRS: { name: 'IRS', label: 'IRS risk', cls: 'tag-risk' },
+      OIG: { name: 'OIG', label: 'OIG risk', cls: 'tag-risk' },
+      DSS: { name: 'DSS', label: 'DSS risk', cls: 'tag-risk' },
+      CMS: { name: 'CMS', label: 'CMS risk', cls: 'tag-risk' },
+      POLICY: { name: 'NC Medicaid policy', label: 'NC Medicaid policy risk', cls: 'tag-risk' },
+      OTHER: { name: 'Other agency', label: 'Other agency risk', cls: 'tag-risk' }
+    };
+    const trapsFor = checkKey => ((SUBTASK_DETAILS_MAP[checkKey] || {}).tips || [])
+      .map((text, idx) => ({ text, code: TRAP_AUTHORITY[`${checkKey}#${idx}`] }))
+      .filter(trap => trap.code);
+    const authoritiesFor = checkKey => [...new Set(trapsFor(checkKey).map(trap => trap.code))];
 
     // Info button on a task: shows the risk text the tag is based on
     function toggleRiskInfo(checkKey) {
@@ -3847,8 +3973,10 @@ unicode-range: U+0102-0103, U+01CD-01DC, U+1E0C-1E0D, U+1E12-1E13, U+1E24-1E25, 
         const overdue = !!dates && status !== 'completed' && todayStart() > dates.end;
         const verify = appState.verification[step.id] || { status: 'not_checked', source: '', date: '' };
         const helpLink = helpHref(viewSection, step);
-        const nctracksStep = /NCTracks/i.test(`${step.title} ${step.description} ${step.resourceName}`);
-        const dhsrTasks = step.subtasks.filter((_, idx) => dhsrTrapsFor(subtaskKey(step.id, idx)).length > 0).length;
+        // One tag per authority in this step, with the number of tasks it applies to
+        const riskCounts = {};
+        step.subtasks.forEach((_, idx) => authoritiesFor(subtaskKey(step.id, idx)).forEach(code => { riskCounts[code] = (riskCounts[code] || 0) + 1; }));
+        const riskBadges = Object.entries(riskCounts).map(([code, n]) => `<span class="compliance-alert-tag ${RISK_TAGS[code].cls}">${RISK_TAGS[code].label}: ${n} ${n === 1 ? 'task' : 'tasks'}</span>`).join('');
 
         return `
           <article id="step-card-${step.id}" class="scroll-mt-20 bg-white  border border-[color:var(--ab-black)] border-l-4 ${meta.accent}">
@@ -3860,8 +3988,7 @@ unicode-range: U+0102-0103, U+01CD-01DC, U+1E0C-1E0D, U+1E12-1E13, U+1E24-1E25, 
                   <span class="px-2.5 py-1  text-xs font-bold bg-[color:var(--ab-navy)] text-white">${step.stepNumber}</span>
                   <span data-status="${status}" class="px-2.5 py-1  text-xs font-bold border ${meta.badge}">${meta.label}</span>
                   ${noteText ? '<span class="px-2.5 py-1  text-xs font-bold border border-[color:var(--ab-blue)] bg-[color:var(--ab-fog)] text-[color:var(--ab-navy)]">i Note</span>' : ''}
-                  ${nctracksStep ? '<span class="compliance-alert-tag tag-nctracks">NCTracks credentialing cycle</span>' : ''}
-                  ${dhsrTasks ? `<span class="compliance-alert-tag tag-dhsr-warning">DHSR audit trap: ${dhsrTasks} ${dhsrTasks === 1 ? 'task' : 'tasks'}</span>` : ''}
+                  ${riskBadges}
                   ${overdue ? '<span data-status="overdue" class="px-2.5 py-1  text-xs font-bold border border-[color:var(--ab-black)] bg-white text-[color:var(--ab-black)]">Past planned end</span>' : ''}
                 </span>
                 <span class="block text-base font-bold text-[color:var(--ab-black)] leading-snug">${step.title}</span>
@@ -3942,7 +4069,7 @@ unicode-range: U+0102-0103, U+01CD-01DC, U+1E0C-1E0D, U+1E12-1E13, U+1E24-1E25, 
                   ${step.subtasks.map((sub, subIdx) => {
                     const checkKey = subtaskKey(step.id, subIdx);
                     const isChecked = !!appState.subtaskChecks[checkKey];
-                    const dhsrTraps = dhsrTrapsFor(checkKey);
+                    const traps = trapsFor(checkKey);
                     return `
                   <li class="sm:flex sm:items-stretch  border ${isChecked ? 'border-[color:var(--ab-navy)] bg-white' : 'border-[color:var(--ab-black)] bg-white'}">
                     <label class="flex sm:flex-1 min-w-0 items-start gap-3 p-3 min-h-[52px] cursor-pointer">
@@ -3950,17 +4077,17 @@ unicode-range: U+0102-0103, U+01CD-01DC, U+1E0C-1E0D, U+1E12-1E13, U+1E24-1E25, 
                       <span class="text-sm ${isChecked ? 'line-through text-[color:var(--ab-black)] font-normal' : 'font-semibold text-[color:var(--ab-black)]'}">${sub}</span>
                     </label>
                     <div class="px-3 pb-3 pl-12 sm:p-0 sm:flex sm:shrink-0 sm:border-l sm:border-[color:var(--ab-black)]">
-                      ${dhsrTraps.length ? `<span class="compliance-alert-tag tag-dhsr-warning">DHSR audit trap</span>
+                      ${traps.length ? authoritiesFor(checkKey).map(code => `<span class="compliance-alert-tag ${RISK_TAGS[code].cls}">${RISK_TAGS[code].label}</span>`).join('') + `
                       <button type="button" onclick="toggleRiskInfo('${checkKey}')" aria-expanded="false" aria-controls="risk-${checkKey}" class="touch-target inline-flex items-center justify-center gap-1.5 px-3 border border-[color:var(--ab-black)] bg-white text-[color:var(--ab-black)] text-sm font-bold">i Risk</button>` : ''}
                       <button type="button" onclick="openSubtaskDetailModal('${checkKey}', ${step.id}, ${subIdx})" aria-label="Instructions and contacts: ${escapeHtml(sub)}" class="touch-target inline-flex items-center justify-center gap-1.5 px-3  border border-[color:var(--ab-blue)] bg-[color:var(--ab-fog)] hover:bg-[color:var(--ab-fog)] text-[color:var(--ab-navy)] text-sm font-semibold sm:w-full sm:px-4   sm:border-0 sm:bg-transparent sm:hover:bg-[color:var(--ab-fog)]">
                         <svg class="w-5 h-5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
                         Instructions
                       </button>
                     </div>
-                  </li>${dhsrTraps.length ? `
+                  </li>${traps.length ? `
                   <li id="risk-${checkKey}" class="hidden p-3 text-sm text-[color:var(--ab-black)] bg-[color:var(--ab-fog)] border border-[color:var(--ab-black)] border-l-4 border-l-[color:var(--ab-amber)]">
-                    <p class="font-bold mb-1">DHSR audit trap: the risk</p>
-                    ${dhsrTraps.map(tip => `<p class="mt-1">${escapeHtml(tip.replace(/^AUDIT TRAP:\s*/, ''))}</p>`).join('')}
+                    <p class="font-bold mb-1">Risk details</p>
+                    ${traps.map(trap => `<p class="mt-1"><b>${RISK_TAGS[trap.code].name}:</b> ${escapeHtml(trap.text.replace(/^AUDIT TRAP:\s*/, ''))}</p>`).join('')}
                   </li>` : ''}`;
                   }).join('')}
                 </ul>
