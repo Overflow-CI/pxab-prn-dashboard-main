@@ -192,11 +192,19 @@ unicode-range: U+0102-0103, U+01CD-01DC, U+1E0C-1E0D, U+1E12-1E13, U+1E24-1E25, 
     /* ---------- Printable plan (#print-report is filled by buildPrintReport) ---------- */
     /* Print and export views: white background, Rule Black text, 12pt body, 1-inch margins (guide s.14.12). */
     #print-report { display: none; }
+    /* Letter, 3-ring binder ready: 1.25in left for the holes, 0.75in right. Top and bottom 1in. */
     @page {
       size: letter;
-      margin: 1in;
-      @bottom-left { content: "AdaptBridge | Praxiom LLC d/b/a AdaptBridge"; font: 10pt "IBM Plex Mono", monospace; color: #1A1A2E; }
-      @bottom-right { content: "Page " counter(page) " of " counter(pages); font: 10pt "IBM Plex Mono", monospace; color: #1A1A2E; }
+      margin: 1in 0.75in 1in 1.25in;
+      @top-left { content: "NC Medicaid BH Operations Navigator"; font: 10pt "IBM Plex Mono", monospace; color: #1A1A2E; vertical-align: bottom; padding-bottom: 6pt; border-bottom: 2pt solid #D4782A; }
+      @top-right { content: "AdaptBridge"; font: 10pt "IBM Plex Mono", monospace; color: #1A1A2E; vertical-align: bottom; padding-bottom: 6pt; border-bottom: 2pt solid #D4782A; }
+      @bottom-left { content: "AdaptBridge | Praxiom LLC d/b/a AdaptBridge | v4.1"; font: 10pt "IBM Plex Mono", monospace; color: #1A1A2E; vertical-align: top; padding-top: 6pt; border-top: 0.5pt solid #1A1A2E; }
+      @bottom-right { content: "Page " counter(page) " of " counter(pages); font: 10pt "IBM Plex Mono", monospace; color: #1A1A2E; vertical-align: top; padding-top: 6pt; border-top: 0.5pt solid #1A1A2E; }
+    }
+    /* The first page carries its own masthead, so the running header is left off it. */
+    @page :first {
+      @top-left { content: none; border: 0; }
+      @top-right { content: none; border: 0; }
     }
     @media print {
       html, body { background: #FFFFFF !important; }
@@ -257,6 +265,11 @@ unicode-range: U+0102-0103, U+01CD-01DC, U+1E0C-1E0D, U+1E12-1E13, U+1E24-1E25, 
       .pr-cols p { margin: 0 0 1pt; overflow-wrap: anywhere; }
       .pr-empty { font-style: italic; color: #1A1A2E; }
       .pr-end { margin-top: 12pt; padding-top: 4pt; border-top: 1pt solid #1A1A2E; font-family: var(--ab-font-mono); font-size: 10pt; color: #1A1A2E; }
+      .pr-writein { margin-top: 8pt; break-inside: avoid; }
+      .pr-writein-label { font-size: 10pt; font-weight: 500; text-transform: uppercase; letter-spacing: .02em; color: #1C3557; margin-bottom: 2pt; }
+      .pr-line { height: 24pt; border-bottom: 0.5pt solid #1A1A2E; }
+      .pr-notes-page { break-before: page; }
+      .pr-notes-page .pr-line { height: 26pt; }
     }
   </style>
 </head>
@@ -3910,7 +3923,11 @@ unicode-range: U+0102-0103, U+01CD-01DC, U+1E0C-1E0D, U+1E12-1E13, U+1E24-1E25, 
             <ul class="pr-checks">
               ${step.subtasks.map((sub, idx) => `<li class="${appState.subtaskChecks[subtaskKey(step.id, idx)] ? 'pr-done' : ''}"><span class="pr-box"></span><span>${e(sub)}</span></li>`).join('')}
             </ul>
-            ${note ? `<div class="pr-note"><b>Notes:</b> ${e(note)}</div>` : ''}
+            ${note ? `<div class="pr-note"><b>Saved note:</b> ${e(note)}</div>` : ''}
+            <div class="pr-writein">
+              <div class="pr-writein-label">Your notes</div>
+              <div class="pr-line"></div><div class="pr-line"></div><div class="pr-line"></div>
+            </div>
           </article>`;
       };
 
@@ -3992,7 +4009,7 @@ unicode-range: U+0102-0103, U+01CD-01DC, U+1E0C-1E0D, U+1E12-1E13, U+1E24-1E25, 
       document.getElementById('print-report').innerHTML = `
         <div class="pr-topbar"></div>
         <header class="pr-header">
-          <div class="pr-kicker">NC Medicaid Behavioral Health</div>
+          <div class="pr-kicker">AdaptBridge &middot; NC Medicaid Behavioral Health</div>
           <h1>Operations &amp; Compliance Plan</h1>
           <p class="pr-sub">Progress report printed ${e(today)}</p>
           <p class="pr-meta-line">AdaptBridge | Praxiom LLC d/b/a AdaptBridge | v4.1 | ${e(today)}</p>
@@ -4024,6 +4041,11 @@ unicode-range: U+0102-0103, U+01CD-01DC, U+1E0C-1E0D, U+1E12-1E13, U+1E24-1E25, 
 
         ${phaseSections}
         ${contactsHtml}
+
+        <section class="pr-notes-page">
+          <h2 class="pr-phase-title"><span>Notes</span><small>Use for anything not tied to one step</small></h2>
+          ${Array.from({ length: 22 }, () => '<div class="pr-line"></div>').join('')}
+        </section>
 
         <p class="pr-end">Progress, statuses and notes reflect the dashboard on ${e(today)}. Fee amounts, phone numbers and requirements are planning aids: confirm them with the issuing agency before relying on them.</p>
       `;
